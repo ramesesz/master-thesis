@@ -1,0 +1,15 @@
+# Virtual environments
+**/*venv*/
+
+# Ontologies
+ontologies/
+
+# Local testing
+playground/
+models/
+
+# Images
+diagrams/img/
+
+# Knowledge learner module
+manon-manufacturing-knowledge-learner

@@ -6,3 +6,4 @@ langchain==0.1.14
 langchain-experimental==0.0.56
 chromadb==0.5.0
 openai==1.33.0
+SPARQLWrapper==2.0.0

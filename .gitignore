@@ -7,7 +7,7 @@ ontologies/
 # Local testing
 playground/
 models/
-__pycache__/
+# __pycache__/
 
 # Ignore editor-specific files
 .vscode/

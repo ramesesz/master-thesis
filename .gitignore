@@ -4,6 +4,9 @@
 # Ontologies
 ontologies/
 
+# Vectorstore
+vectorstores/
+
 # Local testing
 playground/
 models/
@@ -12,7 +15,6 @@ __pycache__/
 # Ignore editor-specific files
 .vscode/
 .idea/
-
 
 # Images
 diagrams/img/

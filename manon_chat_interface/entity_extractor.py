@@ -1,22 +1,30 @@
+# run using 'python -m playground.ontology.test' from root
+
 import re
+import chromadb
 
-from SPARQLWrapper import SPARQLWrapper, JSON
+from manon_chat_interface import (
+    utils,
+    prompts,
+    queries
+)
+from SPARQLWrapper import SPARQLWrapper
 
-# Define the SPARQL endpoint
-sparql = SPARQLWrapper("http://localhost:3030/manon/query")
+# Execute SPARQL query
+wrapper = SPARQLWrapper("http://localhost:3030/manon/query")
 
-# Define the SPARQL query
+results = utils.execute_sparql(wrapper=wrapper, query=queries.MACHINE_EXTRACTION_QUERY)
 
+# Extract machine names
+bindings = results['results']['bindings']
+machine_IRIs = [binding['individual']['value'] for binding in bindings]
+machine_names = [re.split('#M_', iri)[-1] for iri in machine_IRIs]
 
-# Execute query and return in JSON format
-sparql.setQuery(query)
-
-sparql.setReturnFormat(JSON)
-
-results = sparql.query().convert()
-
-# Extract machine names from query result
-machine_names = [re.split('#M_', result['individual']['value'])[-1] for result in results["results"]["bindings"]]
-
-
-# Todo: Embed into vectorstore
+# Create vectorstore
+client = chromadb.PersistentClient(path='./vectorstores/entities')
+machine_collection = client.get_or_create_collection(name="machine_collection")
+machine_collection.add(
+    documents=machine_names,
+    ids=machine_names,
+    metadatas=[{"IRI": iri} for iri in machine_IRIs]
+)

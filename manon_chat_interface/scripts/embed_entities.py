@@ -1,6 +1,5 @@
 # run using 'python -m playground.ontology.test' from root
 
-# Extract Machines ------------------------------------------------------------------------
 import re
 import chromadb
 
@@ -8,12 +7,13 @@ from manon_chat_interface import (
     utils,
     queries
 )
-from SPARQLWrapper import SPARQLWrapper
+
+URL = "http://localhost:3030/manon/query"
+
+# Extract Machines ------------------------------------------------------------------------
 
 # Execute SPARQL query
-wrapper = SPARQLWrapper("http://localhost:3030/manon/query")
-
-results = utils.execute_sparql(wrapper=wrapper, query=queries.MACHINE_EXTRACTION_QUERY)
+results = utils.execute_sparql(url=URL, query=queries.MACHINE_EXTRACTION_QUERY)
 
 # Extract machine names
 bindings = results['results']['bindings']
@@ -33,9 +33,7 @@ machine_collection.add(
 # Extract Parts ------------------------------------------------------------------------
 
 # Execute SPARQL query
-wrapper = SPARQLWrapper("http://localhost:3030/manon/query")
-
-results = utils.execute_sparql(wrapper=wrapper, query=queries.PART_EXTRACTION_QUERY)
+results = utils.execute_sparql(url=URL, query=queries.PART_EXTRACTION_QUERY)
 
 # Extract part names
 bindings = results['results']['bindings']

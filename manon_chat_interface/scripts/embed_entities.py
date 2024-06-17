@@ -21,14 +21,12 @@ machine_IRIs = [binding['individual']['value'] for binding in bindings]
 machine_names = [re.split('#M_', iri)[-1] for iri in machine_IRIs]
 
 # Embed to vectorstore
-client = chromadb.PersistentClient(path='./vectorstores/entities')
-machine_collection = client.get_or_create_collection(name="machine_collection")
-machine_collection.add(
+utils.embed_entities(
+    path="./vectorstores/entities",
+    collection="machine_collection",
     documents=machine_names,
-    ids=machine_names,
-    metadatas=[{"IRI": iri} for iri in machine_IRIs]
+    iris=machine_IRIs
 )
-
 
 # Extract Parts ------------------------------------------------------------------------
 
@@ -41,10 +39,10 @@ part_IRIs = [binding['individual']['value'] for binding in bindings]
 part_names = [re.split('#', iri)[-1] for iri in part_IRIs]
 
 # Embed to vectorstore
-client = chromadb.PersistentClient(path='./vectorstores/entities')
-part_collection = client.get_or_create_collection(name="part_collection")
-part_collection.add(
+utils.embed_entities(
+    path="./vectorstores/entities",
+    collection="part_collection",
     documents=part_names,
-    ids=part_names,
-    metadatas=[{"IRI": iri} for iri in part_IRIs]
+    iris=part_IRIs
 )
+

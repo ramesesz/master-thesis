@@ -1,7 +1,7 @@
-# run using 'python -m playground.ontology.test' from root
+# Run using 'python -m manon_chat_interface.scripts.embed_entities' from root
+# Make sure that SPARQL server is running
 
 import re
-import chromadb
 
 from manon_chat_interface import (
     utils,
@@ -10,9 +10,10 @@ from manon_chat_interface import (
 
 URL = "http://localhost:3030/manon/query"
 
-# Extract Machines ------------------------------------------------------------------------
+# Machines ------------------------------------------------------------------------
 
 # Execute SPARQL query
+print("Extracting machine entities...")
 results = utils.execute_sparql(url=URL, query=queries.MACHINE_EXTRACTION_QUERY)
 
 # Extract machine names
@@ -21,6 +22,7 @@ machine_IRIs = [binding['individual']['value'] for binding in bindings]
 machine_names = [re.split('#M_', iri)[-1] for iri in machine_IRIs]
 
 # Embed to vectorstore
+print("Embedding machine entities...")
 utils.embed_entities(
     path="./vectorstores/entities",
     collection="machine_collection",
@@ -28,8 +30,9 @@ utils.embed_entities(
     iris=machine_IRIs
 )
 
-# Extract Parts ------------------------------------------------------------------------
+# Parts ---------------------------------------------------------------------------
 
+print("Extracting part entities...")
 # Execute SPARQL query
 results = utils.execute_sparql(url=URL, query=queries.PART_EXTRACTION_QUERY)
 
@@ -39,6 +42,7 @@ part_IRIs = [binding['individual']['value'] for binding in bindings]
 part_names = [re.split('#', iri)[-1] for iri in part_IRIs]
 
 # Embed to vectorstore
+print("Embedding part entities...")
 utils.embed_entities(
     path="./vectorstores/entities",
     collection="part_collection",
@@ -46,3 +50,4 @@ utils.embed_entities(
     iris=part_IRIs
 )
 
+print("All entities have been successfully embedded.")

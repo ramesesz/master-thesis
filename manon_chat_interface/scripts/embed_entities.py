@@ -3,10 +3,7 @@
 
 import re
 
-from manon_chat_interface import (
-    utils,
-    queries
-)
+from manon_chat_interface import utils, queries
 
 URL = "http://localhost:3030/manon/query"
 

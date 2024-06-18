@@ -21,7 +21,7 @@ def execute_sparql(url: str, query: str):
     return results
 
 
-def embed_entities(path: str, collection: str, documents: list, metadatas: list):
+def embed_entities(path: str, collection: str, documents: list, metadatas: list = None):
     """Embed entities to vectorstore
 
     Args:

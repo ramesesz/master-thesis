@@ -27,7 +27,7 @@ utils.embed_entities(
     path="./vectorstores/entities",
     collection="machine_collection",
     documents=machine_names,
-    iris=machine_IRIs
+    metadatas=[{"IRI": IRI} for IRI in machine_IRIs]
 )
 
 # Parts ---------------------------------------------------------------------------
@@ -47,7 +47,7 @@ utils.embed_entities(
     path="./vectorstores/entities",
     collection="part_collection",
     documents=part_names,
-    iris=part_IRIs
+    metadatas=[{"IRI": IRI} for IRI in part_IRIs]
 )
 
 print("All entities have been successfully embedded.")

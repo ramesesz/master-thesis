@@ -21,14 +21,14 @@ def execute_sparql(url: str, query: str):
     return results
 
 
-def embed_entities(path: str, collection: str, documents: list, iris: list):
+def embed_entities(path: str, collection: str, documents: list, metadatas: list):
     """Embed entities to vectorstore
 
     Args:
         path (str): Path to vectorstore.
         collection (str): Name of collection.
         documents (list): List of documents.
-        iris (list): List of iris of the documents.
+        metadatas (list): Metadatas in the form of a list of dictionaries.
     """
     # Create a list of unique ids for each document based on the content
     ids = [str(uuid.uuid5(uuid.NAMESPACE_DNS, document)) for document in documents]
@@ -53,5 +53,5 @@ def embed_entities(path: str, collection: str, documents: list, iris: list):
         collection.add(
             documents=list(unique_docs),
             ids=list(unique_ids),
-            metadatas=[{"IRI": iri} for iri in iris]
+            metadatas=metadatas
         )

@@ -39,6 +39,7 @@ def generate_response(client: OpenAI, input: str, messages: list):
 
 def strictjson_llm(system_prompt: str, user_prompt: str):
     """LLM function call to be passed to strictjson.strict_json().
+    Refer to https://github.com/tanchongmin/strictjson/blob/main/strictjson/base.py#L319
 
     Args:
         system_prompt (str): System prompt.

@@ -25,7 +25,7 @@ machine_names = [re.split('#M_', iri)[-1] for iri in machine_IRIs]
 # Embed to vectorstore
 print("Embedding machine entities...")
 vectorstore_utils.embed_entities(
-    path="./data/vectorstores/entities",
+    path="./manon_chat_interface/data/vectorstores/entities",
     collection="machine_collection",
     documents=machine_names,
     metadatas=[{"IRI": IRI} for IRI in machine_IRIs]
@@ -47,7 +47,7 @@ part_names = [re.split('#', iri)[-1] for iri in part_IRIs]
 # Embed to vectorstore
 print("Embedding part entities...")
 vectorstore_utils.embed_entities(
-    path="./data/vectorstores/entities",
+    path="./manon_chat_interface/data/vectorstores/entities",
     collection="part_collection",
     documents=part_names,
     metadatas=[{"IRI": IRI} for IRI in part_IRIs]

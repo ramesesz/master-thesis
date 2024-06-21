@@ -12,7 +12,7 @@ QUESTIONS_LIST = [
 # Embed to vectorstore
 print("Embedding questions...")
 vectorstore_utils.embed_entities(
-    path="./data/vectorstores/competency_questions",
+    path="./manon_chat_interface/data/vectorstores/competency_questions",
     collection="competency_questions",
     documents=QUESTIONS_LIST,
 )

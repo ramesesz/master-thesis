@@ -36,3 +36,21 @@ PART_EXTRACTION_QUERY = """
   }
 """
 
+from SPARQLWrapper import SPARQLWrapper, JSON
+
+def execute_sparql(url: str, query: str):
+    """Execute a SPARQL Query
+
+    Args:
+        url (str): URL of the SPARQL query endpoint.
+        query (str): SPARQL query to be executed.
+
+    Returns:
+        json: Results of the SPARQL query.
+    """
+    wrapper = SPARQLWrapper(url)
+    wrapper.setQuery(query)
+    wrapper.setReturnFormat(JSON)
+    results = wrapper.query().convert()
+
+    return results

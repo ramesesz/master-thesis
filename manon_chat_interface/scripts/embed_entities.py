@@ -3,7 +3,7 @@
 
 import re
 
-from manon_chat_interface.utils import sparql_utils, vectorstore_utils
+from manon_chat_interface.utils import sparql, vectorstore
 from urllib.error import URLError
 
 URL = "http://localhost:3030/manon/query"
@@ -12,9 +12,9 @@ URL = "http://localhost:3030/manon/query"
 print("Extracting machine entities...")
 
 try:
-    results = sparql_utils.execute_sparql(url=URL, query=sparql_utils.MACHINE_EXTRACTION_QUERY)
+    results = sparql.execute_sparql(url=URL, query=sparql.MACHINE_EXTRACTION_QUERY)
 except URLError as e:
-    print(f"Server may not be running. Error message: {e}")
+    print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
 
 
 # Extract machine names
@@ -24,7 +24,7 @@ machine_names = [re.split('#M_', iri)[-1] for iri in machine_IRIs]
 
 # Embed to vectorstore
 print("Embedding machine entities...")
-vectorstore_utils.embed_entities(
+vectorstore.embed_entities(
     path="./data/vectorstores/entities",
     collection="machine_collection",
     documents=machine_names,
@@ -35,9 +35,9 @@ vectorstore_utils.embed_entities(
 print("Extracting part entities...")
 
 try:
-    results = sparql_utils.execute_sparql(url=URL, query=sparql_utils.PART_EXTRACTION_QUERY)
+    results = sparql.execute_sparql(url=URL, query=sparql.PART_EXTRACTION_QUERY)
 except URLError as e:
-    print(f"Server may not be running. Error message: {e}")
+    print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
 
 # Extract part names
 bindings = results['results']['bindings']
@@ -46,7 +46,7 @@ part_names = [re.split('#', iri)[-1] for iri in part_IRIs]
 
 # Embed to vectorstore
 print("Embedding part entities...")
-vectorstore_utils.embed_entities(
+vectorstore.embed_entities(
     path="./data/vectorstores/entities",
     collection="part_collection",
     documents=part_names,

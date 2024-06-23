@@ -1,4 +1,4 @@
-from manon_chat_interface.utils.llm_utils import (
+from manon_chat_interface.utils.llm import (
     ER_SYSTEM_PROMPT, ER_USER_PROMPT, strictjson_llm
 )
 from strictjson import strict_json

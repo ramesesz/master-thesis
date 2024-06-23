@@ -1,6 +1,6 @@
 # Run using 'python -m manon_chat_interface.scripts.embed_questions' from root
 
-from manon_chat_interface.utils import vectorstore_utils
+from manon_chat_interface.utils import vectorstore
 
 QUESTIONS_LIST = [
     "Which machines can manufacture my part?",
@@ -11,8 +11,8 @@ QUESTIONS_LIST = [
 
 # Embed to vectorstore
 print("Embedding questions...")
-vectorstore_utils.embed_entities(
-    path="./manon_chat_interface/data/vectorstores/competency_questions",
+vectorstore.embed_entities(
+    path="./data/vectorstores/competency_questions",
     collection="competency_questions",
     documents=QUESTIONS_LIST,
 )

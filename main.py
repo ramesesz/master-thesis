@@ -1,4 +1,4 @@
-from manon_chat_interface.modules.entity_recognition import entity_recognition
+from manon_chat_interface.utils.utils import entity_recognition
 
 input = """
 Can creality ender manufacture flange additive?

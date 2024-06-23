@@ -3,13 +3,16 @@ import uuid
 
 
 def embed_entities(path: str, collection: str, documents: list, metadatas: list = None):
-    """Embed entities to vectorstore
+    """    
+    Embed entities into a vectorstore.
 
+    This function embeds a list of documents into a specified vectorstore collection, ensuring uniqueness based on document content.
+    
     Args:
-        path (str): Path to vectorstore.
-        collection (str): Name of collection.
-        documents (list): List of documents.
-        metadatas (list): Metadatas in the form of a list of dictionaries.
+        path (str): The file system path to the vectorstore.
+        collection (str): The name of the collection within the vectorstore.
+        documents (list): A list of documents to be embedded.
+        metadatas (list, optional): A list of metadata dictionaries corresponding to the documents.
     """
     # Create a list of unique ids for each document based on the content
     ids = [str(uuid.uuid5(uuid.NAMESPACE_DNS, document)) for document in documents]

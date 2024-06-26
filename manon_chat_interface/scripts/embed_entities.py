@@ -12,7 +12,8 @@ URL = "http://localhost:3030/manon/query"
 print("Extracting machine entities...")
 
 try:
-    results = sparql.execute_sparql(url=URL, query=sparql.MACHINE_EXTRACTION_QUERY)
+    query = sparql.EXTRACTION_QUERY_TEMPLATE.format(iri="http://www.ontology.ift.dlr.de/MANON/Machines#ManufacturingMachine")
+    results = sparql.execute_sparql(url=URL, query=query)
 except URLError as e:
     print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
 
@@ -35,7 +36,8 @@ vectorstore.embed_entities(
 print("Extracting part entities...")
 
 try:
-    results = sparql.execute_sparql(url=URL, query=sparql.PART_EXTRACTION_QUERY)
+    query = sparql.EXTRACTION_QUERY_TEMPLATE.format(iri="http://www.ontology.ift.dlr.de/MANON/Parts#Part")
+    results = sparql.execute_sparql(url=URL, query=query)
 except URLError as e:
     print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
 

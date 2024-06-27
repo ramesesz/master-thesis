@@ -3,12 +3,16 @@ from manon_chat_interface.utils.llm import (
 )
 from strictjson import strict_json
 
+import chromadb
+
 
 def entity_recognition(input: str) -> dict:
     """
     Performs entity recognition on the provided input string using a large language model (LLM).
 
-    This function identifies and categorizes entities within the user input, specifically separating them into machines and parts.
+    This function identifies and categorizes entities within the user input, specifically separating them into machine and part.
+
+    Multiple 
 
     Args:
         input (str): The input string to be analyzed by the LLM.
@@ -24,16 +28,25 @@ def entity_recognition(input: str) -> dict:
     response = strict_json(
         system_prompt=ER_SYSTEM_PROMPT,
         user_prompt=ER_USER_PROMPT.format(input=input),
-        output_format={'machines': 'Machine name', 
-                       'parts': 'Part name'},
+        output_format={"machines": "Array of machines", 
+                       "parts": "Array of parts"},
         llm=strictjson_llm
     )
 
     return response
 
 
-
-def retrieve_context():
-    
+def retrieve_context(entities, path):
+    client = chromadb.PersistentClient(path=path)
+    if entities["machines"]:
+        machine_collection = client.get_or_create_collection("machines_collection")
+        machine_embeddings = machine_collection.query(
+            query_texts=entities["machines"],
+            n_results=1
+        )
+        # TODO: Exec query using IRI
+    if entities["parts"]:
+        part_collection = client.get_or_create_collection("parts_collection")
+        # TODO: Exec query using IRI
     
     pass 

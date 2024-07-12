@@ -1,102 +1,64 @@
-EXTRACTION_QUERY_TEMPLATE = """
-  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-  PREFIX owl: <http://www.w3.org/2002/07/owl#>
-  PREFIX ManO: <http://www.ontology.ift.dlr.de/MANON/ManOnSTEP#>
-  PREFIX om-2: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
-  PREFIX Feat: <http://www.ontology.ift.dlr.de/MANON/Features#>
-  PREFIX ManO2: <http://www.ontology.ift.dlr.de/MANON/ManOn#>
-  PREFIX Part: <http://www.ontology.ift.dlr.de/MANON/Parts#>
-  PREFIX Rest: <http://www.ontology.ift.dlr.de/MANON/Restrictions#>
-  PREFIX Tole: <http://www.ontology.ift.dlr.de/MANON/Tolerances#>
-  SELECT ?individual
-  WHERE {{
-    ?class rdfs:subClassOf* <{iri}> .
-    ?individual rdf:type ?class .
+PREFIXES = """
+  PREFIX : <http://www.co-ode.org/ontologies/pizza#> 
+  PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+  PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+  PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+  PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+  PREFIX pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> 
+  PREFIX terms: <http://purl.org/dc/terms/> 
+  BASE <http://www.co-ode.org/ontologies/pizza#> 
+"""
+
+# Formatable
+EXTRACTION_QUERY = """
+SELECT DISTINCT ?individual
+WHERE {{
+{{
+ SELECT ?individual
+ WHERE {{
+   ?individual rdfs:subClassOf* {pizza_class} .
+ }}
+}}
+UNION
+{{
+ SELECT DISTINCT ?individual
+ WHERE {{
+   ?individual rdf:type owl:Class ;
+           owl:equivalentClass ?equivClass .
+
+   ?equivClass owl:intersectionOf ?list .
+   ?list rdf:rest*/rdf:first {pizza_class} .
+ }}
+}}
+}}
+"""
+
+# Formatable
+PIZZA_RESTRICTIONS = """
+SELECT ?restriction ?property ?type ?value
+WHERE {{
+  {pizza_name} rdfs:subClassOf ?restriction .
+  ?restriction rdf:type owl:Restriction ;
+               owl:onProperty ?property .
+
+  OPTIONAL {{
+    ?restriction owl:someValuesFrom ?value .
+    BIND("someValuesFrom" AS ?type)
   }}
+  OPTIONAL {{
+    ?restriction owl:allValuesFrom ?value .
+    BIND("allValuesFrom" AS ?type)
+  }}
+  OPTIONAL {{
+    ?restriction owl:hasValue ?value .
+    BIND("hasValue" AS ?type)
+  }}
+}}
 """
 
-
-ONE_HOP_EXTRACTION_QUERY = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX ManO: <http://www.ontology.ift.dlr.de/MANON/ManOnSTEP#>
-PREFIX om-2: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
-PREFIX Feat: <http://www.ontology.ift.dlr.de/MANON/Features#>
-PREFIX ManO2: <http://www.ontology.ift.dlr.de/MANON/ManOn#>
-PREFIX Part: <http://www.ontology.ift.dlr.de/MANON/Parts#>
-PREFIX Rest: <http://www.ontology.ift.dlr.de/MANON/Restrictions#>
-PREFIX Tole: <http://www.ontology.ift.dlr.de/MANON/Tolerances#>
-SELECT ?subject ?predicate ?object
-WHERE {
-  {
-    <http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> ?predicate ?object .
-    BIND(<http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> AS ?subject)
-  }
-  UNION
-  {
-    ?subject <http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> ?object .
-    BIND(<http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> AS ?predicate)
-  }
-  UNION
-  {
-    ?subject ?predicate <http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> .
-    BIND(<http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> AS ?object)
-  }
-}
-"""
-
-
-TWO_HOP_EXTRACTION_QUERY = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX ManO: <http://www.ontology.ift.dlr.de/MANON/ManOnSTEP#>
-PREFIX om-2: <http://www.ontology-of-units-of-measure.org/resource/om-2/>
-PREFIX Feat: <http://www.ontology.ift.dlr.de/MANON/Features#>
-PREFIX ManO2: <http://www.ontology.ift.dlr.de/MANON/ManOn#>
-PREFIX Part: <http://www.ontology.ift.dlr.de/MANON/Parts#>
-PREFIX Rest: <http://www.ontology.ift.dlr.de/MANON/Restrictions#>
-PREFIX Tole: <http://www.ontology.ift.dlr.de/MANON/Tolerances#>
-
-SELECT ?subject ?predicate ?object
-WHERE {
-  {
-    <http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> ?predicate ?object .
-    BIND(<http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> AS ?subject)
-  }
-  UNION
-  {
-    ?subject <http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> ?object .
-    BIND(<http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> AS ?predicate)
-  }
-  UNION
-  {
-    ?subject ?predicate <http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> .
-    BIND(<http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> AS ?object)
-  }
-  UNION
-  {
-    <http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> ?p1 ?intermediateNode .
-    ?intermediateNode ?p2 ?object2 .
-    BIND(<http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> AS ?subject)
-    BIND(?p1 AS ?predicate)
-    BIND(?object2 AS ?object)
-  }
-  UNION
-  {
-    ?subject2 ?p1 <http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> .
-    ?subject2 ?p2 ?object .
-    BIND(<http://www.ontology.ift.dlr.de/MANON/EOSM290#M_EOSM290> AS ?objectBound)
-    BIND(?p1 AS ?predicate)
-    BIND(?subject2 AS ?subject)
-  }
-}
-"""
 
 
 from SPARQLWrapper import SPARQLWrapper, JSON

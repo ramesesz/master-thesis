@@ -22,14 +22,14 @@ def entity_recognition(input: str) -> dict:
 
     Example:
         Input: "Can Creality Ender manufacture flange?"
-        Output: {'machines': 'Creality Ender', 'parts': 'flange'}
+        Output: {'machines': ['Creality Ender'], 'parts': ['flange']}
 
     """
     response = strict_json(
         system_prompt=ER_SYSTEM_PROMPT,
         user_prompt=ER_USER_PROMPT.format(input=input),
-        output_format={"machines": "Array of machines", 
-                       "parts": "Array of parts"},
+        output_format={"pizza": "Array of pizza", 
+                       "topping": "Array of topping"},
         llm=strictjson_llm
     )
 

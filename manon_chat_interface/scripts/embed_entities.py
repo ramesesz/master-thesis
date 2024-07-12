@@ -3,41 +3,41 @@
 
 import re
 
-from manon_chat_interface.utils import sparql, vectorstore
+from manon_chat_interface.utils.sparql import *
+from manon_chat_interface.utils import vectorstore
 from urllib.error import URLError
 
 URL = "http://localhost:3030/manon/query"
 
 # Machines ------------------------------------------------------------------------
-print("Extracting machine entities...")
+print("Extracting pizzas...")
 
 try:
-    query = sparql.EXTRACTION_QUERY_TEMPLATE.format(iri="http://www.ontology.ift.dlr.de/MANON/Machines#ManufacturingMachine")
-    results = sparql.execute_sparql(url=URL, query=query)
+    iri = "pizza:Pizza"
+    results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 except URLError as e:
     print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
 
 
-# Extract machine names
+# Extract names
 bindings = results['results']['bindings']
-machine_IRIs = [binding['individual']['value'] for binding in bindings]
-machine_names = [re.split('#M_', iri)[-1] for iri in machine_IRIs]
+pizza_IRIs = [binding['individual']['value'] for binding in bindings]
+pizza_names = [re.split('#', iri)[-1] for iri in pizza_IRIs]
 
 # Embed to vectorstore
-print("Embedding machine entities...")
+print("Embedding pizzas...")
 vectorstore.embed_entities(
     path="./manon_chat_interface/data/vectorstores/entities",
-    collection="machines_collection",
-    documents=machine_names,
-    metadatas=[{"IRI": IRI} for IRI in machine_IRIs]
+    collection="pizza_collection",
+    documents=pizza_names,
+    metadatas=[{"IRI": IRI} for IRI in pizza_IRIs]
 )
 
 # Parts ---------------------------------------------------------------------------
-print("Extracting part entities...")
+print("Extracting toppings...")
 
 try:
-    query = sparql.EXTRACTION_QUERY_TEMPLATE.format(iri="http://www.ontology.ift.dlr.de/MANON/Parts#Part")
-    results = sparql.execute_sparql(url=URL, query=query)
+    results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 except URLError as e:
     print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
 
@@ -47,10 +47,10 @@ part_IRIs = [binding['individual']['value'] for binding in bindings]
 part_names = [re.split('#', iri)[-1] for iri in part_IRIs]
 
 # Embed to vectorstore
-print("Embedding part entities...")
+print("Embedding toppings...")
 vectorstore.embed_entities(
     path="./manon_chat_interface/data/vectorstores/entities",
-    collection="parts_collection",
+    collection="topping_collection",
     documents=part_names,
     metadatas=[{"IRI": IRI} for IRI in part_IRIs]
 )

@@ -12,7 +12,6 @@ PREFIXES = """
   BASE <http://www.co-ode.org/ontologies/pizza#> 
 """
 
-# Formatable
 EXTRACTION_QUERY = """
 SELECT DISTINCT ?individual
 WHERE {{
@@ -36,29 +35,41 @@ UNION
 }}
 """
 
-# Formatable
 PIZZA_RESTRICTIONS = """
-SELECT ?restriction ?property ?type ?value
+SELECT DISTINCT ?pizza ?property ?type ?value
 WHERE {{
-  {pizza_name} rdfs:subClassOf ?restriction .
+  BIND({pizza_variable} AS ?pizza)  
+  ?pizza rdfs:subClassOf ?restriction .
   ?restriction rdf:type owl:Restriction ;
                owl:onProperty ?property .
 
   OPTIONAL {{
     ?restriction owl:someValuesFrom ?value .
-    BIND("someValuesFrom" AS ?type)
-  }}
-  OPTIONAL {{
-    ?restriction owl:allValuesFrom ?value .
-    BIND("allValuesFrom" AS ?type)
+    BIND(owl:someValuesFrom AS ?type)
   }}
   OPTIONAL {{
     ?restriction owl:hasValue ?value .
-    BIND("hasValue" AS ?type)
+    BIND(owl:hasValue AS ?type)
   }}
 }}
 """
 
+PIZZA_TRIPLES = """
+SELECT DISTINCT ?subject ?predicate ?object
+WHERE {{
+  {{
+    BIND({pizza_variable} AS ?subject) .
+    ?subject ?predicate ?object .
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }}
+  UNION
+  {{
+    BIND({pizza_variable} AS ?object) .
+    ?subject ?predicate ?object .
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }}
+}}
+"""
 
 
 from SPARQLWrapper import SPARQLWrapper, JSON

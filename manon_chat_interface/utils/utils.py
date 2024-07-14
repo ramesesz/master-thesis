@@ -38,15 +38,15 @@ def entity_recognition(input: str) -> dict:
 
 def retrieve_context(entities, path):
     client = chromadb.PersistentClient(path=path)
-    if entities["machines"]:
-        machine_collection = client.get_or_create_collection("machines_collection")
-        machine_embeddings = machine_collection.query(
+    if entities["pizza"]:
+        collection = client.get_or_create_collection("pizza_collection")
+        embeddings = collection.query(
             query_texts=entities["machines"],
             n_results=1
         )
         # TODO: Exec query using IRI
-    if entities["parts"]:
-        part_collection = client.get_or_create_collection("parts_collection")
+    if entities["topping"]:
+        collection = client.get_or_create_collection("topping_collection")
         # TODO: Exec query using IRI
     
     pass 

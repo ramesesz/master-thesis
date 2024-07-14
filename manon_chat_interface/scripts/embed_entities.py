@@ -7,7 +7,7 @@ from manon_chat_interface.utils.sparql import *
 from manon_chat_interface.utils import vectorstore
 from urllib.error import URLError
 
-URL = "http://localhost:3030/manon/query"
+URL = "http://localhost:3030/pizza/query"
 
 # Machines ------------------------------------------------------------------------
 print("Extracting pizzas...")
@@ -37,6 +37,7 @@ vectorstore.embed_entities(
 print("Extracting toppings...")
 
 try:
+    iri = "pizza:PizzaTopping"
     results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 except URLError as e:
     print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")

@@ -1,15 +1,14 @@
 from openai import OpenAI
 
 ER_SYSTEM_PROMPT = """
-You are an expert in the manufacturing domain with extensive knowledge of various machines and parts used in industrial 
-settings. Your task is to accurately identify and extract the names of machines and parts from given text. You should 
-focus on recognizing specific terminology and contextually relevant phrases that pertain to machinery and components 
-within the manufacturing sector. Your output should be in JSON format, categorizing the identified terms into "machines" 
-and "parts". The output should be strictly the JSON object without any additional commentary or explanation.
+You are an expert in the gastronomy domain with extensive knowledge of various pizzas and toppings. Your task is to accurately identify and extract the names of machines and parts from given text. You should 
+focus on recognizing specific terminology and contextually relevant phrases that pertain to pizza names and their toppings 
+within the gastronomy sector. Your output should be in JSON format, categorizing the identified terms into "pizza" 
+and "topping". The output should be strictly the JSON object without any additional commentary or explanation.
 """
 
 ER_USER_PROMPT = """
-I want you to identify machines and parts of the following input.
+I want you to identify the pizza and topping of the following input.
 
 Input: {input}
 Output: 

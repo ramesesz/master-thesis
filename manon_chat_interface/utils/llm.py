@@ -14,6 +14,20 @@ Input: {input}
 Output: 
 """
 
+CONTEXT_RETRIEVAL_SYSTEM_PROMPT = """
+You are an expert SPARQL-based context retrieval. You will be given a question and the relevant entities
+within it. Your task is to help generate a SPARQL query that represents given question. Make sure to give
+only the executable SPARQL query in your answer.
+"""
+
+CONTEXT_RETRIEVAL_USER_PROMPT = """
+Here are the IRIs of the entity in question: {iris}
+Consider the following subgraph in turtle syntax: {subgraph}
+Given the question: {question}
+Create a SPARQL query that best represent the question.
+SPARQL query:
+"""
+
 def generate_response(client: OpenAI, input: str, messages: list):
     """Sends a request to local LMStudio server and generate LLM response. Appends prompt 
     and response to messages.
@@ -36,7 +50,7 @@ def generate_response(client: OpenAI, input: str, messages: list):
     return response, messages
 
 
-def strictjson_llm(system_prompt: str, user_prompt: str):
+def invoke_llm(system_prompt: str, user_prompt: str):
     """LLM function call to be passed to strictjson.strict_json().
     Refer to https://github.com/tanchongmin/strictjson/blob/main/strictjson/base.py#L319
 

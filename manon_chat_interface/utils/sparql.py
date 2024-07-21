@@ -26,6 +26,13 @@ PREFIX terms: <http://purl.org/dc/terms/>
 BASE <http://www.co-ode.org/ontologies/pizza#> 
 """
 
+ALL_TRIPLES_QUERY = """
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object.
+}
+"""
+
 ########################################################################
 ## Embed entities ######################################################
 ########################################################################
@@ -182,7 +189,7 @@ def execute_parse_sparql(url, queries):
     """
     results = []
     for index, query in enumerate(queries):
-        result = execute_sparql(url=url, query=query)
+        result = execute_sparql(url=url, query=PREFIXES+query)
         table = parse_sparql_output(result).to_string()
         results.append(f"Triples: {index}\n{table}")
     subgraph = "\n".join(results)

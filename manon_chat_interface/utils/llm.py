@@ -28,15 +28,16 @@ Create a SPARQL query that best represent the question.
 SPARQL query:
 """
 
-def generate_response(client: OpenAI, input: str, messages: list):
-    """Sends a request to local LMStudio server and generate LLM response. Appends prompt 
-    and response to messages.
+def generate_response(user_prompt: str, messages: list):
+    """Calls the LLM with history.
         input (str): Input of the LLM.
         messages (list): History of messages.
     """
 
-    input_message = {"role": "user", "content": input}
-    messages.append(input_message)
+    user_message = {"role": "user", "content": user_prompt}
+    messages.append(user_message)
+
+    client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 
     response = client.chat.completions.create(
         model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
@@ -51,7 +52,8 @@ def generate_response(client: OpenAI, input: str, messages: list):
 
 
 def invoke_llm(system_prompt: str, user_prompt: str):
-    """LLM function call to be passed to strictjson.strict_json().
+    """Calls the LLM without history.
+    LLM function call to be passed to strictjson.strict_json(). It is advised not to change the parameters.
     Refer to https://github.com/tanchongmin/strictjson/blob/main/strictjson/base.py#L319
 
     Args:

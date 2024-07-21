@@ -1,8 +1,12 @@
 from openai import OpenAI
 
+########################################################################
+## Entity recognition ##################################################
+########################################################################
 ER_SYSTEM_PROMPT = """
-You are an expert in the gastronomy domain with extensive knowledge of various pizzas and toppings. Your task is to accurately identify and extract the names of machines and parts from given text. You should 
-focus on recognizing specific terminology and contextually relevant phrases that pertain to pizza names and their toppings 
+You are an expert in the gastronomy domain with extensive knowledge of various pizzas and toppings. Your task is to 
+accurately identify and extract the names of pizzas and toppings from given text. You should focus on recognizing 
+specific terminology and contextually relevant phrases that pertain to pizza names and their toppings 
 within the gastronomy sector. Your output should be in JSON format, categorizing the identified terms into "pizza" 
 and "topping". The output should be strictly the JSON object without any additional commentary or explanation.
 """
@@ -14,6 +18,9 @@ Input: {input}
 Output: 
 """
 
+########################################################################
+## SPARQL generation ###################################################
+########################################################################
 CONTEXT_RETRIEVAL_SYSTEM_PROMPT = """
 You are an expert SPARQL-based context retrieval. You will be given a question and the relevant entities
 within it. Your task is to help generate a SPARQL query that represents given question. Make sure to give
@@ -27,6 +34,22 @@ Given the question: {question}
 Create a SPARQL query that best represent the question.
 SPARQL query:
 """
+
+########################################################################
+## QA prompt template ##################################################
+########################################################################
+QA_SYSTEM_PROMPT = """
+You are a helpful assistant. I want you to answer the given question considering the context given in the
+form of a pandas DataFrame.
+"""
+
+QA_USER_PROMPT = """
+Answer the following question with the given context.
+Question: {question}
+Context: {context}
+Output: 
+"""
+
 
 def generate_response(user_prompt: str, messages: list):
     """Calls the LLM with history.

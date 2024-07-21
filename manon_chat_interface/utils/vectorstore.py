@@ -14,6 +14,9 @@ def embed_entities(path: str, collection: str, documents: list, metadatas: list 
         documents (list): A list of documents to be embedded.
         metadatas (list, optional): A list of metadata dictionaries corresponding to the documents.
     """
+    if metadatas is None:
+        metadatas = [{'placeholder_key': 'placeholder_value'} for _ in documents]
+
     # Create a list of unique ids for each document based on the content
     ids = [str(uuid.uuid5(uuid.NAMESPACE_DNS, document)) for document in documents]
     
@@ -41,8 +44,14 @@ def embed_entities(path: str, collection: str, documents: list, metadatas: list 
     if filtered_pairs:
         unique_ids, unique_docs, unique_metadatas = zip(*filtered_pairs)
 
-        collection.add(
-            documents=list(unique_docs),
-            ids=list(unique_ids),
-            metadatas=list(unique_metadatas)
-        )
+        if metadatas is None:
+            collection.add(
+                documents=list(unique_docs),
+                ids=list(unique_ids),
+            )
+        else:
+            collection.add(
+                documents=list(unique_docs),
+                ids=list(unique_ids),
+                metadatas=list(unique_metadatas)
+            )

@@ -13,9 +13,9 @@ QUESTIONS_LIST = [
 # Embed to vectorstore
 print("Embedding questions...")
 vectorstore.embed_entities(
-    path="./manon_chat_interface/data/vectorstores/competency_questions",
-    collection="competency_questions",
+    path="./manon_chat_interface/data/vectorstores/pizza_questions",
+    collection="pizza_questions",
     documents=QUESTIONS_LIST,
 )
 
-print("All entities have been successfully embedded.")
+print("All questions have been successfully embedded.")

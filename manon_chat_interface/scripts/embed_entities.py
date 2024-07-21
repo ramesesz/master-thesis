@@ -27,7 +27,7 @@ pizza_names = [re.split('#', iri)[-1] for iri in pizza_IRIs]
 # Embed to vectorstore
 print("Embedding pizzas...")
 vectorstore.embed_entities(
-    path="./manon_chat_interface/data/vectorstores/entities",
+    path="./manon_chat_interface/data/vectorstores/pizza_entities",
     collection="pizza_collection",
     documents=pizza_names,
     metadatas=[{"IRI": IRI} for IRI in pizza_IRIs]
@@ -50,7 +50,7 @@ part_names = [re.split('#', iri)[-1] for iri in part_IRIs]
 # Embed to vectorstore
 print("Embedding toppings...")
 vectorstore.embed_entities(
-    path="./manon_chat_interface/data/vectorstores/entities",
+    path="./manon_chat_interface/data/vectorstores/pizza_entities",
     collection="topping_collection",
     documents=part_names,
     metadatas=[{"IRI": IRI} for IRI in part_IRIs]

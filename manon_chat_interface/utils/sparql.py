@@ -1,4 +1,5 @@
 from manon_chat_interface.utils import utils
+from urllib.error import URLError
 
 prefix_dict = {
     ":": "http://www.co-ode.org/ontologies/pizza#",
@@ -171,11 +172,15 @@ def execute_sparql(url: str, query: str):
     Returns:
         dict: The results of the SPARQL query in JSON format.
     """
-    wrapper = SPARQLWrapper(url)
-    wrapper.setQuery(query)
-    wrapper.setReturnFormat(JSON)
-    results = wrapper.query().convert()
+    try:
+      wrapper = SPARQLWrapper(url)
+      wrapper.setQuery(query)
+      wrapper.setReturnFormat(JSON)
+      results = wrapper.query().convert()
 
+    except URLError as e:
+        print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
+        
     return results
 
 

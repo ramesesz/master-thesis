@@ -12,12 +12,8 @@ URL = "http://localhost:3030/pizza/query"
 # Machines ------------------------------------------------------------------------
 print("Extracting pizzas...")
 
-try:
-    iri = "pizza:Pizza"
-    results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
-except URLError as e:
-    print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
-
+iri = "pizza:Pizza"
+results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 
 # Extract names
 bindings = results['results']['bindings']
@@ -36,11 +32,8 @@ vectorstore.embed_entities(
 # Parts ---------------------------------------------------------------------------
 print("Extracting toppings...")
 
-try:
-    iri = "pizza:PizzaTopping"
-    results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
-except URLError as e:
-    print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
+iri = "pizza:PizzaTopping"
+results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 
 # Extract part names
 bindings = results['results']['bindings']

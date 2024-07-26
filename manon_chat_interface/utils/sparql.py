@@ -1,3 +1,5 @@
+from manon_chat_interface.utils import utils
+
 prefix_dict = {
     ":": "http://www.co-ode.org/ontologies/pizza#",
     "dc:": "http://purl.org/dc/elements/1.1/",
@@ -190,57 +192,14 @@ def execute_parse_sparql(url, queries):
     results = []
     for index, query in enumerate(queries):
         result = execute_sparql(url=url, query=PREFIXES+query)
-        table = parse_sparql_output(result).to_string()
+        table = utils.parse_sparql_output(result).to_string()
         results.append(f"Triples: {index}\n{table}")
     subgraph = "\n".join(results)
-    subgraph = replace_urls_with_prefixes(subgraph, prefix_dict)
+    subgraph = utils.replace_urls_with_prefixes(subgraph, prefix_dict)
     return subgraph
 
 
-def parse_sparql_output(query_output: dict):
-    """Parse query JSON output to dataframe.
-
-    Args:
-        query_output (dict): The output from a SPARQL query in JSON format
-
-    Returns:
-        pd.DataFrame: the parsed results as a pandas DataFrame
-    """
-    columns = query_output['head']['vars']
-    rows = []
-    for result in query_output['results']['bindings']:
-        row = {}
-        for col in columns:
-            row[col] = result[col]['value'] if col in result else None
-        rows.append(row)
-    df = pd.DataFrame(rows, columns=columns)
-    return df
-
-
-def replace_urls_with_prefixes(text, prefix_dict):
-    """Replace URLs with prefixes in a given string.
-
-    Args:
-        text (str): String containing SPARQL query or text.
-        prefix_dict (dict): Mapping of prefixes to URLs.
-    """
-    for prefix, url in prefix_dict.items():
-        text = text.replace(url, prefix)
-    return text
-
-
-def replace_prefixes_with_urls(text, prefix_dict):
-    """Replace prefixes with URLs in a given string.
-
-    Args:
-        text (str): String containing SPARQL query or text.
-        prefix_dict (dict): Mapping of prefixes to URLs.
-    """
-    for prefix, url in prefix_dict.items():
-        text = text.replace(prefix, url)
-    return text
-
-
+# TODO: Fix this function
 def generate_sparql_n_hop_query(starting_node, prefixes, n_hops):
     """
     Generate a SPARQL query that retrieves all triples within n-hops from a starting node.

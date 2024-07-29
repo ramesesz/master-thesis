@@ -40,11 +40,13 @@ SPARQL query:
 ########################################################################
 QA_SYSTEM_PROMPT = """
 You are a helpful assistant. I want you to answer the given question considering the context given in the
-form of a pandas DataFrame.
+form of a pandas DataFrame containing RDF triples.
 """
 
+# TODO: Enhance the prompt. Currently it does not answer the question and instead just explains the context
 QA_USER_PROMPT = """
-Answer the following question with the given context.
+Answer the following question with the given context in the form of RDF triples. Be concise in answering the
+question and do not explain the context.
 Question: {question}
 Context: {context}
 Output: 
@@ -56,20 +58,23 @@ def generate_response(user_prompt: str, messages: list):
         input (str): Input of the LLM.
         messages (list): History of messages.
     """
+    try:
+        user_message = {"role": "user", "content": user_prompt}
+        messages.append(user_message)
 
-    user_message = {"role": "user", "content": user_prompt}
-    messages.append(user_message)
+        client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 
-    client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
+        response = client.chat.completions.create(
+            model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
+            messages=messages,
+            temperature=0.7,
+        )
 
-    response = client.chat.completions.create(
-        model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
-        messages=messages,
-        temperature=0.7,
-    )
-
-    new_message = {"role": "assistant", "content": response.choices[0].message.content}
-    messages.append(new_message)
+        new_message = {"role": "assistant", "content": response.choices[0].message.content}
+        messages.append(new_message)
+    
+    except Exception as e:
+        print(f"An error occured when invoking the LLM: {e}")
 
     return response, messages
 
@@ -86,17 +91,21 @@ def invoke_llm(system_prompt: str, user_prompt: str):
     Returns:
         str: LLM response string.
     """
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt},
-    ]   
+    try:
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ]   
 
-    client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
+        client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 
-    response = client.chat.completions.create(
-        model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
-        messages=messages,
-        temperature=0.7,
-    )
+        response = client.chat.completions.create(
+            model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
+            messages=messages,
+            temperature=0.7,
+        )
+
+    except Exception as e:
+        print(f"An error occured when invoking the LLM: {e}")
     
     return response.choices[0].message.content

@@ -81,5 +81,5 @@ def retrieve_context(entities: dict, # From entity recognition
             "topping": topping_info
         }
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An error occurred when retrieving context: {e}")
         return None

@@ -44,8 +44,10 @@ triples = orchestration.get_triples(
     original_question, 
     recognized_pizza,
     "pizza_collection",
-    mode="generated",
-    url="http://localhost:3030/pizza/query"
+    mode="default",
+    url="http://localhost:3030/pizza/query",
+    file_path="./manon_chat_interface/data/ontologies/pizza.ttl",
+    format="ttl"
 )
 # try:
 #     response = llm.invoke_llm(
@@ -57,3 +59,4 @@ triples = orchestration.get_triples(
 #     print(f"The following error occured {e}")
 
 print(triples)
+print("Hello world")

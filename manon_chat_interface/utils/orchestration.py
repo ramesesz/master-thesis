@@ -35,15 +35,16 @@ def entity_recognition(input: str) -> dict:
     return response
 
 
-def get_triples(client, question, entity, collection_name, mode, url):
+def get_triples(client, question, entity, collection_name, mode, url, file_path, format):
     """Helper function for retrieve_context()
 
     Args:
         client (chromadb.PersistentClient): Chroma client.
         entity (list(str)): Entity being queried to chroma.
-        collection_name (_type_): Chromadb collection.
-        mode (_type_): Mode of context retrieval.
-        url (_type_): LM Studio URL.
+        collection_name (str): Chromadb collection.
+        mode (str): Mode of context retrieval.
+        url (str): LM Studio URL.
+        file_path (str): Path to turtle file.
 
     Returns:
         str: SPARQL query.
@@ -53,11 +54,9 @@ def get_triples(client, question, entity, collection_name, mode, url):
         embeddings = collection.query(query_texts=entity, n_results=1)
         iris = [metadata['IRI'] for metadata in embeddings['metadatas'][0]]
         if mode == "default":
-            # Use generic sparql queries to retrieve tables for context
-            # queries = [sparql.GET_CLASSES, sparql.GET_CLASS_HIERARCHY, sparql.GET_PROPERTIES]
-            queries = [sparql.ALL_TRIPLES_QUERY]
-            context = sparql.execute_parse_sparql(url, queries) # Result prefixes already replaced
-            return context
+            triples = sparql.load_rdf_triples(file_path=file_path, format=format)
+            
+            return triples
         
         elif mode == "n_hop":
             # Additional handling for n_hop mode
@@ -88,8 +87,8 @@ def get_triples(client, question, entity, collection_name, mode, url):
                     question=question
                 ),
                 output_format={
-                    "sparql_query": "Executable sparql query", 
-                    "explanation": "Explanation of sparql query"
+                    "sparql_query": "Executable sparql query string.", 
+                    "explanation": "Explanation of what the sparql query does."
                 },
                 llm=llm.invoke_llm
             )

@@ -1,5 +1,6 @@
 from manon_chat_interface.utils import utils
 from urllib.error import URLError
+from rdflib import Graph, BNode
 
 prefix_dict = {
     ":": "http://www.co-ode.org/ontologies/pizza#",
@@ -202,6 +203,23 @@ def execute_parse_sparql(url, queries):
     subgraph = "\n".join(results)
     subgraph = utils.replace_urls_with_prefixes(subgraph, prefix_dict)
     return subgraph
+
+
+def load_rdf_triples(file_path: str, format: str = 'ttl'):
+    
+  # Create a Graph object 
+  g = Graph()
+  g.parse(file_path, format=format)
+
+  # Retrieve triples whose subject and object are not blank nodes
+  triples_string = ""
+  for subj, pred, obj in g:
+      if not isinstance(subj, BNode) and not isinstance(obj, BNode):
+          triples_string += f"{subj} {pred} {obj} .\n"
+
+  replaced_triples_string = utils.replace_urls_with_prefixes(triples_string, prefix_dict)
+
+  return replaced_triples_string
 
 
 # TODO: Fix this function

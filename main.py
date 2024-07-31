@@ -44,15 +44,16 @@ triples = orchestration.get_triples(
     original_question, 
     recognized_pizza,
     "pizza_collection",
-    mode="default",
+    mode="generated",
     url="http://localhost:3030/pizza/query"
 )
-try:
-    response = llm.invoke_llm(
-        system_prompt=llm.QA_SYSTEM_PROMPT.format(context=triples),
-        user_prompt=llm.QA_USER_PROMPT.format(question=original_question)
-    )
-    print(response)
-except Exception as e:
-    print(f"The following error occured {e}")
+# try:
+#     response = llm.invoke_llm(
+#         system_prompt=llm.QA_SYSTEM_PROMPT.format(context=triples),
+#         user_prompt=llm.QA_USER_PROMPT.format(question=original_question)
+#     )
+#     print(response)
+# except Exception as e:
+#     print(f"The following error occured {e}")
 
+print(triples)

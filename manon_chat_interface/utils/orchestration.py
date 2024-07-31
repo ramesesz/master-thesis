@@ -58,14 +58,54 @@ def get_triples(client, question, entity, collection_name, mode, url):
             queries = [sparql.ALL_TRIPLES_QUERY]
             context = sparql.execute_parse_sparql(url, queries) # Result prefixes already replaced
             return context
+        
         elif mode == "n_hop":
             # Additional handling for n_hop mode
             pass
+
+        elif mode == "generated":
+            # LLM Generation
+
+            # Get context using default mode
+            queries = [sparql.ALL_TRIPLES_QUERY]
+            context = sparql.execute_parse_sparql(url, queries)
+
+            # Generate query using context from default mode
+            # query = llm.invoke_llm(
+            #     system_prompt=llm.CONTEXT_RETRIEVAL_SYSTEM_PROMPT.format(
+            #         context=context
+            #     ),
+            #     user_prompt=llm.CONTEXT_RETRIEVAL_USER_PROMPT.format(
+            #         question=question
+            #     )
+            # )
+
+            query = strict_json(
+                system_prompt=llm.CONTEXT_RETRIEVAL_SYSTEM_PROMPT.format(
+                    context=context
+                ),
+                user_prompt=llm.CONTEXT_RETRIEVAL_USER_PROMPT.format(
+                    question=question
+                ),
+                output_format={
+                    "sparql_query": "Executable sparql query", 
+                    "explanation": "Explanation of sparql query"
+                },
+                llm=llm.invoke_llm
+            )
+            # try:
+            #     response = sparql.execute_parse_sparql(url, [query])
+            
+            # except Exception as e:
+            #     print(f"The following error occured when executing generated query:/n{e}")
+            
+            return query
+        
         else:
-            # Handle other modes if necessary
-            pass
+            raise Exception("Given mode is not valid. Choose between 'default', 'n-hop', or 'generated'")
 
 
+# TODO: What is this for again?
 def retrieve_context(entities: dict, # From entity recognition
                      question: str, # From question
                      path: str, # Path to vectorstore

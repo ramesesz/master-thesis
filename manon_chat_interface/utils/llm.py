@@ -22,17 +22,18 @@ Output:
 ## SPARQL generation ###################################################
 ########################################################################
 CONTEXT_RETRIEVAL_SYSTEM_PROMPT = """
-You are an expert SPARQL-based context retrieval. You will be given a question and the relevant entities
-within it. Your task is to help generate a SPARQL query that represents given question. Make sure to give
-only the executable SPARQL query in your answer.
+You are a helpful assistant. I want you to answer generate a SPARQL query considering the question given by the user and the following pandas DataFrame containing RDF triples:
+    {context}
+-Use only classes and properties defined in the RDF graph, for this is important to use the same URIs for the properties and classes as defined in the original graph; 
+-Include all the prefixes used in the SPARQL query; 
+-Declare non-essential properties to the question as OPTIONAL if needed; 
+-DO NOT use specific resources in the query; Declare filters on strings (like labels and names) as filter operations over the REGEX function using the case-insensitive flag.
+
+Your output should be in JSON format, categorizing the identified terms into "sparql_query" and "explanation". The output should be strictly the JSON object without any additional commentary or explanation.
 """
 
 CONTEXT_RETRIEVAL_USER_PROMPT = """
-Here are the IRIs of the entity in question: {iris}
-Consider the following subgraph in turtle syntax: {subgraph}
-Given the question: {question}
-Create a SPARQL query that best represent the question.
-SPARQL query:
+Question: {question}
 """
 
 ########################################################################
@@ -40,16 +41,17 @@ SPARQL query:
 ########################################################################
 QA_SYSTEM_PROMPT = """
 You are a helpful assistant. I want you to answer the given question considering the context given in the
-form of a pandas DataFrame containing RDF triples.
+form of a pandas DataFrame containing RDF triples:
+    {context}
+-Use only classes and properties defined in the RDF graph, for this is important to use the same URIs for the properties and classes as defined in the original graph; 
+-Include all the prefixes used in the SPARQL query; 
+-Declare non-essential properties to the question as OPTIONAL if needed; 
+-DO NOT use specific resources in the query; Declare filters on strings (like labels and names) as filter operations over the REGEX function using the case-insensitive flag.
 """
 
 # TODO: Enhance the prompt. Currently it does not answer the question and instead just explains the context
 QA_USER_PROMPT = """
-Answer the following question with the given context in the form of RDF triples. Be concise in answering the
-question and do not explain the context.
 Question: {question}
-Context: {context}
-Output: 
 """
 
 
@@ -65,7 +67,7 @@ def generate_response(user_prompt: str, messages: list):
         client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 
         response = client.chat.completions.create(
-            model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
+            model="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
             messages=messages,
             temperature=0.7,
         )
@@ -100,7 +102,7 @@ def invoke_llm(system_prompt: str, user_prompt: str):
         client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
 
         response = client.chat.completions.create(
-            model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
+            model="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
             messages=messages,
             temperature=0.7,
         )

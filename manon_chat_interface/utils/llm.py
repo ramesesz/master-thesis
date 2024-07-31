@@ -40,13 +40,9 @@ Question: {question}
 ## QA prompt template ##################################################
 ########################################################################
 QA_SYSTEM_PROMPT = """
-You are a helpful assistant. I want you to answer the given question considering the context given in the
-form of a pandas DataFrame containing RDF triples:
-    {context}
--Use only classes and properties defined in the RDF graph, for this is important to use the same URIs for the properties and classes as defined in the original graph; 
--Include all the prefixes used in the SPARQL query; 
--Declare non-essential properties to the question as OPTIONAL if needed; 
--DO NOT use specific resources in the query; Declare filters on strings (like labels and names) as filter operations over the REGEX function using the case-insensitive flag.
+You are a helpful assistant. I want you to answer the given user question considering the context given in the
+following RDF triples. Explain your reasoning and cite the relevant triples
+Triples: {context}
 """
 
 # TODO: Enhance the prompt. Currently it does not answer the question and instead just explains the context
@@ -69,7 +65,7 @@ def generate_response(user_prompt: str, messages: list):
         response = client.chat.completions.create(
             model="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
             messages=messages,
-            temperature=0.7,
+            temperature=1,
         )
 
         new_message = {"role": "assistant", "content": response.choices[0].message.content}
@@ -104,7 +100,7 @@ def invoke_llm(system_prompt: str, user_prompt: str):
         response = client.chat.completions.create(
             model="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
             messages=messages,
-            temperature=0.7,
+            temperature=1,
         )
 
     except Exception as e:

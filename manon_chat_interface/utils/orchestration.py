@@ -9,7 +9,7 @@ def entity_recognition(input: str) -> dict:
     """
     Performs entity recognition on the provided input string using a large language model (LLM).
 
-    This function identifies and categorizes entities within the user input, specifically separating them into machine and part.
+    This function identifies and categorizes entities within the user input.
 
     Multiple 
 
@@ -17,18 +17,17 @@ def entity_recognition(input: str) -> dict:
         input (str): The input string to be analyzed by the LLM.
 
     Returns:
-        dict: A dictionary with two keys, 'machines' and 'parts', containing the identified machine names and part names respectively.
+        dict: A dictionary with key 'entities', containing the identified entities within the question.
 
     Example:
         Input: "Can Creality Ender manufacture flange?"
-        Output: {'machines': ['Creality Ender'], 'parts': ['flange']}
+        Output: {'entities': ['Creality Ender', 'flange']}
 
     """
     response = strict_json(
         system_prompt=llm.ER_SYSTEM_PROMPT,
         user_prompt=llm.ER_USER_PROMPT.format(input=input),
-        output_format={"pizza": "Array of pizza", 
-                       "topping": "Array of topping"},
+        output_format={"entities": "Array of entities"},
         llm=llm.invoke_llm
     )
 

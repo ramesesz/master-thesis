@@ -95,9 +95,6 @@ def generate_sparql_n_hop_query(starting_node, prefixes, n_hops):
     """
     return query
 
-########################################################################
-## Query templates #####################################################
-########################################################################
 
 prefix_dict = {
     ":": "http://www.co-ode.org/ontologies/pizza#",

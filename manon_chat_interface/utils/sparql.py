@@ -1,161 +1,6 @@
 from manon_chat_interface.utils import utils
 from urllib.error import URLError
 from rdflib import Graph, BNode
-
-prefix_dict = {
-    ":": "http://www.co-ode.org/ontologies/pizza#",
-    "dc:": "http://purl.org/dc/elements/1.1/",
-    "owl:": "http://www.w3.org/2002/07/owl#",
-    "rdf:": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xml:": "http://www.w3.org/XML/1998/namespace",
-    "xsd:": "http://www.w3.org/2001/XMLSchema#",
-    "rdfs:": "http://www.w3.org/2000/01/rdf-schema#",
-    "skos:": "http://www.w3.org/2004/02/skos/core#",
-    "pizza:": "http://www.co-ode.org/ontologies/pizza/pizza.owl#",
-    "terms:": "http://purl.org/dc/terms/",
-    "base:": "http://www.co-ode.org/ontologies/pizza#"
-}
-
-PREFIXES = """
-PREFIX : <http://www.co-ode.org/ontologies/pizza#> 
-PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
-PREFIX pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> 
-PREFIX terms: <http://purl.org/dc/terms/> 
-BASE <http://www.co-ode.org/ontologies/pizza#> 
-"""
-
-ALL_TRIPLES_QUERY = """
-SELECT ?subject ?predicate ?object
-WHERE {
-  ?subject ?predicate ?object.
-}
-"""
-
-########################################################################
-## Embed entities ######################################################
-########################################################################
-EXTRACTION_QUERY = """
-SELECT DISTINCT ?individual
-WHERE {{
-{{
- SELECT ?individual
- WHERE {{
-   ?individual rdfs:subClassOf* {pizza_class} .
- }}
-}}
-UNION
-{{
- SELECT DISTINCT ?individual
- WHERE {{
-   ?individual rdf:type owl:Class ;
-           owl:equivalentClass ?equivClass .
-
-   ?equivClass owl:intersectionOf ?list .
-   ?list rdf:rest*/rdf:first {pizza_class} .
- }}
-}}
-}}
-"""
-
-########################################################################
-## Golden standard #####################################################
-########################################################################
-PIZZA_RESTRICTIONS = """
-SELECT DISTINCT ?pizza ?property ?type ?value
-WHERE {{
-  BIND({pizza_variable} AS ?pizza)  
-  ?pizza rdfs:subClassOf ?restriction .
-  ?restriction rdf:type owl:Restriction ;
-               owl:onProperty ?property .
-
-  OPTIONAL {{
-    ?restriction owl:someValuesFrom ?value .
-    BIND(owl:someValuesFrom AS ?type)
-  }}
-  OPTIONAL {{
-    ?restriction owl:hasValue ?value .
-    BIND(owl:hasValue AS ?type)
-  }}
-}}
-"""
-
-PIZZA_TRIPLES = """
-SELECT DISTINCT ?subject ?predicate ?object
-WHERE {{
-  {{
-    BIND({pizza_variable} AS ?subject) .
-    ?subject ?predicate ?object .
-    FILTER (!isBlank(?subject) && !isBlank(?object))
-  }}
-  UNION
-  {{
-    BIND({pizza_variable} AS ?object) .
-    ?subject ?predicate ?object .
-    FILTER (!isBlank(?subject) && !isBlank(?object))
-  }}
-}}
-"""
-
-########################################################################
-## T-Box ###############################################################
-########################################################################
-GET_CLASSES = """
-SELECT ?class ?label
-WHERE {
-  {
-    ?class rdf:type owl:Class .
-    FILTER (isIRI(?class))
-    OPTIONAL { ?class rdfs:label ?label . }
-  }
-  UNION
-  {
-    ?class rdf:type rdfs:Class .
-    FILTER (isIRI(?class))
-    OPTIONAL { ?class rdfs:label ?label . }
-  }
-}
-"""
-
-GET_PROPERTIES = """
-SELECT ?property ?domain ?range ?label
-WHERE {
-  {
-    ?property rdf:type owl:ObjectProperty .
-    FILTER (isIRI(?property))
-    OPTIONAL { ?property rdfs:domain ?domain . }
-    OPTIONAL { ?property rdfs:range ?range . }
-    OPTIONAL { ?property rdfs:label ?label . }
-  }
-  UNION
-  {
-    ?property rdf:type owl:DatatypeProperty .
-    FILTER (isIRI(?property))
-    OPTIONAL { ?property rdfs:domain ?domain . }
-    OPTIONAL { ?property rdfs:range ?range . }
-    OPTIONAL { ?property rdfs:label ?label . }
-  }
-}
-"""
-
-GET_CLASS_HIERARCHY = """
-SELECT ?subClass ?superClass
-WHERE {
-  ?subClass rdfs:subClassOf ?superClass .
-  FILTER (isIRI(?subClass) && isIRI(?superClass))
-}
-"""
-
-########################################################################
-## n-Hop ###############################################################
-########################################################################
-
-
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 import pandas as pd
@@ -249,3 +94,220 @@ def generate_sparql_n_hop_query(starting_node, prefixes, n_hops):
     }}
     """
     return query
+
+########################################################################
+## Query templates #####################################################
+########################################################################
+
+prefix_dict = {
+    ":": "http://www.co-ode.org/ontologies/pizza#",
+    "dc:": "http://purl.org/dc/elements/1.1/",
+    "owl:": "http://www.w3.org/2002/07/owl#",
+    "rdf:": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml:": "http://www.w3.org/XML/1998/namespace",
+    "xsd:": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs:": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos:": "http://www.w3.org/2004/02/skos/core#",
+    "pizza:": "http://www.co-ode.org/ontologies/pizza/pizza.owl#",
+    "terms:": "http://purl.org/dc/terms/",
+    "base:": "http://www.co-ode.org/ontologies/pizza#"
+}
+
+PREFIXES = """
+PREFIX : <http://www.co-ode.org/ontologies/pizza#> 
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+PREFIX pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> 
+PREFIX terms: <http://purl.org/dc/terms/> 
+BASE <http://www.co-ode.org/ontologies/pizza#> 
+"""
+
+########################################################################
+## Embed entities ######################################################
+########################################################################
+EXTRACTION_QUERY = """
+SELECT DISTINCT ?individual
+WHERE {{
+{{
+ SELECT ?individual
+ WHERE {{
+   ?individual rdfs:subClassOf* {pizza_class} .
+ }}
+}}
+UNION
+{{
+ SELECT DISTINCT ?individual
+ WHERE {{
+   ?individual rdf:type owl:Class ;
+           owl:equivalentClass ?equivClass .
+
+   ?equivClass owl:intersectionOf ?list .
+   ?list rdf:rest*/rdf:first {pizza_class} .
+ }}
+}}
+}}
+"""
+
+########################################################################
+## Golden standard #####################################################
+########################################################################
+PIZZA_RESTRICTIONS = """
+SELECT DISTINCT ?pizza ?property ?type ?value
+WHERE {{
+  BIND({pizza_variable} AS ?pizza)  
+  ?pizza rdfs:subClassOf ?restriction .
+  ?restriction rdf:type owl:Restriction ;
+               owl:onProperty ?property .
+
+  OPTIONAL {{
+    ?restriction owl:someValuesFrom ?value .
+    BIND(owl:someValuesFrom AS ?type)
+  }}
+  OPTIONAL {{
+    ?restriction owl:hasValue ?value .
+    BIND(owl:hasValue AS ?type)
+  }}
+}}
+"""
+
+PIZZA_TRIPLES = """
+SELECT DISTINCT ?subject ?predicate ?object
+WHERE {{
+  {{
+    BIND({pizza_variable} AS ?subject) .
+    ?subject ?predicate ?object .
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }}
+  UNION
+  {{
+    BIND({pizza_variable} AS ?object) .
+    ?subject ?predicate ?object .
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }}
+}}
+"""
+
+########################################################################
+## n-Hop ###############################################################
+########################################################################
+
+ONE_HOP = """
+SELECT ?subject ?predicate ?object WHERE {
+  {
+    ?s ?p pizza:NamedPizza .
+    BIND(?s AS ?subject)
+    BIND(?p AS ?predicate)
+    BIND(pizza:NamedPizza AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    pizza:NamedPizza ?p ?o .
+    BIND(pizza:NamedPizza AS ?subject)
+    BIND(?p AS ?predicate)
+    BIND(?o AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+}
+"""
+
+TWO_HOP = """
+SELECT ?subject ?predicate ?object WHERE {
+  {
+    ?s ?p pizza:NamedPizza .
+    BIND(?s AS ?subject)
+    BIND(?p AS ?predicate)
+    BIND(pizza:NamedPizza AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    ?s ?p pizza:NamedPizza .
+    ?s1 ?p1 ?s .
+    BIND(?s1 AS ?subject)
+    BIND(?p1 AS ?predicate)
+    BIND(?s AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    pizza:NamedPizza ?p ?o .
+    BIND(pizza:NamedPizza AS ?subject)
+    BIND(?p AS ?predicate)
+    BIND(?o AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    pizza:NamedPizza ?p ?o .
+    ?o ?p1 ?o1 .
+    BIND(?o AS ?subject)
+    BIND(?p1 AS ?predicate)
+    BIND(?o1 AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+}
+"""
+
+THREE_HOP = """
+SELECT ?subject ?predicate ?object WHERE {
+  {
+    ?s ?p pizza:NamedPizza .
+    BIND(?s AS ?subject)
+    BIND(?p AS ?predicate)
+    BIND(pizza:NamedPizza AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    ?s ?p pizza:NamedPizza .
+    ?s1 ?p1 ?s .
+    BIND(?s1 AS ?subject)
+    BIND(?p1 AS ?predicate)
+    BIND(?s AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    ?s ?p pizza:NamedPizza .
+    ?s1 ?p1 ?s .
+    ?s2 ?p2 ?s1 .
+    BIND(?s2 AS ?subject)
+    BIND(?p2 AS ?predicate)
+    BIND(?s1 AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    pizza:NamedPizza ?p ?o .
+    BIND(pizza:NamedPizza AS ?subject)
+    BIND(?p AS ?predicate)
+    BIND(?o AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    pizza:NamedPizza ?p ?o .
+    ?o ?p1 ?o1 .
+    BIND(?o AS ?subject)
+    BIND(?p1 AS ?predicate)
+    BIND(?o1 AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+  UNION
+  {
+    pizza:NamedPizza ?p ?o .
+    ?o ?p1 ?o1 .
+    ?o1 ?p2 ?o2 .
+    BIND(?o1 AS ?subject)
+    BIND(?p2 AS ?predicate)
+    BIND(?o2 AS ?object)
+    FILTER (!isBlank(?subject) && !isBlank(?object))
+  }
+}
+"""

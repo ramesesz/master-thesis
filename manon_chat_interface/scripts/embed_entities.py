@@ -5,47 +5,35 @@ import re
 
 from manon_chat_interface.utils.sparql import *
 from manon_chat_interface.utils import vectorstore
-from urllib.error import URLError
 
 URL = "http://localhost:3030/pizza/query"
 
 # Machines ------------------------------------------------------------------------
-print("Extracting pizzas...")
+
+# Extract entities
+print("Extracting entities...")
 
 iri = "pizza:Pizza"
 results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 
-# Extract names
 bindings = results['results']['bindings']
 pizza_IRIs = [binding['individual']['value'] for binding in bindings]
 pizza_names = [re.split('#', iri)[-1] for iri in pizza_IRIs]
 
-# Embed to vectorstore
-print("Embedding pizzas...")
-vectorstore.embed_entities(
-    path="./manon_chat_interface/data/vectorstores/pizza_entities",
-    collection="pizza_collection",
-    documents=pizza_names,
-    metadatas=[{"IRI": IRI} for IRI in pizza_IRIs]
-)
-
-# Parts ---------------------------------------------------------------------------
-print("Extracting toppings...")
-
 iri = "pizza:PizzaTopping"
 results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 
-# Extract part names
 bindings = results['results']['bindings']
-part_IRIs = [binding['individual']['value'] for binding in bindings]
-part_names = [re.split('#', iri)[-1] for iri in part_IRIs]
+topping_IRIs = [binding['individual']['value'] for binding in bindings]
+topping_names = [re.split('#', iri)[-1] for iri in topping_IRIs]
 
 # Embed to vectorstore
-print("Embedding toppings...")
+print("Embedding entities...")
 vectorstore.embed_entities(
     path="./manon_chat_interface/data/vectorstores/pizza_entities",
-    collection="topping_collection",
-    documents=part_names,
-    metadatas=[{"IRI": IRI} for IRI in part_IRIs]
+    collection="pizza_collection",
+    documents=pizza_names+topping_names,
+    metadatas=[{"IRI": IRI} for IRI in pizza_IRIs]
 )
+
 print("All entities have been successfully embedded.")

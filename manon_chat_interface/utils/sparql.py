@@ -153,7 +153,6 @@ UNION
 ########################################################################
 ## n-Hop ###############################################################
 ########################################################################
-
 ONE_HOP = """
 SELECT ?subject ?predicate ?object WHERE {{
   {{
@@ -173,7 +172,6 @@ SELECT ?subject ?predicate ?object WHERE {{
   }}
 }}
 """
-
 
 TWO_HOP = """
 SELECT ?subject ?predicate ?object WHERE {{

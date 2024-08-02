@@ -90,23 +90,11 @@ def get_triples(
         elif mode == "generated":
             # LLM Generation
 
-            # Get context using default mode
-            queries = [sparql.ALL_TRIPLES_QUERY]
-            context = sparql.execute_parse_sparql(url, queries)
-
-            # Generate query using context from default mode
-            # query = llm.invoke_llm(
-            #     system_prompt=llm.CONTEXT_RETRIEVAL_SYSTEM_PROMPT.format(
-            #         context=context
-            #     ),
-            #     user_prompt=llm.CONTEXT_RETRIEVAL_USER_PROMPT.format(
-            #         question=question
-            #     )
-            # )
+            triples = sparql.load_rdf_triples(file_path=file_path, format=format)
 
             query = strict_json(
                 system_prompt=llm.CONTEXT_RETRIEVAL_SYSTEM_PROMPT.format(
-                    context=context
+                    context=triples
                 ),
                 user_prompt=llm.CONTEXT_RETRIEVAL_USER_PROMPT.format(
                     question=question

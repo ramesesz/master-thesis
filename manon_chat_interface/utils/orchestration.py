@@ -118,23 +118,3 @@ def get_triples(
     
     else:
         raise Exception("No entity is recognized from given question.")
-
-
-# TODO: What is this for again?
-def retrieve_context(entities: dict, # From entity recognition
-                     question: str, # From question
-                     path: str, # Path to vectorstore
-                     mode: str = "default", 
-                     url: str = "http://localhost:3030/pizza/query"
-                     ):
-    try:
-        client = chromadb.PersistentClient(path=path)
-        pizza_info = get_triples(client, question, entities.get("pizza"), "pizza_collection", mode, url)
-        topping_info = get_triples(client, question, entities.get("topping"), "topping_collection", mode, url)
-        return {
-            "pizza": pizza_info,
-            "topping": topping_info
-        }
-    except Exception as e:
-        print(f"An error occurred when retrieving context: {e}")
-        return None

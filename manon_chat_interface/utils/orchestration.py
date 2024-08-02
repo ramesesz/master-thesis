@@ -34,12 +34,21 @@ def entity_recognition(input: str) -> dict:
     return response
 
 
-def get_triples(client, question, entity, collection_name, mode, url, file_path, format):
+def get_triples(
+        client: chromadb.PersistentClient, 
+        question: str, 
+        entities: list, 
+        collection_name: str, 
+        mode: str = "default", 
+        url: str = "http://localhost:3030/pizza/query", 
+        file_path: str = None, 
+        format: str = None
+):
     """Helper function for retrieve_context()
 
     Args:
         client (chromadb.PersistentClient): Chroma client.
-        entity (list(str)): Entity being queried to chroma.
+        entities (list(str)): Entity being queried to chroma.
         collection_name (str): Chromadb collection.
         mode (str): Mode of context retrieval.
         url (str): LM Studio URL.
@@ -48,18 +57,35 @@ def get_triples(client, question, entity, collection_name, mode, url, file_path,
     Returns:
         str: SPARQL query.
     """
-    if entity:
-        collection = client.get_or_create_collection(collection_name)
-        embeddings = collection.query(query_texts=entity, n_results=1)
-        iris = [metadata['IRI'] for metadata in embeddings['metadatas'][0]]
+    if entities:
         if mode == "default":
+            if file_path is None or format is None:
+                raise ValueError("In 'default' mode, 'file_path' and 'format' cannot be None.")
+
             triples = sparql.load_rdf_triples(file_path=file_path, format=format)
             
             return triples
         
         elif mode == "n_hop":
-            # Additional handling for n_hop mode
-            pass
+            # TODO: Add cases for 1, 2, 3 hops
+            if client is None or collection_name is None:
+                raise ValueError("In 'n_hop' mode, 'client' and 'collection_name' cannot be None.")
+                        
+            collection = client.get_or_create_collection(collection_name)
+            embeddings = collection.query(query_texts=entities, n_results=1)
+            iris = [metadata[0]['IRI'] for metadata in embeddings['metadatas']]
+            
+            triples = ""
+            
+            for iri in iris:
+                query = sparql.PREFIXES+sparql.TWO_HOP.format(IRI=iri)
+                query_result = sparql.execute_parse_sparql(
+                    url=url, 
+                    queries=[query]
+                )
+                triples += query_result
+
+            return triples
 
         elif mode == "generated":
             # LLM Generation
@@ -101,6 +127,9 @@ def get_triples(client, question, entity, collection_name, mode, url, file_path,
         
         else:
             raise Exception("Given mode is not valid. Choose between 'default', 'n-hop', or 'generated'")
+    
+    else:
+        raise Exception("No entity is recognized from given question.")
 
 
 # TODO: What is this for again?

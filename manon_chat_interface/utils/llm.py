@@ -62,8 +62,9 @@ ER_SYSTEM_PROMPT = """
 You are an expert in the gastronomy domain with extensive knowledge of various pizzas. Your task is to 
 accurately identify and extract the names of entities from the given text. You should focus on recognizing 
 specific terminology and contextually relevant phrases that pertain to objects such as food and beverages 
-within the gastronomy sector. Your output should be in JSON format, categorizing the identified terms into 
-"entities". The output should be strictly the JSON object without any additional commentary or explanation.
+within the gastronomy sector. Your output should be in JSON format, placing the identified terms into the key
+"entities". For instance {'entities': ['LaReine', 'MeatyPizza', 'Mushroom']} The output should be strictly 
+the JSON object without any additional commentary or explanation.
 """
 
 ER_USER_PROMPT = """

@@ -33,7 +33,7 @@ vectorstore.embed_entities(
     path="./manon_chat_interface/data/vectorstores/pizza_entities",
     collection="pizza_collection",
     documents=pizza_names+topping_names,
-    metadatas=[{"IRI": IRI} for IRI in pizza_IRIs]
+    metadatas=[{"IRI": IRI} for IRI in pizza_IRIs+topping_IRIs]
 )
 
 print("All entities have been successfully embedded.")

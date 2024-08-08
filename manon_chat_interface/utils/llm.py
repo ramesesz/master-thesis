@@ -1,4 +1,10 @@
 from openai import OpenAI
+from dotenv import load_dotenv
+
+import os
+
+load_dotenv()
+LLM_ENDPOINT = os.getenv('LLM_ENDPOINT')
 
 
 def generate_response(user_prompt: str, messages: list):
@@ -10,7 +16,7 @@ def generate_response(user_prompt: str, messages: list):
         user_message = {"role": "user", "content": user_prompt}
         messages.append(user_message)
 
-        client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
+        client = OpenAI(base_url=LLM_ENDPOINT, api_key="lm-studio")
 
         response = client.chat.completions.create(
             model="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
@@ -44,7 +50,7 @@ def invoke_llm(system_prompt: str, user_prompt: str):
         {"role": "user", "content": user_prompt},
     ]   
 
-    client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
+    client = OpenAI(base_url=LLM_ENDPOINT, api_key="lm-studio")
 
     response = client.chat.completions.create(
         model="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",

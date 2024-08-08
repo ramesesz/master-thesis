@@ -42,21 +42,22 @@ def get_triples(
         path_to_graph: str = None, # Path to RDF graph
         format: str = None, # Format of RDF graph
 ):
-    """Helper function for retrieve_context()
+    """Get triples to be given as context to the QA model.
 
     Args:
-        client (chromadb.PersistentClient): Chroma client.
-        entities (list(str)): Entity being queried to chroma.
-        collection_name (str): Chromadb collection.
-        mode (str): Mode of context retrieval.
-        url (str): LM Studio URL.
-        path_to_graph (str): Path to turtle file.
+        question (str): Question.
+        path_to_vectorstore (str, optional): Path to the vectorstore.
+        path_to_graph (str, optional): Path to the file containing the RDF graph.
+
+    Raises:
+        ValueError: If required params not given.
+        Exception: If mode is invalid.
 
     Returns:
-        str: SPARQL query.
+        str: Text containing RDF triples.
     """
 
-    # Get chroma
+    # Get chroma. Adjust client name if necessary.
     entities_client = chromadb.PersistentClient(path=f"{path_to_vectorstore}/pizza_entities")
     questions_client = chromadb.PersistentClient(path=f"{path_to_vectorstore}/pizza_questions")
 
@@ -102,7 +103,9 @@ def get_triples(
 
     elif mode == "generated":
         # LLM Generation
-
+        if path_to_graph is None or format is None:
+            raise ValueError("In 'default' mode, 'path_to_graph' and 'format' cannot be None.")
+        
         triples = sparql.load_rdf_triples(file_path=path_to_graph, format=format)
 
         query = strict_json(

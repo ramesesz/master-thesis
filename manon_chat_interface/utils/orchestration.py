@@ -80,7 +80,17 @@ def get_triples(
         query_texts=entities, 
         n_results=1
     )
-    mapped_entities = [metadata[0]['IRI'] for metadata in entities_emb['metadatas']]
+    # mapped_entities = [metadata[0]['IRI'] for metadata in entities_emb['metadatas']]
+
+    # Get the documents where the corresponding distance is below the threshold
+    threshold = 0.5
+    filtered_results = [
+        (doc[0], meta[0]['IRI']) 
+        for doc, dist, meta in zip(entities_emb['documents'], entities_emb['distances'], entities_emb['metadatas']) 
+        if dist[0] < threshold
+    ]
+    mapped_documents = [result[0] for result in filtered_results]
+    mapped_iris = [result[1] for result in filtered_results]
 
     if mode == "default":
         if path_to_graph is None or format is None:
@@ -94,7 +104,7 @@ def get_triples(
         # TODO: Add cases for 1, 2, 3 hops
         triples = ""
         
-        for iri in mapped_entities:
+        for iri in mapped_iris:
             query = sparql.PREFIXES+sparql.TWO_HOP.format(IRI=iri)
             query_result = sparql.execute_parse_sparql(
                 url=SPARQL_ENDPOINT, 

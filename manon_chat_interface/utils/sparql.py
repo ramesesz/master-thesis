@@ -3,7 +3,6 @@ from urllib.error import URLError
 from rdflib import Graph, BNode
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-import pandas as pd
 
 def execute_sparql(url: str, query: str):
     """    

@@ -1,10 +1,13 @@
 from manon_chat_interface.utils import llm
 from manon_chat_interface.utils import sparql
 from strictjson import strict_json
+from dotenv import load_dotenv
 
 import chromadb
+import os
 
-URL = "http://localhost:3030/pizza/query"
+load_dotenv()
+SPARQL_ENDPOINT = os.getenv('SPARQL_ENDPOINT')
 
 def entity_recognition(input: str) -> dict:
     """
@@ -94,7 +97,7 @@ def get_triples(
         for iri in mapped_entities:
             query = sparql.PREFIXES+sparql.TWO_HOP.format(IRI=iri)
             query_result = sparql.execute_parse_sparql(
-                url=URL, 
+                url=SPARQL_ENDPOINT, 
                 queries=[query]
             )
             triples += query_result

@@ -10,7 +10,7 @@ question = "Can I make an american pizza with mozzarella topping?"
 # Get triples
 triples = orchestration.get_triples(
     question=question, 
-    mode="generated",
+    mode="n_hop",
     path_to_vectorstore="./manon_chat_interface/data/vectorstores",
     path_to_graph="./manon_chat_interface/data/ontologies/pizza.ttl",
     format="ttl"

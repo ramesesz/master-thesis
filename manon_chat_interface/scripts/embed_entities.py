@@ -2,24 +2,27 @@
 # Make sure that SPARQL server is running
 
 import re
+import os
 
 from manon_chat_interface.utils.sparql import *
 from manon_chat_interface.utils import vectorstore
+from dotenv import load_dotenv
 
-URL = "http://localhost:3030/pizza/query"
+load_dotenv()
+SPARQL_ENDPOINT = os.getenv('SPARQL_ENDPOINT')
 
 # Extract entities
 print("Extracting entities...")
 
 iri = "pizza:Pizza"
-results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
+results = execute_sparql(url=SPARQL_ENDPOINT, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 
 bindings = results['results']['bindings']
 pizza_IRIs = [binding['individual']['value'] for binding in bindings]
 pizza_names = [re.split('#', iri)[-1] for iri in pizza_IRIs]
 
 iri = "pizza:PizzaTopping"
-results = execute_sparql(url=URL, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
+results = execute_sparql(url=SPARQL_ENDPOINT, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 
 bindings = results['results']['bindings']
 topping_IRIs = [binding['individual']['value'] for binding in bindings]

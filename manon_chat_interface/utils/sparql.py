@@ -67,35 +67,6 @@ def load_rdf_triples(file_path: str, format: str = 'ttl'):
   return replaced_triples_string
 
 
-# TODO: Fix this function
-def generate_sparql_n_hop_query(starting_node, prefixes, n_hops):
-    """
-    Generate a SPARQL query that retrieves all triples within n-hops from a starting node.
-
-    Parameters:
-    - starting_node (str): The URI of the starting node.
-    - n_hops (int): The maximum number of hops to traverse.
-
-    Returns:
-    - str: A SPARQL query string.
-    """
-    # The base predicate pattern to match any predicate (adjust as needed)
-    predicate_pattern = "?p"
-
-    # Construct the SPARQL query with variable path length up to n_hops
-    query = f"""
-    {prefixes}
-    SELECT ?subject ?predicate ?object
-    WHERE {{
-        {starting_node} ?predicate* ?object .
-        ?subject ?predicate* ?object .
-        ?subject ?predicate ?object .
-        FILTER(isIRI(?object))  # Optional: Ensure that objects are IRI nodes, not literals
-    }}
-    """
-    return query
-
-
 prefix_dict = {
     ":": "http://www.co-ode.org/ontologies/pizza#",
     "dc:": "http://purl.org/dc/elements/1.1/",

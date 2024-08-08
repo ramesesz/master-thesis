@@ -14,7 +14,7 @@ QUESTIONS_LIST = [
 print("Embedding questions...")
 vectorstore.embed_entities(
     path="./manon_chat_interface/data/vectorstores/pizza_questions",
-    collection="pizza_questions",
+    collection="pizza_questions_collection",
     documents=QUESTIONS_LIST,
 )
 

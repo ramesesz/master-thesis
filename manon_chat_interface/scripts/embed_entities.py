@@ -8,8 +8,6 @@ from manon_chat_interface.utils import vectorstore
 
 URL = "http://localhost:3030/pizza/query"
 
-# Machines ------------------------------------------------------------------------
-
 # Extract entities
 print("Extracting entities...")
 
@@ -31,7 +29,7 @@ topping_names = [re.split('#', iri)[-1] for iri in topping_IRIs]
 print("Embedding entities...")
 vectorstore.embed_entities(
     path="./manon_chat_interface/data/vectorstores/pizza_entities",
-    collection="pizza_collection",
+    collection="pizza_entities_collection",
     documents=pizza_names+topping_names,
     metadatas=[{"IRI": IRI} for IRI in pizza_IRIs+topping_IRIs]
 )

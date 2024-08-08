@@ -95,9 +95,6 @@ def generate_sparql_n_hop_query(starting_node, prefixes, n_hops):
     """
     return query
 
-########################################################################
-## Query templates #####################################################
-########################################################################
 
 prefix_dict = {
     ":": "http://www.co-ode.org/ontologies/pizza#",
@@ -114,17 +111,17 @@ prefix_dict = {
 }
 
 PREFIXES = """
-PREFIX : <http://www.co-ode.org/ontologies/pizza#> 
-PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
-PREFIX pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> 
-PREFIX terms: <http://purl.org/dc/terms/> 
-BASE <http://www.co-ode.org/ontologies/pizza#> 
+PREFIX : <http://www.co-ode.org/ontologies/pizza#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#>
+PREFIX terms: <http://purl.org/dc/terms/>
+BASE <http://www.co-ode.org/ontologies/pizza#>
 """
 
 ########################################################################
@@ -154,160 +151,120 @@ UNION
 """
 
 ########################################################################
-## Golden standard #####################################################
-########################################################################
-PIZZA_RESTRICTIONS = """
-SELECT DISTINCT ?pizza ?property ?type ?value
-WHERE {{
-  BIND({pizza_variable} AS ?pizza)  
-  ?pizza rdfs:subClassOf ?restriction .
-  ?restriction rdf:type owl:Restriction ;
-               owl:onProperty ?property .
-
-  OPTIONAL {{
-    ?restriction owl:someValuesFrom ?value .
-    BIND(owl:someValuesFrom AS ?type)
-  }}
-  OPTIONAL {{
-    ?restriction owl:hasValue ?value .
-    BIND(owl:hasValue AS ?type)
-  }}
-}}
-"""
-
-PIZZA_TRIPLES = """
-SELECT DISTINCT ?subject ?predicate ?object
-WHERE {{
-  {{
-    BIND({pizza_variable} AS ?subject) .
-    ?subject ?predicate ?object .
-    FILTER (!isBlank(?subject) && !isBlank(?object))
-  }}
-  UNION
-  {{
-    BIND({pizza_variable} AS ?object) .
-    ?subject ?predicate ?object .
-    FILTER (!isBlank(?subject) && !isBlank(?object))
-  }}
-}}
-"""
-
-########################################################################
 ## n-Hop ###############################################################
 ########################################################################
-
 ONE_HOP = """
-SELECT ?subject ?predicate ?object WHERE {
-  {
-    ?s ?p pizza:NamedPizza .
+SELECT ?subject ?predicate ?object WHERE {{
+  {{
+    ?s ?p <{IRI}> .
     BIND(?s AS ?subject)
     BIND(?p AS ?predicate)
-    BIND(pizza:NamedPizza AS ?object)
+    BIND(<{IRI}> AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    pizza:NamedPizza ?p ?o .
-    BIND(pizza:NamedPizza AS ?subject)
+  {{
+    <{IRI}> ?p ?o .
+    BIND(<{IRI}> AS ?subject)
     BIND(?p AS ?predicate)
     BIND(?o AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
-}
+  }}
+}}
 """
 
 TWO_HOP = """
-SELECT ?subject ?predicate ?object WHERE {
-  {
-    ?s ?p pizza:NamedPizza .
+SELECT ?subject ?predicate ?object WHERE {{
+  {{
+    ?s ?p <{IRI}> .
     BIND(?s AS ?subject)
     BIND(?p AS ?predicate)
-    BIND(pizza:NamedPizza AS ?object)
+    BIND(<{IRI}> AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    ?s ?p pizza:NamedPizza .
+  {{
+    ?s ?p <{IRI}> .
     ?s1 ?p1 ?s .
     BIND(?s1 AS ?subject)
     BIND(?p1 AS ?predicate)
     BIND(?s AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    pizza:NamedPizza ?p ?o .
-    BIND(pizza:NamedPizza AS ?subject)
+  {{
+    <{IRI}> ?p ?o .
+    BIND(<{IRI}> AS ?subject)
     BIND(?p AS ?predicate)
     BIND(?o AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    pizza:NamedPizza ?p ?o .
+  {{
+    <{IRI}> ?p ?o .
     ?o ?p1 ?o1 .
     BIND(?o AS ?subject)
     BIND(?p1 AS ?predicate)
     BIND(?o1 AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
-}
+  }}
+}}
 """
 
 THREE_HOP = """
-SELECT ?subject ?predicate ?object WHERE {
-  {
-    ?s ?p pizza:NamedPizza .
+SELECT ?subject ?predicate ?object WHERE {{
+  {{
+    ?s ?p <{IRI}> .
     BIND(?s AS ?subject)
     BIND(?p AS ?predicate)
-    BIND(pizza:NamedPizza AS ?object)
+    BIND(<{IRI}> AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    ?s ?p pizza:NamedPizza .
+  {{
+    ?s ?p <{IRI}> .
     ?s1 ?p1 ?s .
     BIND(?s1 AS ?subject)
     BIND(?p1 AS ?predicate)
     BIND(?s AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    ?s ?p pizza:NamedPizza .
+  {{
+    ?s ?p <{IRI}> .
     ?s1 ?p1 ?s .
     ?s2 ?p2 ?s1 .
     BIND(?s2 AS ?subject)
     BIND(?p2 AS ?predicate)
     BIND(?s1 AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    pizza:NamedPizza ?p ?o .
-    BIND(pizza:NamedPizza AS ?subject)
+  {{
+    <{IRI}> ?p ?o .
+    BIND(<{IRI}> AS ?subject)
     BIND(?p AS ?predicate)
     BIND(?o AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    pizza:NamedPizza ?p ?o .
+  {{
+    <{IRI}> ?p ?o .
     ?o ?p1 ?o1 .
     BIND(?o AS ?subject)
     BIND(?p1 AS ?predicate)
     BIND(?o1 AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
+  }}
   UNION
-  {
-    pizza:NamedPizza ?p ?o .
+  {{
+    <{IRI}> ?p ?o .
     ?o ?p1 ?o1 .
     ?o1 ?p2 ?o2 .
     BIND(?o1 AS ?subject)
     BIND(?p2 AS ?predicate)
     BIND(?o2 AS ?object)
     FILTER (!isBlank(?subject) && !isBlank(?object))
-  }
-}
+  }}
+}}
 """

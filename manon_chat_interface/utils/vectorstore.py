@@ -34,7 +34,7 @@ def embed_entities(path: str, collection: str, documents: list, metadatas: list 
     
     # Remove duplicates by comparing generated unique_ids and embedded ids
     client = chromadb.PersistentClient(path=path)
-    collection = client.get_or_create_collection(name=collection)
+    collection = client.get_or_create_collection(name=collection, metadata={"hnsw:space": "cosine"})
     existing_ids = collection.get()["ids"]
 
     # Filter out the unique_ids and unique_docs if the unique_id is already in existing_ids

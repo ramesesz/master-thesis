@@ -100,7 +100,7 @@ following RDF triples. Explain your reasoning and cite the relevant triples
 Triples: {context}
 """
 
-# TODO: Enhance the prompt. Currently it does not answer the question and instead just explains the context
+# TODO: Enhance the prompt.
 QA_USER_PROMPT = """
 Question: {question}
 """

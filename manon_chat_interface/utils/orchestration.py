@@ -4,6 +4,7 @@ from strictjson import strict_json
 
 import chromadb
 
+URL = "http://localhost:3030/pizza/query"
 
 def entity_recognition(input: str) -> dict:
     """
@@ -35,14 +36,11 @@ def entity_recognition(input: str) -> dict:
 
 
 def get_triples(
-        client: chromadb.PersistentClient, 
-        question: str, 
-        entities: list, 
-        collection_name: str, 
-        mode: str = "default", 
-        url: str = "http://localhost:3030/pizza/query", 
-        file_path: str = None, 
-        format: str = None
+        question: str, # Original question 
+        mode: str = "default",
+        path_to_vectorstore: str = "./manon_chat_interface/data/vectorstores", 
+        path_to_graph: str = None, # Path to RDF graph
+        format: str = None, # Format of RDF graph
 ):
     """Helper function for retrieve_context()
 
@@ -52,69 +50,83 @@ def get_triples(
         collection_name (str): Chromadb collection.
         mode (str): Mode of context retrieval.
         url (str): LM Studio URL.
-        file_path (str): Path to turtle file.
+        path_to_graph (str): Path to turtle file.
 
     Returns:
         str: SPARQL query.
     """
-    if entities:
-        if mode == "default":
-            if file_path is None or format is None:
-                raise ValueError("In 'default' mode, 'file_path' and 'format' cannot be None.")
 
-            triples = sparql.load_rdf_triples(file_path=file_path, format=format)
-            
-            return triples
+    # Get chroma
+    entities_client = chromadb.PersistentClient(path=f"{path_to_vectorstore}/pizza_entities")
+    questions_client = chromadb.PersistentClient(path=f"{path_to_vectorstore}/pizza_questions")
+
+    pizza_collection = entities_client.get_or_create_collection("pizza_collection")
+    question_collection = questions_client.get_or_create_collection("pizza_questions")
+
+    # Map question
+    question_emb = question_collection.query(
+        query_texts=[question], 
+        n_results=1
+    )
+    mapped_question = question_emb["documents"][0][0]
+
+    # Map entities
+    entities = entity_recognition(question)["entities"] # List of entities
+    entities_emb = pizza_collection.query(
+        query_texts=entities, 
+        n_results=1
+    )
+    mapped_entities = [metadata[0]['IRI'] for metadata in entities_emb['metadatas']]
+
+    if mode == "default":
+        if path_to_graph is None or format is None:
+            raise ValueError("In 'default' mode, 'path_to_graph' and 'format' cannot be None.")
+
+        triples = sparql.load_rdf_triples(file_path=path_to_graph, format=format)
         
-        elif mode == "n_hop":
-            # TODO: Add cases for 1, 2, 3 hops
-            if client is None or collection_name is None:
-                raise ValueError("In 'n_hop' mode, 'client' and 'collection_name' cannot be None.")
-                        
-            collection = client.get_or_create_collection(collection_name)
-            embeddings = collection.query(query_texts=entities, n_results=1)
-            iris = [metadata[0]['IRI'] for metadata in embeddings['metadatas']]
-            
-            triples = ""
-            
-            for iri in iris:
-                query = sparql.PREFIXES+sparql.TWO_HOP.format(IRI=iri)
-                query_result = sparql.execute_parse_sparql(
-                    url=url, 
-                    queries=[query]
-                )
-                triples += query_result
-
-            return triples
-
-        elif mode == "generated":
-            # LLM Generation
-
-            triples = sparql.load_rdf_triples(file_path=file_path, format=format)
-
-            query = strict_json(
-                system_prompt=llm.CONTEXT_RETRIEVAL_SYSTEM_PROMPT.format(
-                    context=triples
-                ),
-                user_prompt=llm.CONTEXT_RETRIEVAL_USER_PROMPT.format(
-                    question=question
-                ),
-                output_format={
-                    "sparql_query": "Executable sparql query string.", 
-                    "explanation": "Explanation of what the sparql query does."
-                },
-                llm=llm.invoke_llm
+        return triples
+    
+    elif mode == "n_hop":
+        # TODO: Add cases for 1, 2, 3 hops
+        triples = ""
+        
+        for iri in mapped_entities:
+            query = sparql.PREFIXES+sparql.TWO_HOP.format(IRI=iri)
+            query_result = sparql.execute_parse_sparql(
+                url=URL, 
+                queries=[query]
             )
-            # try:
-            #     response = sparql.execute_parse_sparql(url, [query])
-            
-            # except Exception as e:
-            #     print(f"The following error occured when executing generated query:/n{e}")
-            
-            return query
+            triples += query_result
+
+        return triples
+
+    elif mode == "generated":
+        # LLM Generation
+
+        triples = sparql.load_rdf_triples(file_path=path_to_graph, format=format)
+
+        query = strict_json(
+            system_prompt=llm.CONTEXT_RETRIEVAL_SYSTEM_PROMPT.format(
+                context=triples
+            ),
+            user_prompt=llm.CONTEXT_RETRIEVAL_USER_PROMPT.format(
+                question=question
+            ),
+            output_format={
+                "sparql_query": "Executable sparql query string.", 
+                "explanation": "Explanation of what the sparql query does."
+            },
+            llm=llm.invoke_llm
+        )
+        # try:
+        #     response = sparql.execute_parse_sparql(url, [query])
         
-        else:
-            raise Exception("Given mode is not valid. Choose between 'default', 'n-hop', or 'generated'")
+        # except Exception as e:
+        #     print(f"The following error occured when executing generated query:/n{e}")
+        
+        return query
     
     else:
-        raise Exception("No entity is recognized from given question.")
+        raise Exception("Given mode is not valid. Choose between 'default', 'n-hop', or 'generated'")
+
+

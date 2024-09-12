@@ -8,7 +8,7 @@ ontologies/
 vectorstores/
 
 # Local testing
-playground/
+playground/*
 models/
 __pycache__/
 
@@ -23,5 +23,5 @@ diagrams/img/
 manon-manufacturing-knowledge-learner
 
 # Git control for modifying flight knowledge graph
-!**/flight/
-!**/flight/**
+!playground/sparql/onto/atmonto/flight/
+!playground/sparql/onto/atmonto/flight/**

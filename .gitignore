@@ -21,3 +21,7 @@ diagrams/img/
 
 # Knowledge learner module
 manon-manufacturing-knowledge-learner
+
+# Git control for modifying flight knowledge graph
+!**/flight/
+!**/flight/**

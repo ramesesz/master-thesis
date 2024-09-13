@@ -99,82 +99,234 @@ atm:AAL20-201407152358 a atm:Flight ;
     atm:operatedBy nas:AALairline ;
     atm:userCategory "COMMERCIAL"^^xsd:string .
 
-atm:AAL2248-201407150023 a atm:Flight ;
-    rdfs:label "Flight AAL2248 on 2014-07-15 00:23:00"^^xsd:string ;
+atm:ACA722-201407150025 a atm:Flight ;
+    rdfs:label "Flight ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:19:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:25:00"^^xsd:dateTime ;
+    atm:arrivalAirport nas:KLGAairport ;
+    atm:callSign "ACA722"^^xsd:string ;
+    atm:departureAirport nas:CYYZairport ;
+    atm:hasActualRoute atm:ActualRouteACA722-201407150025 ;
+    atm:hasPlannedRoute atm:PlannedRouteACA722-201407150025 ;
+    atm:operatedBy nas:ACAairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ACA723-201407150033 a atm:Flight ;
+    rdfs:label "Flight ACA723 on 2014-07-15 00:33:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:39:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:33:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:E190AircraftType ;
+    atm:arrivalAirport nas:CYYZairport ;
+    atm:callSign "ACA723"^^xsd:string ;
+    atm:departureAirport nas:KLGAairport ;
+    atm:hasActualRoute atm:ActualRouteACA723-201407150033 ;
+    atm:hasPlannedRoute atm:PlannedRouteACA723-201407150033 ;
+    atm:operatedBy nas:ACAairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AFL103-201407150045 a atm:Flight ;
+    rdfs:label "Flight AFL103 on 2014-07-15 00:45:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T04:08:16"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:45:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:B77WAircraftType ;
+    atm:arrivalAirport nas:UUEEairport ;
+    atm:callSign "AFL103"^^xsd:string ;
+    atm:departureAirport nas:KJFKairport ;
+    atm:hasActualRoute atm:ActualRouteAFL103-201407150045 ;
+    atm:hasPlannedRoute atm:PlannedRouteAFL103-201407150045 ;
+    atm:operatedBy nas:AFLairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASA14-201407150005 a atm:Flight ;
+    rdfs:label "Flight ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T04:49:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:05:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN413AS ;
+    atm:aircraftTypeFlown eqp:B739AircraftType ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASA14"^^xsd:string ;
+    atm:departureAirport nas:KSEAairport ;
+    atm:hasActualRoute atm:ActualRouteASA14-201407150005 ;
+    atm:hasPlannedRoute atm:PlannedRouteASA14-201407150005 ;
+    atm:operatedBy nas:ASAairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASQ3831-201407150019 a atm:Flight ;
+    rdfs:label "Flight ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:22:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:19:00"^^xsd:dateTime ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASQ3831"^^xsd:string ;
+    atm:departureAirport nas:CYYZairport ;
+    atm:hasActualRoute atm:ActualRouteASQ3831-201407150019 ;
+    atm:hasPlannedRoute atm:PlannedRouteASQ3831-201407150019 ;
+    atm:operatedBy nas:ASQairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASQ4423-201407150037 a atm:Flight ;
+    rdfs:label "Flight ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:33:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:37:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN11548 ;
+    atm:aircraftTypeFlown eqp:E145AircraftType ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASQ4423"^^xsd:string ;
+    atm:departureAirport nas:KMHTairport ;
+    atm:hasActualRoute atm:ActualRouteASQ4423-201407150037 ;
+    atm:hasPlannedRoute atm:PlannedRouteASQ4423-201407150037 ;
+    atm:operatedBy nas:ASQairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:CHQ2945-201407150047 a atm:Flight ;
+    rdfs:label "Flight CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T02:27:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:47:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:E145AircraftType ;
+    atm:arrivalAirport nas:KCLTairport ;
+    atm:callSign "CHQ2945"^^xsd:string ;
+    atm:departureAirport nas:KJFKairport ;
+    atm:hasActualRoute atm:ActualRouteCHQ2945-201407150047 ;
+    atm:hasPlannedRoute atm:PlannedRouteCHQ2945-201407150047 ;
+    atm:operatedBy nas:CHQairline ;
+    atm:userCategory "AIR TAXI"^^xsd:string .
+
+atm:CPZ5839-201407150054 a atm:Flight ;
+    rdfs:label "Flight CPZ5839 on 2014-07-15 00:54:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T04:21:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:54:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:E170AircraftType ;
+    atm:arrivalAirport nas:KIAHairport ;
+    atm:callSign "CPZ5839"^^xsd:string ;
+    atm:departureAirport nas:KLGAairport ;
+    atm:hasActualRoute atm:ActualRouteCPZ5839-201407150054 ;
+    atm:hasPlannedRoute atm:PlannedRouteCPZ5839-201407150054 ;
+    atm:operatedBy nas:CPZairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:DAL1514-201407150041 a atm:Flight ;
+    rdfs:label "Flight DAL1514 on 2014-07-15 00:41:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T03:04:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:41:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN317NB ;
+    atm:aircraftTypeFlown eqp:A319AircraftType ;
+    atm:arrivalAirport nas:KLGAairport ;
+    atm:callSign "DAL1514"^^xsd:string ;
+    atm:departureAirport nas:KFLLairport ;
+    atm:hasActualRoute atm:ActualRouteDAL1514-201407150041 ;
+    atm:hasPlannedRoute atm:PlannedRouteDAL1514-201407150041 ;
+    atm:operatedBy nas:DALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:DAL1776-201407150046 a atm:Flight ;
+    rdfs:label "Flight DAL1776 on 2014-07-15 00:46:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T03:03:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:46:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN323NB ;
+    atm:aircraftTypeFlown eqp:A319AircraftType ;
+    atm:arrivalAirport nas:KLGAairport ;
+    atm:callSign "DAL1776"^^xsd:string ;
+    atm:departureAirport nas:KMCOairport ;
+    atm:hasActualRoute atm:ActualRouteDAL1776-201407150046 ;
+    atm:hasPlannedRoute atm:PlannedRouteDAL1776-201407150046 ;
+    atm:operatedBy nas:DALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:DAL1878-201407150030 a atm:Flight ;
+    rdfs:label "Flight DAL1878 on 2014-07-15 00:30:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T02:16:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:30:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN994AT ;
+    atm:aircraftTypeFlown eqp:B712AircraftType ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "DAL1878"^^xsd:string ;
+    atm:departureAirport nas:KATLairport ;
+    atm:hasActualRoute atm:ActualRouteDAL1878-201407150030 ;
+    atm:hasPlannedRoute atm:PlannedRouteDAL1878-201407150030 ;
+    atm:operatedBy nas:DALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ENY2840-201407150029 a atm:Flight ;
+    rdfs:label "Flight ENY2840 on 2014-07-15 00:29:00"^^xsd:string ;
     atm:actualArrivalDay nas:Day20140715 ;
     atm:actualArrivalTime "2014-07-15T02:40:00"^^xsd:dateTime ;
     atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:23:00"^^xsd:dateTime ;
-    atm:aircraftFlown eqp:AircraftN826NN ;
-    atm:aircraftTypeFlown eqp:B738AircraftType ;
+    atm:actualDepartureTime "2014-07-15T00:29:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN502MQ ;
+    atm:aircraftTypeFlown eqp:CRJ7AircraftType ;
     atm:arrivalAirport nas:KLGAairport ;
-    atm:callSign "AAL2248"^^xsd:string ;
-    atm:departureAirport nas:KMIAairport ;
-    atm:hasActualRoute atm:ActualRouteAAL2248-201407150023 ;
-    atm:hasPlannedRoute atm:PlannedRouteAAL2248-201407150023 ;
-    atm:operatedBy nas:AALairline ;
+    atm:callSign "ENY2840"^^xsd:string ;
+    atm:departureAirport nas:KSTLairport ;
+    atm:hasActualRoute atm:ActualRouteENY2840-201407150029 ;
+    atm:hasPlannedRoute atm:PlannedRouteENY2840-201407150029 ;
+    atm:operatedBy nas:ENYairline ;
     atm:userCategory "COMMERCIAL"^^xsd:string .
 
-atm:AAL2262-201407150038 a atm:Flight ;
-    rdfs:label "Flight AAL2262 on 2014-07-15 00:38:00"^^xsd:string ;
+atm:ENY3349-201407150049 a atm:Flight ;
+    rdfs:label "Flight ENY3349 on 2014-07-15 00:49:00"^^xsd:string ;
     atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T03:16:00"^^xsd:dateTime ;
+    atm:actualArrivalTime "2014-07-15T03:28:00"^^xsd:dateTime ;
     atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:38:00"^^xsd:dateTime ;
-    atm:aircraftTypeFlown eqp:B752AircraftType ;
+    atm:actualDepartureTime "2014-07-15T00:49:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN525MQ ;
+    atm:aircraftTypeFlown eqp:CRJ7AircraftType ;
+    atm:arrivalAirport nas:KLITairport ;
+    atm:callSign "ENY3349"^^xsd:string ;
+    atm:departureAirport nas:KLGAairport ;
+    atm:hasActualRoute atm:ActualRouteENY3349-201407150049 ;
+    atm:hasPlannedRoute atm:PlannedRouteENY3349-201407150049 ;
+    atm:operatedBy nas:ENYairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:GEC8171-201407150048 a atm:Flight ;
+    rdfs:label "Flight GEC8171 on 2014-07-15 00:48:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T02:19:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:48:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:B77LAircraftType ;
     atm:arrivalAirport nas:KJFKairport ;
-    atm:callSign "AAL2262"^^xsd:string ;
-    atm:departureAirport nas:KMIAairport ;
-    atm:hasActualRoute atm:ActualRouteAAL2262-201407150038 ;
-    atm:hasPlannedRoute atm:PlannedRouteAAL2262-201407150038 ;
-    atm:operatedBy nas:AALairline ;
+    atm:callSign "GEC8171"^^xsd:string ;
+    atm:departureAirport nas:KATLairport ;
+    atm:hasActualRoute atm:ActualRouteGEC8171-201407150048 ;
+    atm:hasPlannedRoute atm:PlannedRouteGEC8171-201407150048 ;
+    atm:operatedBy nas:GECairline ;
     atm:userCategory "COMMERCIAL"^^xsd:string .
 
-atm:AAL2285-201407150041 a atm:Flight ;
-    rdfs:label "Flight AAL2285 on 2014-07-15 00:41:00"^^xsd:string ;
+atm:GJS6196-201407150053 a atm:Flight ;
+    rdfs:label "Flight GJS6196 on 2014-07-15 00:53:00"^^xsd:string ;
     atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T02:41:00"^^xsd:dateTime ;
+    atm:actualArrivalTime "2014-07-15T01:46:00"^^xsd:dateTime ;
     atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:41:00"^^xsd:dateTime ;
-    atm:aircraftTypeFlown eqp:B752AircraftType ;
-    atm:arrivalAirport nas:KJFKairport ;
-    atm:callSign "AAL2285"^^xsd:string ;
-    atm:departureAirport nas:KMCOairport ;
-    atm:hasActualRoute atm:ActualRouteAAL2285-201407150041 ;
-    atm:hasPlannedRoute atm:PlannedRouteAAL2285-201407150041 ;
-    atm:operatedBy nas:AALairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:AAL291-201407150013 a atm:Flight ;
-    rdfs:label "Flight AAL291 on 2014-07-15 00:13:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T03:44:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:13:00"^^xsd:dateTime ;
-    atm:aircraftFlown eqp:AircraftN879NN ;
-    atm:aircraftTypeFlown eqp:B738AircraftType ;
-    atm:arrivalAirport nas:KAUSairport ;
-    atm:callSign "AAL291"^^xsd:string ;
-    atm:departureAirport nas:KJFKairport ;
-    atm:hasActualRoute atm:ActualRouteAAL291-201407150013 ;
-    atm:hasPlannedRoute atm:PlannedRouteAAL291-201407150013 ;
-    atm:operatedBy nas:AALairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:AAL352-201407150023 a atm:Flight ;
-    rdfs:label "Flight AAL352 on 2014-07-15 00:23:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T02:00:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:23:00"^^xsd:dateTime ;
-    atm:aircraftFlown eqp:AircraftN933AN ;
-    atm:aircraftTypeFlown eqp:B738AircraftType ;
+    atm:actualDepartureTime "2014-07-15T00:53:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:CRJ7AircraftType ;
     atm:arrivalAirport nas:KLGAairport ;
-    atm:callSign "AAL352"^^xsd:string ;
-    atm:departureAirport nas:KORDairport ;
-    atm:hasActualRoute atm:ActualRouteAAL352-201407150023 ;
-    atm:hasPlannedRoute atm:PlannedRouteAAL352-201407150023 ;
-    atm:operatedBy nas:AALairline ;
+    atm:callSign "GJS6196"^^xsd:string ;
+    atm:departureAirport nas:KBUFairport ;
+    atm:hasActualRoute atm:ActualRouteGJS6196-201407150053 ;
+    atm:hasPlannedRoute atm:PlannedRouteGJS6196-201407150053 ;
+    atm:operatedBy nas:GJSairline ;
     atm:userCategory "COMMERCIAL"^^xsd:string .
 
 ########################################################################

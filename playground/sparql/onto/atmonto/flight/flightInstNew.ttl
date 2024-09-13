@@ -113,36 +113,6 @@ atm:ACA722-201407150025 a atm:Flight ;
     atm:operatedBy nas:ACAairline ;
     atm:userCategory "COMMERCIAL"^^xsd:string .
 
-atm:ACA723-201407150033 a atm:Flight ;
-    rdfs:label "Flight ACA723 on 2014-07-15 00:33:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T01:39:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:33:00"^^xsd:dateTime ;
-    atm:aircraftTypeFlown eqp:E190AircraftType ;
-    atm:arrivalAirport nas:CYYZairport ;
-    atm:callSign "ACA723"^^xsd:string ;
-    atm:departureAirport nas:KLGAairport ;
-    atm:hasActualRoute atm:ActualRouteACA723-201407150033 ;
-    atm:hasPlannedRoute atm:PlannedRouteACA723-201407150033 ;
-    atm:operatedBy nas:ACAairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:AFL103-201407150045 a atm:Flight ;
-    rdfs:label "Flight AFL103 on 2014-07-15 00:45:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T04:08:16"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:45:00"^^xsd:dateTime ;
-    atm:aircraftTypeFlown eqp:B77WAircraftType ;
-    atm:arrivalAirport nas:UUEEairport ;
-    atm:callSign "AFL103"^^xsd:string ;
-    atm:departureAirport nas:KJFKairport ;
-    atm:hasActualRoute atm:ActualRouteAFL103-201407150045 ;
-    atm:hasPlannedRoute atm:PlannedRouteAFL103-201407150045 ;
-    atm:operatedBy nas:AFLairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
 atm:ASA14-201407150005 a atm:Flight ;
     rdfs:label "Flight ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
     atm:actualArrivalDay nas:Day20140715 ;
@@ -204,131 +174,6 @@ atm:CHQ2945-201407150047 a atm:Flight ;
     atm:operatedBy nas:CHQairline ;
     atm:userCategory "AIR TAXI"^^xsd:string .
 
-atm:CPZ5839-201407150054 a atm:Flight ;
-    rdfs:label "Flight CPZ5839 on 2014-07-15 00:54:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T04:21:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:54:00"^^xsd:dateTime ;
-    atm:aircraftTypeFlown eqp:E170AircraftType ;
-    atm:arrivalAirport nas:KIAHairport ;
-    atm:callSign "CPZ5839"^^xsd:string ;
-    atm:departureAirport nas:KLGAairport ;
-    atm:hasActualRoute atm:ActualRouteCPZ5839-201407150054 ;
-    atm:hasPlannedRoute atm:PlannedRouteCPZ5839-201407150054 ;
-    atm:operatedBy nas:CPZairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:DAL1514-201407150041 a atm:Flight ;
-    rdfs:label "Flight DAL1514 on 2014-07-15 00:41:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T03:04:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:41:00"^^xsd:dateTime ;
-    atm:aircraftFlown eqp:AircraftN317NB ;
-    atm:aircraftTypeFlown eqp:A319AircraftType ;
-    atm:arrivalAirport nas:KLGAairport ;
-    atm:callSign "DAL1514"^^xsd:string ;
-    atm:departureAirport nas:KFLLairport ;
-    atm:hasActualRoute atm:ActualRouteDAL1514-201407150041 ;
-    atm:hasPlannedRoute atm:PlannedRouteDAL1514-201407150041 ;
-    atm:operatedBy nas:DALairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:DAL1776-201407150046 a atm:Flight ;
-    rdfs:label "Flight DAL1776 on 2014-07-15 00:46:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T03:03:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:46:00"^^xsd:dateTime ;
-    atm:aircraftFlown eqp:AircraftN323NB ;
-    atm:aircraftTypeFlown eqp:A319AircraftType ;
-    atm:arrivalAirport nas:KLGAairport ;
-    atm:callSign "DAL1776"^^xsd:string ;
-    atm:departureAirport nas:KMCOairport ;
-    atm:hasActualRoute atm:ActualRouteDAL1776-201407150046 ;
-    atm:hasPlannedRoute atm:PlannedRouteDAL1776-201407150046 ;
-    atm:operatedBy nas:DALairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:DAL1878-201407150030 a atm:Flight ;
-    rdfs:label "Flight DAL1878 on 2014-07-15 00:30:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T02:16:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:30:00"^^xsd:dateTime ;
-    atm:aircraftFlown eqp:AircraftN994AT ;
-    atm:aircraftTypeFlown eqp:B712AircraftType ;
-    atm:arrivalAirport nas:KEWRairport ;
-    atm:callSign "DAL1878"^^xsd:string ;
-    atm:departureAirport nas:KATLairport ;
-    atm:hasActualRoute atm:ActualRouteDAL1878-201407150030 ;
-    atm:hasPlannedRoute atm:PlannedRouteDAL1878-201407150030 ;
-    atm:operatedBy nas:DALairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:ENY2840-201407150029 a atm:Flight ;
-    rdfs:label "Flight ENY2840 on 2014-07-15 00:29:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T02:40:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:29:00"^^xsd:dateTime ;
-    atm:aircraftFlown eqp:AircraftN502MQ ;
-    atm:aircraftTypeFlown eqp:CRJ7AircraftType ;
-    atm:arrivalAirport nas:KLGAairport ;
-    atm:callSign "ENY2840"^^xsd:string ;
-    atm:departureAirport nas:KSTLairport ;
-    atm:hasActualRoute atm:ActualRouteENY2840-201407150029 ;
-    atm:hasPlannedRoute atm:PlannedRouteENY2840-201407150029 ;
-    atm:operatedBy nas:ENYairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:ENY3349-201407150049 a atm:Flight ;
-    rdfs:label "Flight ENY3349 on 2014-07-15 00:49:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T03:28:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:49:00"^^xsd:dateTime ;
-    atm:aircraftFlown eqp:AircraftN525MQ ;
-    atm:aircraftTypeFlown eqp:CRJ7AircraftType ;
-    atm:arrivalAirport nas:KLITairport ;
-    atm:callSign "ENY3349"^^xsd:string ;
-    atm:departureAirport nas:KLGAairport ;
-    atm:hasActualRoute atm:ActualRouteENY3349-201407150049 ;
-    atm:hasPlannedRoute atm:PlannedRouteENY3349-201407150049 ;
-    atm:operatedBy nas:ENYairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:GEC8171-201407150048 a atm:Flight ;
-    rdfs:label "Flight GEC8171 on 2014-07-15 00:48:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T02:19:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:48:00"^^xsd:dateTime ;
-    atm:aircraftTypeFlown eqp:B77LAircraftType ;
-    atm:arrivalAirport nas:KJFKairport ;
-    atm:callSign "GEC8171"^^xsd:string ;
-    atm:departureAirport nas:KATLairport ;
-    atm:hasActualRoute atm:ActualRouteGEC8171-201407150048 ;
-    atm:hasPlannedRoute atm:PlannedRouteGEC8171-201407150048 ;
-    atm:operatedBy nas:GECairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
-atm:GJS6196-201407150053 a atm:Flight ;
-    rdfs:label "Flight GJS6196 on 2014-07-15 00:53:00"^^xsd:string ;
-    atm:actualArrivalDay nas:Day20140715 ;
-    atm:actualArrivalTime "2014-07-15T01:46:00"^^xsd:dateTime ;
-    atm:actualDepartureDay nas:Day20140715 ;
-    atm:actualDepartureTime "2014-07-15T00:53:00"^^xsd:dateTime ;
-    atm:aircraftTypeFlown eqp:CRJ7AircraftType ;
-    atm:arrivalAirport nas:KLGAairport ;
-    atm:callSign "GJS6196"^^xsd:string ;
-    atm:departureAirport nas:KBUFairport ;
-    atm:hasActualRoute atm:ActualRouteGJS6196-201407150053 ;
-    atm:hasPlannedRoute atm:PlannedRouteGJS6196-201407150053 ;
-    atm:operatedBy nas:GJSairline ;
-    atm:userCategory "COMMERCIAL"^^xsd:string .
-
 ########################################################################
 ## Aircraft ############################################################
 ########################################################################
@@ -385,6 +230,32 @@ eqp:AircraftN784AA a eqp:Aircraft ;
     eqp:numberOfSeats 4 ;
     eqp:registrationNumber "N784AA"^^xsd:string .
 
+eqp:AircraftN413AS a eqp:Aircraft ;
+    rdfs:label "Aircraft N413AS"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "ALASKA AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "35205"^^xsd:string ;
+    eqp:certificateIssueDate "2013-03-28"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-990ER ;
+    eqp:manufactureYear 2013 ;
+    eqp:modeSCode 51157526 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 222 ;
+    eqp:registrationNumber "N413AS"^^xsd:string .
+
+eqp:AircraftN11548 a eqp:Aircraft ;
+    rdfs:label "Aircraft N11548"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "145565"^^xsd:string ;
+    eqp:certificateIssueDate "2002-05-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Embraer-EMB145-LR ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 50040713 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 55 ;
+    eqp:registrationNumber "N11548"^^xsd:string .
+
 ########################################################################
 ## Aircraft type #######################################################
 ########################################################################
@@ -409,6 +280,21 @@ eqp:A321AircraftType a eqp:AircraftType ;
     eqp:aircraftTypeDesignator "A321"^^xsd:string ;
     eqp:hasAircraftEngineType eqp:JetEngineType ;
     eqp:hasAircraftWakeCategory eqp:AircraftWakeCategoryD5 ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+eqp:B739AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type B739"^^xsd:string ;
+    eqp:aircraftTypeDesignator "B739"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWakeCategory eqp:AircraftWakeCategoryD5 ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+eqp:E145AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type E145"^^xsd:string ;
+    eqp:aircraftTypeDesignator "E145"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
     eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
     eqp:numberOfEngines 2 .
 
@@ -514,6 +400,78 @@ nas:KSFOairport a nas:CONUSairport ;
     nas:withinARTCC nas:ZOAcenter ;
     nas:withinTimezone "America/Los_Angeles"^^xsd:string .   
 
+nas:CYYZairport a nas:CanadianAirport ;
+    rdfs:label "CYYZ Airport"^^xsd:string ;
+    nas:airportLocation nas:CYYZcoordinates ;
+    nas:airportName "TORONTO PEARSON INTL"^^xsd:string ;
+    nas:hasRunway nas:CYYZphysicalRunway05_23 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "YYZ"^^xsd:string ;
+    nas:icaoAirportCode "CYYZ"^^xsd:string ;
+    nas:locatedInState "ON"^^xsd:string ;
+    nas:withinARTCC nas:CZYcenter ;
+    nas:withinTimezone "America/Toronto\r"^^xsd:string .
+
+nas:KEWRairport a nas:CONUSairport ;
+    rdfs:label "KEWR Airport"^^xsd:string ;
+    nas:airportLocation nas:KEWRcoordinates ;
+    nas:airportName "NEWARK LIBERTY INTL"^^xsd:string ;
+    nas:faaAirportCode "EWR"^^xsd:string ;
+    nas:hasRunway nas:KEWRphysicalRunway04L_22R,
+        nas:KEWRphysicalRunway04R_22L,
+        nas:KEWRphysicalRunway11_29 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "EWR"^^xsd:string ;
+    nas:icaoAirportCode "KEWR"^^xsd:string ;
+    nas:locatedInState "NJ"^^xsd:string ;
+    nas:withinARTCC nas:ZNYcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KSEAairport a nas:CONUSairport ;
+    rdfs:label "KSEA Airport"^^xsd:string ;
+    nas:airportLocation nas:KSEAcoordinates ;
+    nas:airportName "SEATTLE-TACOMA INTL"^^xsd:string ;
+    nas:faaAirportCode "SEA"^^xsd:string ;
+    nas:hasRunway nas:KSEAphysicalRunway16C_34C,
+        nas:KSEAphysicalRunway16L_34R,
+        nas:KSEAphysicalRunway16R_34L ;
+    nas:hoursOffsetFromUTC -8 ;
+    nas:iataAirportCode "SEA"^^xsd:string ;
+    nas:icaoAirportCode "KSEA"^^xsd:string ;
+    nas:locatedInState "WA"^^xsd:string ;
+    nas:withinARTCC nas:ZSEcenter ;
+    nas:withinTimezone "America/Los_Angeles"^^xsd:string .
+
+nas:KMHTairport a nas:CONUSairport ;
+    rdfs:label "KMHT Airport"^^xsd:string ;
+    nas:airportLocation nas:KMHTcoordinates ;
+    nas:airportName "MANCHESTER"^^xsd:string ;
+    nas:faaAirportCode "MHT"^^xsd:string ;
+    nas:hasRunway nas:KMHTphysicalRunway06_24,
+        nas:KMHTphysicalRunway17_35 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "MHT"^^xsd:string ;
+    nas:icaoAirportCode "KMHT"^^xsd:string ;
+    nas:locatedInState "NH"^^xsd:string ;
+    nas:withinARTCC nas:ZBWcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KCLTairport a nas:CONUSairport ;
+    rdfs:label "KCLT Airport"^^xsd:string ;
+    nas:airportLocation nas:KCLTcoordinates ;
+    nas:airportName "CHARLOTTE/DOUGLAS INTL"^^xsd:string ;
+    nas:faaAirportCode "CLT"^^xsd:string ;
+    nas:hasRunway nas:KCLTphysicalRunway05_23,
+        nas:KCLTphysicalRunway18C_36C,
+        nas:KCLTphysicalRunway18L_36R,
+        nas:KCLTphysicalRunway18R_36L ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "CLT"^^xsd:string ;
+    nas:icaoAirportCode "KCLT"^^xsd:string ;
+    nas:locatedInState "NC"^^xsd:string ;
+    nas:withinARTCC nas:ZTLcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
 ########################################################################
 ## Coordinates #########################################################
 ########################################################################
@@ -553,6 +511,30 @@ nas:KSFOcoordinates a gen:PointLocation ;
     gen:altitude "13"^^xsd:float ;
     gen:latitude "37.619106"^^xsd:float ;
     gen:longitude "-122.375236"^^xsd:float .
+
+nas:CYYZcoordinates a gen:PointLocation ;
+    rdfs:label "CYYZ coordinates"^^xsd:string ;
+    gen:altitude "569"^^xsd:float ;
+    gen:latitude "43.676661"^^xsd:float ;
+    gen:longitude "-79.630644"^^xsd:float .
+
+nas:KEWRcoordinates a gen:PointLocation ;
+    rdfs:label "KEWR coordinates"^^xsd:string ;
+    gen:altitude "18"^^xsd:float ;
+    gen:latitude "40.692481"^^xsd:float ;
+    gen:longitude "-74.168686"^^xsd:float .
+
+nas:KSEAcoordinates a gen:PointLocation ;
+    rdfs:label "KSEA coordinates"^^xsd:string ;
+    gen:altitude "433"^^xsd:float ;
+    gen:latitude "47.449889"^^xsd:float ;
+    gen:longitude "-122.311778"^^xsd:float .
+
+nas:KMHTcoordinates a gen:PointLocation ;
+    rdfs:label "KMHT coordinates"^^xsd:string ;
+    gen:altitude "266"^^xsd:float ;
+    gen:latitude "42.932806"^^xsd:float ;
+    gen:longitude "-71.435750"^^xsd:float .
 
 ########################################################################
 ## Actual routes #######################################################
@@ -2095,6 +2077,776 @@ atm:ActualRouteAAL20-201407152358 a atm:ActualFlightRoute ;
         atm:TrackPt201407160459000115,
         atm:TrackPt201407160459010423 .
 
+atm:ActualRouteACA722-201407150025 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150031054599 ;
+    gen:hasLastItem atm:TrackPt201407150123113486 ;
+    gen:hasSequencedItem atm:TrackPt201407150031054599,
+        atm:TrackPt201407150031155236,
+        atm:TrackPt201407150032160905,
+        atm:TrackPt201407150033066739,
+        atm:TrackPt201407150033145930,
+        atm:TrackPt201407150034063383,
+        atm:TrackPt201407150034134237,
+        atm:TrackPt201407150035059399,
+        atm:TrackPt201407150035160163,
+        atm:TrackPt201407150036064400,
+        atm:TrackPt201407150037042239,
+        atm:TrackPt201407150037086183,
+        atm:TrackPt201407150038023217,
+        atm:TrackPt201407150038120487,
+        atm:TrackPt201407150038138609,
+        atm:TrackPt201407150039070788,
+        atm:TrackPt201407150039170722,
+        atm:TrackPt201407150040087554,
+        atm:TrackPt201407150040133672,
+        atm:TrackPt201407150041082801,
+        atm:TrackPt201407150041155236,
+        atm:TrackPt201407150042105996,
+        atm:TrackPt201407150042149406,
+        atm:TrackPt201407150043052016,
+        atm:TrackPt201407150043063793,
+        atm:TrackPt201407150043129330,
+        atm:TrackPt201407150044108338,
+        atm:TrackPt201407150044112628,
+        atm:TrackPt201407150044117190,
+        atm:TrackPt201407150045167186,
+        atm:TrackPt201407150045188637,
+        atm:TrackPt201407150046004491,
+        atm:TrackPt201407150046085506,
+        atm:TrackPt201407150046090080,
+        atm:TrackPt201407150046160209,
+        atm:TrackPt201407150047096989,
+        atm:TrackPt201407150047112236,
+        atm:TrackPt201407150047151847,
+        atm:TrackPt201407150048111853,
+        atm:TrackPt201407150048132950,
+        atm:TrackPt201407150048135166,
+        atm:TrackPt201407150049062611,
+        atm:TrackPt201407150049098249,
+        atm:TrackPt201407150049125393,
+        atm:TrackPt201407150050081943,
+        atm:TrackPt201407150050144022,
+        atm:TrackPt201407150050148435,
+        atm:TrackPt201407150051097238,
+        atm:TrackPt201407150051141405,
+        atm:TrackPt201407150052042969,
+        atm:TrackPt201407150052085261,
+        atm:TrackPt201407150052097000,
+        atm:TrackPt201407150052143227,
+        atm:TrackPt201407150053105715,
+        atm:TrackPt201407150053139167,
+        atm:TrackPt201407150053142009,
+        atm:TrackPt201407150054135756,
+        atm:TrackPt201407150054146511,
+        atm:TrackPt201407150055026544,
+        atm:TrackPt201407150055109016,
+        atm:TrackPt201407150055140495,
+        atm:TrackPt201407150056005027,
+        atm:TrackPt201407150056147016,
+        atm:TrackPt201407150056153315,
+        atm:TrackPt201407150057019826,
+        atm:TrackPt201407150057077539,
+        atm:TrackPt201407150057138013,
+        atm:TrackPt201407150058011196,
+        atm:TrackPt201407150058082428,
+        atm:TrackPt201407150058125351,
+        atm:TrackPt201407150058130482,
+        atm:TrackPt201407150059100145,
+        atm:TrackPt201407150059139546,
+        atm:TrackPt201407150100017336,
+        atm:TrackPt201407150100095173,
+        atm:TrackPt201407150100144198,
+        atm:TrackPt201407150102009785,
+        atm:TrackPt201407150102113019,
+        atm:TrackPt201407150103004651,
+        atm:TrackPt201407150103009109,
+        atm:TrackPt201407150103124292,
+        atm:TrackPt201407150104012081,
+        atm:TrackPt201407150104141682,
+        atm:TrackPt201407150105021150,
+        atm:TrackPt201407150105106952,
+        atm:TrackPt201407150106050691,
+        atm:TrackPt201407150106070264,
+        atm:TrackPt201407150106130660,
+        atm:TrackPt201407150107004716,
+        atm:TrackPt201407150107111162,
+        atm:TrackPt201407150109002913,
+        atm:TrackPt201407150109024129,
+        atm:TrackPt201407150109129553,
+        atm:TrackPt201407150109147134,
+        atm:TrackPt201407150110139149,
+        atm:TrackPt201407150110145656,
+        atm:TrackPt201407150112045150,
+        atm:TrackPt201407150113008244,
+        atm:TrackPt201407150114012172,
+        atm:TrackPt201407150115029628,
+        atm:TrackPt201407150115132032,
+        atm:TrackPt201407150116133804,
+        atm:TrackPt201407150118013131,
+        atm:TrackPt201407150119013184,
+        atm:TrackPt201407150120026229,
+        atm:TrackPt201407150120056772,
+        atm:TrackPt201407150120127393,
+        atm:TrackPt201407150121125376,
+        atm:TrackPt201407150122073109,
+        atm:TrackPt201407150123113486 .
+
+atm:ActualRouteASA14-201407150005 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150010162517 ;
+    gen:hasLastItem atm:TrackPt201407150449062713 ;
+    gen:hasSequencedItem atm:TrackPt201407150010162517,
+        atm:TrackPt201407150012004444,
+        atm:TrackPt201407150012159153,
+        atm:TrackPt201407150013137273,
+        atm:TrackPt201407150014001903,
+        atm:TrackPt201407150015044256,
+        atm:TrackPt201407150015162929,
+        atm:TrackPt201407150017010688,
+        atm:TrackPt201407150017143381,
+        atm:TrackPt201407150020016149,
+        atm:TrackPt201407150021034434,
+        atm:TrackPt201407150022040160,
+        atm:TrackPt201407150023023639,
+        atm:TrackPt201407150024010689,
+        atm:TrackPt201407150025043901,
+        atm:TrackPt201407150026042883,
+        atm:TrackPt201407150027040551,
+        atm:TrackPt201407150028039024,
+        atm:TrackPt201407150029057101,
+        atm:TrackPt201407150030039422,
+        atm:TrackPt201407150030081978,
+        atm:TrackPt201407150031077525,
+        atm:TrackPt201407150031100466,
+        atm:TrackPt201407150032062834,
+        atm:TrackPt201407150032073540,
+        atm:TrackPt201407150033039513,
+        atm:TrackPt201407150033099077,
+        atm:TrackPt201407150034052732,
+        atm:TrackPt201407150034069527,
+        atm:TrackPt201407150035025907,
+        atm:TrackPt201407150035146169,
+        atm:TrackPt201407150036121103,
+        atm:TrackPt201407150036133292,
+        atm:TrackPt201407150037089605,
+        atm:TrackPt201407150037095507,
+        atm:TrackPt201407150038061835,
+        atm:TrackPt201407150038125492,
+        atm:TrackPt201407150039068757,
+        atm:TrackPt201407150039085259,
+        atm:TrackPt201407150040051462,
+        atm:TrackPt201407150040122271,
+        atm:TrackPt201407150041053820,
+        atm:TrackPt201407150041143710,
+        atm:TrackPt201407150042063936,
+        atm:TrackPt201407150042120037,
+        atm:TrackPt201407150043085330,
+        atm:TrackPt201407150043124636,
+        atm:TrackPt201407150044089084,
+        atm:TrackPt201407150045052256,
+        atm:TrackPt201407150045126791,
+        atm:TrackPt201407150045151172,
+        atm:TrackPt201407150046140906,
+        atm:TrackPt201407150046145236,
+        atm:TrackPt201407150047094960,
+        atm:TrackPt201407150047154050,
+        atm:TrackPt201407150048071876,
+        atm:TrackPt201407150048136127,
+        atm:TrackPt201407150049074546,
+        atm:TrackPt201407150049141782,
+        atm:TrackPt201407150050120146,
+        atm:TrackPt201407150050135706,
+        atm:TrackPt201407150051134950,
+        atm:TrackPt201407150051160749,
+        atm:TrackPt201407150052092544,
+        atm:TrackPt201407150053028867,
+        atm:TrackPt201407150053099570,
+        atm:TrackPt201407150054003758,
+        atm:TrackPt201407150054128887,
+        atm:TrackPt201407150054149247,
+        atm:TrackPt201407150055094269,
+        atm:TrackPt201407150056016436,
+        atm:TrackPt201407150056105754,
+        atm:TrackPt201407150056160034,
+        atm:TrackPt201407150057078554,
+        atm:TrackPt201407150058046032,
+        atm:TrackPt201407150058127488,
+        atm:TrackPt201407150059051439,
+        atm:TrackPt201407150059116765,
+        atm:TrackPt201407150100025221,
+        atm:TrackPt201407150102036509,
+        atm:TrackPt201407150103033466,
+        atm:TrackPt201407150104042338,
+        atm:TrackPt201407150105070928,
+        atm:TrackPt201407150106067103,
+        atm:TrackPt201407150107052496,
+        atm:TrackPt201407150108062369,
+        atm:TrackPt201407150109045581,
+        atm:TrackPt201407150110049108,
+        atm:TrackPt201407150111057036,
+        atm:TrackPt201407150112101570,
+        atm:TrackPt201407150113078359,
+        atm:TrackPt201407150114115950,
+        atm:TrackPt201407150115118813,
+        atm:TrackPt201407150116098542,
+        atm:TrackPt201407150117069456,
+        atm:TrackPt201407150118115170,
+        atm:TrackPt201407150119138937,
+        atm:TrackPt201407150120130404,
+        atm:TrackPt201407150121112486,
+        atm:TrackPt201407150122110635,
+        atm:TrackPt201407150124009684,
+        atm:TrackPt201407150125018963,
+        atm:TrackPt201407150125127294,
+        atm:TrackPt201407150126148256,
+        atm:TrackPt201407150127125370,
+        atm:TrackPt201407150128123442,
+        atm:TrackPt201407150129132478,
+        atm:TrackPt201407150130118032,
+        atm:TrackPt201407150132025465,
+        atm:TrackPt201407150133014200,
+        atm:TrackPt201407150134013553,
+        atm:TrackPt201407150135014698,
+        atm:TrackPt201407150136005382,
+        atm:TrackPt201407150137012534,
+        atm:TrackPt201407150138043624,
+        atm:TrackPt201407150139050445,
+        atm:TrackPt201407150140047942,
+        atm:TrackPt201407150141032692,
+        atm:TrackPt201407150142035959,
+        atm:TrackPt201407150143031085,
+        atm:TrackPt201407150144075149,
+        atm:TrackPt201407150145059252,
+        atm:TrackPt201407150145126475,
+        atm:TrackPt201407150146101165,
+        atm:TrackPt201407150146109689,
+        atm:TrackPt201407150147053591,
+        atm:TrackPt201407150147110725,
+        atm:TrackPt201407150148047671,
+        atm:TrackPt201407150149014308,
+        atm:TrackPt201407150149063435,
+        atm:TrackPt201407150150037502,
+        atm:TrackPt201407150150044236,
+        atm:TrackPt201407150151009727,
+        atm:TrackPt201407150152026258,
+        atm:TrackPt201407150152063322,
+        atm:TrackPt201407150152166681,
+        atm:TrackPt201407150153067862,
+        atm:TrackPt201407150153125143,
+        atm:TrackPt201407150154048300,
+        atm:TrackPt201407150154102704,
+        atm:TrackPt201407150155043270,
+        atm:TrackPt201407150156037064,
+        atm:TrackPt201407150157099132,
+        atm:TrackPt201407150157134761,
+        atm:TrackPt201407150157144800,
+        atm:TrackPt201407150158026945,
+        atm:TrackPt201407150158088869,
+        atm:TrackPt201407150158145184,
+        atm:TrackPt201407150159081091,
+        atm:TrackPt201407150159130173,
+        atm:TrackPt201407150200037645,
+        atm:TrackPt201407150201041126,
+        atm:TrackPt201407150202037044,
+        atm:TrackPt201407150203076696,
+        atm:TrackPt201407150204068901,
+        atm:TrackPt201407150205079607,
+        atm:TrackPt201407150206074285,
+        atm:TrackPt201407150207058111,
+        atm:TrackPt201407150208072495,
+        atm:TrackPt201407150209113636,
+        atm:TrackPt201407150210091242,
+        atm:TrackPt201407150211086536,
+        atm:TrackPt201407150212077040,
+        atm:TrackPt201407150213081683,
+        atm:TrackPt201407150215008530,
+        atm:TrackPt201407150216016923,
+        atm:TrackPt201407150216124689,
+        atm:TrackPt201407150217106395,
+        atm:TrackPt201407150218097927,
+        atm:TrackPt201407150219113050,
+        atm:TrackPt201407150220120372,
+        atm:TrackPt201407150222015611,
+        atm:TrackPt201407150223002934,
+        atm:TrackPt201407150224002412,
+        atm:TrackPt201407150224125908,
+        atm:TrackPt201407150225111268,
+        atm:TrackPt201407150227016377,
+        atm:TrackPt201407150227111604,
+        atm:TrackPt201407150229026895,
+        atm:TrackPt201407150230030887,
+        atm:TrackPt201407150231019623,
+        atm:TrackPt201407150232017324,
+        atm:TrackPt201407150233012807,
+        atm:TrackPt201407150234014165,
+        atm:TrackPt201407150235054384,
+        atm:TrackPt201407150236049743,
+        atm:TrackPt201407150237039136,
+        atm:TrackPt201407150238041449,
+        atm:TrackPt201407150239030715,
+        atm:TrackPt201407150240035819,
+        atm:TrackPt201407150241038459,
+        atm:TrackPt201407150242061896,
+        atm:TrackPt201407150243059722,
+        atm:TrackPt201407150244062583,
+        atm:TrackPt201407150245044612,
+        atm:TrackPt201407150246062648,
+        atm:TrackPt201407150247050335,
+        atm:TrackPt201407150248053420,
+        atm:TrackPt201407150249081592,
+        atm:TrackPt201407150250079322,
+        atm:TrackPt201407150251084521,
+        atm:TrackPt201407150252071830,
+        atm:TrackPt201407150253071133,
+        atm:TrackPt201407150254058603,
+        atm:TrackPt201407150255097098,
+        atm:TrackPt201407150256101446,
+        atm:TrackPt201407150257093693,
+        atm:TrackPt201407150257097776,
+        atm:TrackPt201407150258090850,
+        atm:TrackPt201407150258095116,
+        atm:TrackPt201407150259090578,
+        atm:TrackPt201407150259093026,
+        atm:TrackPt201407150300081407,
+        atm:TrackPt201407150300088390,
+        atm:TrackPt201407150301094657,
+        atm:TrackPt201407150301094910,
+        atm:TrackPt201407150302092881,
+        atm:TrackPt201407150303003035,
+        atm:TrackPt201407150303109293,
+        atm:TrackPt201407150304003465,
+        atm:TrackPt201407150304117569,
+        atm:TrackPt201407150304118704,
+        atm:TrackPt201407150305110207,
+        atm:TrackPt201407150305117417,
+        atm:TrackPt201407150306113305,
+        atm:TrackPt201407150306117524,
+        atm:TrackPt201407150307106994,
+        atm:TrackPt201407150307108220,
+        atm:TrackPt201407150308100875,
+        atm:TrackPt201407150309023316,
+        atm:TrackPt201407150309096339,
+        atm:TrackPt201407150310016389,
+        atm:TrackPt201407150311013375,
+        atm:TrackPt201407150311022897,
+        atm:TrackPt201407150312009933,
+        atm:TrackPt201407150312016096,
+        atm:TrackPt201407150313011685,
+        atm:TrackPt201407150314005608,
+        atm:TrackPt201407150315008446,
+        atm:TrackPt201407150315106247,
+        atm:TrackPt201407150317006511,
+        atm:TrackPt201407150318024445,
+        atm:TrackPt201407150319029488,
+        atm:TrackPt201407150320031827,
+        atm:TrackPt201407150321029721,
+        atm:TrackPt201407150322022505,
+        atm:TrackPt201407150323011321,
+        atm:TrackPt201407150324014469,
+        atm:TrackPt201407150325046071,
+        atm:TrackPt201407150326052080,
+        atm:TrackPt201407150327046970,
+        atm:TrackPt201407150328037937,
+        atm:TrackPt201407150329041593,
+        atm:TrackPt201407150329044124,
+        atm:TrackPt201407150330029142,
+        atm:TrackPt201407150330038986,
+        atm:TrackPt201407150331035051,
+        atm:TrackPt201407150331043224,
+        atm:TrackPt201407150332041179,
+        atm:TrackPt201407150332061094,
+        atm:TrackPt201407150333037430,
+        atm:TrackPt201407150333067620,
+        atm:TrackPt201407150334055407,
+        atm:TrackPt201407150334065534,
+        atm:TrackPt201407150335056316,
+        atm:TrackPt201407150335059825,
+        atm:TrackPt201407150336053563,
+        atm:TrackPt201407150336059758,
+        atm:TrackPt201407150337048151,
+        atm:TrackPt201407150337060922,
+        atm:TrackPt201407150338042717,
+        atm:TrackPt201407150338055794,
+        atm:TrackPt201407150339043104,
+        atm:TrackPt201407150339052711,
+        atm:TrackPt201407150340057866,
+        atm:TrackPt201407150340076399,
+        atm:TrackPt201407150341076915,
+        atm:TrackPt201407150341084591,
+        atm:TrackPt201407150342072377,
+        atm:TrackPt201407150342078033,
+        atm:TrackPt201407150343073033,
+        atm:TrackPt201407150343078618,
+        atm:TrackPt201407150344060438,
+        atm:TrackPt201407150344068866,
+        atm:TrackPt201407150345057126,
+        atm:TrackPt201407150345058839,
+        atm:TrackPt201407150346059976,
+        atm:TrackPt201407150347062181,
+        atm:TrackPt201407150348084677,
+        atm:TrackPt201407150349091305,
+        atm:TrackPt201407150350080425,
+        atm:TrackPt201407150351077275,
+        atm:TrackPt201407150352083371,
+        atm:TrackPt201407150353072581,
+        atm:TrackPt201407150354081120,
+        atm:TrackPt201407150355064760,
+        atm:TrackPt201407150357005200,
+        atm:TrackPt201407150358000418,
+        atm:TrackPt201407150358088397,
+        atm:TrackPt201407150359091492,
+        atm:TrackPt201407150400093802,
+        atm:TrackPt201407150401089848,
+        atm:TrackPt201407150402084379,
+        atm:TrackPt201407150404016322,
+        atm:TrackPt201407150405014038,
+        atm:TrackPt201407150406022337,
+        atm:TrackPt201407150407011502,
+        atm:TrackPt201407150408008092,
+        atm:TrackPt201407150409007899,
+        atm:TrackPt201407150410001640,
+        atm:TrackPt201407150411033345,
+        atm:TrackPt201407150412026008,
+        atm:TrackPt201407150413026276,
+        atm:TrackPt201407150413071195,
+        atm:TrackPt201407150414023644,
+        atm:TrackPt201407150414083828,
+        atm:TrackPt201407150415012557,
+        atm:TrackPt201407150415043341,
+        atm:TrackPt201407150416026586,
+        atm:TrackPt201407150416059881,
+        atm:TrackPt201407150417017345,
+        atm:TrackPt201407150417062811,
+        atm:TrackPt201407150418018222,
+        atm:TrackPt201407150418068300,
+        atm:TrackPt201407150419047317,
+        atm:TrackPt201407150419067452,
+        atm:TrackPt201407150420033551,
+        atm:TrackPt201407150420070670,
+        atm:TrackPt201407150421037723,
+        atm:TrackPt201407150421055806,
+        atm:TrackPt201407150422045751,
+        atm:TrackPt201407150422054437,
+        atm:TrackPt201407150423032804,
+        atm:TrackPt201407150423054877,
+        atm:TrackPt201407150424028356,
+        atm:TrackPt201407150424071390,
+        atm:TrackPt201407150425028460,
+        atm:TrackPt201407150425067332,
+        atm:TrackPt201407150426067637,
+        atm:TrackPt201407150427057798,
+        atm:TrackPt201407150428054478,
+        atm:TrackPt201407150429053609,
+        atm:TrackPt201407150430054199,
+        atm:TrackPt201407150431061557,
+        atm:TrackPt201407150432062305,
+        atm:TrackPt201407150433048770,
+        atm:TrackPt201407150433074604,
+        atm:TrackPt201407150434054887,
+        atm:TrackPt201407150434072008,
+        atm:TrackPt201407150435055076,
+        atm:TrackPt201407150435067939,
+        atm:TrackPt201407150436048722,
+        atm:TrackPt201407150436073483,
+        atm:TrackPt201407150437046677,
+        atm:TrackPt201407150437063204,
+        atm:TrackPt201407150438067445,
+        atm:TrackPt201407150439035660,
+        atm:TrackPt201407150439059509,
+        atm:TrackPt201407150440037656,
+        atm:TrackPt201407150440050307,
+        atm:TrackPt201407150441044089,
+        atm:TrackPt201407150441051413,
+        atm:TrackPt201407150442056510,
+        atm:TrackPt201407150443007119,
+        atm:TrackPt201407150443064995,
+        atm:TrackPt201407150444000437,
+        atm:TrackPt201407150444043150,
+        atm:TrackPt201407150444070582,
+        atm:TrackPt201407150445044060,
+        atm:TrackPt201407150445068587,
+        atm:TrackPt201407150446049300,
+        atm:TrackPt201407150446069802,
+        atm:TrackPt201407150447052594,
+        atm:TrackPt201407150447067171,
+        atm:TrackPt201407150448060855,
+        atm:TrackPt201407150449062713 .
+
+atm:ActualRouteASQ3831-201407150019 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150026013204 ;
+    gen:hasLastItem atm:TrackPt201407150122119924 ;
+    gen:hasSequencedItem atm:TrackPt201407150026013204,
+        atm:TrackPt201407150026175968,
+        atm:TrackPt201407150027159377,
+        atm:TrackPt201407150028146562,
+        atm:TrackPt201407150029009441,
+        atm:TrackPt201407150030027897,
+        atm:TrackPt201407150030046134,
+        atm:TrackPt201407150030137356,
+        atm:TrackPt201407150031007389,
+        atm:TrackPt201407150031173828,
+        atm:TrackPt201407150032044449,
+        atm:TrackPt201407150033008184,
+        atm:TrackPt201407150033032880,
+        atm:TrackPt201407150034004594,
+        atm:TrackPt201407150034023169,
+        atm:TrackPt201407150034147869,
+        atm:TrackPt201407150035006876,
+        atm:TrackPt201407150036005308,
+        atm:TrackPt201407150036041988,
+        atm:TrackPt201407150037001466,
+        atm:TrackPt201407150037052887,
+        atm:TrackPt201407150037158367,
+        atm:TrackPt201407150038064547,
+        atm:TrackPt201407150038142276,
+        atm:TrackPt201407150039016495,
+        atm:TrackPt201407150039061681,
+        atm:TrackPt201407150039143245,
+        atm:TrackPt201407150039159827,
+        atm:TrackPt201407150040030876,
+        atm:TrackPt201407150040136770,
+        atm:TrackPt201407150041027451,
+        atm:TrackPt201407150041040426,
+        atm:TrackPt201407150042003237,
+        atm:TrackPt201407150042010201,
+        atm:TrackPt201407150042023142,
+        atm:TrackPt201407150042146352,
+        atm:TrackPt201407150042163310,
+        atm:TrackPt201407150043054786,
+        atm:TrackPt201407150044004316,
+        atm:TrackPt201407150044011035,
+        atm:TrackPt201407150044071738,
+        atm:TrackPt201407150045021048,
+        atm:TrackPt201407150045036472,
+        atm:TrackPt201407150045065122,
+        atm:TrackPt201407150046020760,
+        atm:TrackPt201407150046061071,
+        atm:TrackPt201407150046077802,
+        atm:TrackPt201407150046178057,
+        atm:TrackPt201407150047040125,
+        atm:TrackPt201407150047109398,
+        atm:TrackPt201407150047159062,
+        atm:TrackPt201407150048004327,
+        atm:TrackPt201407150048047986,
+        atm:TrackPt201407150048144884,
+        atm:TrackPt201407150049016643,
+        atm:TrackPt201407150049087631,
+        atm:TrackPt201407150050006027,
+        atm:TrackPt201407150050054287,
+        atm:TrackPt201407150050092329,
+        atm:TrackPt201407150050161093,
+        atm:TrackPt201407150051022694,
+        atm:TrackPt201407150051138190,
+        atm:TrackPt201407150051165363,
+        atm:TrackPt201407150052043289,
+        atm:TrackPt201407150052093280,
+        atm:TrackPt201407150053023420,
+        atm:TrackPt201407150053049611,
+        atm:TrackPt201407150053118430,
+        atm:TrackPt201407150054001617,
+        atm:TrackPt201407150054057833,
+        atm:TrackPt201407150054104081,
+        atm:TrackPt201407150055019817,
+        atm:TrackPt201407150055051636,
+        atm:TrackPt201407150055098689,
+        atm:TrackPt201407150056031885,
+        atm:TrackPt201407150056131229,
+        atm:TrackPt201407150056153327,
+        atm:TrackPt201407150057036142,
+        atm:TrackPt201407150057103073,
+        atm:TrackPt201407150058038711,
+        atm:TrackPt201407150058132963,
+        atm:TrackPt201407150059044079,
+        atm:TrackPt201407150100000685,
+        atm:TrackPt201407150100038361,
+        atm:TrackPt201407150100140655,
+        atm:TrackPt201407150102066791,
+        atm:TrackPt201407150102142855,
+        atm:TrackPt201407150103093052,
+        atm:TrackPt201407150104103548,
+        atm:TrackPt201407150105055694,
+        atm:TrackPt201407150106057701,
+        atm:TrackPt201407150107095773,
+        atm:TrackPt201407150108104047,
+        atm:TrackPt201407150109092769,
+        atm:TrackPt201407150110098713,
+        atm:TrackPt201407150111106886,
+        atm:TrackPt201407150112027046,
+        atm:TrackPt201407150112111608,
+        atm:TrackPt201407150113016523,
+        atm:TrackPt201407150114008892,
+        atm:TrackPt201407150115013418,
+        atm:TrackPt201407150116003534,
+        atm:TrackPt201407150117010829,
+        atm:TrackPt201407150117135468,
+        atm:TrackPt201407150118136937,
+        atm:TrackPt201407150119131492,
+        atm:TrackPt201407150121032041,
+        atm:TrackPt201407150122017929,
+        atm:TrackPt201407150122119924 .
+
+atm:ActualRouteASQ4423-201407150037 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150043108464 ;
+    gen:hasLastItem atm:TrackPt201407150133122029 ;
+    gen:hasSequencedItem atm:TrackPt201407150043108464,
+        atm:TrackPt201407150044075821,
+        atm:TrackPt201407150045164562,
+        atm:TrackPt201407150046104481,
+        atm:TrackPt201407150047089632,
+        atm:TrackPt201407150048124841,
+        atm:TrackPt201407150049104356,
+        atm:TrackPt201407150050154124,
+        atm:TrackPt201407150051152091,
+        atm:TrackPt201407150052141510,
+        atm:TrackPt201407150053111463,
+        atm:TrackPt201407150054127641,
+        atm:TrackPt201407150055123150,
+        atm:TrackPt201407150056143390,
+        atm:TrackPt201407150057122584,
+        atm:TrackPt201407150059000062,
+        atm:TrackPt201407150100020140,
+        atm:TrackPt201407150100146238,
+        atm:TrackPt201407150102016735,
+        atm:TrackPt201407150102120870,
+        atm:TrackPt201407150103117312,
+        atm:TrackPt201407150105063779,
+        atm:TrackPt201407150106033064,
+        atm:TrackPt201407150107019752,
+        atm:TrackPt201407150108030263,
+        atm:TrackPt201407150109030752,
+        atm:TrackPt201407150110026724,
+        atm:TrackPt201407150111063653,
+        atm:TrackPt201407150112014070,
+        atm:TrackPt201407150113035178,
+        atm:TrackPt201407150114020985,
+        atm:TrackPt201407150115044367,
+        atm:TrackPt201407150116046705,
+        atm:TrackPt201407150117042982,
+        atm:TrackPt201407150118058855,
+        atm:TrackPt201407150119069597,
+        atm:TrackPt201407150120022125,
+        atm:TrackPt201407150120137803,
+        atm:TrackPt201407150121043557,
+        atm:TrackPt201407150121125361,
+        atm:TrackPt201407150122034525,
+        atm:TrackPt201407150122123295,
+        atm:TrackPt201407150123119561,
+        atm:TrackPt201407150124126625,
+        atm:TrackPt201407150125105578,
+        atm:TrackPt201407150126107564,
+        atm:TrackPt201407150127108796,
+        atm:TrackPt201407150128107281,
+        atm:TrackPt201407150129109206,
+        atm:TrackPt201407150130085862,
+        atm:TrackPt201407150131139759,
+        atm:TrackPt201407150132128718,
+        atm:TrackPt201407150133122029 .
+
+atm:ActualRouteCHQ2945-201407150047 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150053074110 ;
+    gen:hasLastItem atm:TrackPt201407150228095181 ;
+    gen:hasSequencedItem atm:TrackPt201407150053042977,
+        atm:TrackPt201407150053074110,
+        atm:TrackPt201407150054073369,
+        atm:TrackPt201407150055056700,
+        atm:TrackPt201407150056037367,
+        atm:TrackPt201407150057041561,
+        atm:TrackPt201407150057137003,
+        atm:TrackPt201407150059006967,
+        atm:TrackPt201407150100030361,
+        atm:TrackPt201407150102035883,
+        atm:TrackPt201407150102142597,
+        atm:TrackPt201407150104047409,
+        atm:TrackPt201407150105007518,
+        atm:TrackPt201407150106018478,
+        atm:TrackPt201407150107037456,
+        atm:TrackPt201407150108044555,
+        atm:TrackPt201407150108156979,
+        atm:TrackPt201407150110010603,
+        atm:TrackPt201407150111011153,
+        atm:TrackPt201407150112039617,
+        atm:TrackPt201407150113028103,
+        atm:TrackPt201407150114016637,
+        atm:TrackPt201407150115024717,
+        atm:TrackPt201407150116004038,
+        atm:TrackPt201407150117015143,
+        atm:TrackPt201407150118018020,
+        atm:TrackPt201407150119026528,
+        atm:TrackPt201407150120031600,
+        atm:TrackPt201407150120145884,
+        atm:TrackPt201407150122006000,
+        atm:TrackPt201407150123006132,
+        atm:TrackPt201407150124043611,
+        atm:TrackPt201407150125021496,
+        atm:TrackPt201407150126058165,
+        atm:TrackPt201407150127003515,
+        atm:TrackPt201407150128002383,
+        atm:TrackPt201407150129022021,
+        atm:TrackPt201407150130020963,
+        atm:TrackPt201407150131000017,
+        atm:TrackPt201407150132026139,
+        atm:TrackPt201407150133030633,
+        atm:TrackPt201407150133124889,
+        atm:TrackPt201407150135001117,
+        atm:TrackPt201407150136024446,
+        atm:TrackPt201407150137005555,
+        atm:TrackPt201407150138016855,
+        atm:TrackPt201407150139022250,
+        atm:TrackPt201407150140049408,
+        atm:TrackPt201407150140134428,
+        atm:TrackPt201407150142013525,
+        atm:TrackPt201407150143008399,
+        atm:TrackPt201407150144029537,
+        atm:TrackPt201407150145033983,
+        atm:TrackPt201407150145139397,
+        atm:TrackPt201407150147007671,
+        atm:TrackPt201407150148013516,
+        atm:TrackPt201407150149016581,
+        atm:TrackPt201407150150048087,
+        atm:TrackPt201407150152076023,
+        atm:TrackPt201407150152187903,
+        atm:TrackPt201407150153021455,
+        atm:TrackPt201407150154028260,
+        atm:TrackPt201407150156044005,
+        atm:TrackPt201407150157040513,
+        atm:TrackPt201407150157167680,
+        atm:TrackPt201407150158036379,
+        atm:TrackPt201407150158068328,
+        atm:TrackPt201407150159084801,
+        atm:TrackPt201407150200024303,
+        atm:TrackPt201407150201047778,
+        atm:TrackPt201407150202027293,
+        atm:TrackPt201407150203024723,
+        atm:TrackPt201407150204025536,
+        atm:TrackPt201407150205058589,
+        atm:TrackPt201407150206063227,
+        atm:TrackPt201407150207038363,
+        atm:TrackPt201407150208039317,
+        atm:TrackPt201407150209039077,
+        atm:TrackPt201407150210035879,
+        atm:TrackPt201407150211040959,
+        atm:TrackPt201407150212026866,
+        atm:TrackPt201407150213031045,
+        atm:TrackPt201407150214018297,
+        atm:TrackPt201407150214105497,
+        atm:TrackPt201407150215100401,
+        atm:TrackPt201407150216106909,
+        atm:TrackPt201407150217097381,
+        atm:TrackPt201407150218079985,
+        atm:TrackPt201407150219083593,
+        atm:TrackPt201407150220095521,
+        atm:TrackPt201407150222003086,
+        atm:TrackPt201407150222117872,
+        atm:TrackPt201407150223110983,
+        atm:TrackPt201407150224122150,
+        atm:TrackPt201407150226082258,
+        atm:TrackPt201407150228019793,
+        atm:TrackPt201407150228095181 .
+
 ########################################################################
 ## Planned routes ######################################################
 ########################################################################
@@ -2176,6 +2928,73 @@ atm:PlannedRouteAAL20-201407152358 a atm:PlannedFlightRoute ;
         nas:NEC008_AAL20-201407152358_LENDY6,
         nas:NEC009_AAL20-201407152358_KJFK .
 
+atm:PlannedRouteACA722-201407150025 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:24:00"^^xsd:dateTime ;
+    atm:flightRouteString "CYYZ.BULGE2.AIRCO..GEE.GEE111.EXTOL..RKA.HAARP3.KLGA/0124"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:25:59"^^xsd:dateTime .
+
+atm:PlannedRouteASA14-201407150005 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T04:48:00"^^xsd:dateTime ;
+    atm:flightRouteString "KSEA..SEA.J70.MLP..GTF..HILGR..KP09Y..KP06C..GEP..ODI..KG78K..KG72M..EVOTE..NELLS..KEEHO.J584.SLT.FQM3.KEWR/0448"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:24:53"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "0"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_ASA14-201407150005_KSEA ;
+    gen:hasLastItem nas:NEC015_ASA14-201407150005_KEWR ;
+    gen:hasSequencedItem nas:NEC001_ASA14-201407150005_KSEA,
+        nas:NEC002_ASA14-201407150005_J70,
+        nas:NEC003_ASA14-201407150005_GTF,
+        nas:NEC004_ASA14-201407150005_HILGR,
+        nas:NEC005_ASA14-201407150005_KP09Y,
+        nas:NEC006_ASA14-201407150005_KP06C,
+        nas:NEC007_ASA14-201407150005_GEP,
+        nas:NEC008_ASA14-201407150005_ODI,
+        nas:NEC009_ASA14-201407150005_KG78K,
+        nas:NEC010_ASA14-201407150005_KG72M,
+        nas:NEC011_ASA14-201407150005_EVOTE,
+        nas:NEC012_ASA14-201407150005_NELLS,
+        nas:NEC013_ASA14-201407150005_J584,
+        nas:NEC014_ASA14-201407150005_FQM3,
+        nas:NEC015_ASA14-201407150005_KEWR .
+
+atm:PlannedRouteASQ3831-201407150019 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:24:00"^^xsd:dateTime ;
+    atm:flightRouteString "CYYZ.BULGE2.AIRCO.V252.GEE.SHAFF7.KEWR/0124"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:21:13"^^xsd:dateTime .
+
+atm:PlannedRouteASQ4423-201407150037 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:41:00"^^xsd:dateTime ;
+    atm:flightRouteString "KMHT./.HANAA.FLOSI3.KEWR/0141"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:48:21"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_ASQ4423-201407150037_KMHT ;
+    gen:hasLastItem nas:NEC003_ASQ4423-201407150037_KEWR ;
+    gen:hasSequencedItem nas:NEC001_ASQ4423-201407150037_KMHT,
+        nas:NEC002_ASQ4423-201407150037_FLOSI3,
+        nas:NEC003_ASQ4423-201407150037_KEWR .
+
+atm:PlannedRouteCHQ2945-201407150047 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    atm:flightRouteString "KJFK./.EMJAY.J174.WARNN.J174.ORF.J121.BARTL.J4.FLO.HUSTN2.KCLT"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:47:00"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_CHQ2945-201407150047_KJFK ;
+    gen:hasLastItem nas:NEC006_CHQ2945-201407150047_KCLT ;
+    gen:hasSequencedItem nas:NEC001_CHQ2945-201407150047_KJFK,
+        nas:NEC002_CHQ2945-201407150047_J174,
+        nas:NEC003_CHQ2945-201407150047_J121,
+        nas:NEC004_CHQ2945-201407150047_J4,
+        nas:NEC005_CHQ2945-201407150047_HUSTN2,
+        nas:NEC006_CHQ2945-201407150047_KCLT .
+
 ########################################################################
 ## Airlines ############################################################
 ########################################################################
@@ -2187,3 +3006,35 @@ nas:AALairline a nas:AirCarrier ;
     nas:countryOfRegistry "United States"^^xsd:string ;
     nas:iataCarrierCode "AA"^^xsd:string ;
     nas:icaoCarrierCode "AAL"^^xsd:string .
+
+nas:ACAairline a nas:AirCarrier ;
+    rdfs:label "Air Canada"^^xsd:string ;
+    nas:airCarrierName "Air Canada"^^xsd:string ;
+    nas:airlineCallsign "AIR CANADA"^^xsd:string ;
+    nas:countryOfRegistry "Canada"^^xsd:string ;
+    nas:iataCarrierCode "AC"^^xsd:string ;
+    nas:icaoCarrierCode "ACA"^^xsd:string .
+
+nas:ASAairline a nas:AirCarrier ;
+    rdfs:label "Alaska Airlines"^^xsd:string ;
+    nas:airCarrierName "Alaska Airlines"^^xsd:string ;
+    nas:airlineCallsign "ALASKA"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "AS"^^xsd:string ;
+    nas:icaoCarrierCode "ASA"^^xsd:string .
+
+nas:ASQairline a nas:AirCarrier ;
+    rdfs:label "Atlantic Southeast Airlines"^^xsd:string ;
+    nas:airCarrierName "Atlantic Southeast Airlines"^^xsd:string ;
+    nas:airlineCallsign "ACEY"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "EV"^^xsd:string ;
+    nas:icaoCarrierCode "ASQ"^^xsd:string .
+
+nas:CHQairline a nas:AirCarrier ;
+    rdfs:label "Chautauqua Airlines"^^xsd:string ;
+    nas:airCarrierName "Chautauqua Airlines"^^xsd:string ;
+    nas:airlineCallsign "CHAUTAUQUA"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "RP"^^xsd:string ;
+    nas:icaoCarrierCode "CHQ"^^xsd:string .

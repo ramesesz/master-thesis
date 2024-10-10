@@ -93,6 +93,8 @@ def get_triples(
     mapped_iris = [result[1] for result in filtered_results]
 
     if mode == "default":
+        # This is for evaluation. Reads the file containing golden standards.
+        # TODO: Consider if load_rdf_triples is necessary, or just loading a csv in N3 format
         if path_to_graph is None or format is None:
             raise ValueError("In 'default' mode, 'path_to_graph' and 'format' cannot be None.")
 

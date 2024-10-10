@@ -1,0 +1,100 @@
+# baseURI: https://data.nasa.gov/ontologies/atmonto/equipmentInst
+# imports: https://data.nasa.gov/ontologies/atmonto/equipment
+
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix data: <https://data.nasa.gov/ontologies/atmonto/data#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix gen: <https://data.nasa.gov/ontologies/atmonto/general#> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eqp:AircraftWakeCategoryA1 a eqp:AircraftWakeCategory ;
+    rdfs:label "Category A Aircraft Wake Category"^^xsd:string ;
+    eqp:maxTakeoffWeightLowBound 300000 ;
+    eqp:wakeCategoryID "A"^^xsd:string ;
+    eqp:wingSpanLowBound 246 .
+
+eqp:AircraftWakeCategoryB2 a eqp:AircraftWakeCategory ;
+    rdfs:label "Category B Aircraft Wake Category"^^xsd:string ;
+    eqp:maxTakeoffWeightLowBound 300000 ;
+    eqp:wakeCategoryID "B"^^xsd:string ;
+    eqp:wingSpanHighBound 245 ;
+    eqp:wingSpanLowBound 176 .
+
+eqp:AircraftWakeCategoryC3 a eqp:AircraftWakeCategory ;
+    rdfs:label "Category C Aircraft Wake Category"^^xsd:string ;
+    eqp:maxTakeoffWeightLowBound 300000 ;
+    eqp:wakeCategoryID "C"^^xsd:string ;
+    eqp:wingSpanHighBound 175 ;
+    eqp:wingSpanLowBound 126 .
+
+eqp:AircraftWakeCategoryD4 a eqp:AircraftWakeCategory ;
+    rdfs:label "Category D Aircraft Wake Category"^^xsd:string ;
+    eqp:maxTaxeoffWeightHighBound 299999 ;
+    eqp:wakeCategoryID "D"^^xsd:string ;
+    eqp:wingSpanHighBound 175 ;
+    eqp:wingSpanLowBound 126 .
+
+eqp:AircraftWakeCategoryD5 a eqp:AircraftWakeCategory ;
+    rdfs:label "Category D Aircraft Wake Category"^^xsd:string ;
+    eqp:maxTakeoffWeightLowBound 41001 ;
+    eqp:wakeCategoryID "D"^^xsd:string ;
+    eqp:wingSpanHighBound 125 ;
+    eqp:wingSpanLowBound 91 .
+
+eqp:AircraftWakeCategoryE6 a eqp:AircraftWakeCategory ;
+    rdfs:label "Category E Aircraft Wake Category"^^xsd:string ;
+    eqp:maxTakeoffWeightLowBound 41001 ;
+    eqp:wakeCategoryID "E"^^xsd:string ;
+    eqp:wingSpanHighBound 90 ;
+    eqp:wingSpanLowBound 66 .
+
+eqp:AircraftWakeCategoryF7 a eqp:AircraftWakeCategory ;
+    rdfs:label "Category F Aircraft Wake Category"^^xsd:string ;
+    eqp:maxTaxeoffWeightHighBound 40999 ;
+    eqp:wakeCategoryID "F"^^xsd:string ;
+    eqp:wingSpanHighBound 125 .
+
+eqp:AircraftWakeCategoryF8 a eqp:AircraftWakeCategory ;
+    rdfs:label "Category F Aircraft Wake Category"^^xsd:string ;
+    eqp:maxTaxeoffWeightHighBound 15499 ;
+    eqp:wakeCategoryID "F"^^xsd:string .
+
+eqp:ElectricEngineType a eqp:EngineType ;
+    rdfs:label "Electric Engine Type Category"^^xsd:string ;
+    eqp:engineTypeDescription "electric engine"^^xsd:string .
+
+eqp:HighAircraftWeightClass a eqp:AircraftWeightClass ;
+    rdfs:label "High Aircraft Weight Class"^^xsd:string ;
+    eqp:aircraftWeightHighBound 9999999 ;
+    eqp:aircraftWeightLowBound 300000 .
+
+eqp:JetEngineType a eqp:EngineType ;
+    rdfs:label "Jet Engine Type Category"^^xsd:string ;
+    eqp:engineTypeDescription "jet engine"^^xsd:string .
+
+eqp:LowAircraftWeightClass a eqp:AircraftWeightClass ;
+    rdfs:label "Low Aircraft Weight Class"^^xsd:string ;
+    eqp:aircraftWeightHighBound 15500 ;
+    eqp:aircraftWeightLowBound 0 .
+
+eqp:MediumAircraftWeightClass a eqp:AircraftWeightClass ;
+    rdfs:label "Medium Aircraft Weight Class"^^xsd:string ;
+    eqp:aircraftWeightHighBound 300000 ;
+    eqp:aircraftWeightLowBound 15501 .
+
+eqp:PropellerEngineType a eqp:EngineType ;
+    rdfs:label "Propeller Engine Type Category"^^xsd:string ;
+    eqp:engineTypeDescription "prop (piston) engine"^^xsd:string .
+
+eqp:TurboPropEngineType a eqp:EngineType ;
+    rdfs:label "Turbo Prop Engine Type Category"^^xsd:string ;
+    eqp:engineTypeDescription "turboprop/turboshaft engine"^^xsd:string .
+
+<https://data.nasa.gov/ontologies/atmonto/equipmentInst> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/equipment> .
+

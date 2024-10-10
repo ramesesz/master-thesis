@@ -1,0 +1,732 @@
+# baseURI: https://data.nasa.gov/ontologies/atmonto/acInst
+# imports: https://data.nasa.gov/ontologies/atmonto/equipment
+
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix data: <https://data.nasa.gov/ontologies/atmonto/data#> .
+@prefix doc: <https://data.nasa.gov/ontologies/atmonto/documentation#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix gen: <https://data.nasa.gov/ontologies/atmonto/general#> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.nasa.gov/ontologies/atmonto/acInst> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/equipment> .
+
+eqp:AircraftN11548 a eqp:Aircraft ;
+    rdfs:label "Aircraft N11548"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "145565"^^xsd:string ;
+    eqp:certificateIssueDate "2002-05-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Embraer-EMB145-LR ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 50040713 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 55 ;
+    eqp:registrationNumber "N11548"^^xsd:string .
+
+eqp:AircraftN12238 a eqp:Aircraft ;
+    rdfs:label "Aircraft N12238"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "28804"^^xsd:string ;
+    eqp:certificateIssueDate "1999-10-12"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-824 ;
+    eqp:manufactureYear 1999 ;
+    eqp:modeSCode 50057002 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 149 ;
+    eqp:registrationNumber "N12238"^^xsd:string .
+
+eqp:AircraftN16112 a eqp:Aircraft ;
+    rdfs:label "Aircraft N16112"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9999999999999999"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "145660"^^xsd:string ;
+    eqp:certificateIssueDate "2003-06-25"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Embraer-EMB145-XR ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 50173773 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 55 ;
+    eqp:registrationNumber "N16112"^^xsd:string .
+
+eqp:AircraftN16234 a eqp:Aircraft ;
+    rdfs:label "Aircraft N16234"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "28946"^^xsd:string ;
+    eqp:certificateIssueDate "1999-08-06"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-824 ;
+    eqp:manufactureYear 1999 ;
+    eqp:modeSCode 50175772 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 149 ;
+    eqp:registrationNumber "N16234"^^xsd:string .
+
+eqp:AircraftN24702 a eqp:Aircraft ;
+    rdfs:label "Aircraft N24702"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "28763"^^xsd:string ;
+    eqp:certificateIssueDate "1998-04-01"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-724 ;
+    eqp:manufactureYear 1998 ;
+    eqp:modeSCode 50446163 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 149 ;
+    eqp:registrationNumber "N24702"^^xsd:string .
+
+eqp:AircraftN26549 a eqp:Aircraft ;
+    rdfs:label "Aircraft N26549"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "145571"^^xsd:string ;
+    eqp:certificateIssueDate "2002-05-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Embraer-EMB145-LR ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 50512226 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 55 ;
+    eqp:registrationNumber "N26549"^^xsd:string .
+
+eqp:AircraftN27733 a eqp:Aircraft ;
+    rdfs:label "Aircraft N27733"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "28800"^^xsd:string ;
+    eqp:certificateIssueDate "1999-09-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-724 ;
+    eqp:manufactureYear 1999 ;
+    eqp:modeSCode 50541532 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 149 ;
+    eqp:registrationNumber "N27733"^^xsd:string .
+
+eqp:AircraftN312US a eqp:Aircraft ;
+    rdfs:label "Aircraft N312US"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "152"^^xsd:string ;
+    eqp:certificateIssueDate "2013-01-31"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A320-211 ;
+    eqp:manufactureYear 1990 ;
+    eqp:modeSCode 50650022 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 182 ;
+    eqp:registrationNumber "N312US"^^xsd:string .
+
+eqp:AircraftN317NB a eqp:Aircraft ;
+    rdfs:label "Aircraft N317NB"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "1324"^^xsd:string ;
+    eqp:certificateIssueDate "2009-12-31"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A319-114 ;
+    eqp:manufactureYear 2000 ;
+    eqp:modeSCode 50661000 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 145 ;
+    eqp:registrationNumber "N317NB"^^xsd:string .
+
+eqp:AircraftN323NB a eqp:Aircraft ;
+    rdfs:label "Aircraft N323NB"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "1453"^^xsd:string ;
+    eqp:certificateIssueDate "2009-12-31"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A319-114 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 50675243 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 145 ;
+    eqp:registrationNumber "N323NB"^^xsd:string .
+
+eqp:AircraftN333NB a eqp:Aircraft ;
+    rdfs:label "Aircraft N333NB"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "1582"^^xsd:string ;
+    eqp:certificateIssueDate "2009-12-31"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A319-114 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 50721042 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 145 ;
+    eqp:registrationNumber "N333NB"^^xsd:string .
+
+eqp:AircraftN354NB a eqp:Aircraft ;
+    rdfs:label "Aircraft N354NB"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "1833"^^xsd:string ;
+    eqp:certificateIssueDate "2009-12-31"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A319-114 ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 50772327 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 145 ;
+    eqp:registrationNumber "N354NB"^^xsd:string .
+
+eqp:AircraftN37263 a eqp:Aircraft ;
+    rdfs:label "Aircraft N37263"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31583"^^xsd:string ;
+    eqp:certificateIssueDate "2001-08-01"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-824 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 51037177 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 149 ;
+    eqp:registrationNumber "N37263"^^xsd:string .
+
+eqp:AircraftN37273 a eqp:Aircraft ;
+    rdfs:label "Aircraft N37273"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31591"^^xsd:string ;
+    eqp:certificateIssueDate "2001-12-05"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-824 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 51037242 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 149 ;
+    eqp:registrationNumber "N37273"^^xsd:string .
+
+eqp:AircraftN37274 a eqp:Aircraft ;
+    rdfs:label "Aircraft N37274"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31592"^^xsd:string ;
+    eqp:certificateIssueDate "2002-02-05"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-824 ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 51037243 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 149 ;
+    eqp:registrationNumber "N37274"^^xsd:string .
+
+eqp:AircraftN374NW a eqp:Aircraft ;
+    rdfs:label "Aircraft N374NW"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "1646"^^xsd:string ;
+    eqp:certificateIssueDate "2009-12-31"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A320-212 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 51041750 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 182 ;
+    eqp:registrationNumber "N374NW"^^xsd:string .
+
+eqp:AircraftN38417 a eqp:Aircraft ;
+    rdfs:label "Aircraft N38417"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "31665"^^xsd:string ;
+    eqp:certificateIssueDate "2008-03-13"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-924ER ;
+    eqp:manufactureYear 2008 ;
+    eqp:modeSCode 51066301 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 191 ;
+    eqp:registrationNumber "N38417"^^xsd:string .
+
+eqp:AircraftN389DA a eqp:Aircraft ;
+    rdfs:label "Aircraft N389DA"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "30376"^^xsd:string ;
+    eqp:certificateIssueDate "2000-04-19"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-832 ;
+    eqp:manufactureYear 2000 ;
+    eqp:modeSCode 51076405 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 189 ;
+    eqp:registrationNumber "N389DA"^^xsd:string .
+
+eqp:AircraftN413AS a eqp:Aircraft ;
+    rdfs:label "Aircraft N413AS"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "ALASKA AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "35205"^^xsd:string ;
+    eqp:certificateIssueDate "2013-03-28"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-990ER ;
+    eqp:manufactureYear 2013 ;
+    eqp:modeSCode 51157526 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 222 ;
+    eqp:registrationNumber "N413AS"^^xsd:string .
+
+eqp:AircraftN502MQ a eqp:Aircraft ;
+    rdfs:label "Aircraft N502MQ"^^xsd:string ;
+    eqp:registrationNumber "N502MQ"^^xsd:string .
+
+eqp:AircraftN525MQ a eqp:Aircraft ;
+    rdfs:label "Aircraft N525MQ"^^xsd:string ;
+    eqp:registrationNumber "N525MQ"^^xsd:string .
+
+eqp:AircraftN527MQ a eqp:Aircraft ;
+    rdfs:label "Aircraft N527MQ"^^xsd:string ;
+    eqp:registrationNumber "N527MQ"^^xsd:string .
+
+eqp:AircraftN546UW a eqp:Aircraft ;
+    rdfs:label "Aircraft N546UW"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "US AIRWAYS INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "4885"^^xsd:string ;
+    eqp:certificateIssueDate "2011-10-24"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A321-231 ;
+    eqp:manufactureYear 2011 ;
+    eqp:modeSCode 51570015 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 379 ;
+    eqp:registrationNumber "N546UW"^^xsd:string .
+
+eqp:AircraftN565JB a eqp:Aircraft ;
+    rdfs:label "Aircraft N565JB"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "2031"^^xsd:string ;
+    eqp:certificateIssueDate "2003-06-18"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A320-232 ;
+    eqp:manufactureYear 2003 ;
+    eqp:modeSCode 51635107 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 200 ;
+    eqp:registrationNumber "N565JB"^^xsd:string .
+
+eqp:AircraftN589UA a eqp:Aircraft ;
+    rdfs:label "Aircraft N589UA"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "28707"^^xsd:string ;
+    eqp:certificateIssueDate "2013-04-01"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-757-222 ;
+    eqp:manufactureYear 1997 ;
+    eqp:modeSCode 51714432 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 178 ;
+    eqp:registrationNumber "N589UA"^^xsd:string .
+
+eqp:AircraftN605QX a eqp:Aircraft ;
+    rdfs:label "Aircraft N605QX"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.8203709047992731"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "10022"^^xsd:string ;
+    eqp:certificateIssueDate "2002-02-25"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Bombardier-CL6002B19-100 ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 51755506 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 80 ;
+    eqp:registrationNumber "N605QX"^^xsd:string .
+
+eqp:AircraftN624VA a eqp:Aircraft ;
+    rdfs:label "Aircraft N624VA"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "AFS INVESTMENTS 67 LLC"^^xsd:string ;
+    eqp:aircraftSerialNumber "2778"^^xsd:string ;
+    eqp:certificateIssueDate "2006-05-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A320-214 ;
+    eqp:manufactureYear 2006 ;
+    eqp:modeSCode 52023365 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 182 ;
+    eqp:registrationNumber "N624VA"^^xsd:string .
+
+eqp:AircraftN63820 a eqp:Aircraft ;
+    rdfs:label "Aircraft N63820"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "43534"^^xsd:string ;
+    eqp:certificateIssueDate "2014-03-28"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-924ER ;
+    eqp:manufactureYear 2014 ;
+    eqp:modeSCode 52057053 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 191 ;
+    eqp:registrationNumber "N63820"^^xsd:string .
+
+eqp:AircraftN639VA a eqp:Aircraft ;
+    rdfs:label "Aircraft N639VA"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "3016"^^xsd:string ;
+    eqp:certificateIssueDate "2010-08-17"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A320-214 ;
+    eqp:manufactureYear 2007 ;
+    eqp:modeSCode 52060407 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 182 ;
+    eqp:registrationNumber "N639VA"^^xsd:string .
+
+eqp:AircraftN652JB a eqp:Aircraft ;
+    rdfs:label "Aircraft N652JB"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "JETBLUE AIRWAYS CORP"^^xsd:string ;
+    eqp:aircraftSerialNumber "3029"^^xsd:string ;
+    eqp:certificateIssueDate "2007-02-07"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A320-232 ;
+    eqp:manufactureYear 2007 ;
+    eqp:modeSCode 52112362 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 200 ;
+    eqp:registrationNumber "N652JB"^^xsd:string .
+
+eqp:AircraftN68801 a eqp:Aircraft ;
+    rdfs:label "Aircraft N68801"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "42740"^^xsd:string ;
+    eqp:certificateIssueDate "2013-08-01"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-924ER ;
+    eqp:manufactureYear 2013 ;
+    eqp:modeSCode 52221541 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 191 ;
+    eqp:registrationNumber "N68801"^^xsd:string .
+
+eqp:AircraftN68821 a eqp:Aircraft ;
+    rdfs:label "Aircraft N68821"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "43535"^^xsd:string ;
+    eqp:certificateIssueDate "2014-04-16"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-924ER ;
+    eqp:manufactureYear 2014 ;
+    eqp:modeSCode 52221647 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 191 ;
+    eqp:registrationNumber "N68821"^^xsd:string .
+
+eqp:AircraftN706SW a eqp:Aircraft ;
+    rdfs:label "Aircraft N706SW"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9999999999999997"^^xsd:float ;
+    eqp:aircraftRegistrant "SOUTHWEST AIRLINES CO"^^xsd:string ;
+    eqp:aircraftSerialNumber "27840"^^xsd:string ;
+    eqp:certificateIssueDate "1998-07-08"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-7H4 ;
+    eqp:manufactureYear 1998 ;
+    eqp:modeSCode 52266175 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 140 ;
+    eqp:registrationNumber "N706SW"^^xsd:string .
+
+eqp:AircraftN713TW a eqp:Aircraft ;
+    rdfs:label "Aircraft N713TW"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "28173"^^xsd:string ;
+    eqp:certificateIssueDate "2013-07-16"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-757-2Q8 ;
+    eqp:manufactureYear 1997 ;
+    eqp:modeSCode 52304360 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 178 ;
+    eqp:registrationNumber "N713TW"^^xsd:string .
+
+eqp:AircraftN740SW a eqp:Aircraft ;
+    rdfs:label "Aircraft N740SW"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9999999999999997"^^xsd:float ;
+    eqp:aircraftRegistrant "SOUTHWEST AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "29276"^^xsd:string ;
+    eqp:certificateIssueDate "1999-01-27"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-7H4 ;
+    eqp:manufactureYear 1998 ;
+    eqp:modeSCode 52372057 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 140 ;
+    eqp:registrationNumber "N740SW"^^xsd:string .
+
+eqp:AircraftN765SW a eqp:Aircraft ;
+    rdfs:label "Aircraft N765SW"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9999999999999997"^^xsd:float ;
+    eqp:aircraftRegistrant "SOUTHWEST AIRLINES CO"^^xsd:string ;
+    eqp:aircraftSerialNumber "29805"^^xsd:string ;
+    eqp:certificateIssueDate "2000-04-25"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-7H4 ;
+    eqp:manufactureYear 2000 ;
+    eqp:modeSCode 52452700 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 140 ;
+    eqp:registrationNumber "N765SW"^^xsd:string .
+
+eqp:AircraftN78438 a eqp:Aircraft ;
+    rdfs:label "Aircraft N78438"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "33533"^^xsd:string ;
+    eqp:certificateIssueDate "2009-07-22"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-924ER ;
+    eqp:manufactureYear 2009 ;
+    eqp:modeSCode 52521104 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 191 ;
+    eqp:registrationNumber "N78438"^^xsd:string .
+
+eqp:AircraftN784AA a eqp:Aircraft ;
+    rdfs:label "Aircraft N784AA"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9879913721631963"^^xsd:float ;
+    eqp:aircraftRegistrant "HAYDEN CHARLES J JR"^^xsd:string ;
+    eqp:aircraftSerialNumber "D-6858"^^xsd:string ;
+    eqp:certificateIssueDate "1991-02-28"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Beech-35-P35 ;
+    eqp:manufactureYear 1961 ;
+    eqp:modeSCode 52517543 ;
+    eqp:numberOfEngines 1 ;
+    eqp:numberOfSeats 4 ;
+    eqp:registrationNumber "N784AA"^^xsd:string .
+
+eqp:AircraftN79279 a eqp:Aircraft ;
+    rdfs:label "Aircraft N79279"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "31597"^^xsd:string ;
+    eqp:certificateIssueDate "2003-11-26"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-824 ;
+    eqp:manufactureYear 2003 ;
+    eqp:modeSCode 52541342 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 149 ;
+    eqp:registrationNumber "N79279"^^xsd:string .
+
+eqp:AircraftN816NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N816NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WILMINGTON TRUST CO TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31081"^^xsd:string ;
+    eqp:certificateIssueDate "2009-12-03"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2009 ;
+    eqp:modeSCode 52620337 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N816NN"^^xsd:string .
+
+eqp:AircraftN822DN a eqp:Aircraft ;
+    rdfs:label "Aircraft N822DN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31933"^^xsd:string ;
+    eqp:certificateIssueDate "2014-06-12"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-932ER ;
+    eqp:manufactureYear 2014 ;
+    eqp:modeSCode 52634241 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 222 ;
+    eqp:registrationNumber "N822DN"^^xsd:string .
+
+eqp:AircraftN826NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N826NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "AMERICAN AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "31089"^^xsd:string ;
+    eqp:certificateIssueDate "2010-02-26"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2010 ;
+    eqp:modeSCode 52644136 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N826NN"^^xsd:string .
+
+eqp:AircraftN832UA a eqp:Aircraft ;
+    rdfs:label "Aircraft N832UA"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "1321"^^xsd:string ;
+    eqp:certificateIssueDate "2013-04-01"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A319-131 ;
+    eqp:manufactureYear 2000 ;
+    eqp:modeSCode 52660613 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 179 ;
+    eqp:registrationNumber "N832UA"^^xsd:string .
+
+eqp:AircraftN843UA a eqp:Aircraft ;
+    rdfs:label "Aircraft N843UA"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "1573"^^xsd:string ;
+    eqp:certificateIssueDate "2013-04-01"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A319-131 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 52706301 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 179 ;
+    eqp:registrationNumber "N843UA"^^xsd:string .
+
+eqp:AircraftN849UA a eqp:Aircraft ;
+    rdfs:label "Aircraft N849UA"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "UNITED AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "1649"^^xsd:string ;
+    eqp:certificateIssueDate "2013-04-01"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Airbus-A319-131 ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 52721413 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 179 ;
+    eqp:registrationNumber "N849UA"^^xsd:string .
+
+eqp:AircraftN871NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N871NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WILMINGTON TRUST CO TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31127"^^xsd:string ;
+    eqp:certificateIssueDate "2011-11-14"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2011 ;
+    eqp:modeSCode 52775506 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N871NN"^^xsd:string .
+
+eqp:AircraftN879NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N879NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31133"^^xsd:string ;
+    eqp:certificateIssueDate "2011-11-21"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2011 ;
+    eqp:modeSCode 53014376 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N879NN"^^xsd:string .
+
+eqp:AircraftN904DE a eqp:Aircraft ;
+    rdfs:label "Aircraft N904DE"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9824854119015275"^^xsd:float ;
+    eqp:aircraftRegistrant "DELTA AIR LINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "53409"^^xsd:string ;
+    eqp:certificateIssueDate "1992-06-03"^^xsd:date ;
+    eqp:hasAircraftModel eqp:McdonnellDouglas-MD88-88 ;
+    eqp:manufactureYear 1992 ;
+    eqp:modeSCode 53077130 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 142 ;
+    eqp:registrationNumber "N904DE"^^xsd:string .
+
+eqp:AircraftN913DL a eqp:Aircraft ;
+    rdfs:label "Aircraft N913DL"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9824854119015275"^^xsd:float ;
+    eqp:aircraftRegistrant "WILMINGTON TRUST COMPANY TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "49544"^^xsd:string ;
+    eqp:certificateIssueDate "1988-06-21"^^xsd:date ;
+    eqp:hasAircraftModel eqp:McdonnellDouglas-MD88-88 ;
+    eqp:manufactureYear 1988 ;
+    eqp:modeSCode 53121046 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 142 ;
+    eqp:registrationNumber "N913DL"^^xsd:string .
+
+eqp:AircraftN917DL a eqp:Aircraft ;
+    rdfs:label "Aircraft N917DL"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9824854119015275"^^xsd:float ;
+    eqp:aircraftRegistrant "WILMINGTON TRUST CO TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "49573"^^xsd:string ;
+    eqp:certificateIssueDate "2007-09-27"^^xsd:date ;
+    eqp:hasAircraftModel eqp:McdonnellDouglas-MD88-88 ;
+    eqp:manufactureYear 1988 ;
+    eqp:modeSCode 53130402 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 142 ;
+    eqp:registrationNumber "N917DL"^^xsd:string .
+
+eqp:AircraftN931WN a eqp:Aircraft ;
+    rdfs:label "Aircraft N931WN"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9999999999999997"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "36637"^^xsd:string ;
+    eqp:certificateIssueDate "2009-04-10"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-7H4 ;
+    eqp:manufactureYear 2009 ;
+    eqp:modeSCode 53165541 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 140 ;
+    eqp:registrationNumber "N931WN"^^xsd:string .
+
+eqp:AircraftN933AN a eqp:Aircraft ;
+    rdfs:label "Aircraft N933AN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "AMERICAN AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "30080"^^xsd:string ;
+    eqp:certificateIssueDate "2000-05-15"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2000 ;
+    eqp:modeSCode 53170333 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N933AN"^^xsd:string .
+
+eqp:AircraftN942NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N942NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "33492"^^xsd:string ;
+    eqp:certificateIssueDate "2013-12-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2013 ;
+    eqp:modeSCode 53212717 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N942NN"^^xsd:string .
+
+eqp:AircraftN958UW a eqp:Aircraft ;
+    rdfs:label "Aircraft N958UW"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9999999999999999"^^xsd:float ;
+    eqp:aircraftRegistrant "US AIRWAYS INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "19000164"^^xsd:string ;
+    eqp:certificateIssueDate "2008-04-04"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Embraer-ERJ190-100IGW ;
+    eqp:manufactureYear 2008 ;
+    eqp:modeSCode 53252066 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 20 ;
+    eqp:registrationNumber "N958UW"^^xsd:string .
+
+eqp:AircraftN962WN a eqp:Aircraft ;
+    rdfs:label "Aircraft N962WN"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9999999999999997"^^xsd:float ;
+    eqp:aircraftRegistrant "SOUTHWEST AIRLINES CO"^^xsd:string ;
+    eqp:aircraftSerialNumber "36963"^^xsd:string ;
+    eqp:certificateIssueDate "2011-08-18"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-7H4 ;
+    eqp:manufactureYear 2011 ;
+    eqp:modeSCode 53262625 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 140 ;
+    eqp:registrationNumber "N962WN"^^xsd:string .
+
+eqp:AircraftN963AN a eqp:Aircraft ;
+    rdfs:label "Aircraft N963AN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "AMERICAN AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "29543"^^xsd:string ;
+    eqp:certificateIssueDate "2001-05-04"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 53263530 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N963AN"^^xsd:string .
+
+eqp:AircraftN994AT a eqp:Aircraft ;
+    rdfs:label "Aircraft N994AT"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9999798463148213"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "55138"^^xsd:string ;
+    eqp:certificateIssueDate "2002-11-05"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-717-200 ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 53360621 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 100 ;
+    eqp:registrationNumber "N994AT"^^xsd:string .
+

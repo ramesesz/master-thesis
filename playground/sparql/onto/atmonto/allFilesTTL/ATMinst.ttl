@@ -1,0 +1,675 @@
+# baseURI: https://data.nasa.gov/ontologies/atmonto/ATMinst
+# imports: https://data.nasa.gov/ontologies/atmonto/ATM
+
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix gen: <https://data.nasa.gov/ontologies/atmonto/general#> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+atm:GDP02320120908
+  rdf:type atm:GroundDelayProgramTMI ;
+  atm:advisoryNumber 23 ;
+  atm:controlledNASelement nas:KORDairport ;
+  atm:departureScope atm:GDPdscope02320120908 ;
+  atm:effectiveEndDay nas:Day20120908 ;
+  atm:effectiveEndTime "2012-09-08T22:59:59"^^xsd:dateTime ;
+  atm:effectiveStartDay nas:Day20120908 ;
+  atm:effectiveStartTime "2012-09-08T18:15:00"^^xsd:dateTime ;
+  atm:impactingCondition "runway"^^xsd:string ;
+  atm:impactingConditionMessage "thunderstorms"^^xsd:string ;
+  atm:initiativeComments "LANDING RY27R/27L/28 DEP22L/32L/28. THUNDERSTORMS MOVING THROUGH"^^xsd:string ;
+  atm:issuedDay nas:Day20120908 ;
+  atm:issuedTime "2012-09-08T18:30:00"^^xsd:dateTime ;
+  atm:modeledBy atm:GDPmodel02320120908 ;
+  rdfs:label "GDP 023 on 2012-09-08"^^xsd:string ;
+.
+atm:GDPdscope02320120908
+  rdf:type atm:AirportSpec ;
+  atm:includesAirport nas:CYHZairport ;
+  atm:includesAirport nas:CYOWairport ;
+  atm:includesAirport nas:CYULairport ;
+  atm:includesAirport nas:CYYZairport ;
+  atm:withinARTCC nas:ZABcenter ;
+  atm:withinARTCC nas:ZAUcenter ;
+  atm:withinARTCC nas:ZBWcenter ;
+  atm:withinARTCC nas:ZDCcenter ;
+  atm:withinARTCC nas:ZDVcenter ;
+  atm:withinARTCC nas:ZFWcenter ;
+  atm:withinARTCC nas:ZHUcenter ;
+  atm:withinARTCC nas:ZIDcenter ;
+  atm:withinARTCC nas:ZJXcenter ;
+  atm:withinARTCC nas:ZKCcenter ;
+  atm:withinARTCC nas:ZLAcenter ;
+  atm:withinARTCC nas:ZLCcenter ;
+  atm:withinARTCC nas:ZMAcenter ;
+  atm:withinARTCC nas:ZMEcenter ;
+  atm:withinARTCC nas:ZMPcenter ;
+  atm:withinARTCC nas:ZNYcenter ;
+  atm:withinARTCC nas:ZOAcenter ;
+  atm:withinARTCC nas:ZOBcenter ;
+  atm:withinARTCC nas:ZSEcenter ;
+  atm:withinARTCC nas:ZTLcenter ;
+  rdfs:label "Departure Scope for GDP 023 on 2012/09/08"^^xsd:string ;
+.
+atm:GDPmodel02320120908
+  rdf:type atm:GDPmodel ;
+  atm:adlDay nas:Day20120908 ;
+  atm:adlTime "17:30:00"^^xsd:time ;
+  atm:delayAssignmentMode "UDP"^^xsd:string ;
+  atm:modeledArrivalRate atm:PARseq02320120908 ;
+  atm:modeledAverageDelay 18 ;
+  atm:modeledMaximumDelay 46 ;
+  rdfs:label "GDPmodel02320120908"^^xsd:string ;
+.
+atm:J518SubPath07620120908_01
+  rdf:type atm:AirspaceRouteSegment ;
+  gen:subsequenceEndIndex 10 ;
+  gen:subsequenceOf nas:J518 ;
+  gen:subsequenceStartIndex 3 ;
+  rdfs:label "J518 Subpath07620120908 01"^^xsd:string ;
+.
+atm:NEC001-DAL1512-201209081903
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:CADIT6a ;
+  gen:hasNextItem atm:NEC002-DAL1512-201209081903 ;
+  gen:sequenceNumber 1 ;
+  rdfs:label "NEC001-DAL1512-201209081903"^^xsd:string ;
+.
+atm:NEC001_rtePath07620120908_01
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:BUFFR ;
+  gen:hasNextItem atm:NEC002_rtePath07620120908_01 ;
+  gen:sequenceNumber 1 ;
+  rdfs:label "NEC001 rtePath07620120908 01"^^xsd:string ;
+.
+atm:NEC001_rtePath07620120908_02
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:MGM ;
+  gen:hasNextItem atm:NEC002_rtePath07620120908_02 ;
+  gen:sequenceNumber 1 ;
+  rdfs:label "NEC001 rtePath07620120908 02"^^xsd:string ;
+.
+atm:NEC001_rtePath07620120908_03
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:LAL ;
+  gen:hasNextItem atm:NEC002_rtePath07620120908_03 ;
+  gen:sequenceNumber 1 ;
+  rdfs:label "NEC001 rtePath07620120908 03"^^xsd:string ;
+.
+atm:NEC001_rtePath07620120908_04
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:ATL ;
+  gen:hasNextItem atm:NEC002_rtePath07620120908_04 ;
+  gen:sequenceNumber 1 ;
+  rdfs:label "NEC001 rtePath07620120908 04"^^xsd:string ;
+.
+atm:NEC001_rtePath07620120908_05
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:GQO ;
+  gen:hasNextItem atm:NEC002_rtePath07620120908_05 ;
+  gen:sequenceNumber 1 ;
+  rdfs:label "NEC001 rtePath07620120908 05"^^xsd:string ;
+.
+atm:NEC001_rtePath07620120908_06
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:VXV ;
+  gen:hasNextItem atm:NEC002_rtePath07620120908_06 ;
+  gen:sequenceNumber 1 ;
+  rdfs:label "NEC001 rtePath07620120908 06"^^xsd:string ;
+.
+atm:NEC002-DAL1512-201209081903
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:CADIT ;
+  gen:hasNextItem atm:NEC003-DAL1512-201209081903 ;
+  gen:sequenceNumber 2 ;
+  rdfs:label "NEC002-DAL1512-201209081903"^^xsd:string ;
+.
+atm:NEC002_rtePath07620120908_01
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement atm:J518SubPath07620120908_01 ;
+  gen:hasNextItem atm:NEC003_rtePath07620120908_01 ;
+  gen:sequenceNumber 2 ;
+  rdfs:label "NEC002 rtePath07620120908 01"^^xsd:string ;
+.
+atm:NEC002_rtePath07620120908_02
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:PXV ;
+  gen:hasNextItem atm:NEC003_rtePath07620120908_02 ;
+  gen:sequenceNumber 2 ;
+  rdfs:label "NEC002 rtePath07620120908 02"^^xsd:string ;
+.
+atm:NEC002_rtePath07620120908_03
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:MGM ;
+  gen:hasNextItem atm:NEC003_rtePath07620120908_03 ;
+  gen:sequenceNumber 2 ;
+  rdfs:label "NEC002 rtePath07620120908 03"^^xsd:string ;
+.
+atm:NEC002_rtePath07620120908_04
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:MGM ;
+  gen:hasNextItem atm:NEC003_rtePath07620120908_04 ;
+  gen:sequenceNumber 2 ;
+  rdfs:label "NEC002 rtePath07620120908 04"^^xsd:string ;
+.
+atm:NEC002_rtePath07620120908_05
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:FAM ;
+  gen:hasNextItem atm:NEC003_rtePath07620120908_05 ;
+  gen:sequenceNumber 2 ;
+  rdfs:label "NEC002 rtePath07620120908 05"^^xsd:string ;
+.
+atm:NEC002_rtePath07620120908_06
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:GQO ;
+  gen:hasNextItem atm:NEC003_rtePath07620120908_06 ;
+  gen:sequenceNumber 2 ;
+  rdfs:label "NEC002 rtePath07620120908 06"^^xsd:string ;
+.
+atm:NEC003-DAL1512-201209081903
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:GLAZR ;
+  gen:hasNextItem atm:NEC004-DAL1512-201209081903 ;
+  gen:sequenceNumber 3 ;
+  rdfs:label "NEC003-DAL1512-201209081903"^^xsd:string ;
+.
+atm:NEC003_rtePath07620120908_01
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:DJB ;
+  gen:hasNextItem atm:NEC004_rtePath07620120908_01 ;
+  gen:sequenceNumber 3 ;
+  rdfs:label "NEC003 rtePath07620120908 01"^^xsd:string ;
+.
+atm:NEC003_rtePath07620120908_02
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:MZZ ;
+  gen:hasNextItem atm:NEC004_rtePath07620120908_02 ;
+  gen:sequenceNumber 3 ;
+  rdfs:label "NEC003 rtePath07620120908 02"^^xsd:string ;
+.
+atm:NEC003_rtePath07620120908_03
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:PXV ;
+  gen:hasNextItem atm:NEC004_rtePath07620120908_03 ;
+  gen:sequenceNumber 3 ;
+  rdfs:label "NEC003 rtePath07620120908 03"^^xsd:string ;
+.
+atm:NEC003_rtePath07620120908_04
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:PXV ;
+  gen:hasNextItem atm:NEC004_rtePath07620120908_04 ;
+  gen:sequenceNumber 3 ;
+  rdfs:label "NEC003 rtePath07620120908 04"^^xsd:string ;
+.
+atm:NEC003_rtePath07620120908_05
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:FTZ ;
+  gen:hasNextItem atm:NEC004_rtePath07620120908_05 ;
+  gen:sequenceNumber 3 ;
+  rdfs:label "NEC003 rtePath07620120908 05"^^xsd:string ;
+.
+atm:NEC003_rtePath07620120908_06
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:FAM ;
+  gen:hasNextItem atm:NEC004_rtePath07620120908_06 ;
+  gen:sequenceNumber 3 ;
+  rdfs:label "NEC003 rtePath07620120908 06"^^xsd:string ;
+.
+atm:NEC004-DAL1512-201209081903
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:HOPAP ;
+  gen:hasNextItem atm:NEC005-DAL1512-201209081903 ;
+  gen:sequenceNumber 4 ;
+  rdfs:label "NEC004-DAL1512-201209081903"^^xsd:string ;
+.
+atm:NEC004_rtePath07620120908_01
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:FNT ;
+  gen:hasNextItem atm:NEC005_rtePath07620120908_01 ;
+  gen:sequenceNumber 4 ;
+  rdfs:label "NEC004 rtePath07620120908 01"^^xsd:string ;
+.
+atm:NEC004_rtePath07620120908_02
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:ROYKO3b ;
+  gen:sequenceNumber 4 ;
+  rdfs:label "NEC004 rtePath07620120908 02"^^xsd:string ;
+.
+atm:NEC004_rtePath07620120908_03
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:MZZ ;
+  gen:hasNextItem atm:NEC005_rtePath07620120908_03 ;
+  gen:sequenceNumber 4 ;
+  rdfs:label "NEC004 rtePath07620120908 03"^^xsd:string ;
+.
+atm:NEC004_rtePath07620120908_04
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:MZZ ;
+  gen:hasNextItem atm:NEC005_rtePath07620120908_04 ;
+  gen:sequenceNumber 4 ;
+  rdfs:label "NEC004 rtePath07620120908 04"^^xsd:string ;
+.
+atm:NEC004_rtePath07620120908_05
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:BENKY1c ;
+  gen:sequenceNumber 4 ;
+  rdfs:label "NEC004 rtePath07620120908 05"^^xsd:string ;
+.
+atm:NEC004_rtePath07620120908_06
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:FTZ ;
+  gen:hasNextItem atm:NEC005_rtePath07620120908_06 ;
+  gen:sequenceNumber 4 ;
+  rdfs:label "NEC004 rtePath07620120908 06"^^xsd:string ;
+.
+atm:NEC005-DAL1512-201209081903
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:VOSTK ;
+  gen:hasNextItem atm:NEC006-DAL1512-201209081903 ;
+  gen:sequenceNumber 5 ;
+  rdfs:label "NEC005-DAL1512-201209081903"^^xsd:string ;
+.
+atm:NEC005_rtePath07620120908_01
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:WYNDE4a ;
+  gen:sequenceNumber 5 ;
+  rdfs:label "NEC005 rtePath07620120908 01"^^xsd:string ;
+.
+atm:NEC005_rtePath07620120908_03
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:ROYKO3b ;
+  gen:sequenceNumber 5 ;
+  rdfs:label "NEC005 rtePath07620120908 03"^^xsd:string ;
+.
+atm:NEC005_rtePath07620120908_04
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:ROYKO3b ;
+  gen:sequenceNumber 5 ;
+  rdfs:label "NEC005 rtePath07620120908 04"^^xsd:string ;
+.
+atm:NEC005_rtePath07620120908_06
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:BENKY1c ;
+  gen:sequenceNumber 5 ;
+  rdfs:label "NEC005 rtePath07620120908 06"^^xsd:string ;
+.
+atm:NEC006-DAL1512-201209081903
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:HEVAN ;
+  gen:hasNextItem atm:NEC007-DAL1512-201209081903 ;
+  gen:sequenceNumber 6 ;
+  rdfs:label "NEC006-DAL1512-201209081903"^^xsd:string ;
+.
+atm:NEC007-DAL1512-201209081903
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:MZZ ;
+  gen:hasNextItem atm:NEC008-DAL1512-201209081903 ;
+  gen:sequenceNumber 7 ;
+  rdfs:label "NEC007-DAL1512-201209081903"^^xsd:string ;
+.
+atm:NEC008-DAL1512-201209081903
+  rdf:type atm:NavElementContainer ;
+  atm:hasNavElement nas:ROYKO3b ;
+  gen:sequenceNumber 8 ;
+  rdfs:label "NEC008-DAL1512-201209081903"^^xsd:string ;
+.
+atm:PARcon02320120908_1
+  rdf:type atm:ProgramArrivalRateContainer ;
+  atm:hasNumericParameter atm:ProgramArrivalRate_72 ;
+  gen:hasNextItem atm:PARcon02320120908_2 ;
+  gen:sequenceNumber 1 ;
+  rdfs:label "PARcon02320120908_1"^^xsd:string ;
+.
+atm:PARcon02320120908_2
+  rdf:type atm:ProgramArrivalRateContainer ;
+  atm:hasNumericParameter atm:ProgramArrivalRate_72 ;
+  gen:hasNextItem atm:PARcon02320120908_3 ;
+  gen:sequenceNumber 2 ;
+  rdfs:label "PARcon02320120908 2"^^xsd:string ;
+.
+atm:PARcon02320120908_3
+  rdf:type atm:ProgramArrivalRateContainer ;
+  atm:hasNumericParameter atm:ProgramArrivalRate_104 ;
+  gen:sequenceNumber 3 ;
+  rdfs:label "PARcon02320120908 3"^^xsd:string ;
+.
+atm:PARseq02320120908
+  rdf:type atm:ProgramArrivalRateSequence ;
+  gen:hasFirstItem atm:PARcon02320120908_1 ;
+  gen:hasLastItem atm:PARcon02320120908_3 ;
+  gen:hasSequencedItem atm:PARcon02320120908_1 ;
+  gen:hasSequencedItem atm:PARcon02320120908_2 ;
+  gen:hasSequencedItem atm:PARcon02320120908_3 ;
+  rdfs:label "PARseq02320120908"^^xsd:string ;
+.
+atm:PlannedRouteDAL1512-201209081903
+  rdf:type atm:PlannedFlightRoute ;
+  gen:hasFirstItem atm:NEC001-DAL1512-201209081903 ;
+  gen:hasLastItem atm:NEC008-DAL1512-201209081903 ;
+  gen:hasSequencedItem atm:NEC001-DAL1512-201209081903 ;
+  gen:hasSequencedItem atm:NEC002-DAL1512-201209081903 ;
+  gen:hasSequencedItem atm:NEC003-DAL1512-201209081903 ;
+  gen:hasSequencedItem atm:NEC004-DAL1512-201209081903 ;
+  gen:hasSequencedItem atm:NEC005-DAL1512-201209081903 ;
+  gen:hasSequencedItem atm:NEC006-DAL1512-201209081903 ;
+  gen:hasSequencedItem atm:NEC007-DAL1512-201209081903 ;
+  gen:hasSequencedItem atm:NEC008-DAL1512-201209081903 ;
+.
+atm:ProgramArrivalRate_104
+  rdf:type atm:ProgramArrivalRate ;
+  rdfs:label "Program arrival rate 104"^^xsd:string ;
+.
+atm:ProgramArrivalRate_72
+  rdf:type atm:ProgramArrivalRate ;
+  gen:parameterValue 72 ;
+  rdfs:label "Program arrival rate 72"^^xsd:string ;
+.
+atm:RRT07620120908
+  rdf:type atm:ReRouteTMI ;
+  atm:advisoryNumber 76 ;
+  atm:allowedRoute atm:seg07620120908_01 ;
+  atm:allowedRoute atm:seg07620120908_02 ;
+  atm:allowedRoute atm:seg07620120908_03 ;
+  atm:allowedRoute atm:seg07620120908_04 ;
+  atm:allowedRoute atm:seg07620120908_05 ;
+  atm:allowedRoute atm:seg07620120908_06 ;
+  atm:controlledNASelement nas:ZIDcenter ;
+  atm:effectiveEndDay nas:Day20120908 ;
+  atm:effectiveEndTime "2012-09-08T20:59:59"^^xsd:dateTime ;
+  atm:effectiveStartDay nas:Day20120908 ;
+  atm:effectiveStartTime "2012-09-08T18:00:00"^^xsd:dateTime ;
+  atm:extensionProbability "LOW"^^xsd:string ;
+  atm:flightInclusionExclusion atm:RRTscope07620120908 ;
+  atm:implementationStatus "RQD"^^xsd:string ;
+  atm:initiativeComments "REPLACES ADVZY 052"^^xsd:string ;
+  atm:issuedDay nas:Day20120908 ;
+  atm:issuedTime "2012-09-08T16:00:00"^^xsd:dateTime ;
+  atm:reRouteReason "WEATHER"^^xsd:string ;
+  atm:reRouteTimeType "FCA Flight List"^^xsd:string ;
+  atm:reRouteType "ROUTE"^^xsd:string ;
+  rdfs:label "RRT07620120908"^^xsd:string ;
+.
+atm:RRTdest07620120908
+  rdf:type atm:AirportSpec ;
+  atm:includesAirport nas:KORDairport ;
+  rdfs:label "RRTdest07620120908"^^xsd:string ;
+.
+atm:RRTorig07620120908
+  rdf:type atm:AirportSpec ;
+  atm:includesAirport nas:KADWairport ;
+  atm:includesAirport nas:KATLairport ;
+  atm:includesAirport nas:KBHMairport ;
+  atm:includesAirport nas:KBWIairport ;
+  atm:includesAirport nas:KCAEairport ;
+  atm:includesAirport nas:KCHAairport ;
+  atm:includesAirport nas:KCHSairport ;
+  atm:includesAirport nas:KDCAairport ;
+  atm:includesAirport nas:KIADairport ;
+  atm:includesAirport nas:KJAXairport ;
+  atm:includesAirport nas:KSAVairport ;
+  atm:includesAirport nas:KTYSairport ;
+  atm:withinARTCC nas:ZJXcenter ;
+  atm:withinARTCC nas:ZMAcenter ;
+  rdfs:label "RRTorig07620120908"^^xsd:string ;
+.
+atm:RRTorig07620120908_1
+  rdf:type atm:AirportSpec ;
+  atm:includesAirport nas:KADWairport ;
+  atm:includesAirport nas:KBWIairport ;
+  atm:includesAirport nas:KDCAairport ;
+  atm:includesAirport nas:KIADairport ;
+  rdfs:label "RRTorig07620120908 1"^^xsd:string ;
+.
+atm:RRTorig07620120908_2
+  rdf:type atm:AirportSpec ;
+  atm:includesAirport nas:KBHMairport ;
+  atm:includesAirport nas:KCAEairport ;
+  atm:includesAirport nas:KCHSairport ;
+  atm:includesAirport nas:KJAXairport ;
+  atm:includesAirport nas:KSAVairport ;
+  atm:withinARTCC nas:ZJXcenter ;
+  rdfs:label "RRTorig07620120908 2"^^xsd:string ;
+.
+atm:RRTorig07620120908_3
+  rdf:type atm:AirportSpec ;
+  atm:withinARTCC nas:ZMAcenter ;
+  rdfs:label "RRTorig07620120908 3"^^xsd:string ;
+.
+atm:RRTorig07620120908_4
+  rdf:type atm:AirportSpec ;
+  atm:includesAirport nas:KATLairport ;
+  atm:withinARTCC nas:ZMAcenter ;
+  rdfs:label "RRTorig07620120908 4"^^xsd:string ;
+.
+atm:RRTorig07620120908_5
+  rdf:type atm:AirportSpec ;
+  atm:includesAirport nas:KCHAairport ;
+  rdfs:label "RRTorig07620120908 5"^^xsd:string ;
+.
+atm:RRTorig07620120908_6
+  rdf:type atm:AirportSpec ;
+  atm:includesAirport nas:KTYSairport ;
+  rdfs:label "RRTorig07620120908 6"^^xsd:string ;
+.
+atm:RRTscope07620120908
+  rdf:type atm:FlightSpec ;
+  atm:mustHaveDestination atm:RRTdest07620120908 ;
+  atm:mustHaveOrigin atm:RRTorig07620120908 ;
+  rdfs:label "RRTspec07620120908"^^xsd:string ;
+.
+atm:rteCon07620120908_01
+  rdf:type atm:FlightSpec ;
+  atm:mustHaveDestination atm:RRTdest07620120908 ;
+  atm:mustHaveOrigin atm:RRTorig07620120908_1 ;
+  rdfs:label "rteCon07620120908 01"^^xsd:string ;
+.
+atm:rteCon07620120908_02
+  rdf:type atm:FlightSpec ;
+  atm:mustHaveDestination atm:RRTdest07620120908 ;
+  atm:mustHaveOrigin atm:RRTorig07620120908_2 ;
+  rdfs:label "rteCon07620120908 02"^^xsd:string ;
+.
+atm:rteCon07620120908_03
+  rdf:type atm:FlightSpec ;
+  atm:mustHaveDestination atm:RRTdest07620120908 ;
+  atm:mustHaveOrigin atm:RRTorig07620120908_3 ;
+  rdfs:label "rteCon07620120908 03"^^xsd:string ;
+.
+atm:rteCon07620120908_04
+  rdf:type atm:FlightSpec ;
+  atm:mustHaveDestination atm:RRTdest07620120908 ;
+  atm:mustHaveOrigin atm:RRTorig07620120908_4 ;
+  rdfs:label "rteCon07620120908 04"^^xsd:string ;
+.
+atm:rteCon07620120908_05
+  rdf:type atm:FlightSpec ;
+  atm:mustHaveDestination atm:RRTdest07620120908 ;
+  atm:mustHaveOrigin atm:RRTorig07620120908_5 ;
+  rdfs:label "rteCon07620120908 05"^^xsd:string ;
+.
+atm:rteCon07620120908_06
+  rdf:type atm:FlightSpec ;
+  atm:mustHaveDestination atm:RRTdest07620120908 ;
+  atm:mustHaveOrigin atm:RRTorig07620120908_6 ;
+  rdfs:label "rteCon07620120908 06"^^xsd:string ;
+.
+atm:rtePath07620120908_01
+  rdf:type atm:PlannedFlightRoute ;
+  gen:hasFirstItem atm:NEC001_rtePath07620120908_01 ;
+  gen:hasLastItem atm:NEC005_rtePath07620120908_01 ;
+  gen:hasSequencedItem atm:NEC001_rtePath07620120908_01 ;
+  gen:hasSequencedItem atm:NEC002_rtePath07620120908_01 ;
+  gen:hasSequencedItem atm:NEC003_rtePath07620120908_01 ;
+  gen:hasSequencedItem atm:NEC004_rtePath07620120908_01 ;
+  gen:hasSequencedItem atm:NEC005_rtePath07620120908_01 ;
+  rdfs:label "rtePath07620120908 01"^^xsd:string ;
+.
+atm:rtePath07620120908_02
+  rdf:type atm:PlannedFlightRoute ;
+  gen:hasFirstItem atm:NEC001_rtePath07620120908_02 ;
+  gen:hasLastItem atm:NEC004_rtePath07620120908_02 ;
+  gen:hasSequencedItem atm:NEC001_rtePath07620120908_02 ;
+  gen:hasSequencedItem atm:NEC002_rtePath07620120908_02 ;
+  gen:hasSequencedItem atm:NEC003_rtePath07620120908_02 ;
+  gen:hasSequencedItem atm:NEC004_rtePath07620120908_02 ;
+  rdfs:label "rtePath07620120908 02"^^xsd:string ;
+.
+atm:rtePath07620120908_03
+  rdf:type atm:PlannedFlightRoute ;
+  gen:hasFirstItem atm:NEC001_rtePath07620120908_03 ;
+  gen:hasLastItem atm:NEC005_rtePath07620120908_03 ;
+  gen:hasSequencedItem atm:NEC001_rtePath07620120908_03 ;
+  gen:hasSequencedItem atm:NEC002_rtePath07620120908_03 ;
+  gen:hasSequencedItem atm:NEC003_rtePath07620120908_03 ;
+  gen:hasSequencedItem atm:NEC004_rtePath07620120908_03 ;
+  gen:hasSequencedItem atm:NEC005_rtePath07620120908_03 ;
+  rdfs:label "rtePath07620120908 03"^^xsd:string ;
+.
+atm:rtePath07620120908_04
+  rdf:type atm:PlannedFlightRoute ;
+  gen:hasFirstItem atm:NEC001_rtePath07620120908_04 ;
+  gen:hasLastItem atm:NEC005_rtePath07620120908_04 ;
+  gen:hasSequencedItem atm:NEC001_rtePath07620120908_04 ;
+  gen:hasSequencedItem atm:NEC002_rtePath07620120908_04 ;
+  gen:hasSequencedItem atm:NEC003_rtePath07620120908_04 ;
+  gen:hasSequencedItem atm:NEC004_rtePath07620120908_04 ;
+  gen:hasSequencedItem atm:NEC005_rtePath07620120908_04 ;
+  rdfs:label "rtePath07620120908 04"^^xsd:string ;
+.
+atm:rtePath07620120908_05
+  rdf:type atm:PlannedFlightRoute ;
+  gen:hasFirstItem atm:NEC001_rtePath07620120908_05 ;
+  gen:hasLastItem atm:NEC004_rtePath07620120908_05 ;
+  gen:hasSequencedItem atm:NEC001_rtePath07620120908_05 ;
+  gen:hasSequencedItem atm:NEC002_rtePath07620120908_05 ;
+  gen:hasSequencedItem atm:NEC003_rtePath07620120908_05 ;
+  gen:hasSequencedItem atm:NEC004_rtePath07620120908_05 ;
+  rdfs:label "rtePath07620120908 05"^^xsd:string ;
+.
+atm:rtePath07620120908_06
+  rdf:type atm:PlannedFlightRoute ;
+  gen:hasFirstItem atm:NEC001_rtePath07620120908_06 ;
+  gen:hasLastItem atm:NEC005_rtePath07620120908_06 ;
+  gen:hasSequencedItem atm:NEC001_rtePath07620120908_06 ;
+  gen:hasSequencedItem atm:NEC002_rtePath07620120908_06 ;
+  gen:hasSequencedItem atm:NEC003_rtePath07620120908_06 ;
+  gen:hasSequencedItem atm:NEC004_rtePath07620120908_06 ;
+  gen:hasSequencedItem atm:NEC005_rtePath07620120908_06 ;
+  rdfs:label "rtePath07620120908 06"^^xsd:string ;
+.
+atm:seg07620120908_01
+  rdf:type atm:ReRouteSegment ;
+  atm:reRouteConstraint atm:rteCon07620120908_01 ;
+  atm:reRoutePath atm:rtePath07620120908_01 ;
+  rdfs:label "rte07620120908 01"^^xsd:string ;
+.
+atm:seg07620120908_02
+  rdf:type atm:ReRouteSegment ;
+  atm:reRouteConstraint atm:rteCon07620120908_02 ;
+  atm:reRoutePath atm:rtePath07620120908_02 ;
+  rdfs:label "seg07620120908 02"^^xsd:string ;
+.
+atm:seg07620120908_03
+  rdf:type atm:ReRouteSegment ;
+  atm:reRouteConstraint atm:rteCon07620120908_03 ;
+  atm:reRoutePath atm:rtePath07620120908_03 ;
+  rdfs:label "seg07620120908 03"^^xsd:string ;
+.
+atm:seg07620120908_04
+  rdf:type atm:ReRouteSegment ;
+  atm:reRouteConstraint atm:rteCon07620120908_04 ;
+  atm:reRoutePath atm:rtePath07620120908_04 ;
+  rdfs:label "seg07620120908 04"^^xsd:string ;
+.
+atm:seg07620120908_05
+  rdf:type atm:ReRouteSegment ;
+  atm:reRouteConstraint atm:rteCon07620120908_05 ;
+  atm:reRoutePath atm:rtePath07620120908_05 ;
+  rdfs:label "seg07620120908 05"^^xsd:string ;
+.
+atm:seg07620120908_06
+  rdf:type atm:ReRouteSegment ;
+  atm:reRouteConstraint atm:rteCon07620120908_06 ;
+  atm:reRoutePath atm:rtePath07620120908_06 ;
+  rdfs:label "seg07620120908 06"^^xsd:string ;
+.
+<https://data.nasa.gov/ontologies/atmonto/ATMinst>
+  rdf:type owl:Ontology ;
+  owl:imports <https://data.nasa.gov/ontologies/atmonto/ATM> ;
+.
+nas:BENKY1c
+  rdf:type nas:TransitionRoute ;
+  gen:hasFirstItem nas:NEC001-BENKY1c ;
+  gen:hasLastItem nas:NEC004-BENKY1c ;
+  gen:hasSequencedItem nas:NEC001-BENKY1c ;
+  gen:hasSequencedItem nas:NEC002-BENKY1c ;
+  gen:hasSequencedItem nas:NEC003-BENKY1c ;
+  gen:hasSequencedItem nas:NEC004-BENKY1c ;
+  rdfs:label "BENKY1c"^^xsd:string ;
+.
+nas:CADIT6a
+  rdf:type nas:TransitionRoute ;
+  gen:hasFirstItem nas:NEC001-CADIT6a ;
+  gen:hasLastItem nas:NEC003-CADIT6a ;
+  gen:hasSequencedItem nas:NEC001-CADIT6a ;
+  gen:hasSequencedItem nas:NEC002-CADIT6a ;
+  gen:hasSequencedItem nas:NEC003-CADIT6a ;
+  rdfs:label "CADIT6a"^^xsd:string ;
+.
+nas:J518
+  rdf:type nas:JetRoute ;
+  gen:hasFirstItem nas:NEC001-J518 ;
+  gen:hasLastItem nas:NEC011-J518 ;
+  gen:hasSequencedItem nas:NEC001-J518 ;
+  gen:hasSequencedItem nas:NEC002-J518 ;
+  gen:hasSequencedItem nas:NEC003-J518 ;
+  gen:hasSequencedItem nas:NEC004-J518 ;
+  gen:hasSequencedItem nas:NEC005-J518 ;
+  gen:hasSequencedItem nas:NEC006-J518 ;
+  gen:hasSequencedItem nas:NEC007-J518 ;
+  gen:hasSequencedItem nas:NEC008-J518 ;
+  gen:hasSequencedItem nas:NEC009-J518 ;
+  gen:hasSequencedItem nas:NEC010-J518 ;
+  gen:hasSequencedItem nas:NEC011-J518 ;
+  rdfs:label "J518"^^xsd:string ;
+.
+nas:ROYKO3b
+  rdf:type nas:TransitionRoute ;
+  gen:hasFirstItem nas:NEC001-ROYKO3b ;
+  gen:hasLastItem nas:NEC012-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC001-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC002-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC003-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC004-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC005-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC006-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC007-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC008-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC009-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC010-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC011-ROYKO3b ;
+  gen:hasSequencedItem nas:NEC012-ROYKO3b ;
+  rdfs:label "ROYKO3b"^^xsd:string ;
+.
+nas:WYNDE4a
+  rdf:type nas:TransitionRoute ;
+  gen:hasFirstItem nas:NEC001-WYNDE4a ;
+  gen:hasLastItem nas:NEC008-WYNDE4a ;
+  gen:hasSequencedItem nas:NEC001-WYNDE4a ;
+  gen:hasSequencedItem nas:NEC002-WYNDE4a ;
+  gen:hasSequencedItem nas:NEC003-WYNDE4a ;
+  gen:hasSequencedItem nas:NEC004-WYNDE4a ;
+  gen:hasSequencedItem nas:NEC005-WYNDE4a ;
+  gen:hasSequencedItem nas:NEC006-WYNDE4a ;
+  gen:hasSequencedItem nas:NEC007-WYNDE4a ;
+  gen:hasSequencedItem nas:NEC008-WYNDE4a ;
+  rdfs:label "WYNDE4a"^^xsd:string ;
+.

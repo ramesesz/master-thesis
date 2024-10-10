@@ -1,0 +1,205 @@
+# baseURI: https://data.nasa.gov/ontologies/atmonto/NASinst
+# imports: https://data.nasa.gov/ontologies/atmonto/NAS
+
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix gen: <https://data.nasa.gov/ontologies/atmonto/general#> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+nas:CZEcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Edmonton ACC" ;
+  nas:artccID "CZE" ;
+.
+nas:CZMcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Moncton ACC" ;
+  nas:artccID "CZM" ;
+.
+nas:CZUcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Montreal ACC" ;
+  nas:artccID "CZU" ;
+.
+nas:CZVcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Vancouver ACC" ;
+  nas:artccID "CZV" ;
+.
+nas:CZWcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Winnipeg ACC" ;
+  nas:artccID "CZW" ;
+.
+nas:CZXcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Gander ACC" ;
+  nas:artccID "CZX" ;
+.
+nas:CZYcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Toronto ACC" ;
+  nas:artccID "CZY" ;
+.
+nas:UScommandCenter
+  rdf:type nas:ATCSCC ;
+  rdfs:label "US command center" ;
+.
+nas:ZABcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Albuquerque ARTCC" ;
+  nas:artccID "ZAB" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZANcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Anchorage ARTCC" ;
+  nas:artccID "ZAN" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZAUcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Chicago ARTCC" ;
+  nas:artccID "ZAU" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZBWcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Boston ARTCC" ;
+  nas:artccID "ZBW" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZDCcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Washington ARTCC" ;
+  nas:artccID "ZDC" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZDVcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Denver ARTCC" ;
+  nas:artccID "ZDV" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZELAN
+  rdf:type atm:LatLonFix ;
+  rdfs:label "ZELAN" ;
+  atm:fixName "ZELAN" ;
+  gen:latitude "33.811278"^^xsd:float ;
+  gen:longitude "-84.580694"^^xsd:float ;
+.
+nas:ZFWcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Fort Worth ARTCC" ;
+  nas:artccID "ZFW" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZHNcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Honolulu ARTCC" ;
+  nas:artccID "ZHN" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZHUcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Houston ARTCC" ;
+  nas:artccID "ZHU" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZIDcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Indianapolis ARTCC" ;
+  nas:artccID "ZID" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZJXcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Jacksonville ARTCC" ;
+  nas:artccID "ZJX" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZKCcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Kansas city ARTCC" ;
+  nas:artccID "ZKC" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZLAcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Los Angeles ARTCC" ;
+  nas:artccID "ZLA" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZLCcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Salt Lake ARTCC" ;
+  nas:artccID "ZLC" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZMAcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Miami ARTCC" ;
+  nas:artccID "ZMA" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZMEcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Memphis ARTCC" ;
+  nas:artccID "ZME" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZMPcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Minneapolis ARTCC" ;
+  nas:artccID "ZMP" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZNYcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "New York ARTCC" ;
+  nas:artccID "ZNY" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZOAcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Oakland ARTCC" ;
+  nas:artccID "ZOA" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZOBcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Cleveland ARTCC" ;
+  nas:artccID "ZOB" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZSEcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Seattle ARTCC" ;
+  nas:artccID "ZSE" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZSUcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "San Juan CERAP" ;
+  nas:artccID "ZSU" ;
+.
+nas:ZTLcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Atlanta ARTCC" ;
+  nas:artccID "ZTL" ;
+  nas:hasLOAwith nas:UScommandCenter ;
+.
+nas:ZUAcenter
+  rdf:type nas:ARTCC ;
+  rdfs:label "Guam CERAP" ;
+  nas:artccID "ZUA" ;
+.
+<https://data.nasa.gov/ontologies/atmonto/NASinst>
+  rdf:type owl:Ontology ;
+  owl:imports <https://data.nasa.gov/ontologies/atmonto/NAS> ;
+.

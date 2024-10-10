@@ -1,0 +1,1911 @@
+# baseURI: https://data.nasa.gov/ontologies/atmonto/TRACONinst
+# imports: https://data.nasa.gov/ontologies/atmonto/NAS
+
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix data: <https://data.nasa.gov/ontologies/atmonto/data#> .
+@prefix doc: <https://data.nasa.gov/ontologies/atmonto/documentation#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix gen: <https://data.nasa.gov/ontologies/atmonto/general#> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nas:AbileneTowerTRACON a nas:TRACON ;
+    rdfs:label "Abilene Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KABIairport,
+        nas:KDYSairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Abilene"^^xsd:string ;
+    nas:hasTRACONid "ABI"^^xsd:string ;
+    nas:hasTRACONname "Abilene Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:Akron-CantonTowerTRACON a nas:TRACON ;
+    rdfs:label "Akron-Canton Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCAKairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "North Canton"^^xsd:string ;
+    nas:hasTRACONid "CAK"^^xsd:string ;
+    nas:hasTRACONname "Akron-Canton Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Ohio"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AlbanyTowerTRACON a nas:TRACON ;
+    rdfs:label "Albany Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KALBairport,
+        nas:KSCHairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "Latham"^^xsd:string ;
+    nas:hasTRACONid "ALB"^^xsd:string ;
+    nas:hasTRACONname "Albany Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New York"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AlbuquerqueTowerTRACON a nas:TRACON ;
+    rdfs:label "Albuquerque Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KABQairport,
+        nas:KAEGairport,
+        nas:ZABcenter ;
+    nas:hasTRACONcity "Albuquerque"^^xsd:string ;
+    nas:hasTRACONid "ABQ"^^xsd:string ;
+    nas:hasTRACONname "Albuquerque Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New Mexico"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AllentownTowerTRACON a nas:TRACON ;
+    rdfs:label "Allentown Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KABEairport,
+        nas:ZNYcenter ;
+    nas:hasTRACONcity "Allentown"^^xsd:string ;
+    nas:hasTRACONid "ABE"^^xsd:string ;
+    nas:hasTRACONname "Allentown Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Pennsylvania"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AmarilloTowerTRACON a nas:TRACON ;
+    rdfs:label "Amarillo Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAMAairport,
+        nas:ZABcenter ;
+    nas:hasTRACONcity "Amarillo"^^xsd:string ;
+    nas:hasTRACONid "AMA"^^xsd:string ;
+    nas:hasTRACONname "Amarillo Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AnchorageTRACON a nas:TRACON ;
+    rdfs:label "Anchorage TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:PAEDairport,
+        nas:PAFRairport,
+        nas:PALHairport,
+        nas:PAMRairport,
+        nas:PANCairport,
+        nas:ZANcenter ;
+    nas:hasTRACONcity "Anchorage"^^xsd:string ;
+    nas:hasTRACONid "A11"^^xsd:string ;
+    nas:hasTRACONname "Anchorage TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Alaska"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:AshevilleTowerTRACON a nas:TRACON ;
+    rdfs:label "Asheville Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAVLairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Fletcher"^^xsd:string ;
+    nas:hasTRACONid "AVL"^^xsd:string ;
+    nas:hasTRACONname "Asheville Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "North Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AspenTowerTRACON a nas:TRACON ;
+    rdfs:label "Aspen Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KASEairport,
+        nas:ZDVcenter ;
+    nas:hasTRACONcity "Aspen"^^xsd:string ;
+    nas:hasTRACONid "ASE"^^xsd:string ;
+    nas:hasTRACONname "Aspen Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Colorado"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AtlantaTRACON a nas:TRACON ;
+    rdfs:label "Atlanta TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAHNairport,
+        nas:KATLairport,
+        nas:KCSGairport,
+        nas:KFTYairport,
+        nas:KLSFairport,
+        nas:KLZUairport,
+        nas:KMCNairport,
+        nas:KMGEairport,
+        nas:KPDKairport,
+        nas:KRYYairport,
+        nas:KWRBairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Peachtree City"^^xsd:string ;
+    nas:hasTRACONid "A80"^^xsd:string ;
+    nas:hasTRACONname "Atlanta TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Georgia"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:AtlanticCityTowerTRACON a nas:TRACON ;
+    rdfs:label "Atlantic City Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KACYairport,
+        nas:ZDCcenter ;
+    nas:hasTRACONcity "Atlantic City"^^xsd:string ;
+    nas:hasTRACONid "ACY"^^xsd:string ;
+    nas:hasTRACONname "Atlantic City Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New Jersey"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AugustaTowerTRACON a nas:TRACON ;
+    rdfs:label "Augusta Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAGSairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Augusta"^^xsd:string ;
+    nas:hasTRACONid "AGS"^^xsd:string ;
+    nas:hasTRACONname "Augusta Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Georgia"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:AustinTowerTRACON a nas:TRACON ;
+    rdfs:label "Austin Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAUSairport,
+        nas:KGTUairport,
+        nas:KHYIairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "Austin"^^xsd:string ;
+    nas:hasTRACONid "AUS"^^xsd:string ;
+    nas:hasTRACONname "Austin Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BOISETowerTRACON a nas:TRACON ;
+    rdfs:label "BOISE Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBOIairport,
+        nas:KBZNairport,
+        nas:ZLCcenter ;
+    nas:hasTRACONcity "Boise"^^xsd:string ;
+    nas:hasTRACONid "BOI"^^xsd:string ;
+    nas:hasTRACONname "BOISE Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Idaho"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BakersfieldTowerTRACON a nas:TRACON ;
+    rdfs:label "Bakersfield Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBFLairport,
+        nas:ZLAcenter ;
+    nas:hasTRACONcity "Bakersfield"^^xsd:string ;
+    nas:hasTRACONid "BFL"^^xsd:string ;
+    nas:hasTRACONname "Bakersfield Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "California"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BangorTowerTRACON a nas:TRACON ;
+    rdfs:label "Bangor Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBGRairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "Bangor"^^xsd:string ;
+    nas:hasTRACONid "BGR"^^xsd:string ;
+    nas:hasTRACONname "Bangor Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Maine"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BatonRougeTowerTRACON a nas:TRACON ;
+    rdfs:label "Baton Rouge Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBTRairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "Baton Rouge"^^xsd:string ;
+    nas:hasTRACONid "BTR"^^xsd:string ;
+    nas:hasTRACONname "Baton Rouge Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Louisiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BillingsTowerTRACON a nas:TRACON ;
+    rdfs:label "Billings Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBILairport,
+        nas:ZLCcenter ;
+    nas:hasTRACONcity "Billings"^^xsd:string ;
+    nas:hasTRACONid "BIL"^^xsd:string ;
+    nas:hasTRACONname "Billings Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Montana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BinghamtonTowerTRACON a nas:TRACON ;
+    rdfs:label "Binghamton Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBGMairport,
+        nas:ZNYcenter ;
+    nas:hasTRACONcity "Johnson City"^^xsd:string ;
+    nas:hasTRACONid "BGM"^^xsd:string ;
+    nas:hasTRACONname "Binghamton Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New York"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BirminghamTowerTRACON a nas:TRACON ;
+    rdfs:label "Birmingham Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBHMairport,
+        nas:KTCLairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Birmingham"^^xsd:string ;
+    nas:hasTRACONid "BHM"^^xsd:string ;
+    nas:hasTRACONname "Birmingham Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Alabama"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BismarckTowerTRACON a nas:TRACON ;
+    rdfs:label "Bismarck Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBISairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Bismarck"^^xsd:string ;
+    nas:hasTRACONid "BIS"^^xsd:string ;
+    nas:hasTRACONname "Bismarck Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "North Dakota"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BostonTRACON a nas:TRACON ;
+    rdfs:label "Boston TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KASHairport,
+        nas:KBEDairport,
+        nas:KBOSairport,
+        nas:KBVYairport,
+        nas:KLWMairport,
+        nas:KMHTairport,
+        nas:KOWDairport,
+        nas:KPSMairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "Merrimack"^^xsd:string ;
+    nas:hasTRACONid "A90"^^xsd:string ;
+    nas:hasTRACONname "Boston TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New Hampshire"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:BuffaloTowerTRACON a nas:TRACON ;
+    rdfs:label "Buffalo Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBUFairport,
+        nas:KIAGairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Cheektowaga"^^xsd:string ;
+    nas:hasTRACONid "BUF"^^xsd:string ;
+    nas:hasTRACONname "Buffalo Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New York"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:BurlingtonTowerTRACON a nas:TRACON ;
+    rdfs:label "Burlington Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBTVairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "S. Burlington"^^xsd:string ;
+    nas:hasTRACONid "BTV"^^xsd:string ;
+    nas:hasTRACONname "Burlington Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Vermont"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:CapeTRACON a nas:TRACON ;
+    rdfs:label "Cape TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KACKairport,
+        nas:KFMHairport,
+        nas:KHYAairport,
+        nas:KMVYairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "Falmouth"^^xsd:string ;
+    nas:hasTRACONid "K90"^^xsd:string ;
+    nas:hasTRACONname "Cape TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Massachusetts"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:CasperTowerTRACON a nas:TRACON ;
+    rdfs:label "Casper Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCPRairport,
+        nas:ZDVcenter ;
+    nas:hasTRACONcity "Casper"^^xsd:string ;
+    nas:hasTRACONid "CPR"^^xsd:string ;
+    nas:hasTRACONname "Casper Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Wyoming"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:CedarRapidsTowerTRACON a nas:TRACON ;
+    rdfs:label "Cedar Rapids Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCIDairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Cedar Rapids"^^xsd:string ;
+    nas:hasTRACONid "CID"^^xsd:string ;
+    nas:hasTRACONname "Cedar Rapids Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Iowa"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:CentralFloridaTRACON a nas:TRACON ;
+    rdfs:label "Central Florida TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMCOairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Orlando"^^xsd:string ;
+    nas:hasTRACONid "F11"^^xsd:string ;
+    nas:hasTRACONname "Central Florida TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:ChampaignTowerTRACON a nas:TRACON ;
+    rdfs:label "Champaign Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCMIairport,
+        nas:KDECairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Savoy"^^xsd:string ;
+    nas:hasTRACONid "CMI"^^xsd:string ;
+    nas:hasTRACONname "Champaign Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Illinois"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:CharlestonTowerTRACON a nas:TRACON ;
+    rdfs:label "Charleston Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCHSairport,
+        nas:KCRWairport,
+        nas:ZIDcenter,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Charleston"^^xsd:string ;
+    nas:hasTRACONid "CHS"^^xsd:string,
+        "CRW"^^xsd:string ;
+    nas:hasTRACONname "Charleston Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "South Carolina"^^xsd:string,
+        "West Virginia"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:CharlotteTowerTRACON a nas:TRACON ;
+    rdfs:label "Charlotte Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCLTairport,
+        nas:KJQFairport,
+        nas:KVUJairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Charlotte"^^xsd:string ;
+    nas:hasTRACONid "CLT"^^xsd:string ;
+    nas:hasTRACONname "Charlotte Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "North Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ChatanoogaTowerTRACON a nas:TRACON ;
+    rdfs:label "Chatanooga Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCHAairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Chattanooga"^^xsd:string ;
+    nas:hasTRACONid "CHA"^^xsd:string ;
+    nas:hasTRACONname "Chatanooga Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Tennessee"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ChicagoTRACON a nas:TRACON ;
+    rdfs:label "Chicago TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KARRairport,
+        nas:KDPAairport,
+        nas:KGYYairport,
+        nas:KMDWairport,
+        nas:KORDairport,
+        nas:KPWKairport,
+        nas:KUGNairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Elgin"^^xsd:string ;
+    nas:hasTRACONid "C90"^^xsd:string ;
+    nas:hasTRACONname "Chicago TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Illinois"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:CincinnatiTowerTRACON a nas:TRACON ;
+    rdfs:label "Cincinnati Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCVGairport,
+        nas:KLUKairport,
+        nas:ZIDcenter ;
+    nas:hasTRACONcity "Erlanger"^^xsd:string ;
+    nas:hasTRACONid "CVG"^^xsd:string ;
+    nas:hasTRACONname "Cincinnati Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Kentucky"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ClarksburgTowerTRACON a nas:TRACON ;
+    rdfs:label "Clarksburg Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCKBairport,
+        nas:KMGWairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Bridgeport"^^xsd:string ;
+    nas:hasTRACONid "CKB"^^xsd:string ;
+    nas:hasTRACONname "Clarksburg Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "West Virginia"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ClevelandTowerTRACON a nas:TRACON ;
+    rdfs:label "Cleveland Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBKLairport,
+        nas:KCGFairport,
+        nas:KCLEairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Cleveland"^^xsd:string ;
+    nas:hasTRACONid "CLE"^^xsd:string ;
+    nas:hasTRACONname "Cleveland Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Ohio"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ColoradoSpringsTowerTRACON a nas:TRACON ;
+    rdfs:label "Colorado Springs Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCOSairport,
+        nas:KFCSairport,
+        nas:ZDVcenter ;
+    nas:hasTRACONcity "Peterson AFB"^^xsd:string ;
+    nas:hasTRACONid "COS"^^xsd:string ;
+    nas:hasTRACONname "Colorado Springs Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Colorado"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ColumbiaTowerTRACON a nas:TRACON ;
+    rdfs:label "Columbia Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCAEairport,
+        nas:KXNOairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "West Columbia"^^xsd:string ;
+    nas:hasTRACONid "CAE"^^xsd:string ;
+    nas:hasTRACONname "Columbia Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "South Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ColumbusTowerTRACON a nas:TRACON ;
+    rdfs:label "Columbus Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCMHairport,
+        nas:KDAYairport,
+        nas:KFFOairport,
+        nas:KILNairport,
+        nas:KLCKairport,
+        nas:KOSUairport,
+        nas:KSGHairport,
+        nas:KTZRairport,
+        nas:ZIDcenter ;
+    nas:hasTRACONcity "Columbus"^^xsd:string ;
+    nas:hasTRACONid "CMH"^^xsd:string ;
+    nas:hasTRACONname "Columbus Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Ohio"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:CorpusChristiTowerTRACON a nas:TRACON ;
+    rdfs:label "Corpus Christi Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBROairport,
+        nas:KCRPairport,
+        nas:KHRLairport,
+        nas:KMFEairport,
+        nas:KNGPairport,
+        nas:KNGWairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "Corpus Christi"^^xsd:string ;
+    nas:hasTRACONid "CRP"^^xsd:string ;
+    nas:hasTRACONname "Corpus Christi Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:Dallas-FtWorthTRACON a nas:TRACON ;
+    rdfs:label "Dallas - Ft Worth TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KADSairport,
+        nas:KAFWairport,
+        nas:KDALairport,
+        nas:KDFWairport,
+        nas:KDTOairport,
+        nas:KFTWairport,
+        nas:KFWSairport,
+        nas:KGKYairport,
+        nas:KGPMairport,
+        nas:KHQZairport,
+        nas:KNFWairport,
+        nas:KRBDairport,
+        nas:KTKIairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Dallas-Fort Worth"^^xsd:string ;
+    nas:hasTRACONid "D10"^^xsd:string ;
+    nas:hasTRACONname "Dallas - Ft Worth TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:DaytonaBeachTowerTRACON a nas:TRACON ;
+    rdfs:label "Daytona Beach Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KDABairport,
+        nas:KEVBairport,
+        nas:KFINairport,
+        nas:KOMNairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Daytona Beach"^^xsd:string ;
+    nas:hasTRACONid "DAB"^^xsd:string ;
+    nas:hasTRACONname "Daytona Beach Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:DenverTRACON a nas:TRACON ;
+    rdfs:label "Denver TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAPAairport,
+        nas:KBJCairport,
+        nas:KBKFairport,
+        nas:KDENairport,
+        nas:KFTGairport,
+        nas:KGJTairport,
+        nas:KPUBairport,
+        nas:ZDVcenter ;
+    nas:hasTRACONcity "Denver"^^xsd:string ;
+    nas:hasTRACONid "D01"^^xsd:string ;
+    nas:hasTRACONname "Denver TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Colorado"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:DesMoinesTowerTRACON a nas:TRACON ;
+    rdfs:label "Des Moines Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KDSMairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Des Moines"^^xsd:string ;
+    nas:hasTRACONid "DSM"^^xsd:string ;
+    nas:hasTRACONname "Des Moines Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Iowa"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:DetroitTRACON a nas:TRACON ;
+    rdfs:label "Detroit TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KARBairport,
+        nas:KDETairport,
+        nas:KDTWairport,
+        nas:KPTKairport,
+        nas:KYIPairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Detroit"^^xsd:string ;
+    nas:hasTRACONid "D21"^^xsd:string ;
+    nas:hasTRACONname "Detroit TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Michigan"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:DuluthTowerTRACON a nas:TRACON ;
+    rdfs:label "Duluth Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KDLHairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Duluth"^^xsd:string ;
+    nas:hasTRACONid "DLH"^^xsd:string ;
+    nas:hasTRACONname "Duluth Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Minnesota"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ElPasoTowerTRACON a nas:TRACON ;
+    rdfs:label "El Paso Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBIFairport,
+        nas:KELPairport,
+        nas:ZABcenter ;
+    nas:hasTRACONcity "El Paso"^^xsd:string ;
+    nas:hasTRACONid "ELP"^^xsd:string ;
+    nas:hasTRACONname "El Paso Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ElmiraTowerTRACON a nas:TRACON ;
+    rdfs:label "Elmira Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KELMairport,
+        nas:KITHairport,
+        nas:ZNYcenter ;
+    nas:hasTRACONcity "Elmira"^^xsd:string ;
+    nas:hasTRACONid "ELM"^^xsd:string ;
+    nas:hasTRACONname "Elmira Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New York"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ErieTowerTRACON a nas:TRACON ;
+    rdfs:label "Erie Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KERIairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Erie"^^xsd:string ;
+    nas:hasTRACONid "ERI"^^xsd:string ;
+    nas:hasTRACONname "Erie Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Pennsylvania"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:EugeneTowerTRACON a nas:TRACON ;
+    rdfs:label "Eugene Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KEUGairport,
+        nas:KMFRairport,
+        nas:ZSEcenter ;
+    nas:hasTRACONcity "Eugene"^^xsd:string ;
+    nas:hasTRACONid "EUG"^^xsd:string ;
+    nas:hasTRACONname "Eugene Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Oregon"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:EvansvilleTowerTRACON a nas:TRACON ;
+    rdfs:label "Evansville Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KEVVairport,
+        nas:KOWBairport,
+        nas:ZIDcenter ;
+    nas:hasTRACONcity "Evansville"^^xsd:string ;
+    nas:hasTRACONid "EVV"^^xsd:string ;
+    nas:hasTRACONname "Evansville Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Indiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FAAPittsburghATCTowerTRACON a nas:TRACON ;
+    rdfs:label "FAA Pittsburgh ATC Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAGCairport,
+        nas:KBVIairport,
+        nas:KHLGairport,
+        nas:KPITairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Pittsburgh"^^xsd:string ;
+    nas:hasTRACONid "PIT"^^xsd:string ;
+    nas:hasTRACONname "FAA Pittsburgh ATC Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Pennsylvania"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FairbanksTowerTRACON a nas:TRACON ;
+    rdfs:label "Fairbanks Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:PAEIairport,
+        nas:PAFAairport,
+        nas:PAFBairport,
+        nas:ZANcenter ;
+    nas:hasTRACONcity "Fairbanks"^^xsd:string ;
+    nas:hasTRACONid "FAI"^^xsd:string ;
+    nas:hasTRACONname "Fairbanks Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Alaska"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FargoTowerTRACON a nas:TRACON ;
+    rdfs:label "Fargo Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFARairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Fargo"^^xsd:string ;
+    nas:hasTRACONid "FAR"^^xsd:string ;
+    nas:hasTRACONname "Fargo Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "North Dakota"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FayettevilleTowerTRACON a nas:TRACON ;
+    rdfs:label "Fayetteville Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFAYairport,
+        nas:KFBGairport,
+        nas:KHFFairport,
+        nas:KPOBairport,
+        nas:ZDCcenter ;
+    nas:hasTRACONcity "Fayetteville"^^xsd:string ;
+    nas:hasTRACONid "FAY"^^xsd:string ;
+    nas:hasTRACONname "Fayetteville Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "North Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FlintTowerTRACON a nas:TRACON ;
+    rdfs:label "Flint Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFNTairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Flint"^^xsd:string ;
+    nas:hasTRACONid "FNT"^^xsd:string ;
+    nas:hasTRACONname "Flint Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Michigan"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FlorenceTowerTRACON a nas:TRACON ;
+    rdfs:label "Florence Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFLOairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Florence"^^xsd:string ;
+    nas:hasTRACONid "FLO"^^xsd:string ;
+    nas:hasTRACONname "Florence Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "South Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FortMyersTowerTRACON a nas:TRACON ;
+    rdfs:label "Fort Myers Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAPFairport,
+        nas:KFMYairport,
+        nas:KPGDairport,
+        nas:KRSWairport,
+        nas:ZMAcenter ;
+    nas:hasTRACONcity "Fort Myers"^^xsd:string ;
+    nas:hasTRACONid "RSW"^^xsd:string ;
+    nas:hasTRACONname "Fort Myers Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FortSmithTowerTRACON a nas:TRACON ;
+    rdfs:label "Fort Smith Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KASGairport,
+        nas:KFSMairport,
+        nas:KFYVairport,
+        nas:KROGairport,
+        nas:KXNAairport,
+        nas:ZMEcenter ;
+    nas:hasTRACONcity "Fort Smith"^^xsd:string ;
+    nas:hasTRACONid "FSM"^^xsd:string ;
+    nas:hasTRACONname "Fort Smith Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Arkansas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FortWayneTowerTRACON a nas:TRACON ;
+    rdfs:label "Fort Wayne Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFWAairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Fort Wayne"^^xsd:string ;
+    nas:hasTRACONid "FWA"^^xsd:string ;
+    nas:hasTRACONname "Fort Wayne Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Indiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:FresnoTowerTRACON a nas:TRACON ;
+    rdfs:label "Fresno Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFATairport,
+        nas:ZOAcenter ;
+    nas:hasTRACONcity "Fresno"^^xsd:string ;
+    nas:hasTRACONid "FAT"^^xsd:string ;
+    nas:hasTRACONname "Fresno Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "California"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:GrandRapidsTowerTRACON a nas:TRACON ;
+    rdfs:label "Grand Rapids Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KGRRairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Grand Rapids"^^xsd:string ;
+    nas:hasTRACONid "GRR"^^xsd:string ;
+    nas:hasTRACONname "Grand Rapids Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Michigan"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:GrantCountyTowerTRACON a nas:TRACON ;
+    rdfs:label "Grant County Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMWHairport,
+        nas:ZSEcenter ;
+    nas:hasTRACONcity "Moses Lake"^^xsd:string ;
+    nas:hasTRACONid "MWH"^^xsd:string ;
+    nas:hasTRACONname "Grant County Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Washington"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:GreatFallsTowerTRACON a nas:TRACON ;
+    rdfs:label "Great Falls Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KGTFairport,
+        nas:ZLCcenter ;
+    nas:hasTRACONcity "Great Falls"^^xsd:string ;
+    nas:hasTRACONid "GTF"^^xsd:string ;
+    nas:hasTRACONname "Great Falls Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Montana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:GreenBayTowerTRACON a nas:TRACON ;
+    rdfs:label "Green Bay Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KATWairport,
+        nas:KGRBairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Green Bay"^^xsd:string ;
+    nas:hasTRACONid "GRB"^^xsd:string ;
+    nas:hasTRACONname "Green Bay Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Wisconsin"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:GreensboroTowerTRACON a nas:TRACON ;
+    rdfs:label "Greensboro Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KGSOairport,
+        nas:KINTairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Greensboro"^^xsd:string ;
+    nas:hasTRACONid "GSO"^^xsd:string ;
+    nas:hasTRACONname "Greensboro Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "North Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:GreerTowerTRACON a nas:TRACON ;
+    rdfs:label "Greer Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KGMUairport,
+        nas:KGSPairport,
+        nas:KGYHairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Greer"^^xsd:string ;
+    nas:hasTRACONid "GSP"^^xsd:string ;
+    nas:hasTRACONname "Greer Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "South Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:GulfportTowerTRACON a nas:TRACON ;
+    rdfs:label "Gulfport Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBIXairport,
+        nas:KGPTairport,
+        nas:KHSAairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "Gulfport"^^xsd:string ;
+    nas:hasTRACONid "GPT"^^xsd:string ;
+    nas:hasTRACONname "Gulfport Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Mississippi"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:HelenaTowerTRACON a nas:TRACON ;
+    rdfs:label "Helena Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHLNairport,
+        nas:ZLCcenter ;
+    nas:hasTRACONcity "Helena"^^xsd:string ;
+    nas:hasTRACONid "HLN"^^xsd:string ;
+    nas:hasTRACONname "Helena Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Montana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:HiloTowerTRACON a nas:TRACON ;
+    rdfs:label "Hilo Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:PHTOairport,
+        nas:ZHNcenter ;
+    nas:hasTRACONcity "Hilo"^^xsd:string ;
+    nas:hasTRACONid "ITO"^^xsd:string ;
+    nas:hasTRACONname "Hilo Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Hawaii"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:HoustonTRACON a nas:TRACON ;
+    rdfs:label "Houston TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBPTairport,
+        nas:KCLLairport,
+        nas:KCXOairport,
+        nas:KDWHairport,
+        nas:KEFDairport,
+        nas:KGLSairport,
+        nas:KHOUairport,
+        nas:KIAHairport,
+        nas:KSGRairport,
+        nas:KTMEairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "Houston"^^xsd:string ;
+    nas:hasTRACONid "I90"^^xsd:string ;
+    nas:hasTRACONname "Houston TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:HuntingtonTowerTRACON a nas:TRACON ;
+    rdfs:label "Huntington Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHTSairport,
+        nas:ZIDcenter ;
+    nas:hasTRACONcity "Huntington"^^xsd:string ;
+    nas:hasTRACONid "HTS"^^xsd:string ;
+    nas:hasTRACONname "Huntington Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "West Virginia"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:HuntsvilleTowerTRACON a nas:TRACON ;
+    rdfs:label "Huntsville Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHSVairport,
+        nas:KHUAairport,
+        nas:ZMEcenter ;
+    nas:hasTRACONcity "Huntsville"^^xsd:string ;
+    nas:hasTRACONid "HSV"^^xsd:string ;
+    nas:hasTRACONname "Huntsville Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Alabama"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:IndianapolisTowerTRACON a nas:TRACON ;
+    rdfs:label "Indianapolis Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith <https://data.nasa.gov/ontologies/atmonto/NAS#11IIairport>,
+        nas:KAIDairport,
+        nas:KBAKairport,
+        nas:KINDairport,
+        nas:KMIEairport,
+        nas:ZIDcenter ;
+    nas:hasTRACONcity "Indianapolis"^^xsd:string ;
+    nas:hasTRACONid "IND"^^xsd:string ;
+    nas:hasTRACONname "Indianapolis Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Indiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:JacksonTowerTRACON a nas:TRACON ;
+    rdfs:label "Jackson Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHKSairport,
+        nas:KJANairport,
+        nas:ZMEcenter ;
+    nas:hasTRACONcity "Jackson"^^xsd:string ;
+    nas:hasTRACONid "JAN"^^xsd:string ;
+    nas:hasTRACONname "Jackson Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Mississippi"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:JacksonvilleTowerTRACON a nas:TRACON ;
+    rdfs:label "Jacksonville Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCRGairport,
+        nas:KGNVairport,
+        nas:KJAXairport,
+        nas:KNENairport,
+        nas:KNIPairport,
+        nas:KNRBairport,
+        nas:KOCFairport,
+        nas:KSGJairport,
+        nas:KVQQairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Jacksonville"^^xsd:string ;
+    nas:hasTRACONid "JAX"^^xsd:string ;
+    nas:hasTRACONname "Jacksonville Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:KalamazooTowerTRACON a nas:TRACON ;
+    rdfs:label "Kalamazoo Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAZOairport,
+        nas:KBTLairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Portage"^^xsd:string ;
+    nas:hasTRACONid "AZO"^^xsd:string ;
+    nas:hasTRACONname "Kalamazoo Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Michigan"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:KansasCityTowerTRACON a nas:TRACON ;
+    rdfs:label "Kansas City Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KIXDairport,
+        nas:KMCIairport,
+        nas:KMKCairport,
+        nas:KOJCairport,
+        nas:ZKCcenter ;
+    nas:hasTRACONcity "Kansas City"^^xsd:string ;
+    nas:hasTRACONid "MCI"^^xsd:string ;
+    nas:hasTRACONname "Kansas City Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Missouri"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:KnoxvilleTowerTRACON a nas:TRACON ;
+    rdfs:label "Knoxville Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KTYSairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Loisville"^^xsd:string ;
+    nas:hasTRACONid "TYS"^^xsd:string ;
+    nas:hasTRACONname "Knoxville Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Tennessee"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:LafayetteTowerTRACON a nas:TRACON ;
+    rdfs:label "Lafayette Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KARAairport,
+        nas:KLFTairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "Lafayette"^^xsd:string ;
+    nas:hasTRACONid "LFT"^^xsd:string ;
+    nas:hasTRACONname "Lafayette Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Louisiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:LakeCharlesTowerTRACON a nas:TRACON ;
+    rdfs:label "Lake Charles Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCWFairport,
+        nas:KLCHairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "Lake Charles"^^xsd:string ;
+    nas:hasTRACONid "LCH"^^xsd:string ;
+    nas:hasTRACONname "Lake Charles Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Louisiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:LansingTowerTRACON a nas:TRACON ;
+    rdfs:label "Lansing Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KJXNairport,
+        nas:KLANairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Lansing"^^xsd:string ;
+    nas:hasTRACONid "LAN"^^xsd:string ;
+    nas:hasTRACONname "Lansing Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Michigan"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:LasVegasTRACON a nas:TRACON ;
+    rdfs:label "Las Vegas TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHNDairport,
+        nas:KLASairport,
+        nas:ZLAcenter ;
+    nas:hasTRACONcity "Las Vegas"^^xsd:string ;
+    nas:hasTRACONid "L30"^^xsd:string ;
+    nas:hasTRACONname "Las Vegas TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Nevada"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:LexingtonTowerTRACON a nas:TRACON ;
+    rdfs:label "Lexington Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KLEXairport,
+        nas:ZIDcenter ;
+    nas:hasTRACONcity "Lexington"^^xsd:string ;
+    nas:hasTRACONid "LEX"^^xsd:string ;
+    nas:hasTRACONname "Lexington Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Kentucky"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:LittleRockTowerTRACON a nas:TRACON ;
+    rdfs:label "Little Rock Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KLITairport,
+        nas:KLRFairport,
+        nas:ZMEcenter ;
+    nas:hasTRACONcity "Little Rock"^^xsd:string ;
+    nas:hasTRACONid "LIT"^^xsd:string ;
+    nas:hasTRACONname "Little Rock Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Arkansas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:LongviewTowerTRACON a nas:TRACON ;
+    rdfs:label "Longview Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KGGGairport,
+        nas:KTYRairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Longview"^^xsd:string ;
+    nas:hasTRACONid "GGG"^^xsd:string ;
+    nas:hasTRACONname "Longview Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:LubbockTowerTRACON a nas:TRACON ;
+    rdfs:label "Lubbock Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KLBBairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Lubbock"^^xsd:string ;
+    nas:hasTRACONid "LBB"^^xsd:string ;
+    nas:hasTRACONname "Lubbock Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MadisonTowerTRACON a nas:TRACON ;
+    rdfs:label "Madison Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMSNairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Madison"^^xsd:string ;
+    nas:hasTRACONid "MSN"^^xsd:string ;
+    nas:hasTRACONname "Madison Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Wisconsin"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MansfieldTowerTRACON a nas:TRACON ;
+    rdfs:label "Mansfield Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMFDairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Mansfield"^^xsd:string ;
+    nas:hasTRACONid "MFD"^^xsd:string ;
+    nas:hasTRACONname "Mansfield Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Ohio"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MemphisTRACON a nas:TRACON ;
+    rdfs:label "Memphis TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMEMairport,
+        nas:KNQAairport,
+        nas:KOLVairport,
+        nas:ZMEcenter ;
+    nas:hasTRACONcity "Memphis"^^xsd:string ;
+    nas:hasTRACONid "M03"^^xsd:string ;
+    nas:hasTRACONname "Memphis TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Tennessee"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:MeridianTowerTRACON a nas:TRACON ;
+    rdfs:label "Meridian Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMEIairport,
+        nas:KNMMairport,
+        nas:ZMEcenter ;
+    nas:hasTRACONcity "Meridian"^^xsd:string ;
+    nas:hasTRACONid "NMM"^^xsd:string ;
+    nas:hasTRACONname "Meridian Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Mississippi"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MiamiTowerTRACON a nas:TRACON ;
+    rdfs:label "Miami Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFLLairport,
+        nas:KFXEairport,
+        nas:KHWOairport,
+        nas:KMIAairport,
+        nas:KOPFairport,
+        nas:KPMPairport,
+        nas:KTMBairport,
+        nas:ZMAcenter ;
+    nas:hasTRACONcity "Miami"^^xsd:string ;
+    nas:hasTRACONid "MIA"^^xsd:string ;
+    nas:hasTRACONname "Miami Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MidlandTowerTRACON a nas:TRACON ;
+    rdfs:label "Midland Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMAFairport,
+        nas:KSJTairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Midland"^^xsd:string ;
+    nas:hasTRACONid "MAF"^^xsd:string ;
+    nas:hasTRACONname "Midland Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MilwaukeeTowerTRACON a nas:TRACON ;
+    rdfs:label "Milwaukee Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KENWairport,
+        nas:KMKEairport,
+        nas:KMWCairport,
+        nas:KOSHairport,
+        nas:KUESairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Milwaukee"^^xsd:string ;
+    nas:hasTRACONid "MKE"^^xsd:string ;
+    nas:hasTRACONname "Milwaukee Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Wisconsin"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MinneapolisTRACON a nas:TRACON ;
+    rdfs:label "Minneapolis TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KANEairport,
+        nas:KFCMairport,
+        nas:KMICairport,
+        nas:KMSPairport,
+        nas:KSTPairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Minneapolis"^^xsd:string ;
+    nas:hasTRACONid "M98"^^xsd:string ;
+    nas:hasTRACONname "Minneapolis TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Minnesota"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:MobileTowerTRACON a nas:TRACON ;
+    rdfs:label "Mobile Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBFMairport,
+        nas:KMOBairport,
+        nas:KPQLairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "Mobile"^^xsd:string ;
+    nas:hasTRACONid "MOB"^^xsd:string ;
+    nas:hasTRACONname "Mobile Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Alabama"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MonroeTowerTRACON a nas:TRACON ;
+    rdfs:label "Monroe Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMLUairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Monroe"^^xsd:string ;
+    nas:hasTRACONid "MLU"^^xsd:string ;
+    nas:hasTRACONname "Monroe Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Louisiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MontgomeryTowerTRACON a nas:TRACON ;
+    rdfs:label "Montgomery Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMGMairport,
+        nas:KMXFairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Hope Hull"^^xsd:string ;
+    nas:hasTRACONid "MGM"^^xsd:string ;
+    nas:hasTRACONname "Montgomery Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Alabama"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MuskegonTowerTRACON a nas:TRACON ;
+    rdfs:label "Muskegon Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMKGairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Muskegon"^^xsd:string ;
+    nas:hasTRACONid "MKG"^^xsd:string ;
+    nas:hasTRACONname "Muskegon Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Michigan"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:MyrtleBeachTowerTRACON a nas:TRACON ;
+    rdfs:label "Myrtle Beach Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCREairport,
+        nas:KMYRairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Myrtle Beach"^^xsd:string ;
+    nas:hasTRACONid "MYR"^^xsd:string ;
+    nas:hasTRACONname "Myrtle Beach Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "South Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:NashvilleTowerTRACON a nas:TRACON ;
+    rdfs:label "Nashville Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBNAairport,
+        nas:KMQYairport,
+        nas:ZMEcenter ;
+    nas:hasTRACONcity "Nashville"^^xsd:string ;
+    nas:hasTRACONid "BNA"^^xsd:string ;
+    nas:hasTRACONname "Nashville Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Tennessee"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:NewOrleansTowerTRACON a nas:TRACON ;
+    rdfs:label "New Orleans Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHUMairport,
+        nas:KMSYairport,
+        nas:KNBGairport,
+        nas:KNEWairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "New Orleans"^^xsd:string ;
+    nas:hasTRACONid "MSY"^^xsd:string ;
+    nas:hasTRACONname "New Orleans Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Louisiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:NewYorkTRACON a nas:TRACON ;
+    rdfs:label "New York TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBDRairport,
+        nas:KCDWairport,
+        nas:KDXRairport,
+        nas:KEWRairport,
+        nas:KFOKairport,
+        nas:KFRGairport,
+        nas:KHPNairport,
+        nas:KHTOairport,
+        nas:KHVNairport,
+        nas:KISPairport,
+        nas:KJFKairport,
+        nas:KLGAairport,
+        nas:KMMUairport,
+        nas:KOXCairport,
+        nas:KPOUairport,
+        nas:KSWFairport,
+        nas:KTEBairport,
+        nas:ZNYcenter ;
+    nas:hasTRACONcity "Westbury"^^xsd:string ;
+    nas:hasTRACONid "N90"^^xsd:string ;
+    nas:hasTRACONname "New York TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New York"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:NorfolkTowerTRACON a nas:TRACON ;
+    rdfs:label "Norfolk Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KECGairport,
+        nas:KFAFairport,
+        nas:KLFIairport,
+        nas:KNGUairport,
+        nas:KORFairport,
+        nas:KPHFairport,
+        nas:ZDCcenter ;
+    nas:hasTRACONcity "Virginia Beach"^^xsd:string ;
+    nas:hasTRACONid "ORF"^^xsd:string ;
+    nas:hasTRACONname "Norfolk Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Virginia"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:NorthernCaliforniaTRACON a nas:TRACON ;
+    rdfs:label "Northern California TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBABairport,
+        nas:KHWDairport,
+        nas:KLVKairport,
+        nas:KMERairport,
+        nas:KMHRairport,
+        nas:KMODairport,
+        nas:KMRYairport,
+        nas:KNUQairport,
+        nas:KOAKairport,
+        nas:KPAOairport,
+        nas:KRHVairport,
+        nas:KRNOairport,
+        nas:KSACairport,
+        nas:KSCKairport,
+        nas:KSFOairport,
+        nas:KSJCairport,
+        nas:KSMFairport,
+        nas:KSNSairport,
+        nas:KSQLairport,
+        nas:ZOAcenter ;
+    nas:hasTRACONcity "Mather"^^xsd:string ;
+    nas:hasTRACONid "NCT"^^xsd:string ;
+    nas:hasTRACONname "Northern California TRACON"^^xsd:string ;
+    nas:hasTRACONstate "California"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:OklahomaCityTowerTRACON a nas:TRACON ;
+    rdfs:label "Oklahoma City Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KOKCairport,
+        nas:KOUNairport,
+        nas:KPWAairport,
+        nas:KTIKairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Oklahoma City"^^xsd:string ;
+    nas:hasTRACONid "OKC"^^xsd:string ;
+    nas:hasTRACONname "Oklahoma City Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Oklahoma"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:OmahaTRACON a nas:TRACON ;
+    rdfs:label "Omaha TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KLNKairport,
+        nas:KOFFairport,
+        nas:KOMAairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Bellevue"^^xsd:string ;
+    nas:hasTRACONid "R90"^^xsd:string ;
+    nas:hasTRACONname "Omaha TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Nebraska"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:PalmBeachTowerTRACON a nas:TRACON ;
+    rdfs:label "Palm Beach Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBCTairport,
+        nas:KPBIairport,
+        nas:KSUAairport,
+        nas:ZMAcenter ;
+    nas:hasTRACONcity "West Palm Beach"^^xsd:string ;
+    nas:hasTRACONid "PBI"^^xsd:string ;
+    nas:hasTRACONname "Palm Beach Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:PascoTowerTRACON a nas:TRACON ;
+    rdfs:label "Pasco Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KALWairport,
+        nas:KPDTairport,
+        nas:KPSCairport,
+        nas:KYKMairport,
+        nas:ZSEcenter ;
+    nas:hasTRACONcity "Pasco"^^xsd:string ;
+    nas:hasTRACONid "PSC"^^xsd:string ;
+    nas:hasTRACONname "Pasco Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Washington"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:PensacolaTRACON a nas:TRACON ;
+    rdfs:label "Pensacola TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KNFJairport,
+        nas:KNPAairport,
+        nas:KNSEairport,
+        nas:KPNSairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Pensacola"^^xsd:string ;
+    nas:hasTRACONid "P31"^^xsd:string ;
+    nas:hasTRACONname "Pensacola TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:PeoriaTowerTRACON a nas:TRACON ;
+    rdfs:label "Peoria Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBMIairport,
+        nas:KPIAairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Peoria"^^xsd:string ;
+    nas:hasTRACONid "PIA"^^xsd:string ;
+    nas:hasTRACONname "Peoria Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Illinois"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:PhiladelphiaTowerTRACON a nas:TRACON ;
+    rdfs:label "Philadelphia Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KILGairport,
+        nas:KPHLairport,
+        nas:KPNEairport,
+        nas:KTTNairport,
+        nas:ZNYcenter ;
+    nas:hasTRACONcity "Philadelphia"^^xsd:string ;
+    nas:hasTRACONid "PHL"^^xsd:string ;
+    nas:hasTRACONname "Philadelphia Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Pennsylvania"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:PhoenixTRACON a nas:TRACON ;
+    rdfs:label "Phoenix TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KCHDairport,
+        nas:KDVTairport,
+        nas:KFFZairport,
+        nas:KFLGairport,
+        nas:KIWAairport,
+        nas:KPHXairport,
+        nas:KPRCairport,
+        nas:KSDLairport,
+        nas:ZABcenter ;
+    nas:hasTRACONcity "Phoenix"^^xsd:string ;
+    nas:hasTRACONid "P50"^^xsd:string ;
+    nas:hasTRACONname "Phoenix TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Arizona"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:PortlandTRACONTRACON a nas:TRACON ;
+    rdfs:label "Portland TRACON TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHIOairport,
+        nas:KPDXairport,
+        nas:KTTDairport,
+        nas:ZSEcenter ;
+    nas:hasTRACONcity "Portland"^^xsd:string ;
+    nas:hasTRACONid "P80"^^xsd:string ;
+    nas:hasTRACONname "Portland TRACON TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Oregon"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:PortlandTowerTRACON a nas:TRACON ;
+    rdfs:label "Portland Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KPWMairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "Portland"^^xsd:string ;
+    nas:hasTRACONid "PWM"^^xsd:string ;
+    nas:hasTRACONname "Portland Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Maine"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:PotomacTRACON a nas:TRACON ;
+    rdfs:label "Potomac TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KADWairport,
+        nas:KAPGairport,
+        nas:KBWIairport,
+        nas:KCHOairport,
+        nas:KDAAairport,
+        nas:KDCAairport,
+        nas:KESNairport,
+        nas:KFDKairport,
+        nas:KHEFairport,
+        nas:KHGRairport,
+        nas:KIADairport,
+        nas:KMRBairport,
+        nas:KMTNairport,
+        nas:KRICairport,
+        nas:ZDCcenter ;
+    nas:hasTRACONcity "Warrenton"^^xsd:string ;
+    nas:hasTRACONid "PCT"^^xsd:string ;
+    nas:hasTRACONname "Potomac TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Virginia"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:ProvidenceTowerTRACON a nas:TRACON ;
+    rdfs:label "Providence Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KEWBairport,
+        nas:KGONairport,
+        nas:KOQUairport,
+        nas:KPVDairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "Warwick"^^xsd:string ;
+    nas:hasTRACONid "PVD"^^xsd:string ;
+    nas:hasTRACONname "Providence Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Rhode Island"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:QuadCityTowerTRACON a nas:TRACON ;
+    rdfs:label "Quad City Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMLIairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Milan"^^xsd:string ;
+    nas:hasTRACONid "MLI"^^xsd:string ;
+    nas:hasTRACONname "Quad City Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Illinois"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:Raleigh-DurhamTowerTRACON a nas:TRACON ;
+    rdfs:label "Raleigh-Durham Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KRDUairport,
+        nas:ZDCcenter ;
+    nas:hasTRACONcity "Morrisville"^^xsd:string ;
+    nas:hasTRACONid "RDU"^^xsd:string ;
+    nas:hasTRACONname "Raleigh-Durham Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "North Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ReadingTowerTRACON a nas:TRACON ;
+    rdfs:label "Reading Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KRDGairport,
+        nas:ZNYcenter ;
+    nas:hasTRACONcity "Reading"^^xsd:string ;
+    nas:hasTRACONid "RDG"^^xsd:string ;
+    nas:hasTRACONname "Reading Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Pennsylvania"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:RoanokeTowerTRACON a nas:TRACON ;
+    rdfs:label "Roanoke Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KLYHairport,
+        nas:KROAairport,
+        nas:ZDCcenter ;
+    nas:hasTRACONcity "Roanoke"^^xsd:string ;
+    nas:hasTRACONid "ROA"^^xsd:string ;
+    nas:hasTRACONname "Roanoke Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Virginia"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:RochesterTowerTRACON a nas:TRACON ;
+    rdfs:label "Rochester Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KROCairport,
+        nas:KRSTairport,
+        nas:ZMPcenter,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Rochester"^^xsd:string ;
+    nas:hasTRACONid "ROC"^^xsd:string,
+        "RST"^^xsd:string ;
+    nas:hasTRACONname "Rochester Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Minnesota"^^xsd:string,
+        "New York"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:RockfordTowerTRACON a nas:TRACON ;
+    rdfs:label "Rockford Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KJVLairport,
+        nas:KRFDairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Rockford"^^xsd:string ;
+    nas:hasTRACONid "RFD"^^xsd:string ;
+    nas:hasTRACONname "Rockford Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Illinois"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:RoswellTowerTRACON a nas:TRACON ;
+    rdfs:label "Roswell Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KROWairport,
+        nas:ZABcenter ;
+    nas:hasTRACONcity "Roswell"^^xsd:string ;
+    nas:hasTRACONid "ROW"^^xsd:string ;
+    nas:hasTRACONname "Roswell Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New Mexico"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SaginawTowerTRACON a nas:TRACON ;
+    rdfs:label "Saginaw Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KMBSairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Freeland"^^xsd:string ;
+    nas:hasTRACONid "MBS"^^xsd:string ;
+    nas:hasTRACONname "Saginaw Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Michigan"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SaltLakeCityTRACON a nas:TRACON ;
+    rdfs:label "Salt Lake City TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHIFairport,
+        nas:KOGDairport,
+        nas:KPVUairport,
+        nas:KSLCairport,
+        nas:ZLCcenter ;
+    nas:hasTRACONcity "Salt Lake City"^^xsd:string ;
+    nas:hasTRACONid "S56"^^xsd:string ;
+    nas:hasTRACONname "Salt Lake City TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Utah"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:SanAntonioTowerTRACON a nas:TRACON ;
+    rdfs:label "San Antonio Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBAZairport,
+        nas:KRNDairport,
+        nas:KSATairport,
+        nas:KSKFairport,
+        nas:KSSFairport,
+        nas:ZHUcenter ;
+    nas:hasTRACONcity "San Antonio"^^xsd:string ;
+    nas:hasTRACONid "SAT"^^xsd:string ;
+    nas:hasTRACONname "San Antonio Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SantaBarbaraTowerTRACON a nas:TRACON ;
+    rdfs:label "Santa Barbara Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KSBAairport,
+        nas:KSBPairport,
+        nas:KSMXairport,
+        nas:KVBGairport,
+        nas:ZLAcenter ;
+    nas:hasTRACONcity "Goleta"^^xsd:string ;
+    nas:hasTRACONid "SBA"^^xsd:string ;
+    nas:hasTRACONname "Santa Barbara Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "California"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SavannahTowerTRACON a nas:TRACON ;
+    rdfs:label "Savannah Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KHXDairport,
+        nas:KLHWairport,
+        nas:KSAVairport,
+        nas:KSVNairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Savannah"^^xsd:string ;
+    nas:hasTRACONid "SAV"^^xsd:string ;
+    nas:hasTRACONname "Savannah Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Georgia"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SeattleTRACON a nas:TRACON ;
+    rdfs:label "Seattle TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBFIairport,
+        nas:KGRFairport,
+        nas:KOLMairport,
+        nas:KPAEairport,
+        nas:KRNTairport,
+        nas:KSEAairport,
+        nas:KTCMairport,
+        nas:KTIWairport,
+        nas:ZSEcenter ;
+    nas:hasTRACONcity "Burien"^^xsd:string ;
+    nas:hasTRACONid "S46"^^xsd:string ;
+    nas:hasTRACONname "Seattle TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Washington"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:ShreveportTowerTRACON a nas:TRACON ;
+    rdfs:label "Shreveport Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KSHVairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Barksdale AFB"^^xsd:string ;
+    nas:hasTRACONid "SHV"^^xsd:string ;
+    nas:hasTRACONname "Shreveport Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Louisiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SiouxFallsTowerTRACON a nas:TRACON ;
+    rdfs:label "Sioux Falls Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFSDairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Sioux Falls"^^xsd:string ;
+    nas:hasTRACONid "FSD"^^xsd:string ;
+    nas:hasTRACONname "Sioux Falls Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "South Dakota"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SiouxGatewayTowerTRACON a nas:TRACON ;
+    rdfs:label "Sioux Gateway Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KSUXairport,
+        nas:ZMPcenter ;
+    nas:hasTRACONcity "Sioux City"^^xsd:string ;
+    nas:hasTRACONid "SUX"^^xsd:string ;
+    nas:hasTRACONname "Sioux Gateway Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Iowa"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SouthBendTowerTRACON a nas:TRACON ;
+    rdfs:label "South Bend Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KEKMairport,
+        nas:KSBNairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "South Bend"^^xsd:string ;
+    nas:hasTRACONid "SBN"^^xsd:string ;
+    nas:hasTRACONname "South Bend Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Indiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SouthernCaliforniaTRACON a nas:TRACON ;
+    rdfs:label "Southern California TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBURairport,
+        nas:KCNOairport,
+        nas:KCRQairport,
+        nas:KEMTairport,
+        nas:KFULairport,
+        nas:KHHRairport,
+        nas:KLAXairport,
+        nas:KLGBairport,
+        nas:KMYFairport,
+        nas:KNFGairport,
+        nas:KNKXairport,
+        nas:KNRSairport,
+        nas:KNZYairport,
+        nas:KONTairport,
+        nas:KPOCairport,
+        nas:KPSPairport,
+        nas:KRALairport,
+        nas:KRNMairport,
+        nas:KSANairport,
+        nas:KSBDairport,
+        nas:KSDMairport,
+        nas:KSEEairport,
+        nas:KSLIairport,
+        nas:KSMOairport,
+        nas:KSNAairport,
+        nas:KTOAairport,
+        nas:KVNYairport,
+        nas:KWHPairport,
+        nas:ZLAcenter ;
+    nas:hasTRACONcity "San Diego"^^xsd:string ;
+    nas:hasTRACONid "SCT"^^xsd:string ;
+    nas:hasTRACONname "Southern California TRACON"^^xsd:string ;
+    nas:hasTRACONstate "California"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:SpokaneTowerTRACON a nas:TRACON ;
+    rdfs:label "Spokane Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KGEGairport,
+        nas:KMSOairport,
+        nas:KSFFairport,
+        nas:KSKAairport,
+        nas:ZLCcenter,
+        nas:ZSEcenter ;
+    nas:hasTRACONcity "Spokane"^^xsd:string ;
+    nas:hasTRACONid "GEG"^^xsd:string ;
+    nas:hasTRACONname "Spokane Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Washington"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SpringfieldTowerTRACON a nas:TRACON ;
+    rdfs:label "Springfield Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBBGairport,
+        nas:KCOUairport,
+        nas:KJEFairport,
+        nas:KSGFairport,
+        nas:KSPIairport,
+        nas:ZKCcenter ;
+    nas:hasTRACONcity "Springfield"^^xsd:string ;
+    nas:hasTRACONid "SGF"^^xsd:string,
+        "SPI"^^xsd:string ;
+    nas:hasTRACONname "Springfield Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Illinois"^^xsd:string,
+        "Missouri"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:StLouisTRACON a nas:TRACON ;
+    rdfs:label "St Louis TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KALNairport,
+        nas:KBLVairport,
+        nas:KCPSairport,
+        nas:KSTLairport,
+        nas:KSUSairport,
+        nas:ZKCcenter ;
+    nas:hasTRACONcity "St. Charles"^^xsd:string ;
+    nas:hasTRACONid "T75"^^xsd:string ;
+    nas:hasTRACONname "St Louis TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Missouri"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:StandifordTowerTRACON a nas:TRACON ;
+    rdfs:label "Standiford Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KFTKairport,
+        nas:KLOUairport,
+        nas:KSDFairport,
+        nas:ZIDcenter ;
+    nas:hasTRACONcity "Louisville"^^xsd:string ;
+    nas:hasTRACONid "SDF"^^xsd:string ;
+    nas:hasTRACONname "Standiford Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Kentucky"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:SyracuseTowerTRACON a nas:TRACON ;
+    rdfs:label "Syracuse Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KRMEairport,
+        nas:KSYRairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "North Syracuse"^^xsd:string ;
+    nas:hasTRACONid "SYR"^^xsd:string ;
+    nas:hasTRACONname "Syracuse Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "New York"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:TallahasseeTowerTRACON a nas:TRACON ;
+    rdfs:label "Tallahassee Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KTLHairport,
+        nas:ZJXcenter ;
+    nas:hasTRACONcity "Tallahassee"^^xsd:string ;
+    nas:hasTRACONid "TLH"^^xsd:string ;
+    nas:hasTRACONname "Tallahassee Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:TampaTowerTRACON a nas:TRACON ;
+    rdfs:label "Tampa Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBKVairport,
+        nas:KBOWairport,
+        nas:KLALairport,
+        nas:KMCFairport,
+        nas:KPIEairport,
+        nas:KSPGairport,
+        nas:KSRQairport,
+        nas:KTPAairport,
+        nas:ZMAcenter ;
+    nas:hasTRACONcity "Tampa"^^xsd:string ;
+    nas:hasTRACONid "TPA"^^xsd:string ;
+    nas:hasTRACONname "Tampa Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Florida"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:TerreHaute-HulmanTowerTRACON a nas:TRACON ;
+    rdfs:label "Terre Haute-Hulman Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBMGairport,
+        nas:KHUFairport,
+        nas:ZIDcenter ;
+    nas:hasTRACONcity "Terra Haute"^^xsd:string ;
+    nas:hasTRACONid "HUF"^^xsd:string ;
+    nas:hasTRACONname "Terre Haute-Hulman Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Indiana"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:ToledoTowerTRACON a nas:TRACON ;
+    rdfs:label "Toledo Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KTOLairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Swanton"^^xsd:string ;
+    nas:hasTRACONid "TOL"^^xsd:string ;
+    nas:hasTRACONname "Toledo Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Ohio"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:Tri-CitiesTowerTRACON a nas:TRACON ;
+    rdfs:label "Tri-Cities Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KTRIairport,
+        nas:ZTLcenter ;
+    nas:hasTRACONcity "Blountville"^^xsd:string ;
+    nas:hasTRACONid "TRI"^^xsd:string ;
+    nas:hasTRACONname "Tri-Cities Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Tennessee"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:TucsonTRACON a nas:TRACON ;
+    rdfs:label "Tucson TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KDMAairport,
+        nas:KRYNairport,
+        nas:KTUSairport,
+        nas:ZABcenter ;
+    nas:hasTRACONcity "Tucson"^^xsd:string ;
+    nas:hasTRACONid "U90"^^xsd:string ;
+    nas:hasTRACONname "Tucson TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Arizona"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:TulsaTowerTRACON a nas:TRACON ;
+    rdfs:label "Tulsa Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KRVSairport,
+        nas:KTULairport,
+        nas:ZKCcenter ;
+    nas:hasTRACONcity "Tulsa"^^xsd:string ;
+    nas:hasTRACONid "TUL"^^xsd:string ;
+    nas:hasTRACONname "Tulsa Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Oklahoma"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:TwinFallsTowerTRACON a nas:TRACON ;
+    rdfs:label "Twin Falls Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KTWFairport,
+        nas:ZLCcenter ;
+    nas:hasTRACONcity "Twin Falls"^^xsd:string ;
+    nas:hasTRACONid "TWF"^^xsd:string ;
+    nas:hasTRACONname "Twin Falls Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Idaho"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:WacoTowerTRACON a nas:TRACON ;
+    rdfs:label "Waco Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KACTairport,
+        nas:KCNWairport,
+        nas:ZFWcenter ;
+    nas:hasTRACONcity "Waco"^^xsd:string ;
+    nas:hasTRACONid "ACT"^^xsd:string ;
+    nas:hasTRACONname "Waco Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Texas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:WaterlooTowerTRACON a nas:TRACON ;
+    rdfs:label "Waterloo Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KALOairport,
+        nas:ZAUcenter ;
+    nas:hasTRACONcity "Waterloo"^^xsd:string ;
+    nas:hasTRACONid "ALO"^^xsd:string ;
+    nas:hasTRACONname "Waterloo Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Iowa"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:WichitaTowerTRACON a nas:TRACON ;
+    rdfs:label "Wichita Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBECairport,
+        nas:KHUTairport,
+        nas:KIABairport,
+        nas:KICTairport,
+        nas:ZKCcenter ;
+    nas:hasTRACONcity "Wichita"^^xsd:string ;
+    nas:hasTRACONid "ICT"^^xsd:string ;
+    nas:hasTRACONname "Wichita Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Kansas"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:Wilkes-BarreTowerTRACON a nas:TRACON ;
+    rdfs:label "Wilkes-Barre Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KAVPairport,
+        nas:ZNYcenter ;
+    nas:hasTRACONcity "Avoca"^^xsd:string ;
+    nas:hasTRACONid "AVP"^^xsd:string ;
+    nas:hasTRACONname "Wilkes-Barre Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Pennsylvania"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:WilmingtonTowerTRACON a nas:TRACON ;
+    rdfs:label "Wilmington Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KILMairport,
+        nas:ZDCcenter ;
+    nas:hasTRACONcity "Wilmington"^^xsd:string ;
+    nas:hasTRACONid "ILM"^^xsd:string ;
+    nas:hasTRACONname "Wilmington Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "North Carolina"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+nas:YankeeTRACON a nas:TRACON ;
+    rdfs:label "Yankee TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KBAFairport,
+        nas:KBDLairport,
+        nas:KCEFairport,
+        nas:KHFDairport,
+        nas:KORHairport,
+        nas:ZBWcenter ;
+    nas:hasTRACONcity "Windsor Locks"^^xsd:string ;
+    nas:hasTRACONid "Y90"^^xsd:string ;
+    nas:hasTRACONname "Yankee TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Connecticut"^^xsd:string ;
+    nas:hasTRACONtype "TRACON"^^xsd:string .
+
+nas:YoungstownTowerTRACON a nas:TRACON ;
+    rdfs:label "Youngstown Tower TRACON"^^xsd:string ;
+    nas:hasLOAwith nas:KYNGairport,
+        nas:ZOBcenter ;
+    nas:hasTRACONcity "Vienna"^^xsd:string ;
+    nas:hasTRACONid "YNG"^^xsd:string ;
+    nas:hasTRACONname "Youngstown Tower TRACON"^^xsd:string ;
+    nas:hasTRACONstate "Ohio"^^xsd:string ;
+    nas:hasTRACONtype "TOWER"^^xsd:string .
+
+<https://data.nasa.gov/ontologies/atmonto/TRACONinst> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/NAS> .
+

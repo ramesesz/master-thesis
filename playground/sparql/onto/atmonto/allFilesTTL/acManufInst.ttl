@@ -1,0 +1,3102 @@
+# baseURI: https://data.nasa.gov/ontologies/atmonto/acManufInst
+# imports: https://data.nasa.gov/ontologies/atmonto/NAS
+
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix data: <https://data.nasa.gov/ontologies/atmonto/data#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix gen: <https://data.nasa.gov/ontologies/atmonto/general#> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nas:Aai a nas:AirframeManufacturer ;
+    rdfs:label "Aai"^^xsd:string ;
+    nas:manufacturerCountryName "ISRAEL"^^xsd:string ;
+    nas:manufacturerFullName "AAI CORP."^^xsd:string .
+
+nas:Acac a nas:AirframeManufacturer ;
+    rdfs:label "Acac"^^xsd:string ;
+    nas:manufacturerCountryName "CHINA"^^xsd:string ;
+    nas:manufacturerFullName "AVIC I COMMERCIAL AIRCRAFT COMPANY LTD"^^xsd:string .
+
+nas:AceAviation a nas:AirframeManufacturer ;
+    rdfs:label "Ace Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "INDIA"^^xsd:string ;
+    nas:manufacturerFullName "ACE AVIATION"^^xsd:string .
+
+nas:AdAerospace a nas:AirframeManufacturer ;
+    rdfs:label "Ad Aerospace"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AD AEROSPACE LTD"^^xsd:string .
+
+nas:AdamAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Adam Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ADAM AIRCRAFT INC."^^xsd:string .
+
+nas:AdamsBalloon a nas:AirframeManufacturer ;
+    rdfs:label "Adams Balloon"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ADAMS BALLOONS"^^xsd:string .
+
+nas:AdvancedTechnology a nas:AirframeManufacturer ;
+    rdfs:label "Advanced Technology"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ADVANCED TECHNOLOGY AIRCRAFT CO., INC."^^xsd:string .
+
+nas:AerPegaso a nas:AirframeManufacturer ;
+    rdfs:label "Aer Pegaso"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "AER-PEGASO SPA"^^xsd:string .
+
+nas:AerialArts a nas:AirframeManufacturer ;
+    rdfs:label "Aerial Arts"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AERIAL ARTS LTD"^^xsd:string .
+
+nas:Aeritalia a nas:AirframeManufacturer ;
+    rdfs:label "Aeritalia"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "AERITALIA SOCIETA AEROSPAZIALE ITALIANA PA"^^xsd:string .
+
+nas:Aermacchi a nas:AirframeManufacturer ;
+    rdfs:label "Aermacchi"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "AERONAUTICA MACCHI"^^xsd:string .
+
+nas:Aero a nas:AirframeManufacturer ;
+    rdfs:label "Aero"^^xsd:string ;
+    nas:manufacturerCountryName "POLAND"^^xsd:string ;
+    nas:manufacturerFullName "AERO SPZ"^^xsd:string .
+
+nas:AeroBoero a nas:AirframeManufacturer ;
+    rdfs:label "Aero Boero"^^xsd:string ;
+    nas:manufacturerCountryName "ARGENTINA"^^xsd:string ;
+    nas:manufacturerFullName "AERO BOERO SA"^^xsd:string .
+
+nas:AeroCommander a nas:AirframeManufacturer ;
+    rdfs:label "Aero Commander"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AERO COMMANDER, INC."^^xsd:string .
+
+nas:AeroEngine a nas:AirframeManufacturer ;
+    rdfs:label "Aero Engine"^^xsd:string ;
+    nas:manufacturerCountryName "NEW ZEALAND"^^xsd:string ;
+    nas:manufacturerFullName "AERO ENGINE SERVICES LTD."^^xsd:string .
+
+nas:AeroSpacelines a nas:AirframeManufacturer ;
+    rdfs:label "Aero Spacelines"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AERO SPACELINES INC"^^xsd:string .
+
+nas:AeroVodochody a nas:AirframeManufacturer ;
+    rdfs:label "Aero Vodochody"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "AERO VODOCHODY A.S."^^xsd:string .
+
+nas:Aerocar a nas:AirframeManufacturer ;
+    rdfs:label "Aerocar"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AEROCAR, INC."^^xsd:string .
+
+nas:Aerochute a nas:AirframeManufacturer ;
+    rdfs:label "Aerochute"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "AEROCHUTE INDUSTRIES PTY LTD"^^xsd:string .
+
+nas:Aerofab a nas:AirframeManufacturer ;
+    rdfs:label "Aerofab"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AEROFAB"^^xsd:string .
+
+nas:Aerola a nas:AirframeManufacturer ;
+    rdfs:label "Aerola"^^xsd:string ;
+    nas:manufacturerCountryName "UKRAINE"^^xsd:string ;
+    nas:manufacturerFullName "AEROLA LTD"^^xsd:string .
+
+nas:Aeromere a nas:AirframeManufacturer ;
+    rdfs:label "Aeromere"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "AEROMERE, SA"^^xsd:string .
+
+nas:Aeromot a nas:AirframeManufacturer ;
+    rdfs:label "Aeromot"^^xsd:string ;
+    nas:manufacturerCountryName "BRAZIL"^^xsd:string ;
+    nas:manufacturerFullName "AEROMOT-INDUSTRIA MECANICO METALURGICA LTD."^^xsd:string .
+
+nas:Aeronaut a nas:AirframeManufacturer ;
+    rdfs:label "Aeronaut"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AERONAUT INSTRUCTION RESEARCH"^^xsd:string .
+
+nas:Aeronca a nas:AirframeManufacturer ;
+    rdfs:label "Aeronca"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AERONCA AIRCRAFT CORP."^^xsd:string .
+
+nas:Aeropro a nas:AirframeManufacturer ;
+    rdfs:label "Aeropro"^^xsd:string ;
+    nas:manufacturerCountryName "SLOVAK REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "AEROPRO SRO"^^xsd:string .
+
+nas:Aerospatiale a nas:AirframeManufacturer ;
+    rdfs:label "Aerospatiale"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AEROSPATIALE MATRA"^^xsd:string .
+
+nas:Aerospool a nas:AirframeManufacturer ;
+    rdfs:label "Aerospool"^^xsd:string ;
+    nas:manufacturerCountryName "SLOVAKIA"^^xsd:string ;
+    nas:manufacturerFullName "AEROSPOOL SPOL SRO"^^xsd:string .
+
+nas:Aerosport a nas:AirframeManufacturer ;
+    rdfs:label "Aerosport"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AEROSPORT LTD"^^xsd:string .
+
+nas:Aerostar a nas:AirframeManufacturer ;
+    rdfs:label "Aerostar"^^xsd:string ;
+    nas:manufacturerCountryName "ROMANIA"^^xsd:string ;
+    nas:manufacturerFullName "AEROSTAR SA"^^xsd:string .
+
+nas:AerostarAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Aerostar Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AEROSTAR AIRCRAFT CORP."^^xsd:string .
+
+nas:AerostarInternational a nas:AirframeManufacturer ;
+    rdfs:label "Aerostar International"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AEROSTAR INTERNATIONAL INC."^^xsd:string .
+
+nas:Aerotec a nas:AirframeManufacturer ;
+    rdfs:label "Aerotec"^^xsd:string ;
+    nas:manufacturerCountryName "BRAZIL"^^xsd:string ;
+    nas:manufacturerFullName "AEROTEC"^^xsd:string .
+
+nas:AerotechInternational a nas:AirframeManufacturer ;
+    rdfs:label "Aerotech International"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AEROTECH INTERNATIONAL"^^xsd:string .
+
+nas:Aerotechnik a nas:AirframeManufacturer ;
+    rdfs:label "Aerotechnik"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "AEROTECHNIK"^^xsd:string .
+
+nas:Aerotek a nas:AirframeManufacturer ;
+    rdfs:label "Aerotek"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AEROTEK, INC."^^xsd:string .
+
+nas:Aerovironment a nas:AirframeManufacturer ;
+    rdfs:label "Aerovironment"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AEROVIRONMENT, INC"^^xsd:string .
+
+nas:AetnaAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Aetna Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AETNA AIRCRAFT CORP."^^xsd:string .
+
+nas:Agusta a nas:AirframeManufacturer ;
+    rdfs:label "Agusta"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "AGUSTA SPA"^^xsd:string .
+
+nas:AgustaAerospace a nas:AirframeManufacturer ;
+    rdfs:label "Agusta Aerospace"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AGUSTA AEROSPACE CORPORATION"^^xsd:string .
+
+nas:Agustawestland a nas:AirframeManufacturer ;
+    rdfs:label "Agustawestland"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "AGUSTAWESTLAND SPA"^^xsd:string .
+
+nas:AgustawestlandPhiladelphia a nas:AirframeManufacturer ;
+    rdfs:label "Agustawestland Philadelphia"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AGUSTAWESTLAND PHILADELPHIA CORPORATION"^^xsd:string .
+
+nas:AgustawestlandUk a nas:AirframeManufacturer ;
+    rdfs:label "Agustawestland Uk"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AGUSTAWESTLAND LTD"^^xsd:string .
+
+nas:Aia a nas:AirframeManufacturer ;
+    rdfs:label "Aia"^^xsd:string ;
+    nas:manufacturerCountryName "ALGERIA"^^xsd:string ;
+    nas:manufacturerFullName "ATELIER INDUSTRIEL DE L'AERONAUTIQUE D'ALGER"^^xsd:string .
+
+nas:AirAndSpace a nas:AirframeManufacturer ;
+    rdfs:label "Air And Space"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AIR & SPACE AMERICA, INC."^^xsd:string .
+
+nas:AirCommand a nas:AirframeManufacturer ;
+    rdfs:label "Air Command"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AIR COMMAND MANUFACTURING INC"^^xsd:string .
+
+nas:AirCreation a nas:AirframeManufacturer ;
+    rdfs:label "Air Creation"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AIR CREATION SARL"^^xsd:string .
+
+nas:AirFouga a nas:AirframeManufacturer ;
+    rdfs:label "Air Fouga"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AIR FOUGA"^^xsd:string .
+
+nas:AirParts a nas:AirframeManufacturer ;
+    rdfs:label "Air Parts"^^xsd:string ;
+    nas:manufacturerCountryName "NEW ZEALAND"^^xsd:string ;
+    nas:manufacturerFullName "AIR PARTS, LTD."^^xsd:string .
+
+nas:AirTractor a nas:AirframeManufacturer ;
+    rdfs:label "Air Tractor"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AIR TRACTOR, INC."^^xsd:string .
+
+nas:Airborne a nas:AirframeManufacturer ;
+    rdfs:label "Airborne"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "AIRBORNE WINDSPORTS PTY. LTD"^^xsd:string .
+
+nas:Airbus a nas:AirframeManufacturer ;
+    rdfs:label "Airbus"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AIRBUS S.A.S."^^xsd:string .
+
+nas:AirbusHelicoptersDeutschland a nas:AirframeManufacturer ;
+    rdfs:label "Airbus Helicopters Deutschland"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "AIRBUS HELICOPTERS DEUTSCHLAND GMBH"^^xsd:string .
+
+nas:AirbusHelicoptersFrance a nas:AirframeManufacturer ;
+    rdfs:label "Airbus Helicopters France"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AIRBUS HELICOPTERS"^^xsd:string .
+
+nas:AirbusMilitary a nas:AirframeManufacturer ;
+    rdfs:label "Airbus Military"^^xsd:string ;
+    nas:manufacturerCountryName "SPAIN"^^xsd:string ;
+    nas:manufacturerFullName "AIRBUS MILITARY SOCIEDAD LIMITADA"^^xsd:string .
+
+nas:Airco a nas:AirframeManufacturer ;
+    rdfs:label "Airco"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AIRCRAFT MANUFACTURING CO LTD"^^xsd:string .
+
+nas:AircraftManufacturing a nas:AirframeManufacturer ;
+    rdfs:label "Aircraft Manufacturing"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AIRCRAFT MANUFACTURING AND DEVELOPMENT CORP."^^xsd:string .
+
+nas:AirshipIndustries a nas:AirframeManufacturer ;
+    rdfs:label "Airship Industries"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AIRSHIP INDUSTRIES LTD."^^xsd:string .
+
+nas:Airspeed a nas:AirframeManufacturer ;
+    rdfs:label "Airspeed"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AIRSPEED LTD."^^xsd:string .
+
+nas:Airtour a nas:AirframeManufacturer ;
+    rdfs:label "Airtour"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AIRTOUR BALLOON CO LTD"^^xsd:string .
+
+nas:Aisa a nas:AirframeManufacturer ;
+    rdfs:label "Aisa"^^xsd:string ;
+    nas:manufacturerCountryName "SPAIN"^^xsd:string ;
+    nas:manufacturerFullName "AERONAUTICA INDUSTRIAL, SA"^^xsd:string .
+
+nas:Akkord a nas:AirframeManufacturer ;
+    rdfs:label "Akkord"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "NPO AVIA LTD"^^xsd:string .
+
+nas:Alenia a nas:AirframeManufacturer ;
+    rdfs:label "Alenia"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "ALENIA AEROSPAZIO"^^xsd:string .
+
+nas:AllAmerican a nas:AirframeManufacturer ;
+    rdfs:label "All American"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ALL-AMERICAN AIRCRAFT, INC."^^xsd:string .
+
+nas:Alliance a nas:AirframeManufacturer ;
+    rdfs:label "Alliance"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ALLIANCE AIRCRAFT CORP."^^xsd:string .
+
+nas:Alon a nas:AirframeManufacturer ;
+    rdfs:label "Alon"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ALON INC."^^xsd:string .
+
+nas:Alpavia a nas:AirframeManufacturer ;
+    rdfs:label "Alpavia"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "ALPAVIA, S.A."^^xsd:string .
+
+nas:Alpha a nas:AirframeManufacturer ;
+    rdfs:label "Alpha"^^xsd:string ;
+    nas:manufacturerCountryName "NEW ZEALAND"^^xsd:string ;
+    nas:manufacturerFullName "ALPHA AVIATION MANUFACTURING LTD."^^xsd:string .
+
+nas:AlpiAviation a nas:AirframeManufacturer ;
+    rdfs:label "Alpi Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "ALPI AVIATION SRL"^^xsd:string .
+
+nas:Alpla a nas:AirframeManufacturer ;
+    rdfs:label "Alpla"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRIA"^^xsd:string ;
+    nas:manufacturerFullName "ALPLA WERKE FLUGZEUGBAU"^^xsd:string .
+
+nas:AmateurConstruction a nas:AirframeManufacturer ;
+    rdfs:label "Amateur Construction"^^xsd:string ;
+    nas:manufacturerCountryName "NOT APPLICABLE"^^xsd:string ;
+    nas:manufacturerFullName "AMATEUR CONSTRUCTION"^^xsd:string .
+
+nas:AmericanAviation a nas:AirframeManufacturer ;
+    rdfs:label "American Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AMERICAN AVIATION CORP."^^xsd:string .
+
+nas:AmericanBlimp a nas:AirframeManufacturer ;
+    rdfs:label "American Blimp"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AMERICAN BLIMP CORP."^^xsd:string .
+
+nas:AmericanChampion a nas:AirframeManufacturer ;
+    rdfs:label "American Champion"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AMERICAN CHAMPION AIRCRAFT CORP."^^xsd:string .
+
+nas:AmericanEagle a nas:AirframeManufacturer ;
+    rdfs:label "American Eagle"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AMERICAN EAGLE AIRCRAFT CORP."^^xsd:string .
+
+nas:AmericanEaglecraft a nas:AirframeManufacturer ;
+    rdfs:label "American Eaglecraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AMERICAN EAGLECRAFT CO."^^xsd:string .
+
+nas:AmericanGeneral a nas:AirframeManufacturer ;
+    rdfs:label "American General"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AMERICAN GENERAL AIRCRAFT HOLDING CO, INC."^^xsd:string .
+
+nas:AmericanMoth a nas:AirframeManufacturer ;
+    rdfs:label "American Moth"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AMERICAN MOTH"^^xsd:string .
+
+nas:Amf a nas:AirframeManufacturer ;
+    rdfs:label "Amf"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AMF MICROFLIGHT LTD"^^xsd:string .
+
+nas:Ams a nas:AirframeManufacturer ;
+    rdfs:label "Ams"^^xsd:string ;
+    nas:manufacturerCountryName "SLOVENIA"^^xsd:string ;
+    nas:manufacturerFullName "AMS FLIGHT D.O.O"^^xsd:string .
+
+nas:Amt a nas:AirframeManufacturer ;
+    rdfs:label "Amt"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "AMT HELICOPTERS PTY LTD."^^xsd:string .
+
+nas:Anec a nas:AirframeManufacturer ;
+    rdfs:label "Anec"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AIR NAVIGATION AND ENGINEERING COMPANY LTD"^^xsd:string .
+
+nas:AngelAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Angel Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ANGEL AIRCRAFT CORP"^^xsd:string .
+
+nas:Antonov a nas:AirframeManufacturer ;
+    rdfs:label "Antonov"^^xsd:string ;
+    nas:manufacturerCountryName "UKRAINE"^^xsd:string ;
+    nas:manufacturerFullName "AVIATSIONNY NAUCHNO-TEKHNIC KOMPLEKS IMENI OK ANTONOV"^^xsd:string .
+
+nas:AppalachianAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Appalachian Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "APPALACHIAN AIRCRAFT CORPORATION"^^xsd:string .
+
+nas:Aquila a nas:AirframeManufacturer ;
+    rdfs:label "Aquila"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "AQUILA AVIATION GMBH"^^xsd:string .
+
+nas:Arctic a nas:AirframeManufacturer ;
+    rdfs:label "Arctic"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ARCTIC AIRCRAFT CO."^^xsd:string .
+
+nas:ArmstrongWhitworth a nas:AirframeManufacturer ;
+    rdfs:label "Armstrong Whitworth"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SIR W.G.ARMSTRONG WHITWORTH AIRCRAFT CO. LTD."^^xsd:string .
+
+nas:Arrow a nas:AirframeManufacturer ;
+    rdfs:label "Arrow"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ARROW AIRCRAFT AND MOTOR CORP."^^xsd:string .
+
+nas:Arv a nas:AirframeManufacturer ;
+    rdfs:label "Arv"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "ARV AVIATION"^^xsd:string .
+
+nas:Asap a nas:AirframeManufacturer ;
+    rdfs:label "Asap"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "AIRCRAFT SALES AND PARTS"^^xsd:string .
+
+nas:Atg a nas:AirframeManufacturer ;
+    rdfs:label "Atg"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AVIATION TECHNOLOGY GROUP INC."^^xsd:string .
+
+nas:Atr a nas:AirframeManufacturer ;
+    rdfs:label "Atr"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AVIONS DE TRANSPORT REGIONAL"^^xsd:string .
+
+nas:Augur a nas:AirframeManufacturer ;
+    rdfs:label "Augur"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "AERONAUTICAL CENTER AUGER LTD"^^xsd:string .
+
+nas:Auster a nas:AirframeManufacturer ;
+    rdfs:label "Auster"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AUSTER AIRCRAFT LTD."^^xsd:string .
+
+nas:Autogyro a nas:AirframeManufacturer ;
+    rdfs:label "Autogyro"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "AUTOGYRO GMBH"^^xsd:string .
+
+nas:Avia a nas:AirframeManufacturer ;
+    rdfs:label "Avia"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "AVIA A.S."^^xsd:string .
+
+nas:AviaBellanca a nas:AirframeManufacturer ;
+    rdfs:label "Avia Bellanca"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AVIABELLANCA AIRCRAFT CORP."^^xsd:string .
+
+nas:Aviamilano a nas:AirframeManufacturer ;
+    rdfs:label "Aviamilano"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "AVIA MILANO COSTRUZIONI AERONAUTICHE"^^xsd:string .
+
+nas:AvianBalloon a nas:AirframeManufacturer ;
+    rdfs:label "Avian Balloon"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AVIAN BALLOON CORP."^^xsd:string .
+
+nas:Aviastroitel a nas:AirframeManufacturer ;
+    rdfs:label "Aviastroitel"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "AVIASTROITEL LTD"^^xsd:string .
+
+nas:AviasudEngineering a nas:AirframeManufacturer ;
+    rdfs:label "Aviasud Engineering"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AVIASUD ENGINEERING SA"^^xsd:string .
+
+nas:Aviat a nas:AirframeManufacturer ;
+    rdfs:label "Aviat"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AVIAT AIRCRAFT, INC."^^xsd:string .
+
+nas:Aviatika a nas:AirframeManufacturer ;
+    rdfs:label "Aviatika"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "AVIATIKA LAYT"^^xsd:string .
+
+nas:AviationTraders a nas:AirframeManufacturer ;
+    rdfs:label "Aviation Traders"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AVIATION TRADERS LTD."^^xsd:string .
+
+nas:AvionsClaudePiel a nas:AirframeManufacturer ;
+    rdfs:label "Avions Claude Piel"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AVIONS CLAUDE PIEL"^^xsd:string .
+
+nas:AvionsFairey a nas:AirframeManufacturer ;
+    rdfs:label "Avions Fairey"^^xsd:string ;
+    nas:manufacturerCountryName "BELGIUM"^^xsd:string ;
+    nas:manufacturerFullName "AVIONS FAIREY SA"^^xsd:string .
+
+nas:AvionsMignet a nas:AirframeManufacturer ;
+    rdfs:label "Avions Mignet"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE D'EXPLORATION DES AERONEFS HENRI MIGNET"^^xsd:string .
+
+nas:AvionsMudry a nas:AirframeManufacturer ;
+    rdfs:label "Avions Mudry"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AVIONS MUDRY ET COMPAGNIE"^^xsd:string .
+
+nas:AvionsRobin a nas:AirframeManufacturer ;
+    rdfs:label "Avions Robin"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AVIONS PIERRE ROBIN"^^xsd:string .
+
+nas:Aviotechnica a nas:AirframeManufacturer ;
+    rdfs:label "Aviotechnica"^^xsd:string ;
+    nas:manufacturerCountryName "BULGARIA"^^xsd:string ;
+    nas:manufacturerFullName "AVIOTECHNICA"^^xsd:string .
+
+nas:Avro a nas:AirframeManufacturer ;
+    rdfs:label "Avro"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "AV ROE AND CO LTD"^^xsd:string .
+
+nas:Ayres a nas:AirframeManufacturer ;
+    rdfs:label "Ayres"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AYRES CORP."^^xsd:string .
+
+nas:BallonfabrikAugsburg a nas:AirframeManufacturer ;
+    rdfs:label "Ballonfabrik Augsburg"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "BALLONFABRIK AUGSBURG GMBH AND CO."^^xsd:string .
+
+nas:BallonsChaize a nas:AirframeManufacturer ;
+    rdfs:label "Ballons Chaize"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "BALLONS CHAIZE"^^xsd:string .
+
+nas:BalloonWorks a nas:AirframeManufacturer ;
+    rdfs:label "Balloon Works"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "THE BALLOON WORKS"^^xsd:string .
+
+nas:BalloonsAloft a nas:AirframeManufacturer ;
+    rdfs:label "Balloons Aloft"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "BALLOONS ALOFT AUSTRALIA PTY. LTD."^^xsd:string .
+
+nas:BalonyKubicek a nas:AirframeManufacturer ;
+    rdfs:label "Balony Kubicek"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "BALONY KUBICEK SPOL. S R.O."^^xsd:string .
+
+nas:Bay a nas:AirframeManufacturer ;
+    rdfs:label "Bay"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BAY AVIATION SERVICES"^^xsd:string .
+
+nas:Beagle a nas:AirframeManufacturer ;
+    rdfs:label "Beagle"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BEAGLE AIRCRAFT LTD."^^xsd:string .
+
+nas:BeagleAuster a nas:AirframeManufacturer ;
+    rdfs:label "Beagle Auster"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BEAGLE AUSTER AIRCRAFT LTD"^^xsd:string .
+
+nas:BeagleMiles a nas:AirframeManufacturer ;
+    rdfs:label "Beagle Miles"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BEAGLE MILES AIRCRAFT LTD"^^xsd:string .
+
+nas:BeagleWallis a nas:AirframeManufacturer ;
+    rdfs:label "Beagle Wallis"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BEAGLE WALLIS LTD"^^xsd:string .
+
+nas:BeaverRxEnterprises a nas:AirframeManufacturer ;
+    rdfs:label "Beaver Rx Enterprises"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "BEAVER RX ENTERPRISES"^^xsd:string .
+
+nas:Beech a nas:AirframeManufacturer ;
+    rdfs:label "Beech"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BEECH AIRCRAFT CO."^^xsd:string .
+
+nas:Beechcraft a nas:AirframeManufacturer ;
+    rdfs:label "Beechcraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BEECHCRAFT CORPORATION"^^xsd:string .
+
+nas:BellAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Bell Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BELL AIRCRAFT CORP."^^xsd:string .
+
+nas:BellHelicopterCanada a nas:AirframeManufacturer ;
+    rdfs:label "Bell Helicopter Canada"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "BELL HELICOPTER TEXTRON CANADA"^^xsd:string .
+
+nas:BellHelicopterUnitedStates a nas:AirframeManufacturer ;
+    rdfs:label "Bell Helicopter United States"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BELL HELICOPTER TEXTRON, INC."^^xsd:string .
+
+nas:BellancaAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Bellanca Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BELLANCA AIRCRAFT CORP."^^xsd:string .
+
+nas:BellancaViking a nas:AirframeManufacturer ;
+    rdfs:label "Bellanca Viking"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BELLANCA, INC."^^xsd:string .
+
+nas:BenesMraz a nas:AirframeManufacturer ;
+    rdfs:label "Benes Mraz"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "BENES MRAZ"^^xsd:string .
+
+nas:Bensen a nas:AirframeManufacturer ;
+    rdfs:label "Bensen"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BENSEN AIRCRAFT CORPORATION"^^xsd:string .
+
+nas:Berieva a nas:AirframeManufacturer ;
+    rdfs:label "Berieva"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "BERIEVA AVIATSIONNYI KOMPANIYA"^^xsd:string .
+
+nas:BerlinDomanHelicopters a nas:AirframeManufacturer ;
+    rdfs:label "Berlin Doman Helicopters"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BERLIN DOMAN HELICOPTERS INC"^^xsd:string .
+
+nas:Billings a nas:AirframeManufacturer ;
+    rdfs:label "Billings"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BILLINGS FLYING SERVICE, INC."^^xsd:string .
+
+nas:BinderAviatik a nas:AirframeManufacturer ;
+    rdfs:label "Binder Aviatik"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "BINDER AVIATIK KG"^^xsd:string .
+
+nas:BinderMotorenbau a nas:AirframeManufacturer ;
+    rdfs:label "Binder Motorenbau"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "BINDER MOTORENBAU GMBH"^^xsd:string .
+
+nas:Bird a nas:AirframeManufacturer ;
+    rdfs:label "Bird"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BIRD AIRCRAFT CO."^^xsd:string .
+
+nas:BirdmanAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Birdman Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BIRDMAN AIRCRAFT INC"^^xsd:string .
+
+nas:BirdmanEnterprises a nas:AirframeManufacturer ;
+    rdfs:label "Birdman Enterprises"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "BIRDMAN ENTERPRISES LTD."^^xsd:string .
+
+nas:Blackburn a nas:AirframeManufacturer ;
+    rdfs:label "Blackburn"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BLACKBURN AIRCRAFT LTD"^^xsd:string .
+
+nas:Bloch a nas:AirframeManufacturer ;
+    rdfs:label "Bloch"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE DES AVIONS MARCEL BLOCH"^^xsd:string .
+
+nas:Boeing a nas:AirframeManufacturer ;
+    rdfs:label "Boeing"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "THE BOEING CO."^^xsd:string .
+
+nas:BoeingVertol a nas:AirframeManufacturer ;
+    rdfs:label "Boeing Vertol"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BOEING VERTOL CO."^^xsd:string .
+
+nas:Bolkow a nas:AirframeManufacturer ;
+    rdfs:label "Bolkow"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "BOLKOW GMBH"^^xsd:string .
+
+nas:Bombardier a nas:AirframeManufacturer ;
+    rdfs:label "Bombardier"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "BOMBARDIER INC."^^xsd:string .
+
+nas:Brantly a nas:AirframeManufacturer ;
+    rdfs:label "Brantly"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BRANTLY INTERNATIONAL, INC."^^xsd:string .
+
+nas:Brditschka a nas:AirframeManufacturer ;
+    rdfs:label "Brditschka"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRIA"^^xsd:string ;
+    nas:manufacturerFullName "HB BRDITSCHKA GMBH & CO KG"^^xsd:string .
+
+nas:Bredanardi a nas:AirframeManufacturer ;
+    rdfs:label "Bredanardi"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "BREDA NARDI COSTRUZIONE AERONAUTICHE SPA"^^xsd:string .
+
+nas:Breezer a nas:AirframeManufacturer ;
+    rdfs:label "Breezer"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "BREEZER AIRCRAFT GMBH AND CO KG"^^xsd:string .
+
+nas:Breguet a nas:AirframeManufacturer ;
+    rdfs:label "Breguet"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE DES ATELIERS D'AVIATION LOUIS BREGUET"^^xsd:string .
+
+nas:Brewster a nas:AirframeManufacturer ;
+    rdfs:label "Brewster"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BREWSTER AERONAUTICAL CORP."^^xsd:string .
+
+nas:Briegleb a nas:AirframeManufacturer ;
+    rdfs:label "Briegleb"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BRIEGLEB"^^xsd:string .
+
+nas:Bristol a nas:AirframeManufacturer ;
+    rdfs:label "Bristol"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BRISTOL AEROPLANE COMPANY"^^xsd:string .
+
+nas:BritishAerospace a nas:AirframeManufacturer ;
+    rdfs:label "British Aerospace"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BAE SYSTEMS"^^xsd:string .
+
+nas:BritishAircraft a nas:AirframeManufacturer ;
+    rdfs:label "British Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BRITISH AIRCRAFT CORP."^^xsd:string .
+
+nas:BrittenNorman a nas:AirframeManufacturer ;
+    rdfs:label "Britten Norman"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BRITTEN-NORMAN LTD."^^xsd:string .
+
+nas:Brooklands a nas:AirframeManufacturer ;
+    rdfs:label "Brooklands"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BROOKLANDS AEROSPACE GROUP PLC"^^xsd:string .
+
+nas:BrushCoachworks a nas:AirframeManufacturer ;
+    rdfs:label "Brush Coachworks"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "BRUSH COACHWORKS"^^xsd:string .
+
+nas:Bucker a nas:AirframeManufacturer ;
+    rdfs:label "Bucker"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "BUCKER FLUGZEUGBAU GMBH"^^xsd:string .
+
+nas:Bucuresti a nas:AirframeManufacturer ;
+    rdfs:label "Bucuresti"^^xsd:string ;
+    nas:manufacturerCountryName "ROMANIA"^^xsd:string ;
+    nas:manufacturerFullName "INTREPRINDEREA DE AVIOANE BUCURESTI"^^xsd:string .
+
+nas:Buhl a nas:AirframeManufacturer ;
+    rdfs:label "Buhl"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BUHL AIRCRAFT CO."^^xsd:string .
+
+nas:BurkhartGrob a nas:AirframeManufacturer ;
+    rdfs:label "Burkhart Grob"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "BURKHART GROB LUFT-UND RAUMFAHRT GMBH & CO. KG"^^xsd:string .
+
+nas:Bushmaster a nas:AirframeManufacturer ;
+    rdfs:label "Bushmaster"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "BUSHMASTER AIRCRAFT CORPORATION"^^xsd:string .
+
+nas:Caarp a nas:AirframeManufacturer ;
+    rdfs:label "Caarp"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "COOPERATIVE DES ATELIERS AERONAUTIQUES DE LA REGIO"^^xsd:string .
+
+nas:Callair a nas:AirframeManufacturer ;
+    rdfs:label "Callair"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CALL AIRCRAFT CO."^^xsd:string .
+
+nas:CameronBalloonsUnitedKingdom a nas:AirframeManufacturer ;
+    rdfs:label "Cameron Balloons United Kingdom"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "CAMERON BALLOONS LTD."^^xsd:string .
+
+nas:CameronBalloonsUnitedStates a nas:AirframeManufacturer ;
+    rdfs:label "Cameron Balloons United States"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CAMERON BALLOONS U.S."^^xsd:string .
+
+nas:Campbell a nas:AirframeManufacturer ;
+    rdfs:label "Campbell"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "CAMPBELL AIRCRAFT LTD"^^xsd:string .
+
+nas:Canadair a nas:AirframeManufacturer ;
+    rdfs:label "Canadair"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "CANADAIR LTD."^^xsd:string .
+
+nas:CanadianUltralight a nas:AirframeManufacturer ;
+    rdfs:label "Canadian Ultralight"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "CANADIAN ULTRALIGHT MANUFACTURING LTD."^^xsd:string .
+
+nas:Caproni a nas:AirframeManufacturer ;
+    rdfs:label "Caproni"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "CAPRONI VIZZOLA COSTRUZIONI AERONAUTICHE SPA"^^xsd:string .
+
+nas:Carmam a nas:AirframeManufacturer ;
+    rdfs:label "Carmam"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "CARMAM SA"^^xsd:string .
+
+nas:Casa a nas:AirframeManufacturer ;
+    rdfs:label "Casa"^^xsd:string ;
+    nas:manufacturerCountryName "SPAIN"^^xsd:string ;
+    nas:manufacturerFullName "CONSTRUCCIONES AERONAUTICAS SA"^^xsd:string .
+
+nas:Ccf a nas:AirframeManufacturer ;
+    rdfs:label "Ccf"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "CANADIAN CAR AND FOUNDRY"^^xsd:string .
+
+nas:Cea a nas:AirframeManufacturer ;
+    rdfs:label "Cea"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "CENTRE EST AERONAUTIQUE"^^xsd:string .
+
+nas:Centrair a nas:AirframeManufacturer ;
+    rdfs:label "Centrair"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE NOUVELLE CENTRAIR"^^xsd:string .
+
+nas:Cessna a nas:AirframeManufacturer ;
+    rdfs:label "Cessna"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CESSNA AIRCRAFT CO."^^xsd:string .
+
+nas:CfmMetalFax a nas:AirframeManufacturer ;
+    rdfs:label "Cfm Metal Fax"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "CFM AIRCRAFT LTD"^^xsd:string .
+
+nas:ChampionAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Champion Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CHAMPION AIRCRAFT CORP."^^xsd:string .
+
+nas:ChanceVought a nas:AirframeManufacturer ;
+    rdfs:label "Chance Vought"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CHANCE-VOUGHT"^^xsd:string .
+
+nas:ChaseAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Chase Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CHASE AIRCRAFT CO."^^xsd:string .
+
+nas:ChichesterMiles a nas:AirframeManufacturer ;
+    rdfs:label "Chichester Miles"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "CHICHESTER MILES CONSULTANTS LTD"^^xsd:string .
+
+nas:Christen a nas:AirframeManufacturer ;
+    rdfs:label "Christen"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CHRISTEN INDUSTRIES, INC."^^xsd:string .
+
+nas:Cirrus a nas:AirframeManufacturer ;
+    rdfs:label "Cirrus"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CIRRUS DESIGN CORP."^^xsd:string .
+
+nas:Colonial a nas:AirframeManufacturer ;
+    rdfs:label "Colonial"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "COLONIAL AIRCRAFT CO."^^xsd:string .
+
+nas:ColtBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Colt Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "COLT BALLOONS LTD."^^xsd:string .
+
+nas:ColtingBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Colting Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "IRELAND"^^xsd:string ;
+    nas:manufacturerFullName "COLTING BALLOONS LTD."^^xsd:string .
+
+nas:Columbia a nas:AirframeManufacturer ;
+    rdfs:label "Columbia"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "COLUMBIA AIR LINERS, INC."^^xsd:string .
+
+nas:ComcoIkarus a nas:AirframeManufacturer ;
+    rdfs:label "Comco Ikarus"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "COMCO IKARUS GMBH"^^xsd:string .
+
+nas:CommandAire a nas:AirframeManufacturer ;
+    rdfs:label "Command Aire"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "COMMAND-AIRE, INC."^^xsd:string .
+
+nas:Commander a nas:AirframeManufacturer ;
+    rdfs:label "Commander"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "COMMANDER AIRCRAFT CO."^^xsd:string .
+
+nas:Commonwealth a nas:AirframeManufacturer ;
+    rdfs:label "Commonwealth"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "COMMONWEALTH AIRCRAFT CORPORATION"^^xsd:string .
+
+nas:CommonwealthAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Commonwealth Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "COMMONWEALTH AIRCRAFT CO."^^xsd:string .
+
+nas:Conair a nas:AirframeManufacturer ;
+    rdfs:label "Conair"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "CONAIR AVIATION INC."^^xsd:string .
+
+nas:ConsolidatedAeronautics a nas:AirframeManufacturer ;
+    rdfs:label "Consolidated Aeronautics"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CONSOLIDATED AERONAUTICS"^^xsd:string .
+
+nas:ConsolidatedVultee a nas:AirframeManufacturer ;
+    rdfs:label "Consolidated Vultee"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CONSOLIDATED VULTEE AIRCRAFT CORP."^^xsd:string .
+
+nas:CorbettFarms a nas:AirframeManufacturer ;
+    rdfs:label "Corbett Farms"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "CORBETT FARMS LTD"^^xsd:string .
+
+nas:CorporateJets a nas:AirframeManufacturer ;
+    rdfs:label "Corporate Jets"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "CORPORATE JETS"^^xsd:string .
+
+nas:Corvus a nas:AirframeManufacturer ;
+    rdfs:label "Corvus"^^xsd:string ;
+    nas:manufacturerCountryName "HUNGARY"^^xsd:string ;
+    nas:manufacturerFullName "CORVUS AIRCRAFT KFT"^^xsd:string .
+
+nas:CosmikAviation a nas:AirframeManufacturer ;
+    rdfs:label "Cosmik Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "COSMIK AVIATION LTD"^^xsd:string .
+
+nas:CubCrafters a nas:AirframeManufacturer ;
+    rdfs:label "Cub Crafters"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CUB CRAFTERS INC"^^xsd:string .
+
+nas:Culver a nas:AirframeManufacturer ;
+    rdfs:label "Culver"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CULVER AIRCRAFT CORP."^^xsd:string .
+
+nas:CurtissWright a nas:AirframeManufacturer ;
+    rdfs:label "Curtiss Wright"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "CURTISS-WRIGHT CORP."^^xsd:string .
+
+nas:CycloneAirsports a nas:AirframeManufacturer ;
+    rdfs:label "Cyclone Airsports"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "CYCLONE AIRSPORTS LTD TRADING AS PEGASUS AVIATION"^^xsd:string .
+
+nas:CzechSport a nas:AirframeManufacturer ;
+    rdfs:label "Czech Sport"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "CZECH SPORT"^^xsd:string .
+
+nas:DassaultAviation a nas:AirframeManufacturer ;
+    rdfs:label "Dassault Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "DASSAULT AVIATION"^^xsd:string .
+
+nas:DaytonWright a nas:AirframeManufacturer ;
+    rdfs:label "Dayton Wright"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "DAYTON WRIGHT AIRPLANE CO"^^xsd:string .
+
+nas:DeBourgogne a nas:AirframeManufacturer ;
+    rdfs:label "De Bourgogne"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "CONSTRUCTIONS AERONAUTIQUES DE BOURGOGNE"^^xsd:string .
+
+nas:DeHavillandAustralia a nas:AirframeManufacturer ;
+    rdfs:label "De Havilland Australia"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "DE HAVILLAND AUSTRALIA"^^xsd:string .
+
+nas:DeHavillandCanada a nas:AirframeManufacturer ;
+    rdfs:label "De Havilland Canada"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "DE HAVILLAND OF CANADA"^^xsd:string .
+
+nas:DeHavillandUnitedKingdom a nas:AirframeManufacturer ;
+    rdfs:label "De Havilland United Kingdom"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "THE DE HAVILLAND AIRCRAFT CO., LTD."^^xsd:string .
+
+nas:DeeHoward a nas:AirframeManufacturer ;
+    rdfs:label "Dee Howard"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "THE DEE HOWARD CO."^^xsd:string .
+
+nas:Designability a nas:AirframeManufacturer ;
+    rdfs:label "Designability"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "DESIGNABILITY LTD"^^xsd:string .
+
+nas:DgFlugzeugbau a nas:AirframeManufacturer ;
+    rdfs:label "Dg Flugzeugbau"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "DG FLUGZEUGBAU GMBH"^^xsd:string .
+
+nas:DiamondAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Diamond Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "DIAMOND AIRCRAFT INDUSTRIES, INC."^^xsd:string .
+
+nas:DiamondAustria a nas:AirframeManufacturer ;
+    rdfs:label "Diamond Austria"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRIA"^^xsd:string ;
+    nas:manufacturerFullName "DIAMOND AIRCRAFT INDUSTRIES GMBH"^^xsd:string .
+
+nas:Dinfia a nas:AirframeManufacturer ;
+    rdfs:label "Dinfia"^^xsd:string ;
+    nas:manufacturerCountryName "ARGENTINA"^^xsd:string ;
+    nas:manufacturerFullName "DIRECCION NACIONAL DE INVESTIGACIONES Y FABRICACIO"^^xsd:string .
+
+nas:Dkba a nas:AirframeManufacturer ;
+    rdfs:label "Dkba"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIA"^^xsd:string ;
+    nas:manufacturerFullName "DOLGOPRUDNENSKOGO DESIGN BUREAU OF AUTOMATION"^^xsd:string .
+
+nas:Dornier a nas:AirframeManufacturer ;
+    rdfs:label "Dornier"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "DORNIER GMBH"^^xsd:string .
+
+nas:Douglas a nas:AirframeManufacturer ;
+    rdfs:label "Douglas"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "DOUGLAS AIRCRAFT CO., INC."^^xsd:string .
+
+nas:Downer a nas:AirframeManufacturer ;
+    rdfs:label "Downer"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "DOWNER AIRCRAFT CO."^^xsd:string .
+
+nas:Eagle a nas:AirframeManufacturer ;
+    rdfs:label "Eagle"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "EAGLE AIRCRAFT CO."^^xsd:string .
+
+nas:EagleAircraftAustralia a nas:AirframeManufacturer ;
+    rdfs:label "Eagle Aircraft Australia"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "EAGLE AIRCRAFT PTY LTD"^^xsd:string .
+
+nas:EagleAircraftMalaysia a nas:AirframeManufacturer ;
+    rdfs:label "Eagle Aircraft Malaysia"^^xsd:string ;
+    nas:manufacturerCountryName "MALAYSIA"^^xsd:string ;
+    nas:manufacturerFullName "EAGLE AIRCRAFT MALAYSIA SDN BHD"^^xsd:string .
+
+nas:EagleBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Eagle Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "EAGLE BALLOONS CORPORATION"^^xsd:string .
+
+nas:EclipseAviation a nas:AirframeManufacturer ;
+    rdfs:label "Eclipse Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ECLIPSE AVIATION"^^xsd:string .
+
+nas:Edgley a nas:AirframeManufacturer ;
+    rdfs:label "Edgley"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "EDGLEY AIRCRAFT LTD"^^xsd:string .
+
+nas:EidgenossichesFlugzeugwerk a nas:AirframeManufacturer ;
+    rdfs:label "Eidgenossiches Flugzeugwerk"^^xsd:string ;
+    nas:manufacturerCountryName "SWITZERLAND"^^xsd:string ;
+    nas:manufacturerFullName "EIDGENOSSICHES FLUGZEUGWERK"^^xsd:string .
+
+nas:Eipper a nas:AirframeManufacturer ;
+    rdfs:label "Eipper"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "EIPPER INDUSTRIES INC."^^xsd:string .
+
+nas:EiriEinoRiihela a nas:AirframeManufacturer ;
+    rdfs:label "Eiri Eino Riihela"^^xsd:string ;
+    nas:manufacturerCountryName "FINLAND"^^xsd:string ;
+    nas:manufacturerFullName "EIRI EINO RIIHELA KY"^^xsd:string .
+
+nas:Eiriavion a nas:AirframeManufacturer ;
+    rdfs:label "Eiriavion"^^xsd:string ;
+    nas:manufacturerCountryName "FINLAND"^^xsd:string ;
+    nas:manufacturerFullName "EIRIAVION OY"^^xsd:string .
+
+nas:ElGavilan a nas:AirframeManufacturer ;
+    rdfs:label "El Gavilan"^^xsd:string ;
+    nas:manufacturerCountryName "COLOMBIA"^^xsd:string ;
+    nas:manufacturerFullName "EL GAVILA S.A."^^xsd:string .
+
+nas:Ela a nas:AirframeManufacturer ;
+    rdfs:label "Ela"^^xsd:string ;
+    nas:manufacturerCountryName "SPAIN"^^xsd:string ;
+    nas:manufacturerFullName "ELA AVIACION SL"^^xsd:string .
+
+nas:Elan a nas:AirframeManufacturer ;
+    rdfs:label "Elan"^^xsd:string ;
+    nas:manufacturerCountryName "SLOVENIA"^^xsd:string ;
+    nas:manufacturerFullName "ELAN"^^xsd:string .
+
+nas:Emair a nas:AirframeManufacturer ;
+    rdfs:label "Emair"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "THE EMROTH CO. DBA EMAIR"^^xsd:string .
+
+nas:Embraer a nas:AirframeManufacturer ;
+    rdfs:label "Embraer"^^xsd:string ;
+    nas:manufacturerCountryName "BRAZIL"^^xsd:string ;
+    nas:manufacturerFullName "EMBRAER SA"^^xsd:string .
+
+nas:Emigh a nas:AirframeManufacturer ;
+    rdfs:label "Emigh"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "EMIGH AIRCRAFT CO."^^xsd:string .
+
+nas:Emivest a nas:AirframeManufacturer ;
+    rdfs:label "Emivest"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "EMIVEST AEROSPACE CORPORATION"^^xsd:string .
+
+nas:EnglishElectric a nas:AirframeManufacturer ;
+    rdfs:label "English Electric"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "ENGLISH ELECTRIC COMPANY LTD."^^xsd:string .
+
+nas:EnstromHelicopter a nas:AirframeManufacturer ;
+    rdfs:label "Enstrom Helicopter"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "THE ENSTROM HELICOPTER CORP."^^xsd:string .
+
+nas:Erco a nas:AirframeManufacturer ;
+    rdfs:label "Erco"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ENGINEERING AND RESEARCH CORP."^^xsd:string .
+
+nas:EricksonAirCrane a nas:AirframeManufacturer ;
+    rdfs:label "Erickson Air Crane"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ERICKSON AIR-CRANE INCORPORATED"^^xsd:string .
+
+nas:Escapade a nas:AirframeManufacturer ;
+    rdfs:label "Escapade"^^xsd:string ;
+    nas:manufacturerCountryName "NOT APPLICABLE"^^xsd:string ;
+    nas:manufacturerFullName "ESCAPADE AIRCRAFT LTD"^^xsd:string .
+
+nas:EurocopterCanada a nas:AirframeManufacturer ;
+    rdfs:label "Eurocopter Canada"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "EUROCOPTER CANADA LTD."^^xsd:string .
+
+nas:EurocopterDeutschland a nas:AirframeManufacturer ;
+    rdfs:label "Eurocopter Deutschland"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "EUROCOPTER DEUTSCHLAND GMBH"^^xsd:string .
+
+nas:EurocopterFrance a nas:AirframeManufacturer ;
+    rdfs:label "Eurocopter France"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "EUROCOPTER FRANCE"^^xsd:string .
+
+nas:Europa a nas:AirframeManufacturer ;
+    rdfs:label "Europa"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "EUROPA AIRCRAFT (2004) LTD"^^xsd:string .
+
+nas:Eurowing a nas:AirframeManufacturer ;
+    rdfs:label "Eurowing"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "EUROWING LTD"^^xsd:string .
+
+nas:Evangel a nas:AirframeManufacturer ;
+    rdfs:label "Evangel"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "EVANGEL AIRCRAFT CORPORATION"^^xsd:string .
+
+nas:EvektorAerotechnik a nas:AirframeManufacturer ;
+    rdfs:label "Evektor Aerotechnik"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "EVEKTOR-AEROTECHNIK INC."^^xsd:string .
+
+nas:Everett a nas:AirframeManufacturer ;
+    rdfs:label "Everett"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "EVERETT GYROPLANES LTD"^^xsd:string .
+
+nas:Extra a nas:AirframeManufacturer ;
+    rdfs:label "Extra"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "EXTRA FLUGZEUGPRODUKTIONS-UND VERTRIEBS GMBH"^^xsd:string .
+
+nas:FairchildAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Fairchild Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "FAIRCHILD AIRCRAFT LTD"^^xsd:string .
+
+nas:FairchildAviation a nas:AirframeManufacturer ;
+    rdfs:label "Fairchild Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "FAIRCHILD AVIATION CORP."^^xsd:string .
+
+nas:FaireyAviation a nas:AirframeManufacturer ;
+    rdfs:label "Fairey Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "FAIREY AVIATION CO. LTD."^^xsd:string .
+
+nas:Fantasy a nas:AirframeManufacturer ;
+    rdfs:label "Fantasy"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "FANTASY SKY PROMOTIONS, INC."^^xsd:string .
+
+nas:FantasyAir a nas:AirframeManufacturer ;
+    rdfs:label "Fantasy Air"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "FANTASY AIR S.R.O"^^xsd:string .
+
+nas:FederalAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Federal Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "FEDERAL AIRCRAFT LTD"^^xsd:string .
+
+nas:FfaFlugzeugwerke a nas:AirframeManufacturer ;
+    rdfs:label "Ffa Flugzeugwerke"^^xsd:string ;
+    nas:manufacturerCountryName "SWITZERLAND"^^xsd:string ;
+    nas:manufacturerFullName "FFA FLUGZEUGWERKE ALTENRHEIN"^^xsd:string .
+
+nas:FftGyroflug a nas:AirframeManufacturer ;
+    rdfs:label "Fft Gyroflug"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "FFT GESELLSCHAFT FUR FLUGZEUG UND FASERVERBUND TECHNOLOGIE MBH"^^xsd:string .
+
+nas:Fiat a nas:AirframeManufacturer ;
+    rdfs:label "Fiat"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "FIAT SPA"^^xsd:string .
+
+nas:Fieseler a nas:AirframeManufacturer ;
+    rdfs:label "Fieseler"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "GERHARD FIESELER WERKE"^^xsd:string .
+
+nas:FleetAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Fleet Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "FLEET AIRCRAFT LTD"^^xsd:string .
+
+nas:Fletcher a nas:AirframeManufacturer ;
+    rdfs:label "Fletcher"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "FLETCHER AVIATION CORP."^^xsd:string .
+
+nas:FlightDesign a nas:AirframeManufacturer ;
+    rdfs:label "Flight Design"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "FLIGHT DESIGN GMBH"^^xsd:string .
+
+nas:FlsAerospace a nas:AirframeManufacturer ;
+    rdfs:label "Fls Aerospace"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "FLS AEROSPACE LIGHT AIRCRAFT LTD"^^xsd:string .
+
+nas:FlyBuyUltralights a nas:AirframeManufacturer ;
+    rdfs:label "Fly Buy Ultralights"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "FLY BUY ULTRALIGHTS LTD"^^xsd:string .
+
+nas:Flygindustri a nas:AirframeManufacturer ;
+    rdfs:label "Flygindustri"^^xsd:string ;
+    nas:manufacturerCountryName "SWEDEN"^^xsd:string ;
+    nas:manufacturerFullName "AB FLYGINDUSTRI"^^xsd:string .
+
+nas:Flylight a nas:AirframeManufacturer ;
+    rdfs:label "Flylight"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "FLYLIGHT AIRSPORTS LTD"^^xsd:string .
+
+nas:Fma a nas:AirframeManufacturer ;
+    rdfs:label "Fma"^^xsd:string ;
+    nas:manufacturerCountryName "ARGENTINA"^^xsd:string ;
+    nas:manufacturerFullName "FABRICA MILITAR DE AVIONES"^^xsd:string .
+
+nas:FockeWulf a nas:AirframeManufacturer ;
+    rdfs:label "Focke Wulf"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "FOCKE WULF FLUGZEUGBAU GMBH"^^xsd:string .
+
+nas:Fokker a nas:AirframeManufacturer ;
+    rdfs:label "Fokker"^^xsd:string ;
+    nas:manufacturerCountryName "NETHERLANDS"^^xsd:string ;
+    nas:manufacturerFullName "FOKKER AVIATION"^^xsd:string .
+
+nas:FokkerAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Fokker Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "FOKKER AIRCRAFT CORP."^^xsd:string .
+
+nas:Folland a nas:AirframeManufacturer ;
+    rdfs:label "Folland"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "FOLLAND AIRCRAFT LTD"^^xsd:string .
+
+nas:Ford a nas:AirframeManufacturer ;
+    rdfs:label "Ford"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "FORD MOTOR CO."^^xsd:string .
+
+nas:Fornaire a nas:AirframeManufacturer ;
+    rdfs:label "Fornaire"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "FORNAIRE AIRCRAFT CO."^^xsd:string .
+
+nas:Found a nas:AirframeManufacturer ;
+    rdfs:label "Found"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "FOUND AIRCRAFT CANADA INC."^^xsd:string .
+
+nas:Fournier a nas:AirframeManufacturer ;
+    rdfs:label "Fournier"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "FOURNIER AVIATION"^^xsd:string .
+
+nas:Fuji a nas:AirframeManufacturer ;
+    rdfs:label "Fuji"^^xsd:string ;
+    nas:manufacturerCountryName "JAPAN"^^xsd:string ;
+    nas:manufacturerFullName "FUJI JUKOGYO KABUSHIKI KAISHA"^^xsd:string .
+
+nas:Funk a nas:AirframeManufacturer ;
+    rdfs:label "Funk"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "FUNK AIRCRAFT CO."^^xsd:string .
+
+nas:Gaf a nas:AirframeManufacturer ;
+    rdfs:label "Gaf"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "GOVERNMENT AIRCRAFT FACTORY"^^xsd:string .
+
+nas:Gal a nas:AirframeManufacturer ;
+    rdfs:label "Gal"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "GENERAL AIRCRAFT LTD."^^xsd:string .
+
+nas:GalaxyBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Galaxy Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GALAXY BALLOONS, INC."^^xsd:string .
+
+nas:Gardan a nas:AirframeManufacturer ;
+    rdfs:label "Gardan"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AVIONS YVES GARDAN"^^xsd:string .
+
+nas:Garlick a nas:AirframeManufacturer ;
+    rdfs:label "Garlick"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GARLLICK HELICOPTERS INC."^^xsd:string .
+
+nas:GatesLearjet a nas:AirframeManufacturer ;
+    rdfs:label "Gates Learjet"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GATES LEARJET"^^xsd:string .
+
+nas:Gefa a nas:AirframeManufacturer ;
+    rdfs:label "Gefa"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "GEFA FLUG GMBH"^^xsd:string .
+
+nas:GeneralAtomics a nas:AirframeManufacturer ;
+    rdfs:label "General Atomics"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GENERAL ATOMICS AERONAUTICAL SYSTEMS"^^xsd:string .
+
+nas:GeneralAvia a nas:AirframeManufacturer ;
+    rdfs:label "General Avia"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "GENERAL AVIA CONSTRUZIONI AERONAUTICHE"^^xsd:string .
+
+nas:GeneralDynamics a nas:AirframeManufacturer ;
+    rdfs:label "General Dynamics"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GENERAL DYNAMICS CORP."^^xsd:string .
+
+nas:GeneralMotors a nas:AirframeManufacturer ;
+    rdfs:label "General Motors"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GENERAL MOTORS CORP."^^xsd:string .
+
+nas:Gidroplan a nas:AirframeManufacturer ;
+    rdfs:label "Gidroplan"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "GIDROPLAN OOO"^^xsd:string .
+
+nas:Gippsland a nas:AirframeManufacturer ;
+    rdfs:label "Gippsland"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "GIPPSLAND AERONAUTICS PTY,  LTD."^^xsd:string .
+
+nas:GlaserDirks a nas:AirframeManufacturer ;
+    rdfs:label "Glaser Dirks"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "GLASER DIRKS"^^xsd:string .
+
+nas:Glasflugel a nas:AirframeManufacturer ;
+    rdfs:label "Glasflugel"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "GLASFLUGEL-ING. E. HANLE"^^xsd:string .
+
+nas:Globe a nas:AirframeManufacturer ;
+    rdfs:label "Globe"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GLOBE AIRCRAFT CORP."^^xsd:string .
+
+nas:Gloster a nas:AirframeManufacturer ;
+    rdfs:label "Gloster"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "GLOSTER AIRCRAFT COMPANY"^^xsd:string .
+
+nas:Goldwing a nas:AirframeManufacturer ;
+    rdfs:label "Goldwing"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GOLDWING LTD"^^xsd:string .
+
+nas:Goodyear a nas:AirframeManufacturer ;
+    rdfs:label "Goodyear"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GOODYEAR AEROSPACE CORP."^^xsd:string .
+
+nas:GreatLakes a nas:AirframeManufacturer ;
+    rdfs:label "Great Lakes"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GREAT LAKES AIRCRAFT CO."^^xsd:string .
+
+nas:Grumman a nas:AirframeManufacturer ;
+    rdfs:label "Grumman"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GRUMMAN AEROSPACE CORP."^^xsd:string .
+
+nas:Guimbal a nas:AirframeManufacturer ;
+    rdfs:label "Guimbal"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "HELICOPTERES GUIMBAL"^^xsd:string .
+
+nas:Gulfstream a nas:AirframeManufacturer ;
+    rdfs:label "Gulfstream"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "GULFSTREAM AEROSPACE CORP."^^xsd:string .
+
+nas:HandleyPage a nas:AirframeManufacturer ;
+    rdfs:label "Handley Page"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "HANDLEY PAGE"^^xsd:string .
+
+nas:Harbin a nas:AirframeManufacturer ;
+    rdfs:label "Harbin"^^xsd:string ;
+    nas:manufacturerCountryName "CHINA"^^xsd:string ;
+    nas:manufacturerFullName "HARBIN AIRCRAFT MANUFACTURING CORP."^^xsd:string .
+
+nas:Harlow a nas:AirframeManufacturer ;
+    rdfs:label "Harlow"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HARLOW AIRCRAFT CORP."^^xsd:string .
+
+nas:Hawker a nas:AirframeManufacturer ;
+    rdfs:label "Hawker"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "HAWKER AIRCRAFT LTD."^^xsd:string .
+
+nas:HawkerBeechcraft a nas:AirframeManufacturer ;
+    rdfs:label "Hawker Beechcraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HAWKER BEECHCRAFT CORPORATION"^^xsd:string .
+
+nas:HawkerSiddeley a nas:AirframeManufacturer ;
+    rdfs:label "Hawker Siddeley"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "HAWKER SIDDELEY AVIATION"^^xsd:string .
+
+nas:HbAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Hb Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRIA"^^xsd:string ;
+    nas:manufacturerFullName "HB  FLUGTECHNIK GMBH"^^xsd:string .
+
+nas:HeadBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Head Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HEAD BALLOONS, INC."^^xsd:string .
+
+nas:HelioCorporation a nas:AirframeManufacturer ;
+    rdfs:label "Helio Corporation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HELIO AIRCRAFT LTD."^^xsd:string .
+
+nas:HillerAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Hiller Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HILLER AIRCRAFT CORP."^^xsd:string .
+
+nas:HillerAviation a nas:AirframeManufacturer ;
+    rdfs:label "Hiller Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HILLER AVIATION"^^xsd:string .
+
+nas:HillerHelicopters a nas:AirframeManufacturer ;
+    rdfs:label "Hiller Helicopters"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HILLER HELICOPTERS"^^xsd:string .
+
+nas:Hindustan a nas:AirframeManufacturer ;
+    rdfs:label "Hindustan"^^xsd:string ;
+    nas:manufacturerCountryName "INDIA"^^xsd:string ;
+    nas:manufacturerFullName "HINDUSTAN AERONAUTICS LTD."^^xsd:string .
+
+nas:HispanoAviacion a nas:AirframeManufacturer ;
+    rdfs:label "Hispano Aviacion"^^xsd:string ;
+    nas:manufacturerCountryName "SPAIN"^^xsd:string ;
+    nas:manufacturerFullName "HISPANO AVIACION"^^xsd:string .
+
+nas:HornetMicrolights a nas:AirframeManufacturer ;
+    rdfs:label "Hornet Microlights"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "HORNET MICROLIGHTS LTD"^^xsd:string .
+
+nas:Howard a nas:AirframeManufacturer ;
+    rdfs:label "Howard"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HOWARD AIRCRAFT CORP."^^xsd:string .
+
+nas:HowardHughesEngineering a nas:AirframeManufacturer ;
+    rdfs:label "Howard Hughes Engineering"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "HOWARD HUGHES ENGINEERING PTY. LTD."^^xsd:string .
+
+nas:Hph a nas:AirframeManufacturer ;
+    rdfs:label "Hph"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "HPH LTD"^^xsd:string .
+
+nas:Hughes a nas:AirframeManufacturer ;
+    rdfs:label "Hughes"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "HUGHES HELICOPTER, INC."^^xsd:string .
+
+nas:HuntingPercival a nas:AirframeManufacturer ;
+    rdfs:label "Hunting Percival"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "HUNTING PERCIVAL AIRCRAFT LTD."^^xsd:string .
+
+nas:HurelDubois a nas:AirframeManufacturer ;
+    rdfs:label "Hurel Dubois"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE DE CONSTRUCTION DES AVIONS HUREL DUBOIS"^^xsd:string .
+
+nas:IarBrasov a nas:AirframeManufacturer ;
+    rdfs:label "Iar Brasov"^^xsd:string ;
+    nas:manufacturerCountryName "ROMANIA"^^xsd:string ;
+    nas:manufacturerFullName "INTREPRINDEREA AERONAUTICI ROMANESC S.A. BRASOV"^^xsd:string .
+
+nas:Ilyushin a nas:AirframeManufacturer ;
+    rdfs:label "Ilyushin"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "AVIATSIONNYI KOMPLEKS IMENI SV ILYUSHINA OAO"^^xsd:string .
+
+nas:Iniziative a nas:AirframeManufacturer ;
+    rdfs:label "Iniziative"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "INIZIATIVE INDUSTRIALI ITALIANE SPA"^^xsd:string .
+
+nas:InstitutLotnictwa a nas:AirframeManufacturer ;
+    rdfs:label "Institut Lotnictwa"^^xsd:string ;
+    nas:manufacturerCountryName "POLAND"^^xsd:string ;
+    nas:manufacturerFullName "INSTITUT LOTNICTWA"^^xsd:string .
+
+nas:Instiu a nas:AirframeManufacturer ;
+    rdfs:label "Instiu"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "INSITU INC."^^xsd:string .
+
+nas:Interavia a nas:AirframeManufacturer ;
+    rdfs:label "Interavia"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "INTERAVIA DESIGN BUREAU"^^xsd:string .
+
+nas:Interceptor a nas:AirframeManufacturer ;
+    rdfs:label "Interceptor"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "INTERCEPTOR CORP."^^xsd:string .
+
+nas:Intermountain a nas:AirframeManufacturer ;
+    rdfs:label "Intermountain"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "INTERMOUNTAIN MANUFACTURING CO."^^xsd:string .
+
+nas:Interstate a nas:AirframeManufacturer ;
+    rdfs:label "Interstate"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "INTERSTATE AIRCRAFT AND ENGINEERING CORP."^^xsd:string .
+
+nas:Iptn a nas:AirframeManufacturer ;
+    rdfs:label "Iptn"^^xsd:string ;
+    nas:manufacturerCountryName "INDONESIA"^^xsd:string ;
+    nas:manufacturerFullName "INDUSTRI PESAWAT TERBANG NUSANTARA"^^xsd:string .
+
+nas:Israel a nas:AirframeManufacturer ;
+    rdfs:label "Israel"^^xsd:string ;
+    nas:manufacturerCountryName "ISRAEL"^^xsd:string ;
+    nas:manufacturerFullName "ISRAEL AIRCRAFT INDUSTRIES LTD."^^xsd:string .
+
+nas:IssoireAviation a nas:AirframeManufacturer ;
+    rdfs:label "Issoire Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "ISSOIRE AVIATION"^^xsd:string .
+
+nas:Jabiru a nas:AirframeManufacturer ;
+    rdfs:label "Jabiru"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "JABIRU AIRCRAFT PTY"^^xsd:string .
+
+nas:Jastreb a nas:AirframeManufacturer ;
+    rdfs:label "Jastreb"^^xsd:string ;
+    nas:manufacturerCountryName "YUGOSLAVIA"^^xsd:string ;
+    nas:manufacturerFullName "AVIONA I JEDRILICA JASTREB"^^xsd:string .
+
+nas:JetstreamAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Jetstream Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "JETSTREAM AIRCRAFT LTD."^^xsd:string .
+
+nas:Jodel a nas:AirframeManufacturer ;
+    rdfs:label "Jodel"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE DES AVIONS JODEL"^^xsd:string .
+
+nas:Junkers a nas:AirframeManufacturer ;
+    rdfs:label "Junkers"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "JUNKERS FLUGZEUGHAU GMBH"^^xsd:string .
+
+nas:Just a nas:AirframeManufacturer ;
+    rdfs:label "Just"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "JUST AIRCRAFT LLC"^^xsd:string .
+
+nas:KamanAerospace a nas:AirframeManufacturer ;
+    rdfs:label "Kaman Aerospace"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "KAMAN AEROSPACE CORP."^^xsd:string .
+
+nas:Kamov a nas:AirframeManufacturer ;
+    rdfs:label "Kamov"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "KAMOV OAO"^^xsd:string .
+
+nas:KavanaghBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Kavanagh Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "KAVANAGH BALLOONS PTY. LIMITED"^^xsd:string .
+
+nas:Kawasaki a nas:AirframeManufacturer ;
+    rdfs:label "Kawasaki"^^xsd:string ;
+    nas:manufacturerCountryName "JAPAN"^^xsd:string ;
+    nas:manufacturerFullName "KAWASAKI JUKOGYO KABUSHIKI KAISHA"^^xsd:string .
+
+nas:Kazan a nas:AirframeManufacturer ;
+    rdfs:label "Kazan"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "KAZANSKI VERTOLYOTNY ZAVOD"^^xsd:string .
+
+nas:Keystone a nas:AirframeManufacturer ;
+    rdfs:label "Keystone"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "KEYSTONE HELICOPTER"^^xsd:string .
+
+nas:Klemm a nas:AirframeManufacturer ;
+    rdfs:label "Klemm"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "HANS KLEMM FLUGZEUGE GMBH"^^xsd:string .
+
+nas:KreiderReisner a nas:AirframeManufacturer ;
+    rdfs:label "Kreider Reisner"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "KREIDER-REISNER AIRCRAFT CO."^^xsd:string .
+
+nas:Lake a nas:AirframeManufacturer ;
+    rdfs:label "Lake"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "LAKE AIRCRAFT CO."^^xsd:string .
+
+nas:Lancair a nas:AirframeManufacturer ;
+    rdfs:label "Lancair"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "LANCAIR INTERNATIONAL"^^xsd:string .
+
+nas:LangeFlugzeugbau a nas:AirframeManufacturer ;
+    rdfs:label "Lange Flugzeugbau"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "LANGE FLUGZEUGBAU GMBH"^^xsd:string .
+
+nas:Lasa a nas:AirframeManufacturer ;
+    rdfs:label "Lasa"^^xsd:string ;
+    nas:manufacturerCountryName "MEXICO"^^xsd:string ;
+    nas:manufacturerFullName "LOCKHEED-AZCARATE S.A."^^xsd:string .
+
+nas:Latecoere a nas:AirframeManufacturer ;
+    rdfs:label "Latecoere"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "AVIATION LATECOERE"^^xsd:string .
+
+nas:Laverda a nas:AirframeManufacturer ;
+    rdfs:label "Laverda"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "LAVERDA SOCIETA PER AZIONI"^^xsd:string .
+
+nas:Laviasa a nas:AirframeManufacturer ;
+    rdfs:label "Laviasa"^^xsd:string ;
+    nas:manufacturerCountryName "ARGENTINA"^^xsd:string ;
+    nas:manufacturerFullName "LATIN AMERICANA DE AVIACION S.A."^^xsd:string .
+
+nas:Lear a nas:AirframeManufacturer ;
+    rdfs:label "Lear"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "LEARJET, INC."^^xsd:string .
+
+nas:Let a nas:AirframeManufacturer ;
+    rdfs:label "Let"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "LETECKE ZAVODY AS"^^xsd:string .
+
+nas:Libert a nas:AirframeManufacturer ;
+    rdfs:label "Libert"^^xsd:string ;
+    nas:manufacturerCountryName "BELGIUM"^^xsd:string ;
+    nas:manufacturerFullName "BALLONS LIBERT SPRL"^^xsd:string .
+
+nas:Liberty a nas:AirframeManufacturer ;
+    rdfs:label "Liberty"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "LIBERTY AEROSPACE INC."^^xsd:string .
+
+nas:LightSport a nas:AirframeManufacturer ;
+    rdfs:label "Light Sport"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "LIGHT SPORT AVIATION LTD"^^xsd:string .
+
+nas:Lightwing a nas:AirframeManufacturer ;
+    rdfs:label "Lightwing"^^xsd:string ;
+    nas:manufacturerCountryName "SWITZERLAND"^^xsd:string ;
+    nas:manufacturerFullName "LIGHTWING AG"^^xsd:string .
+
+nas:LindstrandBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Lindstrand Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "LINDSTRAND HOT AIR BALLOONS LTD."^^xsd:string .
+
+nas:Lockheed a nas:AirframeManufacturer ;
+    rdfs:label "Lockheed"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "LOCKHEED AIRCRAFT CORP."^^xsd:string .
+
+nas:LockheedMartin a nas:AirframeManufacturer ;
+    rdfs:label "Lockheed Martin"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "LOCKEED MARTIN CORPORATION"^^xsd:string .
+
+nas:LuscombeAirplane a nas:AirframeManufacturer ;
+    rdfs:label "Luscombe Airplane"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "LUSCOMBE AIRPLANE CO."^^xsd:string .
+
+nas:MagLetalstvo a nas:AirframeManufacturer ;
+    rdfs:label "Mag Letalstvo"^^xsd:string ;
+    nas:manufacturerCountryName "SLOVENIA"^^xsd:string ;
+    nas:manufacturerFullName "MAG LETALSTVO D.O.O."^^xsd:string .
+
+nas:Magni a nas:AirframeManufacturer ;
+    rdfs:label "Magni"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "MAGNI GYRO SRL"^^xsd:string .
+
+nas:MagniUk a nas:AirframeManufacturer ;
+    rdfs:label "Magni Uk"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MAGNI GYRO LTD"^^xsd:string .
+
+nas:MainairSports a nas:AirframeManufacturer ;
+    rdfs:label "Mainair Sports"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MAINAIR SPORTS LTD"^^xsd:string .
+
+nas:MarganskiAndMyslowski a nas:AirframeManufacturer ;
+    rdfs:label "Marganski And Myslowski"^^xsd:string ;
+    nas:manufacturerCountryName "POLAND"^^xsd:string ;
+    nas:manufacturerFullName "ZAKLADY LOTNICZE MARGANSKI AND MYSLOWSKI SP ZOO"^^xsd:string .
+
+nas:MarshAviation a nas:AirframeManufacturer ;
+    rdfs:label "Marsh Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MARSH AVIATION COMPANY"^^xsd:string .
+
+nas:Martin a nas:AirframeManufacturer ;
+    rdfs:label "Martin"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "THE MARTIN CO."^^xsd:string .
+
+nas:Maule a nas:AirframeManufacturer ;
+    rdfs:label "Maule"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MAULE AEROSPACE TECHNOLOGY, INC."^^xsd:string .
+
+nas:MaxHolste a nas:AirframeManufacturer ;
+    rdfs:label "Max Holste"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE DES AVIONS MAX HOLSTE"^^xsd:string .
+
+nas:Mbb a nas:AirframeManufacturer ;
+    rdfs:label "Mbb"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "MESSERSCHMITT-BOELKOW-BLOHM GMBH"^^xsd:string .
+
+nas:MbbCanada a nas:AirframeManufacturer ;
+    rdfs:label "Mbb Canada"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "MBB HELICOPTER CANADA LTD."^^xsd:string .
+
+nas:Mcculloch a nas:AirframeManufacturer ;
+    rdfs:label "Mcculloch"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MCCULLOCH AIRCRAFT CORP."^^xsd:string .
+
+nas:McdonnellDouglas a nas:AirframeManufacturer ;
+    rdfs:label "Mcdonnell Douglas"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MCDONNELL DOUGLAS CORP."^^xsd:string .
+
+nas:Mckinnon a nas:AirframeManufacturer ;
+    rdfs:label "Mckinnon"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MCKINNON-VIKING ENTERPRISES"^^xsd:string .
+
+nas:MdHelicopter a nas:AirframeManufacturer ;
+    rdfs:label "Md Helicopter"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MD HELICOPTER INC."^^xsd:string .
+
+nas:MedwayMicrolights a nas:AirframeManufacturer ;
+    rdfs:label "Medway Microlights"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MEDWAY MICROLIGHTS"^^xsd:string .
+
+nas:Menavia a nas:AirframeManufacturer ;
+    rdfs:label "Menavia"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE MENAVIA"^^xsd:string .
+
+nas:Merville a nas:AirframeManufacturer ;
+    rdfs:label "Merville"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "MERVILLE"^^xsd:string .
+
+nas:Messerschmitt a nas:AirframeManufacturer ;
+    rdfs:label "Messerschmitt"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "MESSERSCHMITT"^^xsd:string .
+
+nas:Meyers a nas:AirframeManufacturer ;
+    rdfs:label "Meyers"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MEYERS AIRCRAFT CO."^^xsd:string .
+
+nas:Micco a nas:AirframeManufacturer ;
+    rdfs:label "Micco"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MICCO AIRCRAFT CO."^^xsd:string .
+
+nas:MicroAviation a nas:AirframeManufacturer ;
+    rdfs:label "Micro Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "NEW ZEALAND"^^xsd:string ;
+    nas:manufacturerFullName "MICRO AVIATION LTD"^^xsd:string .
+
+nas:Microflight a nas:AirframeManufacturer ;
+    rdfs:label "Microflight"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MICROFLIGHT AIRCRAFT LTD"^^xsd:string .
+
+nas:Microknight a nas:AirframeManufacturer ;
+    rdfs:label "Microknight"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MICROKNIGHT AVIATION LTD"^^xsd:string .
+
+nas:MidlandUltralights a nas:AirframeManufacturer ;
+    rdfs:label "Midland Ultralights"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MIDLAND ULTRALIGHTS LTD"^^xsd:string .
+
+nas:Mil a nas:AirframeManufacturer ;
+    rdfs:label "Mil"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "MOSKOVSKY VERTOLETNY ZAVOD IMIENI ML MILYA OAO"^^xsd:string .
+
+nas:MilesAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Miles Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MILES AIRCRAFT"^^xsd:string .
+
+nas:Millicer a nas:AirframeManufacturer ;
+    rdfs:label "Millicer"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "MILLICER AIRCRAFT INDUSTRIES"^^xsd:string .
+
+nas:Mitsubishi a nas:AirframeManufacturer ;
+    rdfs:label "Mitsubishi"^^xsd:string ;
+    nas:manufacturerCountryName "JAPAN"^^xsd:string ;
+    nas:manufacturerFullName "MITSUBISHI JUKOGYO KABUSHIKI KAISHA"^^xsd:string .
+
+nas:Molino a nas:AirframeManufacturer ;
+    rdfs:label "Molino"^^xsd:string ;
+    nas:manufacturerCountryName "FINLAND"^^xsd:string ;
+    nas:manufacturerFullName "MOLINO OY"^^xsd:string .
+
+nas:Monocoupe a nas:AirframeManufacturer ;
+    rdfs:label "Monocoupe"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MONOCOUPE CORP."^^xsd:string .
+
+nas:Mooney a nas:AirframeManufacturer ;
+    rdfs:label "Mooney"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MOONEY INTERNATIONAL CORPORATION"^^xsd:string .
+
+nas:MoraneSaulnier a nas:AirframeManufacturer ;
+    rdfs:label "Morane Saulnier"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE ANONYME DES AEROPLANES MORANE-SAULNIER"^^xsd:string .
+
+nas:MoravanAeroplanes a nas:AirframeManufacturer ;
+    rdfs:label "Moravan Aeroplanes"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "MORAVAN AEROPLANES, A.S."^^xsd:string .
+
+nas:MorrisMotors a nas:AirframeManufacturer ;
+    rdfs:label "Morris Motors"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MORRIS MOTORS"^^xsd:string .
+
+nas:Morrisey a nas:AirframeManufacturer ;
+    rdfs:label "Morrisey"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "MORRISEY AVIATION INC"^^xsd:string .
+
+nas:MossBrothers a nas:AirframeManufacturer ;
+    rdfs:label "Moss Brothers"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MOSS BROTHERS AIRCRAFT LTD."^^xsd:string .
+
+nas:MothAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Moth Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "MOTH AIRCRAFT"^^xsd:string .
+
+nas:Murphy a nas:AirframeManufacturer ;
+    rdfs:label "Murphy"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "MURPHY AIRCRAFT MANUFACTURING LTD"^^xsd:string .
+
+nas:Myasishchev a nas:AirframeManufacturer ;
+    rdfs:label "Myasishchev"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIA"^^xsd:string ;
+    nas:manufacturerFullName "VM MYASISHCHEV EXPERIMENTAL DESIGN BUREAU"^^xsd:string .
+
+nas:Namc a nas:AirframeManufacturer ;
+    rdfs:label "Namc"^^xsd:string ;
+    nas:manufacturerCountryName "JAPAN"^^xsd:string ;
+    nas:manufacturerFullName "NIHON KOKUKI SEIZO KABUSHIKI KAISHA"^^xsd:string .
+
+nas:Nanchang a nas:AirframeManufacturer ;
+    rdfs:label "Nanchang"^^xsd:string ;
+    nas:manufacturerCountryName "CHINA"^^xsd:string ;
+    nas:manufacturerFullName "NANCHANG AIRCRAFT MANUFACTURING CO."^^xsd:string .
+
+nas:NandoGroppo a nas:AirframeManufacturer ;
+    rdfs:label "Nando Groppo"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "ING NANDO GROPPO SRL"^^xsd:string .
+
+nas:NationalBallooning a nas:AirframeManufacturer ;
+    rdfs:label "National Ballooning"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "NATIONAL BALLOONING LTD."^^xsd:string .
+
+nas:NavalAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Naval Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "NAVAL AIRCRAFT FACTORY"^^xsd:string .
+
+nas:NavionRangemaster a nas:AirframeManufacturer ;
+    rdfs:label "Navion Rangemaster"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "NAVION RANGEMASTER AIRCRAFT CORP."^^xsd:string .
+
+nas:NavionTusco a nas:AirframeManufacturer ;
+    rdfs:label "Navion Tusco"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "NAVION AIRCRAFT CO./TUSCO CORP."^^xsd:string .
+
+nas:Neiva a nas:AirframeManufacturer ;
+    rdfs:label "Neiva"^^xsd:string ;
+    nas:manufacturerCountryName "BRAZIL"^^xsd:string ;
+    nas:manufacturerFullName "INDUSTRIA AERONAUTICA NEIVA SA"^^xsd:string .
+
+nas:Neukom a nas:AirframeManufacturer ;
+    rdfs:label "Neukom"^^xsd:string ;
+    nas:manufacturerCountryName "SWITZERLAND"^^xsd:string ;
+    nas:manufacturerFullName "SEGELFLUGZEUGBAU A NEUKOM"^^xsd:string .
+
+nas:NewPiper a nas:AirframeManufacturer ;
+    rdfs:label "New Piper"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "PIPER AIRCRAFT, INC."^^xsd:string .
+
+nas:NewZealandAerospace a nas:AirframeManufacturer ;
+    rdfs:label "New Zealand Aerospace"^^xsd:string ;
+    nas:manufacturerCountryName "NEW ZEALAND"^^xsd:string ;
+    nas:manufacturerFullName "NEW ZEALAND AEROSPACE INDUSTRIES LTD."^^xsd:string .
+
+nas:NobleHardman a nas:AirframeManufacturer ;
+    rdfs:label "Noble Hardman"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "NOBLE HARDMAN AVIATION LTD"^^xsd:string .
+
+nas:Noorduyn a nas:AirframeManufacturer ;
+    rdfs:label "Noorduyn"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "NOORDUYN AVIATION, LTD."^^xsd:string .
+
+nas:Noosa a nas:AirframeManufacturer ;
+    rdfs:label "Noosa"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "NOOSA AIR PTY LTD. (AUSTFLIGHT ULA PTY. LTD.)"^^xsd:string .
+
+nas:NordAviation a nas:AirframeManufacturer ;
+    rdfs:label "Nord Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE NATIONALE DE CONSTRUCTIONS AERONAUTIQUES DU NORD"^^xsd:string .
+
+nas:NorthAmericanAviation a nas:AirframeManufacturer ;
+    rdfs:label "North American Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "NORTH AMERICAN AVIATION, INC."^^xsd:string .
+
+nas:Northrop a nas:AirframeManufacturer ;
+    rdfs:label "Northrop"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "NORTHROP CORP."^^xsd:string .
+
+nas:NorthropGrumman a nas:AirframeManufacturer ;
+    rdfs:label "Northrop Grumman"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "NORTHROP GRUMMAN CORPORATION"^^xsd:string .
+
+nas:Notheisz a nas:AirframeManufacturer ;
+    rdfs:label "Notheisz"^^xsd:string ;
+    nas:manufacturerCountryName "HUNGARY"^^xsd:string ;
+    nas:manufacturerFullName "NOTHEISZ BALLON HUNGARY KFT"^^xsd:string .
+
+nas:Ogma a nas:AirframeManufacturer ;
+    rdfs:label "Ogma"^^xsd:string ;
+    nas:manufacturerCountryName "PORTUGAL"^^xsd:string ;
+    nas:manufacturerFullName "OFICINAS GERAIS DE MATERIAL AERONAUTICO"^^xsd:string .
+
+nas:OmaSud a nas:AirframeManufacturer ;
+    rdfs:label "Oma Sud"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "OMA SUD SPA"^^xsd:string .
+
+nas:Omf a nas:AirframeManufacturer ;
+    rdfs:label "Omf"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "OMF FLUGZEUGWERKE GMBH"^^xsd:string .
+
+nas:Optica a nas:AirframeManufacturer ;
+    rdfs:label "Optica"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "OPTICA INDUSTRIES LTD"^^xsd:string .
+
+nas:Orlican a nas:AirframeManufacturer ;
+    rdfs:label "Orlican"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "ORLICAN N.P."^^xsd:string .
+
+nas:Oskbes a nas:AirframeManufacturer ;
+    rdfs:label "Oskbes"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "OSKBES MAI"^^xsd:string .
+
+nas:PAndMAviation a nas:AirframeManufacturer ;
+    rdfs:label "P And M Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "P AND M AVIATION LTD"^^xsd:string .
+
+nas:PacificAerospace a nas:AirframeManufacturer ;
+    rdfs:label "Pacific Aerospace"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "PACIFIC AEROSPACE CORP. LTD."^^xsd:string .
+
+nas:Panavia a nas:AirframeManufacturer ;
+    rdfs:label "Panavia"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "PANAVIA AIRCRAFT GMBH"^^xsd:string .
+
+nas:Partenavia a nas:AirframeManufacturer ;
+    rdfs:label "Partenavia"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "PARTENAVIA COSTRUZIONI AERONAUTICHE SPA"^^xsd:string .
+
+nas:Percival a nas:AirframeManufacturer ;
+    rdfs:label "Percival"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "PERCIVAL AIRCRAFT LTD."^^xsd:string .
+
+nas:PerformanceAviation a nas:AirframeManufacturer ;
+    rdfs:label "Performance Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "PERFORMANCE AVIATION LTD"^^xsd:string .
+
+nas:PhillipsAndPowis a nas:AirframeManufacturer ;
+    rdfs:label "Phillips And Powis"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "PHILLIPS AND POWIS AIRCRAFT LTD"^^xsd:string .
+
+nas:Piaggio a nas:AirframeManufacturer ;
+    rdfs:label "Piaggio"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "INDUSTRIE AERONAUTICHE E MECCANICHE RINALDO PIAGGIO SPA"^^xsd:string .
+
+nas:Piasecki a nas:AirframeManufacturer ;
+    rdfs:label "Piasecki"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "PIASECKI HELICOPTER CORP."^^xsd:string .
+
+nas:Piccard a nas:AirframeManufacturer ;
+    rdfs:label "Piccard"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "DON PICCARD BALLOONS, INC."^^xsd:string .
+
+nas:Pik a nas:AirframeManufacturer ;
+    rdfs:label "Pik"^^xsd:string ;
+    nas:manufacturerCountryName "FINLAND"^^xsd:string ;
+    nas:manufacturerFullName "POLYTEKNIKKOJEN ILMAILUKERHO"^^xsd:string .
+
+nas:Pilatus a nas:AirframeManufacturer ;
+    rdfs:label "Pilatus"^^xsd:string ;
+    nas:manufacturerCountryName "SWITZERLAND"^^xsd:string ;
+    nas:manufacturerFullName "PILATUS AIRCRAFT LTD."^^xsd:string .
+
+nas:PilatusBrittenNorman a nas:AirframeManufacturer ;
+    rdfs:label "Pilatus Britten Norman"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "PILATUS BRITTEN-NORMAN LTD."^^xsd:string .
+
+nas:PioneerAviation a nas:AirframeManufacturer ;
+    rdfs:label "Pioneer Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "PIONEER AVIATION LTD"^^xsd:string .
+
+nas:Piper a nas:AirframeManufacturer ;
+    rdfs:label "Piper"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "PIPER AIRCRAFT CORP."^^xsd:string .
+
+nas:Pitcairn a nas:AirframeManufacturer ;
+    rdfs:label "Pitcairn"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "AGA AVIATION CORP."^^xsd:string .
+
+nas:PittsAcrobatic a nas:AirframeManufacturer ;
+    rdfs:label "Pitts Acrobatic"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "PITTS ACROBATIC CO."^^xsd:string .
+
+nas:PneumaTechnikEFicht a nas:AirframeManufacturer ;
+    rdfs:label "Pneuma Technik E Ficht"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "PNEUMA-TECHNIK, E.FICHT"^^xsd:string .
+
+nas:Polikarpov a nas:AirframeManufacturer ;
+    rdfs:label "Polikarpov"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "POLIKARPOV"^^xsd:string .
+
+nas:Porterfield a nas:AirframeManufacturer ;
+    rdfs:label "Porterfield"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "PORTERFIELD AIRCRAFT CORP."^^xsd:string .
+
+nas:PotezAirFouga a nas:AirframeManufacturer ;
+    rdfs:label "Potez Air Fouga"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "POTEZ AIR FOUGA"^^xsd:string .
+
+nas:PowerchuteSystems a nas:AirframeManufacturer ;
+    rdfs:label "Powerchute Systems"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "POWERCHUTE SYSTEMS INTERNATIONAL LTD"^^xsd:string .
+
+nas:PrattRead a nas:AirframeManufacturer ;
+    rdfs:label "Pratt Read"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "PRATT, READ AND CO."^^xsd:string .
+
+nas:PzlBielsko a nas:AirframeManufacturer ;
+    rdfs:label "Pzl Bielsko"^^xsd:string ;
+    nas:manufacturerCountryName "POLAND"^^xsd:string ;
+    nas:manufacturerFullName "PRZEDSI BIORSTWO DOSWIADCZALNO/PRODUKCYJNE"^^xsd:string .
+
+nas:PzlKrosno a nas:AirframeManufacturer ;
+    rdfs:label "Pzl Krosno"^^xsd:string ;
+    nas:manufacturerCountryName "POLAND"^^xsd:string ;
+    nas:manufacturerFullName "WSK PZL KROSNO SA"^^xsd:string .
+
+nas:PzlMielec a nas:AirframeManufacturer ;
+    rdfs:label "Pzl Mielec"^^xsd:string ;
+    nas:manufacturerCountryName "POLAND"^^xsd:string ;
+    nas:manufacturerFullName "WYTWORNIA SPRZETU KOMUNIKACY JNEGO POLSKI ZAKLADY"^^xsd:string .
+
+nas:PzlOkecie a nas:AirframeManufacturer ;
+    rdfs:label "Pzl Okecie"^^xsd:string ;
+    nas:manufacturerCountryName "POLAND"^^xsd:string ;
+    nas:manufacturerFullName "PANSTWOWE ZAKLAKY LOTNICZE  WARSZAWA-OKECIE SA"^^xsd:string .
+
+nas:PzlSwidnik a nas:AirframeManufacturer ;
+    rdfs:label "Pzl Swidnik"^^xsd:string ;
+    nas:manufacturerCountryName "POLAND"^^xsd:string ;
+    nas:manufacturerFullName "PZL-SWIDNIK SA"^^xsd:string .
+
+nas:QuadCity a nas:AirframeManufacturer ;
+    rdfs:label "Quad City"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "QUAD CITY ULTRALIGHT AIRPLANE CORP."^^xsd:string .
+
+nas:Quest a nas:AirframeManufacturer ;
+    rdfs:label "Quest"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "QUEST AIRCRAFT DESIGN, LLC"^^xsd:string .
+
+nas:Quicksilver a nas:AirframeManufacturer ;
+    rdfs:label "Quicksilver"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "QUICKSILVER MANUFACTURING"^^xsd:string .
+
+nas:Raca a nas:AirframeManufacturer ;
+    rdfs:label "Raca"^^xsd:string ;
+    nas:manufacturerCountryName "ARGENTINA"^^xsd:string ;
+    nas:manufacturerFullName "REPRESENTACIONES AERO COMERCIALES ARGENTINAS SA"^^xsd:string .
+
+nas:Rans a nas:AirframeManufacturer ;
+    rdfs:label "Rans"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "RANS INC."^^xsd:string .
+
+nas:Raven a nas:AirframeManufacturer ;
+    rdfs:label "Raven"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "RAVEN INDUSTRIES"^^xsd:string .
+
+nas:Raytheon a nas:AirframeManufacturer ;
+    rdfs:label "Raytheon"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "RAYTHEON AIRCRAFT CO."^^xsd:string .
+
+nas:Reality a nas:AirframeManufacturer ;
+    rdfs:label "Reality"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "REALITY AIRCRAFT LTD"^^xsd:string .
+
+nas:Rearwin a nas:AirframeManufacturer ;
+    rdfs:label "Rearwin"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "REARWIN AIRCRAFT AND ENGINES INC."^^xsd:string .
+
+nas:RedAir a nas:AirframeManufacturer ;
+    rdfs:label "Red Air"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "RED AIR UK"^^xsd:string .
+
+nas:Reims a nas:AirframeManufacturer ;
+    rdfs:label "Reims"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "REIMS AVIATION S.A."^^xsd:string .
+
+nas:Remos a nas:AirframeManufacturer ;
+    rdfs:label "Remos"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "REMOS AIRCRAFT GMBH"^^xsd:string .
+
+nas:Republic a nas:AirframeManufacturer ;
+    rdfs:label "Republic"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "REPUBLIC AVIATION CORP."^^xsd:string .
+
+nas:Revo a nas:AirframeManufacturer ;
+    rdfs:label "Revo"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "REVO, INC."^^xsd:string .
+
+nas:RheinFlugzeugbau a nas:AirframeManufacturer ;
+    rdfs:label "Rhein Flugzeugbau"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "RHEIN FLUGZEUGBAU GMBH"^^xsd:string .
+
+nas:RjEnstrom a nas:AirframeManufacturer ;
+    rdfs:label "Rj Enstrom"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "R.J. ENSTROM CORP."^^xsd:string .
+
+nas:Robin a nas:AirframeManufacturer ;
+    rdfs:label "Robin"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "ROBIN AVIATION"^^xsd:string .
+
+nas:RobinAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Robin Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "ROBIN AIRCRAFT"^^xsd:string .
+
+nas:Robinson a nas:AirframeManufacturer ;
+    rdfs:label "Robinson"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ROBINSON HELICOPTER CO."^^xsd:string .
+
+nas:Rockwell a nas:AirframeManufacturer ;
+    rdfs:label "Rockwell"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ROCKWELL INTERNATIONAL"^^xsd:string .
+
+nas:RogersonHiller a nas:AirframeManufacturer ;
+    rdfs:label "Rogerson Hiller"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ROGERSON HILLER CORP."^^xsd:string .
+
+nas:RolladenSchneider a nas:AirframeManufacturer ;
+    rdfs:label "Rolladen Schneider"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "ROLLADEN-SCHNEIDER SEGELFLUGZUGBAU"^^xsd:string .
+
+nas:Rollason a nas:AirframeManufacturer ;
+    rdfs:label "Rollason"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "ROLLASON AIRCRAFT AND ENGINES, LTD."^^xsd:string .
+
+nas:Rotec a nas:AirframeManufacturer ;
+    rdfs:label "Rotec"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "ROTEC ENGINEERING"^^xsd:string .
+
+nas:Rotorsport a nas:AirframeManufacturer ;
+    rdfs:label "Rotorsport"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "ROTORSPORT UK LTD"^^xsd:string .
+
+nas:Rousseau a nas:AirframeManufacturer ;
+    rdfs:label "Rousseau"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "ATELIERS AERONAUTIQUE ROUSSEAU"^^xsd:string .
+
+nas:Ruschmeyer a nas:AirframeManufacturer ;
+    rdfs:label "Ruschmeyer"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "RUSCHMEYER"^^xsd:string .
+
+nas:RutanAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Rutan Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "RUTAN AIRCRAFT FACTORY"^^xsd:string .
+
+nas:Ryan a nas:AirframeManufacturer ;
+    rdfs:label "Ryan"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "RYAN AERONAUTICAL CO."^^xsd:string .
+
+nas:Saab a nas:AirframeManufacturer ;
+    rdfs:label "Saab"^^xsd:string ;
+    nas:manufacturerCountryName "SWEDEN"^^xsd:string ;
+    nas:manufacturerFullName "SAAB AIRCRAFT"^^xsd:string .
+
+nas:SaintLouis a nas:AirframeManufacturer ;
+    rdfs:label "Saint Louis"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SAINT LOUIS AIRCRAFT CO."^^xsd:string .
+
+nas:SamsungBell a nas:AirframeManufacturer ;
+    rdfs:label "Samsung Bell"^^xsd:string ;
+    nas:manufacturerCountryName "KOREA, REPUBLIC OF"^^xsd:string ;
+    nas:manufacturerFullName "KOREA AEROSPACE INDUSTRIES BELL"^^xsd:string .
+
+nas:San a nas:AirframeManufacturer ;
+    rdfs:label "San"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE AERONAUTIQUE NORMANDE"^^xsd:string .
+
+nas:SaratovAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Saratov Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "SARATOV AIRCRAFT MANUFACTURING COMPANY"^^xsd:string .
+
+nas:Saunders a nas:AirframeManufacturer ;
+    rdfs:label "Saunders"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "SAUNDERS AIRCRAFT CORPORATION, INC."^^xsd:string .
+
+nas:SaundersRoe a nas:AirframeManufacturer ;
+    rdfs:label "Saunders Roe"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SAUNDERS ROE LTD."^^xsd:string .
+
+nas:SavoiaMarchetti a nas:AirframeManufacturer ;
+    rdfs:label "Savoia Marchetti"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "SAVOIA-MARCHETTI"^^xsd:string .
+
+nas:Scheibe a nas:AirframeManufacturer ;
+    rdfs:label "Scheibe"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "SCHEIBE FLUGZEUGBAU GMBH"^^xsd:string .
+
+nas:SchemppHirth a nas:AirframeManufacturer ;
+    rdfs:label "Schempp Hirth"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "SCHEMPP-HIRTH FLUGZEUGBAU GMBH"^^xsd:string .
+
+nas:Schleicher a nas:AirframeManufacturer ;
+    rdfs:label "Schleicher"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "ALEXANDER SCHLEICHER GMBH AND CO."^^xsd:string .
+
+nas:SchroederFireBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Schroeder Fire Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "SCHROEDER FIRE BALLOONS GMBH"^^xsd:string .
+
+nas:Schweizer a nas:AirframeManufacturer ;
+    rdfs:label "Schweizer"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SCHWEIZER AIRCRAFT CORP."^^xsd:string .
+
+nas:Scintex a nas:AirframeManufacturer ;
+    rdfs:label "Scintex"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SCINTEX AVIATION CO."^^xsd:string .
+
+nas:ScottishAviation a nas:AirframeManufacturer ;
+    rdfs:label "Scottish Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SCOTTISH AVIATION"^^xsd:string .
+
+nas:SeabirdAviation a nas:AirframeManufacturer ;
+    rdfs:label "Seabird Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "SEABIRD AVIATION AUSTRALIA, PTY, LTD."^^xsd:string .
+
+nas:SemcoBalloon a nas:AirframeManufacturer ;
+    rdfs:label "Semco Balloon"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SEMCO BALLOON"^^xsd:string .
+
+nas:Sepecat a nas:AirframeManufacturer ;
+    rdfs:label "Sepecat"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE EUROPEANNE DE PRODUCTION DE L'AVION ECOLE DE COMBAT ET APPUI TACTIQUE"^^xsd:string .
+
+nas:Shaanxi a nas:AirframeManufacturer ;
+    rdfs:label "Shaanxi"^^xsd:string ;
+    nas:manufacturerCountryName "CHINA"^^xsd:string ;
+    nas:manufacturerFullName "SHAANXI AIRCRAFT CO."^^xsd:string .
+
+nas:Shandong a nas:AirframeManufacturer ;
+    rdfs:label "Shandong"^^xsd:string ;
+    nas:manufacturerCountryName "CHINA"^^xsd:string ;
+    nas:manufacturerFullName "SHANDONG BIN AO AIRCRAFT INDUSTRIES"^^xsd:string .
+
+nas:Shinn a nas:AirframeManufacturer ;
+    rdfs:label "Shinn"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SHINN ENGINEERING CO."^^xsd:string .
+
+nas:ShortBrothers a nas:AirframeManufacturer ;
+    rdfs:label "Short Brothers"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SHORT BROTHERS PLC"^^xsd:string .
+
+nas:SiaiMarchetti a nas:AirframeManufacturer ;
+    rdfs:label "Siai Marchetti"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "SIAI-MARCHETTI, SPA"^^xsd:string .
+
+nas:Sikorsky a nas:AirframeManufacturer ;
+    rdfs:label "Sikorsky"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SIKORSKY AIRCRAFT CORPORATION"^^xsd:string .
+
+nas:SilvaireLuscombe a nas:AirframeManufacturer ;
+    rdfs:label "Silvaire Luscombe"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SILVAIRE AIRCRAFT AND URANIUM CORP."^^xsd:string .
+
+nas:SinoSwearingen a nas:AirframeManufacturer ;
+    rdfs:label "Sino Swearingen"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SINO SWEARINGEN AIRCRAFT CORP."^^xsd:string .
+
+nas:Sipa a nas:AirframeManufacturer ;
+    rdfs:label "Sipa"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE INDUSTRIELLE POUR L'AERONAUTIQUE"^^xsd:string .
+
+nas:Siren a nas:AirframeManufacturer ;
+    rdfs:label "Siren"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE ANONYME SIREN"^^xsd:string .
+
+nas:SkyBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Sky Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SKY BALLOONS LTD."^^xsd:string .
+
+nas:Skyfox a nas:AirframeManufacturer ;
+    rdfs:label "Skyfox"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "SKYFOX AVIATION LTD."^^xsd:string .
+
+nas:Skystar a nas:AirframeManufacturer ;
+    rdfs:label "Skystar"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SKYSTAR AIRCRAFT CORP."^^xsd:string .
+
+nas:Slingsby a nas:AirframeManufacturer ;
+    rdfs:label "Slingsby"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SLINGSBY AVIATION LTD"^^xsd:string .
+
+nas:SlingsbyEngr a nas:AirframeManufacturer ;
+    rdfs:label "Slingsby Engr"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SLINGSBY ENGINEERING LTD"^^xsd:string .
+
+nas:Snow a nas:AirframeManufacturer ;
+    rdfs:label "Snow"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SNOW AERONAUTICAL"^^xsd:string .
+
+nas:SnowbirdAeroplane a nas:AirframeManufacturer ;
+    rdfs:label "Snowbird Aeroplane"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "THE SNOWBIRD AEROPLANE COMPANY LTD"^^xsd:string .
+
+nas:Socata a nas:AirframeManufacturer ;
+    rdfs:label "Socata"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE DE CONSTRUCTION D'AVIONS DE TOURISME ET D'AFFARIES"^^xsd:string .
+
+nas:Soko a nas:AirframeManufacturer ;
+    rdfs:label "Soko"^^xsd:string ;
+    nas:manufacturerCountryName "YUGOSLAVIA"^^xsd:string ;
+    nas:manufacturerFullName "PREDUZECE SOKO"^^xsd:string .
+
+nas:Sokol a nas:AirframeManufacturer ;
+    rdfs:label "Sokol"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "AVIASTROITELNY ZAVOD SOKOL"^^xsd:string .
+
+nas:SolarWings a nas:AirframeManufacturer ;
+    rdfs:label "Solar Wings"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SOLAR WINGS AVIATION LTD"^^xsd:string .
+
+nas:SouthdownAerostructure a nas:AirframeManufacturer ;
+    rdfs:label "Southdown Aerostructure"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SOUTHDOWN AEROSTRUCTURE LTD"^^xsd:string .
+
+nas:SouthdownInternational a nas:AirframeManufacturer ;
+    rdfs:label "Southdown International"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SOUTHDOWN INTERNATIONAL LTD"^^xsd:string .
+
+nas:SouthwestFlorida a nas:AirframeManufacturer ;
+    rdfs:label "Southwest Florida"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SOUTHWEST FLORIDA AVIATION"^^xsd:string .
+
+nas:Spartan a nas:AirframeManufacturer ;
+    rdfs:label "Spartan"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SPARTAN AIRCRAFT CO."^^xsd:string .
+
+nas:SpectrumAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Spectrum Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "SPECTRUM AIRCRAFT"^^xsd:string .
+
+nas:SpectrumAviation a nas:AirframeManufacturer ;
+    rdfs:label "Spectrum Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SPECTRUM AVIATION"^^xsd:string .
+
+nas:Sportavia a nas:AirframeManufacturer ;
+    rdfs:label "Sportavia"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "SPORTAVIA-PUTZER GMBH AND CO. KG"^^xsd:string .
+
+nas:SportineAviacija a nas:AirframeManufacturer ;
+    rdfs:label "Sportine Aviacija"^^xsd:string ;
+    nas:manufacturerCountryName "LITHUANIA"^^xsd:string ;
+    nas:manufacturerFullName "SPORTINE AVIACIJA  AB"^^xsd:string .
+
+nas:Stampe a nas:AirframeManufacturer ;
+    rdfs:label "Stampe"^^xsd:string ;
+    nas:manufacturerCountryName "BELGIUM"^^xsd:string ;
+    nas:manufacturerFullName "STAMPE-ET-VERTONGEN"^^xsd:string .
+
+nas:Stark a nas:AirframeManufacturer ;
+    rdfs:label "Stark"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "STARK FLUGZEUGBAU KG"^^xsd:string .
+
+nas:StartFlug a nas:AirframeManufacturer ;
+    rdfs:label "Start Flug"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "START+FLUG GMBH"^^xsd:string .
+
+nas:Stearman a nas:AirframeManufacturer ;
+    rdfs:label "Stearman"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "STEARMAN AIRCRAFT CO."^^xsd:string .
+
+nas:StearmanHammond a nas:AirframeManufacturer ;
+    rdfs:label "Stearman Hammond"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "STEARMAN-HAMMOND"^^xsd:string .
+
+nas:Stemme a nas:AirframeManufacturer ;
+    rdfs:label "Stemme"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "STEMME GMBH AND CO."^^xsd:string .
+
+nas:Stinson a nas:AirframeManufacturer ;
+    rdfs:label "Stinson"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "STINSON AIRCRAFT CORP."^^xsd:string .
+
+nas:SudAviation a nas:AirframeManufacturer ;
+    rdfs:label "Sud Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SUD AVIATION"^^xsd:string .
+
+nas:SudEst a nas:AirframeManufacturer ;
+    rdfs:label "Sud Est"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE NATIONALE DE CONSTRUCTIONS AERONAUTIQUES DE SUD EST"^^xsd:string .
+
+nas:SudOuest a nas:AirframeManufacturer ;
+    rdfs:label "Sud Ouest"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE NATIONALE DE CONSTRUCTIONS AERONAUTIQUES DE SUD OUEST"^^xsd:string .
+
+nas:Sukhoi a nas:AirframeManufacturer ;
+    rdfs:label "Sukhoi"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "SUKHOI AIRCRAFT MILITARY AND INDUSTRIAL COMPLEX"^^xsd:string .
+
+nas:SundanceBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Sundance Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "SUNDANCE BALLOONS"^^xsd:string .
+
+nas:SupAir a nas:AirframeManufacturer ;
+    rdfs:label "Sup Air"^^xsd:string ;
+    nas:manufacturerCountryName "HUNGARY"^^xsd:string ;
+    nas:manufacturerFullName "SUP AIR BALLON EGYESULET"^^xsd:string .
+
+nas:Superior a nas:AirframeManufacturer ;
+    rdfs:label "Superior"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "SUPERIOR AIRCRAFT CO."^^xsd:string .
+
+nas:SymphonyAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Symphony Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "SYMPHONY AIRCRAFT INDUSTRIES INC"^^xsd:string .
+
+nas:Taylor a nas:AirframeManufacturer ;
+    rdfs:label "Taylor"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TAYLOR AIRCRAFT CORP."^^xsd:string .
+
+nas:Taylorcraft a nas:AirframeManufacturer ;
+    rdfs:label "Taylorcraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TAYLOR AIRCRAFT CO."^^xsd:string .
+
+nas:TaylorcraftAeroplanes a nas:AirframeManufacturer ;
+    rdfs:label "Taylorcraft Aeroplanes"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "TAYLORCRAFT AEROPLANES (ENGLAND) LTD"^^xsd:string .
+
+nas:TaylorcraftAviation a nas:AirframeManufacturer ;
+    rdfs:label "Taylorcraft Aviation"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TAYLORCRAFT  AVIATION CORPORATION"^^xsd:string .
+
+nas:Technoavia a nas:AirframeManufacturer ;
+    rdfs:label "Technoavia"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "NAUCHNO-KOMMERCHESKY FIRMA TECHNOAVIA"^^xsd:string .
+
+nas:Tecnam a nas:AirframeManufacturer ;
+    rdfs:label "Tecnam"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "COSTRUZIONI AERONAUTICHE TECNAM S.R.L."^^xsd:string .
+
+nas:TedSmith a nas:AirframeManufacturer ;
+    rdfs:label "Ted Smith"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TED SMITH AEROSTAR CORP."^^xsd:string .
+
+nas:Temco a nas:AirframeManufacturer ;
+    rdfs:label "Temco"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TEMCO"^^xsd:string .
+
+nas:Tempest a nas:AirframeManufacturer ;
+    rdfs:label "Tempest"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "TEMPEST AVIATION LTD"^^xsd:string .
+
+nas:TeratornAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Teratorn Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TERATORN AIRCRAFT INC."^^xsd:string .
+
+nas:Thorp a nas:AirframeManufacturer ;
+    rdfs:label "Thorp"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "THORP AERO INC"^^xsd:string .
+
+nas:ThrusterUnitedKingdom a nas:AirframeManufacturer ;
+    rdfs:label "Thruster United Kingdom"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "THRUSTER AIR SERVICES LTD"^^xsd:string .
+
+nas:ThunderAndColt a nas:AirframeManufacturer ;
+    rdfs:label "Thunder And Colt"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "THUNDER AND COLT, LTD."^^xsd:string .
+
+nas:ThunderBalloons a nas:AirframeManufacturer ;
+    rdfs:label "Thunder Balloons"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "THUNDER BALLOONS LTD."^^xsd:string .
+
+nas:TigerAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Tiger Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TIGER AIRCRAFT LLC"^^xsd:string .
+
+nas:Timm a nas:AirframeManufacturer ;
+    rdfs:label "Timm"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TIMM AIRCRAFT CORP."^^xsd:string .
+
+nas:TlUltralight a nas:AirframeManufacturer ;
+    rdfs:label "Tl Ultralight"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "TL ULTRALIGHT SRO"^^xsd:string .
+
+nas:Transall a nas:AirframeManufacturer ;
+    rdfs:label "Transall"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "TRANSPORTER ALLIANZ"^^xsd:string .
+
+nas:Transfield a nas:AirframeManufacturer ;
+    rdfs:label "Transfield"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "TRANSFIELD (NSW) PTY LTD"^^xsd:string .
+
+nas:TravelAir a nas:AirframeManufacturer ;
+    rdfs:label "Travel Air"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "TRAVEL AIR CO."^^xsd:string .
+
+nas:Trident a nas:AirframeManufacturer ;
+    rdfs:label "Trident"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "TRIDENT AIRCRAFT"^^xsd:string .
+
+nas:Tupolev a nas:AirframeManufacturer ;
+    rdfs:label "Tupolev"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "AVIATSIONNY NAUCHNO-TEKHNISHESKY KOMPLEKS IMENI AN TUPOLEVA OAO"^^xsd:string .
+
+nas:Ultramagic a nas:AirframeManufacturer ;
+    rdfs:label "Ultramagic"^^xsd:string ;
+    nas:manufacturerCountryName "SPAIN"^^xsd:string ;
+    nas:manufacturerFullName "ULTRAMAGIC S.A."^^xsd:string .
+
+nas:Ultravia a nas:AirframeManufacturer ;
+    rdfs:label "Ultravia"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "ULTRAVIA AERO INTERNATIONAL INC."^^xsd:string .
+
+nas:Umbaugh a nas:AirframeManufacturer ;
+    rdfs:label "Umbaugh"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "UMBAUGH AIRCRAFT CORP."^^xsd:string .
+
+nas:UnitedConsultant a nas:AirframeManufacturer ;
+    rdfs:label "United Consultant"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "UNITED CONSULTANT CORPORATION"^^xsd:string .
+
+nas:UrbanAir a nas:AirframeManufacturer ;
+    rdfs:label "Urban Air"^^xsd:string ;
+    nas:manufacturerCountryName "CZECH REPUBLIC"^^xsd:string ;
+    nas:manufacturerFullName "URBAN AIR SRO"^^xsd:string .
+
+nas:UsArmy a nas:AirframeManufacturer ;
+    rdfs:label "Us Army"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "US ARMY ENGINEERING DIVISION"^^xsd:string .
+
+nas:Valentin a nas:AirframeManufacturer ;
+    rdfs:label "Valentin"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "VALENTIN FLUGZEUGBAU GMBH"^^xsd:string .
+
+nas:Valmet a nas:AirframeManufacturer ;
+    rdfs:label "Valmet"^^xsd:string ;
+    nas:manufacturerCountryName "FINLAND"^^xsd:string ;
+    nas:manufacturerFullName "VALMET OY LENTOKONETEHDAS"^^xsd:string .
+
+nas:VanAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Van Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "VAN'S AIRCRAFT, INC."^^xsd:string .
+
+nas:Varga a nas:AirframeManufacturer ;
+    rdfs:label "Varga"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "VARGA AIRCRAFT CORP."^^xsd:string .
+
+nas:Veb a nas:AirframeManufacturer ;
+    rdfs:label "Veb"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "VOLKSEIGENER BETRIEBE"^^xsd:string .
+
+nas:Venture a nas:AirframeManufacturer ;
+    rdfs:label "Venture"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "VENTURE LIGHT AIRCRAFT RESOURCES LLC"^^xsd:string .
+
+nas:Vertol a nas:AirframeManufacturer ;
+    rdfs:label "Vertol"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "VERTOL AIRCRAFT CORP."^^xsd:string .
+
+nas:VfwFokker a nas:AirframeManufacturer ;
+    rdfs:label "Vfw Fokker"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "VEREINIGTE FLUGTECHNISCHE WERKE-FOKKER"^^xsd:string .
+
+nas:Vickers a nas:AirframeManufacturer ;
+    rdfs:label "Vickers"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "VICKERS-ARMSTRONG AIRCRAFT LTD."^^xsd:string .
+
+nas:VickersSupermarine a nas:AirframeManufacturer ;
+    rdfs:label "Vickers Supermarine"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "SUPERMARINE DIVISION OF VICKERS-ARMSTRONG"^^xsd:string .
+
+nas:Victa a nas:AirframeManufacturer ;
+    rdfs:label "Victa"^^xsd:string ;
+    nas:manufacturerCountryName "AUSTRALIA"^^xsd:string ;
+    nas:manufacturerFullName "VICTA, LTD."^^xsd:string .
+
+nas:Victory a nas:AirframeManufacturer ;
+    rdfs:label "Victory"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "VICTORY AIRCRAFT LTD"^^xsd:string .
+
+nas:Viking a nas:AirframeManufacturer ;
+    rdfs:label "Viking"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "VIKING FLYING BOAT CO."^^xsd:string .
+
+nas:VikingAir a nas:AirframeManufacturer ;
+    rdfs:label "Viking Air"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "VIKING AIR LTD"^^xsd:string .
+
+nas:VintenWallis a nas:AirframeManufacturer ;
+    rdfs:label "Vinten Wallis"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "VINTEN WALLIS LTD"^^xsd:string .
+
+nas:Volaire a nas:AirframeManufacturer ;
+    rdfs:label "Volaire"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "VOLAIRCRAFT, INC."^^xsd:string .
+
+nas:VoughtSikorsky a nas:AirframeManufacturer ;
+    rdfs:label "Vought Sikorsky"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "VOUGHT-SIKORSKY AIRCRAFT"^^xsd:string .
+
+nas:Vtc a nas:AirframeManufacturer ;
+    rdfs:label "Vtc"^^xsd:string ;
+    nas:manufacturerCountryName "YUGOSLAVIA"^^xsd:string ;
+    nas:manufacturerFullName "JASTREB FABRIKA AVIONA JEDRILICA"^^xsd:string .
+
+nas:Vulcanair a nas:AirframeManufacturer ;
+    rdfs:label "Vulcanair"^^xsd:string ;
+    nas:manufacturerCountryName "ITALY"^^xsd:string ;
+    nas:manufacturerFullName "VULCANAIR S.P.A"^^xsd:string .
+
+nas:Vultee a nas:AirframeManufacturer ;
+    rdfs:label "Vultee"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "VULTEE AIRCRAFT CORP."^^xsd:string .
+
+nas:Waco a nas:AirframeManufacturer ;
+    rdfs:label "Waco"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "WACO AIRCRAFT CO."^^xsd:string .
+
+nas:WaggonUndMaschinenbau a nas:AirframeManufacturer ;
+    rdfs:label "Waggon Und Maschinenbau"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "WAGGON UND MASCHINENBAU AG"^^xsd:string .
+
+nas:WallisAutogyros a nas:AirframeManufacturer ;
+    rdfs:label "Wallis Autogyros"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "WALLIS AUTOGYROS LTD"^^xsd:string .
+
+nas:Wassmer a nas:AirframeManufacturer ;
+    rdfs:label "Wassmer"^^xsd:string ;
+    nas:manufacturerCountryName "FRANCE"^^xsd:string ;
+    nas:manufacturerFullName "SOCIETE NOUVELLE WASSMER AVIATION"^^xsd:string .
+
+nas:WdAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Wd Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "W.D. AIRCRAFT GMBH"^^xsd:string .
+
+nas:Wdl a nas:AirframeManufacturer ;
+    rdfs:label "Wdl"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "WDL LUFTSCHIFFGESELLSCHAFT"^^xsd:string .
+
+nas:Weatherly a nas:AirframeManufacturer ;
+    rdfs:label "Weatherly"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED STATES"^^xsd:string ;
+    nas:manufacturerFullName "WEATHERLY AIRCRAFT COMPANY"^^xsd:string .
+
+nas:Westland a nas:AirframeManufacturer ;
+    rdfs:label "Westland"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "GKN WESTLAND HELICOPTERS LTD."^^xsd:string .
+
+nas:Worner a nas:AirframeManufacturer ;
+    rdfs:label "Worner"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "BALLONBAU WORNER GMBH"^^xsd:string .
+
+nas:Xian a nas:AirframeManufacturer ;
+    rdfs:label "Xian"^^xsd:string ;
+    nas:manufacturerCountryName "CHINA"^^xsd:string ;
+    nas:manufacturerFullName "XIAN AIRCRAFT MANUFACTURING CO."^^xsd:string .
+
+nas:Xtremeair a nas:AirframeManufacturer ;
+    rdfs:label "Xtremeair"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "XTREMEAIR GMBH"^^xsd:string .
+
+nas:Yakovlev a nas:AirframeManufacturer ;
+    rdfs:label "Yakovlev"^^xsd:string ;
+    nas:manufacturerCountryName "RUSSIAN FEDERATION"^^xsd:string ;
+    nas:manufacturerFullName "YAKOVLEV AVIATSIONNOYE KORPORATSIYA OAO"^^xsd:string .
+
+nas:YeomanLightAircraft a nas:AirframeManufacturer ;
+    rdfs:label "Yeoman Light Aircraft"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "YEOMAN LIGHT AIRCRAFT COMPANY LTD"^^xsd:string .
+
+nas:ZanderAndWeyl a nas:AirframeManufacturer ;
+    rdfs:label "Zander And Weyl"^^xsd:string ;
+    nas:manufacturerCountryName "UNITED KINGDOM"^^xsd:string ;
+    nas:manufacturerFullName "ZANDER AND WEYL"^^xsd:string .
+
+nas:Zenair a nas:AirframeManufacturer ;
+    rdfs:label "Zenair"^^xsd:string ;
+    nas:manufacturerCountryName "CANADA"^^xsd:string ;
+    nas:manufacturerFullName "ZENAIR LTD."^^xsd:string .
+
+nas:Zeppelin a nas:AirframeManufacturer ;
+    rdfs:label "Zeppelin"^^xsd:string ;
+    nas:manufacturerCountryName "GERMANY"^^xsd:string ;
+    nas:manufacturerFullName "ZEPPELIN LUFTSCHIFFTECHNIK GMBH & CO KG"^^xsd:string .
+
+<https://data.nasa.gov/ontologies/atmonto/acManufInst> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/NAS> .
+

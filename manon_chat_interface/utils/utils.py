@@ -1,39 +1,44 @@
-from manon_chat_interface.utils.llm import (
-    ER_SYSTEM_PROMPT, ER_USER_PROMPT, strictjson_llm
-)
-from strictjson import strict_json
+import pandas as pd
 
-
-def entity_recognition(input: str) -> dict:
-    """
-    Performs entity recognition on the provided input string using a large language model (LLM).
-
-    This function identifies and categorizes entities within the user input, specifically separating them into machines and parts.
+def replace_urls_with_prefixes(text, prefix_dict):
+    """Replace URLs with prefixes in a given string.
 
     Args:
-        input (str): The input string to be analyzed by the LLM.
+        text (str): String containing SPARQL query or text.
+        prefix_dict (dict): Mapping of prefixes to URLs.
+    """
+    for prefix, url in prefix_dict.items():
+        text = text.replace(url, prefix)
+    return text
+
+
+def replace_prefixes_with_urls(text, prefix_dict):
+    """Replace prefixes with URLs in a given string.
+
+    Args:
+        text (str): String containing SPARQL query or text.
+        prefix_dict (dict): Mapping of prefixes to URLs.
+    """
+    for prefix, url in prefix_dict.items():
+        text = text.replace(prefix, url)
+    return text
+
+
+def parse_sparql_output(query_output: dict):
+    """Parse query JSON output to dataframe.
+
+    Args:
+        query_output (dict): The output from a SPARQL query in JSON format
 
     Returns:
-        dict: A dictionary with two keys, 'machines' and 'parts', containing the identified machine names and part names respectively.
-
-    Example:
-        Input: "Can Creality Ender manufacture flange?"
-        Output: {'machines': 'Creality Ender', 'parts': 'flange'}
-
+        pd.DataFrame: the parsed results as a pandas DataFrame
     """
-    response = strict_json(
-        system_prompt=ER_SYSTEM_PROMPT,
-        user_prompt=ER_USER_PROMPT.format(input=input),
-        output_format={'machines': 'Machine name', 
-                       'parts': 'Part name'},
-        llm=strictjson_llm
-    )
-
-    return response
-
-
-
-def retrieve_context():
-    
-    
-    pass 
+    columns = query_output['head']['vars']
+    rows = []
+    for result in query_output['results']['bindings']:
+        row = {}
+        for col in columns:
+            row[col] = result[col]['value'] if col in result else None
+        rows.append(row)
+    df = pd.DataFrame(rows, columns=columns)
+    return df

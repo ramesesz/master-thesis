@@ -3,18 +3,19 @@
 from manon_chat_interface.utils import vectorstore
 
 QUESTIONS_LIST = [
-    "Which machines can manufacture my part?",
-    "Which manufacturing process can be used to manufacture my part?",
-    "What do I have to change in order to be able to produce my part on machine x?",
-    "What do I have to change in order to be able to produce my part with manufacturing process x?",
+    # "Which machines can manufacture my part?",
+    # "Which manufacturing process can be used to manufacture my part?",
+    # "What do I have to change in order to be able to produce my part on machine x?",
+    # "What do I have to change in order to be able to produce my part with manufacturing process x?",
+    "Do I need this particular topping for my pizza?"
 ]
 
 # Embed to vectorstore
 print("Embedding questions...")
 vectorstore.embed_entities(
-    path="./data/vectorstores/competency_questions",
-    collection="competency_questions",
+    path="./manon_chat_interface/data/vectorstores/pizza_questions",
+    collection="pizza_questions_collection",
     documents=QUESTIONS_LIST,
 )
 
-print("All entities have been successfully embedded.")
+print("All questions have been successfully embedded.")

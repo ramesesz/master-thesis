@@ -2,13 +2,13 @@
 **/*venv*/
 
 # Ontologies
-ontologies/
+# ontologies/
 
 # Vectorstore
 vectorstores/
 
 # Local testing
-playground/
+playground/*
 models/
 __pycache__/
 
@@ -18,6 +18,3 @@ __pycache__/
 
 # Images
 diagrams/img/
-
-# Knowledge learner module
-manon-manufacturing-knowledge-learner

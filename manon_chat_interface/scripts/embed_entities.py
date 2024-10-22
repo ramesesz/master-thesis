@@ -2,54 +2,39 @@
 # Make sure that SPARQL server is running
 
 import re
+import os
 
-from manon_chat_interface.utils import sparql, vectorstore
-from urllib.error import URLError
+from manon_chat_interface.utils.sparql import *
+from manon_chat_interface.utils import vectorstore
+from dotenv import load_dotenv
 
-URL = "http://localhost:3030/manon/query"
+load_dotenv()
+SPARQL_ENDPOINT = os.getenv('SPARQL_ENDPOINT')
 
-# Machines ------------------------------------------------------------------------
-print("Extracting machine entities...")
+# Extract entities
+print("Extracting entities...")
 
-try:
-    results = sparql.execute_sparql(url=URL, query=sparql.MACHINE_EXTRACTION_QUERY)
-except URLError as e:
-    print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
+iri = "pizza:Pizza"
+results = execute_sparql(url=SPARQL_ENDPOINT, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
 
-
-# Extract machine names
 bindings = results['results']['bindings']
-machine_IRIs = [binding['individual']['value'] for binding in bindings]
-machine_names = [re.split('#M_', iri)[-1] for iri in machine_IRIs]
+pizza_IRIs = [binding['individual']['value'] for binding in bindings]
+pizza_names = [re.split('#', iri)[-1] for iri in pizza_IRIs]
+
+iri = "pizza:PizzaTopping"
+results = execute_sparql(url=SPARQL_ENDPOINT, query=PREFIXES+EXTRACTION_QUERY.format(pizza_class=iri))
+
+bindings = results['results']['bindings']
+topping_IRIs = [binding['individual']['value'] for binding in bindings]
+topping_names = [re.split('#', iri)[-1] for iri in topping_IRIs]
 
 # Embed to vectorstore
-print("Embedding machine entities...")
+print("Embedding entities...")
 vectorstore.embed_entities(
-    path="./data/vectorstores/entities",
-    collection="machine_collection",
-    documents=machine_names,
-    metadatas=[{"IRI": IRI} for IRI in machine_IRIs]
+    path="./manon_chat_interface/data/vectorstores/pizza_entities",
+    collection="pizza_entities_collection",
+    documents=pizza_names+topping_names,
+    metadatas=[{"IRI": IRI} for IRI in pizza_IRIs+topping_IRIs]
 )
 
-# Parts ---------------------------------------------------------------------------
-print("Extracting part entities...")
-
-try:
-    results = sparql.execute_sparql(url=URL, query=sparql.PART_EXTRACTION_QUERY)
-except URLError as e:
-    print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
-
-# Extract part names
-bindings = results['results']['bindings']
-part_IRIs = [binding['individual']['value'] for binding in bindings]
-part_names = [re.split('#', iri)[-1] for iri in part_IRIs]
-
-# Embed to vectorstore
-print("Embedding part entities...")
-vectorstore.embed_entities(
-    path="./manon_chat_interface/data/vectorstores/entities",
-    collection="part_collection",
-    documents=part_names,
-    metadatas=[{"IRI": IRI} for IRI in part_IRIs]
-)
 print("All entities have been successfully embedded.")

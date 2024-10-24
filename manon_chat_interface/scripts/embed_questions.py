@@ -1,3 +1,4 @@
+# This script is deprecated as it is part of an old architecture design.
 # Run using 'python -m manon_chat_interface.scripts.embed_questions' from root
 
 from manon_chat_interface.utils import vectorstore

@@ -67,57 +67,50 @@ def load_rdf_triples(file_path: str, format: str = 'ttl'):
 
 
 prefix_dict = {
-    ":": "http://www.co-ode.org/ontologies/pizza#",
-    "dc:": "http://purl.org/dc/elements/1.1/",
+    "atm:": "https://data.nasa.gov/ontologies/atmonto/ATM#",
+    "eqp:": "https://data.nasa.gov/ontologies/atmonto/equipment#",
+    "gen:": "https://data.nasa.gov/ontologies/atmonto/general#",
+    "nas:": "https://data.nasa.gov/ontologies/atmonto/NAS#",
     "owl:": "http://www.w3.org/2002/07/owl#",
     "rdf:": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xml:": "http://www.w3.org/XML/1998/namespace",
-    "xsd:": "http://www.w3.org/2001/XMLSchema#",
     "rdfs:": "http://www.w3.org/2000/01/rdf-schema#",
-    "skos:": "http://www.w3.org/2004/02/skos/core#",
-    "pizza:": "http://www.co-ode.org/ontologies/pizza/pizza.owl#",
-    "terms:": "http://purl.org/dc/terms/",
-    "base:": "http://www.co-ode.org/ontologies/pizza#"
+    "xsd:": "http://www.w3.org/2001/XMLSchema#"
 }
 
 PREFIXES = """
-PREFIX : <http://www.co-ode.org/ontologies/pizza#>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#>
+PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#>
+PREFIX gen: <https://data.nasa.gov/ontologies/atmonto/general#>
+PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xml: <http://www.w3.org/XML/1998/namespace>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#>
-PREFIX terms: <http://purl.org/dc/terms/>
-BASE <http://www.co-ode.org/ontologies/pizza#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 """
 
 ########################################################################
 ## Embed entities ######################################################
 ########################################################################
 EXTRACTION_QUERY = """
-SELECT DISTINCT ?individual
-WHERE {{
-{{
- SELECT ?individual
- WHERE {{
-   ?individual rdfs:subClassOf* {pizza_class} .
- }}
-}}
-UNION
-{{
- SELECT DISTINCT ?individual
- WHERE {{
-   ?individual rdf:type owl:Class ;
-           owl:equivalentClass ?equivClass .
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-   ?equivClass owl:intersectionOf ?list .
-   ?list rdf:rest*/rdf:first {pizza_class} .
- }}
-}}
-}}
+SELECT DISTINCT ?classIRI ?classLabel ?classComment ?entity ?entityLabel ?entityComment
+WHERE {
+    {
+        ?classIRI a owl:Class .
+        OPTIONAL { ?classIRI rdfs:label ?classLabel . }
+        OPTIONAL { ?classIRI rdfs:comment ?classComment . }
+    }
+    UNION
+    {
+        ?entity a ?classIRI .
+        ?classIRI a owl:Class .
+        OPTIONAL { ?entity rdfs:label ?entityLabel . }
+        OPTIONAL { ?entity rdfs:comment ?entityComment . }
+    }
+}
 """
 
 ########################################################################

@@ -70,6 +70,10 @@ entities_df = pd.DataFrame(entities_data)
 
 df = pd.concat([classes_df, entities_df], ignore_index=True)
 
+# This filtering is knowledge graph specific in order to optimize embedding search.
+# When given flight codes, the routes are deemed more similar than the flight label itself.
+df = df[~df['label'].str.contains('Planned Route|Actual Route', na=False)]
+
 labels = df['label'].tolist()
 iris = df['iri'].tolist()
 comments = df['comment'].tolist()

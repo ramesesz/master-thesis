@@ -83,7 +83,7 @@ metadatas = [{"iri": iri, "comments": comment} for iri, comment in zip(iris, com
 
 vectorstore.embed_entities(
     path="./manon_chat_interface/data/vectorstores/flight_vectorstore",
-    collection="test",
+    collection="flight_collection",
     documents=labels,
     metadatas=metadatas
 )

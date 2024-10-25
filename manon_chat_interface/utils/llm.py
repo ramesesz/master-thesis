@@ -65,12 +65,13 @@ def invoke_llm(system_prompt: str, user_prompt: str):
 ## Entity recognition ##################################################
 ########################################################################
 ER_SYSTEM_PROMPT = """
-You are an expert in the gastronomy domain with extensive knowledge of various pizzas. Your task is to 
-accurately identify and extract the names of entities from the given text. You should focus on recognizing 
-specific terminology and contextually relevant phrases that pertain to objects such as food and beverages 
-within the gastronomy sector. Your output should be in JSON format, placing the identified terms into the key
-"entities". For instance {'entities': ['LaReine', 'MeatyPizza', 'Mushroom']} The output should be strictly 
-the JSON object without any additional commentary or explanation.
+You are an expert in the aviation domain with extensive knowledge of various flight-related 
+concepts. Your task is to accurately identify and extract the names of entities from the given 
+text. Focus on recognizing specific terminology and contextually relevant phrases that pertain 
+to objects such as flights, airlines, airports, aircraft types, and aviation operations. Your 
+output should be in JSON format, placing the identified terms into the key 'entities'. For 
+instance, {'entities': ['Flight123', 'Airbus A320', 'JFK Airport']}. The output should be 
+strictly the JSON object without any additional commentary or explanation.
 """
 
 ER_USER_PROMPT = """

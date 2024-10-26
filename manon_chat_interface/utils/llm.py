@@ -1,5 +1,6 @@
 from openai import OpenAI
 from dotenv import load_dotenv
+from strictjson import strict_json
 
 import os
 
@@ -7,30 +8,33 @@ load_dotenv()
 LLM_ENDPOINT = os.getenv('LLM_ENDPOINT')
 
 
-def generate_response(user_prompt: str, messages: list):
-    """Calls the LLM with history.
-        input (str): Input of the LLM.
-        messages (list): History of messages.
+def entity_recognition(input: str) -> dict:
     """
-    try:
-        user_message = {"role": "user", "content": user_prompt}
-        messages.append(user_message)
+    Performs entity recognition on the provided input string using a large language model (LLM).
 
-        client = OpenAI(base_url=LLM_ENDPOINT, api_key="lm-studio")
+    This function identifies and categorizes entities within the user input.
 
-        response = client.chat.completions.create(
-            model="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
-            messages=messages,
-            temperature=1,
-        )
+    Multiple 
 
-        new_message = {"role": "assistant", "content": response.choices[0].message.content}
-        messages.append(new_message)
-    
-    except Exception as e:
-        print(f"An error occured when invoking the LLM: {e}")
+    Args:
+        input (str): The input string to be analyzed by the LLM.
 
-    return response, messages
+    Returns:
+        dict: A dictionary with key 'entities', containing the identified entities within the question.
+
+    Example:
+        Input: "Can Creality Ender manufacture flange?"
+        Output: {'entities': ['Creality Ender', 'flange']}
+
+    """
+    response = strict_json(
+        system_prompt=ER_SYSTEM_PROMPT,
+        user_prompt=ER_USER_PROMPT.format(input=input),
+        output_format={"entities": "Array of entities"},
+        llm=invoke_llm
+    )
+
+    return response
 
 
 def invoke_llm(system_prompt: str, user_prompt: str):

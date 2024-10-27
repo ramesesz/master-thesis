@@ -1,11 +1,36 @@
 from openai import OpenAI
-from dotenv import load_dotenv
 from strictjson import strict_json
+from dotenv import load_dotenv
 
-import os
+# import os
 
-load_dotenv()
-LLM_ENDPOINT = os.getenv('LLM_ENDPOINT')
+# load_dotenv(dotenv_path="../../.env", override=True)
+
+# LLM_MODEL = os.getenv("LLM_MODEL")
+# LLM_ENDPOINT = os.getenv("LLM_ENDPOINT")
+# API_KEY = os.getenv("API_KEY")
+
+def generate_sparql_query(path_to_graph, question, **kwargs):
+    # Open the file in read mode with utf-8 encoding
+    with open(path_to_graph, 'r', encoding='utf-8') as file:
+        ttl_content = file.read()
+
+    query = strict_json(
+        system_prompt=CONTEXT_RETRIEVAL_SYSTEM_PROMPT.format(
+            context=ttl_content
+        ),
+        user_prompt=CONTEXT_RETRIEVAL_USER_PROMPT.format(
+            question=question
+        ),
+        output_format={
+            "sparql_query": "Executable sparql query string.", 
+            "explanation": "Explanation of what the sparql query does."
+        },
+        llm=invoke_llm,
+        **kwargs
+    )
+
+    return query
 
 
 def entity_recognition(input: str) -> dict:
@@ -37,7 +62,7 @@ def entity_recognition(input: str) -> dict:
     return response
 
 
-def invoke_llm(system_prompt: str, user_prompt: str):
+def invoke_llm(system_prompt: str, user_prompt: str, **kwargs):
     """Calls the LLM without history.
     LLM function call to be passed to strictjson.strict_json(). It is advised not to change the parameters.
     Refer to https://github.com/tanchongmin/strictjson/blob/main/strictjson/base.py#L319
@@ -49,15 +74,19 @@ def invoke_llm(system_prompt: str, user_prompt: str):
     Returns:
         str: LLM response string.
     """
+    llm_endpoint = kwargs.get('base_url', 'http://localhost:1234/v1')
+    api_key = kwargs.get('api_key', 'lm-studio')
+    model = kwargs.get('model', 'TheBloke/Meta-Llama-3.1-8B-Instruct-GGUF')
+
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
     ]   
 
-    client = OpenAI(base_url=LLM_ENDPOINT, api_key="lm-studio")
+    client = OpenAI(base_url=llm_endpoint, api_key=api_key)
 
     response = client.chat.completions.create(
-        model="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF",
+        model=model,
         messages=messages,
         temperature=1,
     )
@@ -88,10 +117,11 @@ Input: {input}
 ## SPARQL generation ###################################################
 ########################################################################
 CONTEXT_RETRIEVAL_SYSTEM_PROMPT = """
-You are a helpful assistant. I want you to answer generate a SPARQL query considering the question given by the user and the following pandas DataFrame containing RDF triples:
+You are a helpful assistant with expertise in SPARQL. Consider the following RDF graph in Turtle syntax:
     {context}
--Use only classes and properties defined in the RDF graph, for this is important to use the same URIs for the properties and classes as defined in the original graph; 
--Include all the prefixes used in the SPARQL query; 
+Write a SPARQL for the question given by the user following the restrictions:
+-Use only prefixes provided in the RDF graph;
+-Use only classes and properties defined in the RDF graph
 -Declare non-essential properties to the question as OPTIONAL if needed; 
 -DO NOT use specific resources in the query; Declare filters on strings (like labels and names) as filter operations over the REGEX function using the case-insensitive flag.
 

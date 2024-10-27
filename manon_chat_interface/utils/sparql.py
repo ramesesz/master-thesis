@@ -24,33 +24,13 @@ def execute_sparql(url: str, query: str):
       results = wrapper.query().convert()
 
     except URLError as e:
-        print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
+        print(f"\033[91mERROR. SPARQL server may not be running.\033[0m Error message: {e}")
         
     return results
 
 
-def execute_parse_sparql(url, queries):
-    """Helper function for retrieve_context().
-
-    Args:
-        url (_type_): _description_
-        queries (_type_): _description_
-
-    Returns:
-        _type_: _description_
-    """
-    results = []
-    for index, query in enumerate(queries):
-        result = execute_sparql(url=url, query=PREFIXES+query)
-        table = utils.parse_sparql_output(result).to_string()
-        results.append(f"Triples: {index}\n{table}")
-    subgraph = "\n".join(results)
-    subgraph = utils.replace_urls_with_prefixes(subgraph, prefix_dict)
-    return subgraph
-
-
 def load_rdf_triples(file_path: str, format: str = 'ttl'):
-    
+  # gaada prefix jadi ngarang dia
   # Create a Graph object 
   g = Graph()
   g.parse(file_path, format=format)

@@ -2,13 +2,7 @@ from openai import OpenAI
 from strictjson import strict_json
 from dotenv import load_dotenv
 
-# import os
-
-# load_dotenv(dotenv_path="../../.env", override=True)
-
-# LLM_MODEL = os.getenv("LLM_MODEL")
-# LLM_ENDPOINT = os.getenv("LLM_ENDPOINT")
-# API_KEY = os.getenv("API_KEY")
+import os
 
 def generate_sparql_query(path_to_graph, question, **kwargs):
     # Open the file in read mode with utf-8 encoding
@@ -74,21 +68,53 @@ def invoke_llm(system_prompt: str, user_prompt: str, **kwargs):
     Returns:
         str: LLM response string.
     """
-    llm_endpoint = kwargs.get('base_url', 'http://localhost:1234/v1')
-    api_key = kwargs.get('api_key', 'lm-studio')
-    model = kwargs.get('model', 'TheBloke/Meta-Llama-3.1-8B-Instruct-GGUF')
 
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
     ]   
 
-    client = OpenAI(base_url=llm_endpoint, api_key=api_key)
+    client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
+
+    print("Generating with local model...")
 
     response = client.chat.completions.create(
-        model=model,
+        model="TheBloke/Meta-Llama-3.1-8B-Instruct-GGUF",
         messages=messages,
-        temperature=1,
+        temperature=0,
+    )
+
+    return response.choices[0].message.content
+
+
+def invoke_huggingface(system_prompt: str, user_prompt: str, **kwargs):
+    """Calls the LLM without history.
+    LLM function call to be passed to strictjson.strict_json(). It is advised not to change the parameters.
+    Refer to https://github.com/tanchongmin/strictjson/blob/main/strictjson/base.py#L319
+
+    Args:
+        system_prompt (str): System prompt.
+        user_prompt (str): User prompt.
+
+    Returns:
+        str: LLM response string.
+    """
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]   
+
+    # Insert your API key here. Environ settings not set up, key needs to be hard-coded.
+    client = OpenAI(base_url="https://api-inference.huggingface.co/v1/", api_key=API_KEY)
+
+    print("Generating with huggingface model...")
+
+    response = client.chat.completions.create(
+        model="meta-llama/Llama-3.1-70B-Instruct",
+        messages=messages,
+        temperature=0,
+        max_tokens=500
     )
 
     return response.choices[0].message.content

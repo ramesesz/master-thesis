@@ -841,6 +841,20 @@ nas:KMHTcoordinates a gen:PointLocation ;
 
 ## Actual routes #######################################################
 
+atm:ActualFlightRoute a owl:Class ;
+    rdfs:label "Actual Flight Route" ;
+    rdfs:comment "A flight trajectory (i.e., a sequence of track points), as determined by flight track surveillance data." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom atm:AircraftTrackPoint ;
+            owl:onProperty gen:hasSequencedItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:AircraftTrackPoint ;
+            owl:onProperty gen:hasFirstItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:AircraftTrackPoint ;
+            owl:onProperty gen:hasLastItem ],
+        gen:Sequence .
+
 atm:ActualRouteAAL100-201407150030 a atm:ActualFlightRoute ;
     rdfs:label "Actual Route for AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
     gen:hasFirstItem atm:TrackPt201407150035168241 ;
@@ -1006,9 +1020,46 @@ atm:ActualRouteCHQ2945-201407150047 a atm:ActualFlightRoute ;
         atm:TrackPt201407150100030361,
         atm:TrackPt201407150102035883 .
 
-########################################################################
 ## Planned routes ######################################################
-########################################################################
+
+atm:PlannedFlightRoute a owl:Class ;
+    rdfs:label "Planned flight route" ;
+    rdfs:comment "A planned flight route is an ordered sequence of navigation elements that the pilot intends to traverse en route from origin to destination airport." ;
+    rdfs:subClassOf atm:NavigationPath .
+
+atm:flightPlanETA a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "flight plan ETA" ;
+    rdfs:comment "The estimated time of arrival specified in the flight plan." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range xsd:dateTime .
+
+atm:flightRouteString a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "flight route string" ;
+    rdfs:comment "A string that provides the route of flight proposed in a flight plan. Syntactically, the string shows a path of fixes, airways, SIDs, and STARs, separated by either one or two dots. The string is parsed to create an equivalent ontology representation: an ordered sequence of navigation elements that are associated directly with the flight plan (atm:PlannedFlightRoute)." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range xsd:string .
+
+atm:planFilingDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "plan filing day" ;
+    rdfs:comment "Links to the day when the flight plan was filed with the FAA." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range nas:NASday .
+
+atm:planFilingTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "plan filing time" ;
+    rdfs:comment "The time that the flight plan was filed with the FAA." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range xsd:dateTime .
+
+atm:planGapAfterSequenceElementNumber a owl:DatatypeProperty ;
+    rdfs:label "plan gap after sequence element number" ;
+    rdfs:comment "Indicates the location of a gap in the flight plan due to non-parsable/uninterpretable elements in the flight plan string." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range xsd:integer .
 
 atm:PlannedRouteAAL100-201407150030 a atm:PlannedFlightRoute ;
     rdfs:label "Planned Route for AAL100 on 2014-07-15 00:30:00"^^xsd:string ;

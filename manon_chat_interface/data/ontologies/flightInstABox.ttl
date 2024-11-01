@@ -543,7 +543,7 @@ nas:KMHTcoordinates a gen:PointLocation ;
 atm:ActualRouteAAL100-201407150030 a atm:ActualFlightRoute ;
     rdfs:label "Actual Route for AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
     gen:hasFirstItem atm:TrackPt201407150035168241 ;
-    gen:hasLastItem atm:TrackPt201407150103092611 ;
+    gen:hasLastItem atm:TrackPt201407150047159137 ;
     gen:hasSequencedItem atm:TrackPt201407150035168241,
         atm:TrackPt201407150036016540,
         atm:TrackPt201407150036158496,
@@ -559,51 +559,22 @@ atm:ActualRouteAAL100-201407150030 a atm:ActualFlightRoute ;
         atm:TrackPt201407150045036607,
         atm:TrackPt201407150046061041,
         atm:TrackPt201407150047040140,
-        atm:TrackPt201407150047159137,
-        atm:TrackPt201407150049008479,
-        atm:TrackPt201407150050054272,
-        atm:TrackPt201407150051022724,
-        atm:TrackPt201407150052043274,
-        atm:TrackPt201407150053049581,
-        atm:TrackPt201407150054057773,
-        atm:TrackPt201407150055059878,
-        atm:TrackPt201407150056032777,
-        atm:TrackPt201407150057035830,
-        atm:TrackPt201407150058038681,
-        atm:TrackPt201407150059044154,
-        atm:TrackPt201407150100038713,
-        atm:TrackPt201407150102066806,
-        atm:TrackPt201407150102125822,
-        atm:TrackPt201407150103092611 .
+        atm:TrackPt201407150047159137 .
 
 atm:ActualRouteAAL1102-201407150046 a atm:ActualFlightRoute ;
     rdfs:label "Actual Route for AAL1102 on 2014-07-15 00:46:00"^^xsd:string ;
     gen:hasFirstItem atm:TrackPt201407150052008111 ;
-    gen:hasLastItem atm:TrackPt201407150315062514 ;
+    gen:hasLastItem atm:TrackPt201407150054017098 ;
     gen:hasSequencedItem atm:TrackPt201407150052008111,
         atm:TrackPt201407150052035829,
         atm:TrackPt201407150053030654,
         atm:TrackPt201407150053051356,
-        atm:TrackPt201407150054017098,
-        atm:TrackPt201407150054028745,
-        atm:TrackPt201407150055040463,
-        atm:TrackPt201407150055085318,
-        atm:TrackPt201407150056085105,
-        atm:TrackPt201407150056156335,
-        atm:TrackPt201407150058017519,
-        atm:TrackPt201407150059027869,
-        atm:TrackPt201407150100028366,
-        atm:TrackPt201407150102126730,
-        atm:TrackPt201407150104000266,
-        atm:TrackPt201407150104133606,
-        atm:TrackPt201407150105135111,
-        atm:TrackPt201407150106128016,
-        atm:TrackPt201407150107150517 .
+        atm:TrackPt201407150054017098 .
 
 atm:ActualRouteAAL1144-201407150040 a atm:ActualFlightRoute ;
     rdfs:label "Actual Route for AAL1144 on 2014-07-15 00:40:00"^^xsd:string ;
     gen:hasFirstItem atm:TrackPt201407150045160390 ;
-    gen:hasLastItem atm:TrackPt201407150105124308 ;
+    gen:hasLastItem atm:TrackPt201407150052117550 ;
     gen:hasSequencedItem atm:TrackPt201407150045160390,
         atm:TrackPt201407150046158584,
         atm:TrackPt201407150047141258,
@@ -615,22 +586,7 @@ atm:ActualRouteAAL1144-201407150040 a atm:ActualFlightRoute ;
         atm:TrackPt201407150051114613,
         atm:TrackPt201407150051133037,
         atm:TrackPt201407150052117349,
-        atm:TrackPt201407150052117550,
-        atm:TrackPt201407150053078231,
-        atm:TrackPt201407150053142196,
-        atm:TrackPt201407150054080523,
-        atm:TrackPt201407150054141559,
-        atm:TrackPt201407150055109787,
-        atm:TrackPt201407150055130641,
-        atm:TrackPt201407150056114863,
-        atm:TrackPt201407150057105029,
-        atm:TrackPt201407150058057912,
-        atm:TrackPt201407150059072129,
-        atm:TrackPt201407150100078904,
-        atm:TrackPt201407150102105614,
-        atm:TrackPt201407150103063913,
-        atm:TrackPt201407150104083491,
-        atm:TrackPt201407150105124308 .
+        atm:TrackPt201407150052117550 .
 
 atm:ActualRouteAAL1170-201407150053 a atm:ActualFlightRoute ;
     rdfs:label "Actual Route for AAL1170 on 2014-07-15 00:53:00"^^xsd:string ;
@@ -668,7 +624,7 @@ atm:ActualRouteAAL20-201407152358 a atm:ActualFlightRoute ;
 atm:ActualRouteACA722-201407150025 a atm:ActualFlightRoute ;
     rdfs:label "Actual Route for ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
     gen:hasFirstItem atm:TrackPt201407150031054599 ;
-    gen:hasLastItem atm:TrackPt201407150039070788 ;
+    gen:hasLastItem atm:TrackPt201407150035160163 ;
     gen:hasSequencedItem atm:TrackPt201407150031054599,
         atm:TrackPt201407150031155236,
         atm:TrackPt201407150032160905,
@@ -677,14 +633,7 @@ atm:ActualRouteACA722-201407150025 a atm:ActualFlightRoute ;
         atm:TrackPt201407150034063383,
         atm:TrackPt201407150034134237,
         atm:TrackPt201407150035059399,
-        atm:TrackPt201407150035160163,
-        atm:TrackPt201407150036064400,
-        atm:TrackPt201407150037042239,
-        atm:TrackPt201407150037086183,
-        atm:TrackPt201407150038023217,
-        atm:TrackPt201407150038120487,
-        atm:TrackPt201407150038138609,
-        atm:TrackPt201407150039070788 .
+        atm:TrackPt201407150035160163 .
 
 atm:ActualRouteASA14-201407150005 a atm:ActualFlightRoute ;
     rdfs:label "Actual Route for ASA14 on 2014-07-15 00:05:00"^^xsd:string ;

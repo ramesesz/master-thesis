@@ -17,4 +17,7 @@ __pycache__/
 diagrams/img/
 
 # API keys
-.env.hf
+.env.**
+
+# Evaluation
+evaluation/

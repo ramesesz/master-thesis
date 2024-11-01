@@ -263,8 +263,8 @@ eqp:AircraftN11548 a eqp:Aircraft ;
 eqp:B77WAircraftType a eqp:AircraftType ;
     rdfs:label "Aircraft Type B77W"^^xsd:string ;
     eqp:aircraftTypeDesignator "B77W"^^xsd:string ;
-    eqp:hasAircraftEngineType eqp:JetEngineType ;                       # in equipment
-    eqp:hasAircraftWeightClass eqp:HighAircraftWeightClass ;            # in equipment
+    eqp:hasAircraftEngineType eqp:JetEngineType ;                       
+    eqp:hasAircraftWeightClass eqp:HighAircraftWeightClass ;            
     eqp:numberOfEngines 2 .
 
 eqp:B738AircraftType a eqp:AircraftType ;
@@ -302,7 +302,7 @@ eqp:E145AircraftType a eqp:AircraftType ;
 ## Airports ############################################################
 ########################################################################
 
-nas:EGLLairport a nas:InternationalAirport ;                            # in NAS
+nas:EGLLairport a nas:InternationalAirport ;                            
     rdfs:label "EGLL Airport"^^xsd:string ;
     nas:airportLocation nas:EGLLcoordinates ;
     nas:airportName "Heathrow"^^xsd:string ;

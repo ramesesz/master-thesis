@@ -17,7 +17,7 @@
     owl:imports <https://data.nasa.gov/ontologies/atmonto/ATM> .
 
 
-## T-Box ###############################################################
+## Flights #############################################################
 
 atm:actualArrivalDay a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -127,8 +127,6 @@ atm:aircraftFlown a owl:FunctionalProperty,
     rdfs:comment "Links a flight with the actual aircraft used." ;
     rdfs:domain atm:Flight ;
     rdfs:range eqp:Aircraft .
-
-## Flights #############################################################
 
 atm:AAL100-201407150030 a atm:Flight ;
     rdfs:label "Flight AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
@@ -286,6 +284,85 @@ atm:CHQ2945-201407150047 a atm:Flight ;
 
 ## Aircraft ############################################################
 
+eqp:Aircraft a owl:Class ;
+    rdfs:label "Aircraft" ;
+    rdfs:comment "A physical realization of an aircraft, produced according to the specifications defined for a specific model type." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom nas:AirframeManufacturer ;
+            owl:onProperty eqp:manufacturedBy ],
+        eqp:DecomposableSystem,
+        gen:SequencedItem .
+
+eqp:aircraftModelCertainty a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "aircraft model certainty" ;
+    rdfs:comment "A numeric measure between 0 and 1 reflecting how certain the eqp:hasAircraftModel link is to be correct between the aircraft and the model. A value of one indicates 100% certainty. A lesser value is not to be taken as a percentage, but is a heuristic similarity value taken from the scoring of the TF/IDF similarity assessment performed between the FAA aircraft make/model in the FAA registration database and ICAO make/model names used in the ontology." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:float .
+
+eqp:aircraftRegistrant a owl:DatatypeProperty ;
+    rdfs:label "aircraft registrant" ;
+    rdfs:comment "The name of the entity that registered the aircraft with the FAA." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:string .
+
+eqp:aircraftSerialNumber a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "serial number" ;
+    rdfs:comment "The manufacturer serial number of the aircraft." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:string .
+
+eqp:certificateIssueDate a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "certificate issue date" ;
+    rdfs:comment "The date that an operating certificate was issued to the aircraft." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:date .
+
+eqp:hasAircraftModel a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has aircraft model" ;
+    rdfs:comment "Links a specific aircraft to its model." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range eqp:AircraftModel .
+
+eqp:manufactureYear a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "manufacture year" ;
+    rdfs:comment "The year the system was manufactured." ;
+    rdfs:domain eqp:EngineeredSystem ;
+    rdfs:range xsd:integer .
+
+eqp:modeSCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "mode SCode" ;
+    rdfs:comment "The unique Mode S address of the transponder aboard the aircraft. Mode S equipment on aircraft are assigned a unique ICAO 24-bit address or (informally) Mode S hex code upon national registration and this address becomes a part of the aircraft's Certificate of Registration." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:string .                    
+
+eqp:numberOfEngines a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "number of engines" ;
+    rdfs:comment "The number of engines specified for this aircraft model or found on this aircraft." ;
+    rdfs:domain eqp:Aircraft,
+        eqp:AircraftModel ;
+    rdfs:range xsd:integer .
+
+eqp:numberOfSeats a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "number of seats" ;
+    rdfs:comment "The number of seats on this aircraft." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:integer .
+
+eqp:registrationNumber a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "registration number" ;
+    rdfs:comment "The aircraft FAA registration number (the tail number, or the N-Number in the US)." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:string .
+
 eqp:AircraftN963AN a eqp:Aircraft ;
     rdfs:label "Aircraft N963AN"^^xsd:string ;
     eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
@@ -365,6 +442,39 @@ eqp:AircraftN11548 a eqp:Aircraft ;
     eqp:registrationNumber "N11548"^^xsd:string .
 
 ## Aircraft type #######################################################
+
+eqp:AircraftType a owl:Class ;
+    rdfs:label "Aircraft Type" ;
+    rdfs:comment "An aircraft type represents a set of related aircraft models. Each type corresponds to one of the FAA's aircraft type designators (e.g., B777 covers all Boeing 777 models)." ;
+    rdfs:subClassOf owl:Thing .
+
+eqp:aircraftTypeDesignator a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "aircraft type designator" ;
+    rdfs:comment "The type designator code for this type of aircraft (e.g., B777)." ;
+    rdfs:domain eqp:AircraftType ;
+    rdfs:range xsd:string .
+
+eqp:hasAircraftEngineType a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has aircraft engine type" ;
+    rdfs:comment "Links an aircraft type to the type of engine it uses." ;
+    rdfs:domain eqp:AircraftType ;
+    rdfs:range eqp:EngineType .
+
+eqp:hasAircraftWeightClass a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has aircraft weight class" ;
+    rdfs:comment "Links an aircraft model to its weight class." ;
+    rdfs:domain eqp:AircraftType ;
+    rdfs:range eqp:AircraftWeightClass .
+
+eqp:hasAircraftWakeCategory a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has aircraft wake category" ;
+    rdfs:comment "Links an aircraft model to its wake category." ;
+    rdfs:domain eqp:AircraftType ;
+    rdfs:range eqp:AircraftWakeCategory .
 
 eqp:B77WAircraftType a eqp:AircraftType ;
     rdfs:label "Aircraft Type B77W"^^xsd:string ;

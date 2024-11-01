@@ -516,6 +516,97 @@ eqp:E145AircraftType a eqp:AircraftType ;
 
 ## Airports ############################################################
 
+nas:InternationalAirport a owl:Class ;
+    rdfs:label "International airport" ;
+    rdfs:comment "The set of international (i.e., non-US) airports." ;
+    rdfs:subClassOf nas:Airport .
+
+nas:CONUSairport a owl:Class ;
+    rdfs:label "Continental US airport" ;
+    rdfs:comment "The set of airports in the continental US." ;
+    rdfs:subClassOf nas:USairport .
+
+nas:CanadianAirport a owl:Class ;
+    rdfs:label "Canadian airport" ;
+    rdfs:comment "The set of Canadian airports." ;
+    rdfs:subClassOf nas:InternationalAirport .
+
+nas:airportLocation a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "airport location" ;
+    rdfs:comment "Links to a geographic point designated as the airport location." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range gen:PointLocation .
+
+nas:airportName a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "airport name" ;
+    rdfs:comment "The official name of the airport." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:iataAirportCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "IATA Airport Code" ;
+    rdfs:comment "The thre-letter IATA code assigned to the airport. Contrast with the ICAO and FAA airport codes." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:icaoAirportCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "ICAO airport code" ;
+    rdfs:comment "The four-letter ICAO code assignied to the airport. Contrast with the IATA and FAA airport codes." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:withinTimezone a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "within timezone" ;
+    rdfs:comment "The timezone identifier for the airport, where the timezone is specified as Area/Location, e.g. America/New_York." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:faaAirportCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "FAA airport code" ;
+    rdfs:comment "The alphanumeric FAA code of lenth 3 or 4 for the airport. Contrasted with the ICAO and IATA codes, which in general are different. Often the IATA and FAA codes are identical." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:locatedInState a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Located in State" ;
+    rdfs:comment "The 2-letter US postal code for the state in which the airport is located." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:withinARTCC a owl:ObjectProperty ;
+    rdfs:label "within ARTCC" ;
+    rdfs:comment "Links the airport to the ARTCC within which it is located." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range nas:ARTCC .
+
+nas:withinTimezone a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "within timezone" ;
+    rdfs:comment "The timezone identifier for the airport, where the timezone is specified as Area/Location, e.g. America/New_York." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:hoursOffsetFromUTC a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "hours offset from UTC" ;
+    rdfs:comment "The number of hours that the airport is offset from the UTC timezone." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:integer .
+
+nas:locatedInState a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Located in State" ;
+    rdfs:comment "The 2-letter US postal code for the state in which the airport is located." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
 nas:EGLLairport a nas:InternationalAirport ;                            
     rdfs:label "EGLL Airport"^^xsd:string ;
     nas:airportLocation nas:EGLLcoordinates ;

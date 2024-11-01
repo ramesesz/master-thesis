@@ -1205,9 +1205,44 @@ atm:PlannedRouteCHQ2945-201407150047 a atm:PlannedFlightRoute ;
         nas:NEC005_CHQ2945-201407150047_HUSTN2,
         nas:NEC006_CHQ2945-201407150047_KCLT .
 
-########################################################################
 ## Airlines ############################################################
-########################################################################
+
+nas:AirCarrier a owl:Class ;
+    rdfs:label "Air carrier" ;
+    rdfs:comment "An entity that it licensed to operate aircraft." ;
+    rdfs:subClassOf nas:AviationServiceProvider .
+
+nas:airCarrierName a owl:DatatypeProperty ;
+    rdfs:label "Air carrier name" ;
+    rdfs:comment "The official name of an air carrier." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:airlineCallsign a owl:DatatypeProperty ;
+    rdfs:label "airline callsign" ;
+    rdfs:comment "The radio call sign associated with an the air carrier. Used by pilots and controllers to identify aircraft over radio frequencies." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:countryOfRegistry a owl:DatatypeProperty ;
+    rdfs:label "country of registry" ;
+    rdfs:comment "The country name of the airline registration." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:iataCarrierCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "IATA Carrier Code" ;
+    rdfs:comment "The two-letter IATA code assigned to the carrier." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:icaoCarrierCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "ICAO Air Carrier Code" ;
+    rdfs:comment "The three-letter ICAO code assigned to the airline carrier." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
 
 nas:AALairline a nas:AirCarrier ;
     rdfs:label "American Airlines"^^xsd:string ;

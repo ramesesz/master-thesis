@@ -164,7 +164,7 @@ Write a SPARQL for the question given by the user following the restrictions:
 Your output should be in JSON format, categorizing the identified terms into "sparql_query" and "explanation". The output should be strictly the JSON object without any additional commentary or explanation.
 """
 
-TEEXT2SPARQL_USER_PROMPT = """
+TEXT2SPARQL_USER_PROMPT = """
 Question: {question}
 Object metadata: {metadata}
 """

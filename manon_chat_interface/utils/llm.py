@@ -13,7 +13,7 @@ def generate_sparql_query(path_to_graph, question, mode):
     client = chromadb.PersistentClient(path=f"{path_to_vectorstore}")
     collection = client.get_or_create_collection("flight_collection")
 
-    entities = entity_recognition(question)
+    entities = entity_recognition(question)["entities"]
 
     embeddings = collection.query(
         query_texts=entities, n_results=1
@@ -115,7 +115,7 @@ def invoke_huggingface(system_prompt: str, user_prompt: str):
     ]   
 
     # Insert your API key here. Environ settings not set up, key needs to be hard-coded.
-    client = OpenAI(base_url="https://api-inference.huggingface.co/v1/", api_key="xxx")
+    client = OpenAI(base_url="https://api-inference.huggingface.co/v1/", api_key="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")
 
     print("Generating with huggingface model...")
 

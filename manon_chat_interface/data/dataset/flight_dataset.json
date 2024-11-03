@@ -1,122 +1,122 @@
 [
     {
         "id": 1,
-        "question": "Which flight took off first, AAL1102 or ACA722?",
+        "question": "Which flight departed first: AAL1102 or ACA722?",
         "type": "Temporal comparison",
-        "answer": "Flight ACA722 took off first, departing at 00:25:00 on 2014-07-15, while flight AAL1102 departed later at 00:46:00 on the same day."
+        "answer": "Flight ACA722 departed first at 00:25:00 on July 15, 2014, while flight AAL1102 departed later at 00:46:00 on the same day."
     },
     {
         "id": 2,
-        "question": "Which flight had a longer duration based on actual flight time between flight CHQ2945 and ASQ3831?",
+        "question": "Which flight had a longer duration: CHQ2945 or ASQ3831?",
         "type": "Temporal comparison",
-        "answer": "Flight CHQ2945 had a longer duration (1 hour 40 minutes) compared to Flight ASQ3831 (1 hour 3 minutes)."
+        "answer": "Flight CHQ2945 had a longer duration of 1 hour and 40 minutes, compared to ASQ3831's duration of 1 hour and 3 minutes."
     },
     {
         "id": 3,
-        "question": "Calculate the total number of engines for flights ASA14 and AAL20 combined, considering the aircrafts used for each.",
+        "question": "What is the combined number of engines for flights ASA14 and AAL20?",
         "type": "Aggregate",
-        "answer": "Flights ASA14 and AAL20 have 4 engines combined."
+        "answer": "The combined number of engines for flights ASA14 and AAL20 is 4."
     },
     {
         "id": 4,
-        "question": "What is the ICAO code of the departure airport for flight AAL1170?",
+        "question": "What is the ICAO code for the departure airport of flight AAL1170?",
         "type": "Specific attribute query",
-        "answer": "The departure airport of flight AAL1170 has the ICAO code of KDFW."
+        "answer": "The ICAO code for the departure airport of flight AAL1170 is KDFW."
     },
     {
         "id": 5,
-        "question": "What is the difference between the time zones of the departure and arrival airports for flight AAL1144?",
+        "question": "What is the time zone difference between the departure and arrival airports for flight AAL1144?",
         "type": "Temporal comparison",
-        "answer": "The difference between the time zones is 1 hour, with KLGA being 1 hour ahead of KDFW."
+        "answer": "The time zone difference is 1 hour, with KLGA being 1 hour ahead of KDFW."
     },
     {
         "id": 6,
-        "question": "Which flight had a shorter interval between its flight filing time and actual departure time, ASQ4423 or CHQ2945?",
+        "question": "Which flight had a shorter interval between its filing time and actual departure: ASQ4423 or CHQ2945?",
         "type": "Temporal comparison",
-        "answer": "Flight CHQ2945 had no interval between its filing and departure times, while ASQ4423's filing was 11 minutes and 21 seconds after departure."
+        "answer": "Flight CHQ2945 had no interval between its filing and departure times, while ASQ4423 was filed 11 minutes and 21 seconds after its departure."
     },
     {
         "id": 7,
         "question": "Can flights ASQ4423 and ASA14 carry more than 100 passengers?",
         "type": "Filtered",
-        "answer": "Flight ASQ4423, associated with AircraftN11548, can carry 55 passengers, which is less than 100, while flight ASA14, associated with AircraftN413AS, can carry 222 passengers, which is more than 100."
+        "answer": "Flight ASQ4423 can carry 55 passengers, while flight ASA14 can carry 222 passengers, which is more than 100."
     },
     {
         "id": 8,
-        "question": "Did both flights AAL1170 and ASA14 have aircrafts with the same number of seats?",
+        "question": "Do flights AAL1170 and ASA14 have the same number of seats on board?",
         "type": "Attribute comparison",
-        "answer": "No, flights AAL1170 and ASA14 did not have aircraft with the same number of seats. AAL1170's aircraft (AircraftN871NN) had 162 seats, while ASA14's aircraft (AircraftN413AS) had 222 seats."
+        "answer": "No, AAL1170's aircraft has 162 seats, while ASA14's aircraft has 222 seats."
     },
     {
         "id": 9,
-        "question": "What is the time difference between UTC and the local times of the departure airports for both flights AAL100 and ASQ3831?",
+        "question": "What is the UTC offset for the departure airports of flights AAL100 and ASQ3831?",
         "type": "Temporal comparison",
-        "answer": "Both AAL100 and ASQ3831 have departure airports with a UTC offset of -5, meaning their local times are 5 hours behind UTC."
+        "answer": "Both departure airports have a UTC offset of -5, meaning their local time is 5 hours behind UTC."
     },
     {
         "id": 10,
-        "question": "Which aircraft, used in either flight, was newer, based on the aircraft's manufacture year and certificate issue date: ASQ4423 or AAL20?",
+        "question": "Which aircraft, used in flights ASQ4423 or AAL20, is newer based on its manufacture date?",
         "type": "Temporal comparison",
-        "answer": "The aircraft used in flight ASQ4423 (AircraftN11548) is newer, with a certificate issue date of 2002-05-30, compared to the aircraft used in flight AAL20 (AircraftN784AA), which has a certificate issue date of 1991-02-28."
+        "answer": "The aircraft used for flight ASQ4423 is newer, with a certificate issued on 2002-05-30, compared to the one used for AAL20, issued on 1991-02-28."
     },
     {
         "id": 11,
-        "question": "Analyze both flight paths and determine which flight's aircraft had to fly a more complex route based on the number of waypoints in the flight route string: CHQ2945 or AAL1144?",
+        "question": "Which flight had a more complex actual route based on the number of waypoints: CHQ2945 or AAL1144?",
         "type": "Complexity",
-        "answer": "Based on the number of waypoints in the flight, flight AAL1144 (12 waypoints) flew a more complex route than CHQ2945 (10 waypoints)."
+        "answer": "Flight AAL1144 had a more complex route with 12 waypoints, compared to CHQ2945's 10 waypoints."
     },
     {
         "id": 12,
-        "question": "Which flight's arrival airport is geographically further from the departure airport of the other flight: AAL1102 or ACA722?",
+        "question": "Based on the airports'coordinates, which flight covered a greater distance: AAL1102 or ACA722?",
         "type": "Geospatial comparison",
-        "answer": "The arrival airport of AAL1102 (KMIA) is geographically further from the departure airport of ACA722 (CYYZ) than ACA722's arrival airport (KLGA) is from AAL1102's departure airport (KLGA). The distance from KMIA to KLGA is approximately 1768 km, while the distance from CYYZ to KLGA is about 573 km."
+        "answer": "The flight AAL1102 from LaGuardia Airport (New York) to Miami International Airport (Florida) covered a greater distance of approximately 1768 km, compared to flight ACA722 from Toronto Pearson International Airport (Canada) to LaGuardia Airport (New York), which covered about 573 km."
     },
     {
         "id": 13,
-        "question": "Did both flights AAL100 and CHQ2945 operate under the same user category?",
+        "question": "Did flights AAL100 and CHQ2945 operate under the same user category?",
         "type": "Attribute comparison",
-        "answer": "No, flight AAL100 operates under the commercial category, while CHQ2945 under the air taxi category."
+        "answer": "No, AAL100 operates as a commercial flight, while CHQ2945 operates as an air taxi."
     },
     {
         "id": 14,
-        "question": "Compare the ICAO codes of both departure airports and determine if they belong to the same country: AAL1170 and ASQ3831.",
+        "question": "Are the departure airports of flights AAL1170 and ASQ3831 located in the same country?",
         "type": "Geographical comparison",
-        "answer": "No, flight AAL1170 departs from the USA, while flight 3831 from Canada."
+        "answer": "No, AAL1170 departs from a U.S. airport, while ASQ3831 departs from a Canadian airport."
     },
     {
         "id": 15,
-        "question": "What is the aircraft model flewn in flight ASA14?",
+        "question": "What is the aircraft model for flight ASA14?",
         "type": "Specific attribute query",
-        "answer": "The aircraft model flewn by flight ASA14 is Boeing-737-990ER."
+        "answer": "The aircraft model for ASA14 is a Boeing 737-990ER."
     },
     {
         "id": 16,
-        "question": "\nWas flight ASQ4423's arrival on schedule as planned?",
+        "question": "Was flight ASQ4423's arrival time on schedule?",
         "type": "Attribute comparison",
-        "answer": "No, the flight ASQ4423 did not arrive as planned. The actual arrival time was 2014-07-15T01:33:00, which was 8 minutes earlier than the planned flight plan ETA of 2014-07-15T01:41:00."
+        "answer": "No, ASQ4423 arrived 8 minutes earlier than the scheduled ETA of 01:41:00 on 2014-07-15."
     },
     {
         "id": 17,
-        "question": " Did the flights CHQ2945 and AAL1102 arrive at their\nrespective arrival airports on the same day? If not, which\nflight arrived later, and by how many days?",
+        "question": "Did flights CHQ2945 and AAL1102 arrive on the same day?",
         "type": "Temporal comparison",
-        "answer": "Yes, both flights arrived at the same day on the 15th of July 2014."
+        "answer": "Yes, both flights arrived on July 15, 2014."
     },
     {
         "id": 18,
-        "question": "Between the two flights, which aircraft had a higher certainty in its model designation: AAL1102 or AAL20?",
+        "question": "Which aircraft had a higher certainty in its model designation: AAL1102 or AAL20?",
         "type": "Attribute comparison",
-        "answer": "The aircraft flown on flight AAL1102 (AircraftN963AN) had a higher certainty in its model designation, with a certainty of 1.0000000000000002, compared to the aircraft flown on flight AAL20 (AircraftN784AA), which had a certainty of 0.9879913721631963."
+        "answer": "The aircraft used in AAL1102 had a higher model certainty (1.0000000000000002) compared to AAL20 (0.9879913721631963)."
     },
     {
         "id": 19,
-        "question": "Determine whether both flights AAL1144 and ASQ3831 were planned to operate in the same airspace region based on the FAA airport codes of the departure airports.",
+        "question": "Did flights AAL1144 and ASQ3831 operate in the same airspace region based on FAA airport codes?",
         "type": "Attribute comparison",
-        "answer": "Based on the FAA airport codes, AAL1144 and ASQ3831 were planned to operate in different airspace regions, as AAL1144 departed from a U.S. airport with an FAA code (LGA), while CYYZ (ASQ3831's departure airport) does not have an FAA code since it is a Canadian airport."
+        "answer": "No, AAL1144 departed from a U.S. airport (FAA code LGA), while ASQ3831 departed from a Canadian airport (CYYZ), which lacks an FAA code."
     },
     {
         "id": 20,
-        "question": "Which flight has the most flight attendants on board: ACA722 or AAL1170?",
+        "question": "Which flight has more flight attendants on board: ACA722 or AAL1170?",
         "type": "No answer",
-        "answer": "The provided information does not contain any details about the number of flight attendants on either ACA722 or AAL1170."
+        "answer": "No information is provided about the number of flight attendants on either ACA722 or AAL1170."
     }
 ]

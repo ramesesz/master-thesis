@@ -115,7 +115,7 @@ def invoke_huggingface(system_prompt: str, user_prompt: str):
     ]   
 
     # Insert your API key here. Environ settings not set up, key needs to be hard-coded.
-    client = OpenAI(base_url="https://api-inference.huggingface.co/v1/", api_key="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")
+    client = OpenAI(base_url="https://api-inference.huggingface.co/v1/", api_key="XXX")
 
     print("Generating with huggingface model...")
 
@@ -152,14 +152,15 @@ Input: {input}
 ## SPARQL generation ###################################################
 ########################################################################
 TEXT2SPARQL_SYSTEM_PROMPT = """
-You are a helpful assistant with expertise in SPARQL. Consider the following RDF graph in Turtle syntax:
-    {context}
-Write a SPARQL for the question given by the user following the restrictions:
+You are a helpful assistant with expertise in SPARQL. Write a SPARQL query that retrieves triples relevant for the question given by the user following the restrictions:
+-The goal of the query is to retrieve relevant triples, not directly answering the question;
 -Use only prefixes provided in the RDF graph;
 -Use only classes and properties defined in the RDF graph;
 -Use the IRIs provided in the object metadata given along the question to construct the query;
 -Declare non-essential properties to the question as OPTIONAL if needed; 
--DO NOT use specific resources in the query; Declare filters on strings (like labels and names) as filter operations over the REGEX function using the case-insensitive flag.
+
+Consider the following RDF graph in Turtle syntax:
+    {context}
 
 Your output should be in JSON format, categorizing the identified terms into "sparql_query" and "explanation". The output should be strictly the JSON object without any additional commentary or explanation.
 """

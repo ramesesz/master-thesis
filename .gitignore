@@ -19,5 +19,5 @@ diagrams/img/
 # API keys
 .env.**
 
-# Evaluation
-evaluation/
+# Experiments
+experiments/

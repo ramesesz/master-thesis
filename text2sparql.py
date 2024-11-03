@@ -51,7 +51,7 @@ def text2sparql(question, question_id):
 
     # Save log_data to a JSON file
     print("Saving logs...")
-    base_path = f"evaluation/text2sparql/{graph_name}/{model}"
+    base_path = f"experiments/text2sparql/{graph_name}/{model}"
     file_path = os.path.join(base_path, f"{question_id}.json")
 
     # Ensure the directory exists

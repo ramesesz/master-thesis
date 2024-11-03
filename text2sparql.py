@@ -14,33 +14,33 @@ model = "Llama-3.1-70B" # When changing the model of huggingface, model name in 
 
 def text2sparql(question, question_id):
     # Define variables
-    attempts = 1
-    max_attempts = 3
+    attempts = 0
+    max_attempts = 1
     success = False
     log_data = {"attempts": []} 
 
-    while attempts <= max_attempts and not success:
+    while attempts < max_attempts and not success:
+        attempts += 1
         print(f"Attempt no {attempts}. Generating query...")
         attempt_info = {"attempt_number": attempts} 
         try:
             # Generate and execute SPARQL query
-            results = generate_sparql_query(f"{path_to_graph}/{graph_name}", question, mode)
-            sparql_query = results["sparql_query"]
+            gen_results = generate_sparql_query(f"{path_to_graph}/{graph_name}", question, mode)
+            sparql_query = gen_results["sparql_query"]
             results = execute_sparql(url="http://localhost:3030/flight/query", query=sparql_query)
             success = True
             attempt_info["sparql_query"] = sparql_query  # Log successful SPARQL query
+            attempt_info["query_explanation"] = gen_results["explanation"]
             attempt_info["query_results"] = results
             attempt_info["error"] = None 
         except HTTPError as e:
-            attempt_info["sparql_query"] = sparql_query if 'sparql_query' in locals() else None
+            attempt_info["sparql_query"] = gen_results["sparql_query"] if 'sparql_query' in locals() else None
             attempt_info["error"] = str(e) 
             print(f"Attempt {attempts}: Failed to execute SPARQL query due to an HTTP error - {e}")
-            attempts += 1
         except Exception as e:
-            attempt_info["sparql_query"] = sparql_query if 'sparql_query' in locals() else None
+            attempt_info["sparql_query"] = gen_results["sparql_query"] if 'sparql_query' in locals() else None
             attempt_info["error"] = str(e) 
             print(f"Attempt {attempts}: Error - {e}")
-            attempts += 1
         
         log_data["attempts"].append(attempt_info)
 
@@ -67,8 +67,8 @@ with open("manon_chat_interface/data/dataset/flight_dataset.json", "r") as file:
     data = json.load(file)
 
 for index, item in enumerate(data):
-    if index in [1, 8, 11]:
-        question = item["question"]
-        question_id = item["id"]
 
-        text2sparql(question=question, question_id=question_id)
+    question = item["question"]
+    question_id = item["id"]
+
+    text2sparql(question=question, question_id=question_id)

@@ -17,7 +17,7 @@
         "id": 3,
         "question": "What is the combined number of engines for flights ASA14 and AAL20?",
         "type": "Aggregate",
-        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL20-201407152358> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#B739AircraftType> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfEngines> \"2\"^^<http://www.w3.org/2001/XMLSchema#int> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#A321AircraftType> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfEngines> \"2\"^^<http://www.w3.org/2001/XMLSchema#int> .",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> ;\n    <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftTypeFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#B739AircraftType> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL20-201407152358> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> ;\n    <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftTypeFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#A321AircraftType> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#B739AircraftType> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfEngines> \"2\"^^<http://www.w3.org/2001/XMLSchema#int> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#A321AircraftType> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfEngines> \"2\"^^<http://www.w3.org/2001/XMLSchema#int> .",
         "answer": "The combined number of engines for flights ASA14 and AAL20 is 4."
     },
     {
@@ -136,7 +136,7 @@
         "id": 20,
         "question": "Which flight has more flight attendants on board: ACA722 or AAL1170?",
         "type": "No answer",
-        "triples": "",
+        "triples": NaN,
         "answer": "No information is provided about the number of flight attendants on either ACA722 or AAL1170."
     }
 ]

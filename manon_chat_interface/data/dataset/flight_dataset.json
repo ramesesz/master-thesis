@@ -3,120 +3,140 @@
         "id": 1,
         "question": "Which flight departed first: AAL1102 or ACA722?",
         "type": "Temporal comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ACA722-201407150025> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ACA722-201407150025> <https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureTime> \"2014-07-15T00:25:00\" .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> <https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureTime> \"2014-07-15T00:46:00\" .",
         "answer": "Flight ACA722 departed first at 00:25:00 on July 15, 2014, while flight AAL1102 departed later at 00:46:00 on the same day."
     },
     {
         "id": 2,
         "question": "Which flight had a longer duration: CHQ2945 or ASQ3831?",
         "type": "Temporal comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> <https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureTime> \"2014-07-15T00:47:00\" .\n<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> <https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalTime> \"2014-07-15T02:27:00\" .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> <https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureTime> \"2014-07-15T00:19:00\" .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> <https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalTime> \"2014-07-15T01:22:00\" .",
         "answer": "Flight CHQ2945 had a longer duration of 1 hour and 40 minutes, compared to ASQ3831's duration of 1 hour and 3 minutes."
     },
     {
         "id": 3,
         "question": "What is the combined number of engines for flights ASA14 and AAL20?",
         "type": "Aggregate",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL20-201407152358> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#B739AircraftType> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfEngines> \"2\"^^<http://www.w3.org/2001/XMLSchema#int> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#A321AircraftType> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfEngines> \"2\"^^<http://www.w3.org/2001/XMLSchema#int> .",
         "answer": "The combined number of engines for flights ASA14 and AAL20 is 4."
     },
     {
         "id": 4,
         "question": "What is the ICAO code for the departure airport of flight AAL1170?",
         "type": "Specific attribute query",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1170-201407150053> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KDFWairport> <https://data.nasa.gov/ontologies/atmonto/NAS#icaoAirportCode> \"KDFW\"^^<http://www.w3.org/2001/XMLSchema#string> .",
         "answer": "The ICAO code for the departure airport of flight AAL1170 is KDFW."
     },
     {
         "id": 5,
         "question": "What is the time zone difference between the departure and arrival airports for flight AAL1144?",
         "type": "Temporal comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1144-201407150040> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1144-201407150040> <https://data.nasa.gov/ontologies/atmonto/ATM#arrivalAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#KDFWairport> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1144-201407150040> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KDFWairport> <https://data.nasa.gov/ontologies/atmonto/NAS#hoursOffsetFromUTC> \"-6\" .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport> <https://data.nasa.gov/ontologies/atmonto/NAS#hoursOffsetFromUTC> \"-5\" .",
         "answer": "The time zone difference is 1 hour, with KLGA being 1 hour ahead of KDFW."
     },
     {
         "id": 6,
         "question": "Which flight had a shorter interval between its filing time and actual departure: ASQ4423 or CHQ2945?",
         "type": "Temporal comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> <https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureTime> \"2014-07-15T00:37:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#PlannedRouteASQ4423-201407150037> <https://data.nasa.gov/ontologies/atmonto/ATM#planFilingTime> \"2014-07-15T00:48:21\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> <https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureTime> \"2014-07-15T00:47:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#PlannedRouteCHQ2945-201407150047> <https://data.nasa.gov/ontologies/atmonto/ATM#planFilingTime> \"2014-07-15T00:47:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .",
         "answer": "Flight CHQ2945 had no interval between its filing and departure times, while ASQ4423 was filed 11 minutes and 21 seconds after its departure."
     },
     {
         "id": 7,
         "question": "Can flights ASQ4423 and ASA14 carry more than 100 passengers?",
         "type": "Filtered",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN11548> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN413AS> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN11548> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfSeats> \"55\" .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN413AS> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfSeats> \"222\" .",
         "answer": "Flight ASQ4423 can carry 55 passengers, while flight ASA14 can carry 222 passengers, which is more than 100."
     },
     {
         "id": 8,
         "question": "Do flights AAL1170 and ASA14 have the same number of seats on board?",
         "type": "Attribute comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1170-201407150053> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1170-201407150053> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN871NN> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN413AS> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN871NN> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfSeats> \"162\" .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN413AS> <https://data.nasa.gov/ontologies/atmonto/equipment#numberOfSeats> \"222\" .",
         "answer": "No, AAL1170's aircraft has 162 seats, while ASA14's aircraft has 222 seats."
     },
     {
         "id": 9,
         "question": "What is the UTC offset for the departure airports of flights AAL100 and ASQ3831?",
         "type": "Temporal comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#AAL100-201407150030> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL100-201407150030> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#KJFKairport> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#CYYZairport> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KJFKairport> <https://data.nasa.gov/ontologies/atmonto/NAS#hoursOffsetFromUTC> \"-5\" .\n<https://data.nasa.gov/ontologies/atmonto/NAS#CYYZairport> <https://data.nasa.gov/ontologies/atmonto/NAS#hoursOffsetFromUTC> \"-5\" .",
         "answer": "Both departure airports have a UTC offset of -5, meaning their local time is 5 hours behind UTC."
     },
     {
         "id": 10,
-        "question": "Which aircraft, used in flights ASQ4423 or AAL20, is newer based on its manufacture date?",
+        "question": "Which aircraft, used in flights ASQ4423 or AAL20, is newer based on its certificate issue date?\"",
         "type": "Temporal comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN11548> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL20-201407152358> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL20-201407152358> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN784AA> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN11548> <https://data.nasa.gov/ontologies/atmonto/equipment#certificateIssueDate> \"2002-05-30\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN784AA> <https://data.nasa.gov/ontologies/atmonto/equipment#certificateIssueDate> \"1991-02-28\"^^<http://www.w3.org/2001/XMLSchema#date> .",
         "answer": "The aircraft used for flight ASQ4423 is newer, with a certificate issued on 2002-05-30, compared to the one used for AAL20, issued on 1991-02-28."
     },
     {
         "id": 11,
         "question": "Which flight had a more complex actual route based on the number of waypoints: CHQ2945 or AAL1144?",
         "type": "Complexity",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> ;\n    <https://data.nasa.gov/ontologies/atmonto/ATM#hasActualRoute> <https://data.nasa.gov/ontologies/atmonto/ATM#ActualRouteCHQ2945-201407150047> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ActualRouteCHQ2945-201407150047> a <https://data.nasa.gov/ontologies/atmonto/ATM#ActualFlightRoute> ;\n    <https://data.nasa.gov/ontologies/general#hasSequencedItem> <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150053042977>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150053074110>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150054073369>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150055056700>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150056037367>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150057041561>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150057137003>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150059006967>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150100030361>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150102035883> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1144-201407150040> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> ;\n    <https://data.nasa.gov/ontologies/atmonto/ATM#hasActualRoute> <https://data.nasa.gov/ontologies/atmonto/ATM#ActualRouteAAL1144-201407150040> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ActualRouteAAL1144-201407150040> a <https://data.nasa.gov/ontologies/atmonto/ATM#ActualFlightRoute> ;\n    <https://data.nasa.gov/ontologies/general#hasSequencedItem> <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150045160390>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150046158584>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150047141258>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150048111122>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150049090586>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150050036548>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150050088226>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150051025266>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150051114613>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150051133037>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150052117349>,\n        <https://data.nasa.gov/ontologies/atmonto/ATM#TrackPt201407150052117550> .",
         "answer": "Flight AAL1144 had a more complex route with 12 waypoints, compared to CHQ2945's 10 waypoints."
     },
     {
         "id": 12,
         "question": "Based on the airports'coordinates, which flight covered a greater distance: AAL1102 or ACA722?",
         "type": "Geospatial comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> <https://data.nasa.gov/ontologies/atmonto/ATM#arrivalAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#KMIAairport> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KMIAairport> <https://data.nasa.gov/ontologies/atmonto/NAS#airportLocation> <https://data.nasa.gov/ontologies/atmonto/NAS#KMIAcoordinates> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KMIAcoordinates> <https://data.nasa.gov/ontologies/atmonto/general#altitude> \"9.0\"^^<http://www.w3.org/2001/XMLSchema#float> ;\n    <https://data.nasa.gov/ontologies/atmonto/general#latitude> \"25.795361\"^^<http://www.w3.org/2001/XMLSchema#float> ;\n    <https://data.nasa.gov/ontologies/atmonto/general#longitude> \"-80.290111\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport> <https://data.nasa.gov/ontologies/atmonto/NAS#airportLocation> <https://data.nasa.gov/ontologies/atmonto/NAS#KLGAcoordinates> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KLGAcoordinates> <https://data.nasa.gov/ontologies/general#altitude> \"21.0\"^^<http://www.w3.org/2001/XMLSchema#float> ;\n    <https://data.nasa.gov/ontologies/general#latitude> \"40.77725\"^^<http://www.w3.org/2001/XMLSchema#float> ;\n    <https://data.nasa.gov/ontologies/general#longitude> \"-73.872611\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ACA722-201407150025> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ACA722-201407150025> <https://data.nasa.gov/ontologies/atmonto/ATM#arrivalAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ACA722-201407150025> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#CYYZairport> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#CYYZairport> <https://data.nasa.gov/ontologies/atmonto/NAS#airportLocation> <https://data.nasa.gov/ontologies/atmonto/NAS#CYYZcoordinates> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#CYYZcoordinates> <https://data.nasa.gov/ontologies/general#altitude> \"569.0\"^^<http://www.w3.org/2001/XMLSchema#float> ;\n    <https://data.nasa.gov/ontologies/general#latitude> \"43.676661\"^^<http://www.w3.org/2001/XMLSchema#float> ;\n    <https://data.nasa.gov/ontologies/general#longitude> \"-79.630644\"^^<http://www.w3.org/2001/XMLSchema#float> .",
         "answer": "The flight AAL1102 from LaGuardia Airport (New York) to Miami International Airport (Florida) covered a greater distance of approximately 1768 km, compared to flight ACA722 from Toronto Pearson International Airport (Canada) to LaGuardia Airport (New York), which covered about 573 km."
     },
     {
         "id": 13,
         "question": "Did flights AAL100 and CHQ2945 operate under the same user category?",
         "type": "Attribute comparison",
+        "triples": " <https://data.nasa.gov/ontologies/atmonto/ATM#AAL100-201407150030> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL100-201407150030> <https://data.nasa.gov/ontologies/atmonto/ATM#userCategory> \"COMMERCIAL\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> <https://data.nasa.gov/ontologies/atmonto/ATM#userCategory> \"AIR TAXI\"^^<http://www.w3.org/2001/XMLSchema#string> .",
         "answer": "No, AAL100 operates as a commercial flight, while CHQ2945 operates as an air taxi."
     },
     {
         "id": 14,
         "question": "Are the departure airports of flights AAL1170 and ASQ3831 located in the same country?",
         "type": "Geographical comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1170-201407150053> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1170-201407150053> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#KDFWairport> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KDFWairport> <https://data.nasa.gov/ontologies/atmonto/NAS#icaoAirportCode> \"KDFW\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#CYYZairport> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#CYYZairport> <https://data.nasa.gov/ontologies/atmonto/NAS#icaoAirportCode> \"CYYZ\"^^<http://www.w3.org/2001/XMLSchema#string> .",
         "answer": "No, AAL1170 departs from a U.S. airport, while ASQ3831 departs from a Canadian airport."
     },
     {
         "id": 15,
         "question": "What is the aircraft model for flight ASA14?",
         "type": "Specific attribute query",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN413AS> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN413AS> <https://data.nasa.gov/ontologies/atmonto/equipment#hasAircraftModel> <https://data.nasa.gov/ontologies/atmonto/equipment#Boeing-737-990ER> .",
         "answer": "The aircraft model for ASA14 is a Boeing 737-990ER."
     },
     {
         "id": 16,
         "question": "Was flight ASQ4423's arrival time on schedule?",
         "type": "Attribute comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> <https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalTime> \"2014-07-15T01:33:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037> <https://data.nasa.gov/ontologies/atmonto/ATM#hasPlannedRoute> <https://data.nasa.gov/ontologies/atmonto/ATM#PlannedRouteASQ4423-201407150037> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#PlannedRouteASQ4423-201407150037> <https://data.nasa.gov/ontologies/atmonto/ATM#flightPlanETA> \"2014-07-15T01:41:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .",
         "answer": "No, ASQ4423 arrived 8 minutes earlier than the scheduled ETA of 01:41:00 on 2014-07-15."
     },
     {
         "id": 17,
         "question": "Did flights CHQ2945 and AAL1102 arrive on the same day?",
         "type": "Temporal comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047> <https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalDay> <https://data.nasa.gov/ontologies/atmonto/NAS#Day20140715> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> <https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalDay> <https://data.nasa.gov/ontologies/atmonto/NAS#Day20140715> .",
         "answer": "Yes, both flights arrived on July 15, 2014."
     },
     {
         "id": 18,
         "question": "Which aircraft had a higher certainty in its model designation: AAL1102 or AAL20?",
         "type": "Attribute comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN963AN> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN963AN> <https://data.nasa.gov/ontologies/atmonto/equipment#aircraftModelCertainty> \"1.0000000000000002\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL20-201407152358> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL20-201407152358> <https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown> <https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN784AA> .\n<https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN784AA> <https://data.nasa.gov/ontologies/atmonto/equipment#aircraftModelCertainty> \"0.9879913721631963\"^^<http://www.w3.org/2001/XMLSchema#float> .",
         "answer": "The aircraft used in AAL1102 had a higher model certainty (1.0000000000000002) compared to AAL20 (0.9879913721631963)."
     },
     {
         "id": 19,
         "question": "Did flights AAL1144 and ASQ3831 operate in the same airspace region based on FAA airport codes?",
         "type": "Attribute comparison",
+        "triples": "<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1144-201407150040> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#AAL1144-201407150040> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport> .\n<https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport> <https://data.nasa.gov/ontologies/atmonto/NAS#faaAirportCode> \"LGA\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> a <https://data.nasa.gov/ontologies/atmonto/ATM#Flight> .\n<https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019> <https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport> <https://data.nasa.gov/ontologies/atmonto/NAS#CYYZairport> .",
         "answer": "No, AAL1144 departed from a U.S. airport (FAA code LGA), while ASQ3831 departed from a Canadian airport (CYYZ), which lacks an FAA code."
     },
     {
         "id": 20,
         "question": "Which flight has more flight attendants on board: ACA722 or AAL1170?",
         "type": "No answer",
+        "triples": "",
         "answer": "No information is provided about the number of flight attendants on either ACA722 or AAL1170."
     }
 ]

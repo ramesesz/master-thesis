@@ -123,7 +123,7 @@ def invoke_huggingface(system_prompt: str, user_prompt: str):
         model="meta-llama/Llama-3.1-70B-Instruct",
         messages=messages,
         temperature=0,
-        max_tokens=500
+        max_tokens=800
     )
 
     return response.choices[0].message.content
@@ -154,8 +154,8 @@ Input: {input}
 TEXT2SPARQL_SYSTEM_PROMPT = """
 You are a helpful assistant with expertise in SPARQL. Write a SPARQL query that retrieves triples relevant for the question given by the user following the restrictions:
 -The goal of the query is to retrieve relevant triples, not directly answering the question;
--Use only prefixes provided in the RDF graph;
--Use only classes and properties defined in the RDF graph;
+-Do not limit the query results;
+-Use only prefixes, classes and properties provided in the RDF graph;
 -Use the IRIs provided in the object metadata given along the question to construct the query;
 -Declare non-essential properties to the question as OPTIONAL if needed; 
 
@@ -173,13 +173,13 @@ Object metadata: {metadata}
 ########################################################################
 ## QA prompt template ##################################################
 ########################################################################
-QA_SYSTEM_PROMPT = """
-You are a helpful assistant. I want you to answer the given user question considering the context given in the
-following RDF triples. Explain your reasoning and cite the relevant triples
-Triples: {context}
+TRIPLE2TEXT_SYSTEM_PROMPT = """
+You are a helpful assistant with expertise in RDF graphs. I want you to answer the given user question considering the context given in the
+following RDF triples. Leave out your thought process. Be concise without leaving important information. 
+Triples: {triples}
 """
 
 # TODO: Enhance the prompt.
-QA_USER_PROMPT = """
+TRIPLE2TEXT_USER_PROMPT = """
 Question: {question}
 """

@@ -1,19 +1,18 @@
 from manon_chat_interface.utils.sparql import *
 from manon_chat_interface.utils.llm import * 
-from dotenv import load_dotenv
 from urllib.error import HTTPError
 
 import json
 import os
 
+# Define variables
 path_to_graph = "manon_chat_interface/data/ontologies"
 graph_name = "flightInstATBox.ttl"
-mode = "huggingface"
-model = "Llama-3.1-70B" # When changing the model of huggingface, model name in llm.py also needs to be changed.
+mode = "local"
+model = "Llama-3.1-8B" # This variable is for folder naming only.
 
 
 def text2sparql(question, question_id):
-    # Define variables
     attempts = 0
     max_attempts = 1
     success = False

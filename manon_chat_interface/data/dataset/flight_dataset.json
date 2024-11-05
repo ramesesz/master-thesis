@@ -136,7 +136,7 @@
         "id": 20,
         "question": "Which flight has more flight attendants on board: ACA722 or AAL1170?",
         "type": "No answer",
-        "triples": NaN,
+        "triples": "",
         "answer": "No information is provided about the number of flight attendants on either ACA722 or AAL1170."
     }
 ]

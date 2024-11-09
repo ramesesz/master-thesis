@@ -17,7 +17,7 @@
         "id": 3,
         "question": "What is the combined number of engines for flights ASA14 and AAL20?",
         "type": "Aggregate",
-        "triples": "atm:ASA14-201407150005 a atm:Flight ;\n    atm:aircraftTypeFlown eqp:B739AircraftType .\natm:AAL20-201407152358 a atm:Flight ;\n    atm:aircraftTypeFlown eqp:A321AircraftType .\neqp:B739AircraftType eqp:numberOfEngines \"2\"^^xsd:int .\neqp:A321AircraftType eqp:numberOfEngines \"2\"^^xsd:int .",
+        "triples": "atm:ASA14-201407150005 a atm:Flight ;\n    atm:aircraftTypeFlown eqp:AircraftN413AS .\natm:AAL20-201407152358 a atm:Flight ;\n    atm:aircraftTypeFlown eqp:AircraftN784AA .\neqp:AircraftN413AS eqp:numberOfEngines \"2\"^^xsd:int .\neqp:AircraftN784AA eqp:numberOfEngines \"1\"^^xsd:int .",
         "answer": "The combined number of engines for flights ASA14 and AAL20 is 3."
     },
     {
@@ -31,7 +31,7 @@
         "id": 5,
         "question": "What is the time zone difference between the departure and arrival airports for flight AAL1144?",
         "type": "Temporal comparison",
-        "triples": "atm:AAL1144-201407150040 a atm:Flight .\natm:AAL1144-201407150040 atm:arrivalAirport nas:KDFWairport .\natm:AAL1144-201407150040 atm:departureAirport nas:KLGAairport .\nnas:KDFWairport nas:withinTimezone \"America/Chicago\"^^xsd:string .\nnas:KLGAairport nas:withinTimezone \"America/New_York\"^^xsd:string .",
+        "triples": "atm:AAL1144-201407150040 a atm:Flight .\natm:AAL1144-201407150040 atm:arrivalAirport nas:KDFWairport .\natm:AAL1144-201407150040 atm:departureAirport nas:KLGAairport .\nnas:KDFWairport nas:withinTimezone \"America/Chicago\"^^xsd:string .\nnas:KLGAairport  nas:withinTimezone \"America/New_York\"^^xsd:string .",
         "answer": "The time zone difference is 1 hour, with KLGA being 1 hour ahead of KDFW."
     },
     {

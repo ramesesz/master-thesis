@@ -18,7 +18,7 @@
         "question": "What is the combined number of engines for flights ASA14 and AAL20?",
         "type": "Aggregate",
         "triples": "atm:ASA14-201407150005 a atm:Flight ;\n    atm:aircraftTypeFlown eqp:B739AircraftType .\natm:AAL20-201407152358 a atm:Flight ;\n    atm:aircraftTypeFlown eqp:A321AircraftType .\neqp:B739AircraftType eqp:numberOfEngines \"2\"^^xsd:int .\neqp:A321AircraftType eqp:numberOfEngines \"2\"^^xsd:int .",
-        "answer": "The combined number of engines for flights ASA14 and AAL20 is 4."
+        "answer": "The combined number of engines for flights ASA14 and AAL20 is 3."
     },
     {
         "id": 4,
@@ -31,7 +31,7 @@
         "id": 5,
         "question": "What is the time zone difference between the departure and arrival airports for flight AAL1144?",
         "type": "Temporal comparison",
-        "triples": "atm:AAL1144-201407150040 a atm:Flight .\natm:AAL1144-201407150040 atm:arrivalAirport nas:KDFWairport .\natm:AAL1144-201407150040 atm:departureAirport nas:KLGAairport .\nnas:KDFWairport nas:hoursOffsetFromUTC \"-6\" .\nnas:KLGAairport nas:hoursOffsetFromUTC \"-5\" .",
+        "triples": "atm:AAL1144-201407150040 a atm:Flight .\natm:AAL1144-201407150040 atm:arrivalAirport nas:KDFWairport .\natm:AAL1144-201407150040 atm:departureAirport nas:KLGAairport .\nnas:KDFWairport nas:withinTimezone \"America/Chicago\"^^xsd:string .\nnas:KLGAairport nas:withinTimezone \"America/New_York\"^^xsd:string .",
         "answer": "The time zone difference is 1 hour, with KLGA being 1 hour ahead of KDFW."
     },
     {
@@ -94,7 +94,7 @@
         "id": 14,
         "question": "Are the departure airports of flights AAL1170 and ASQ3831 located in the same country?",
         "type": "Geographical comparison",
-        "triples": "atm:AAL1170-201407150053 a atm:Flight .\natm:AAL1170-201407150053 atm:departureAirport nas:KDFWairport .\nnas:KDFWairport nas:icaoAirportCode \"KDFW\"^^xsd:string .\natm:ASQ3831-201407150019 a atm:Flight .\natm:ASQ3831-201407150019 atm:departureAirport nas:CYYZairport .\nnas:CYYZairport nas:icaoAirportCode \"CYYZ\"^^xsd:string .",
+        "triples": "atm:AAL1170-201407150053 a atm:Flight .\natm:AAL1170-201407150053 atm:departureAirport nas:KDFWairport .\nnas:KDFWairport nas:locatedInState \"TX\"^^xsd:string .\natm:ASQ3831-201407150019 a atm:Flight .\natm:ASQ3831-201407150019 atm:departureAirport nas:CYYZairport .\nnas:CYYZairport nas:locatedInState \"ON\"^^xsd:string .",
         "answer": "No, AAL1170 departs from a U.S. airport, while ASQ3831 departs from a Canadian airport."
     },
     {
@@ -128,7 +128,7 @@
     {
         "id": 19,
         "question": "Did flights AAL1144 and ASQ3831 operate in the same airspace region based on FAA airport codes?",
-        "type": "Attribute comparison",
+        "type": "No answer, partial unavailability",
         "triples": "atm:AAL1144-201407150040 a atm:Flight .\natm:AAL1144-201407150040 atm:departureAirport nas:KLGAairport .\nnas:KLGAairport nas:faaAirportCode \"LGA\"^^xsd:string .\natm:ASQ3831-201407150019 a atm:Flight .\natm:ASQ3831-201407150019 atm:departureAirport nas:CYYZairport .",
         "answer": "No, AAL1144 departed from a U.S. airport (FAA code LGA), while ASQ3831 departed from a Canadian airport (CYYZ), which lacks an FAA code."
     },

@@ -53,7 +53,6 @@ with open("manon_chat_interface/data/dataset/flight_dataset.json", "r") as file:
     data = json.load(file)
 
 for index, item in enumerate(data):
-    if index==3: break
     question = item["question"]
     question_id = item["id"]
     triples = item["triples"]

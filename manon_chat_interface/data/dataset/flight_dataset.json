@@ -4,7 +4,7 @@
         "question": "Which flight departed first: AAL1102 or ACA722?",
         "type": "Temporal comparison",
         "triples": "atm:ACA722-201407150025 a atm:Flight .\natm:AAL1102-201407150046 a atm:Flight .\natm:ACA722-201407150025 atm:actualDepartureTime \"2014-07-15T00:25:00\" .\natm:AAL1102-201407150046 atm:actualDepartureTime \"2014-07-15T00:46:00\" .",
-        "answer": "Flight ACA722 departed first at 00:25:00 on July 15, 2014, while flight AAL1102 departed later at 00:46:00 on the same day."
+        "answer": "Flight ACA722 departed first at 00:25:00, while flight AAL1102 departed later at 00:46:00 on the same day."
     },
     {
         "id": 2,

@@ -174,8 +174,7 @@ Object metadata: {metadata}
 ## QA prompt template ##################################################
 ########################################################################
 TRIPLE2TEXT_SYSTEM_PROMPT = """
-You are a helpful assistant with expertise in RDF graphs. I want you to answer the given user question considering the context given in the
-following RDF triples. Leave out your thought process. Be concise without leaving important information. 
+You are an expert assistant specialized in RDF graphs. Answer the user’s question using only the information from the RDF triples, providing a full, concise answer in one or two sentences.
 Triples: {triples}
 """
 

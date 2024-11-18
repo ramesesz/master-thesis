@@ -157,7 +157,7 @@ You are a helpful assistant with expertise in SPARQL. Write a SPARQL query that 
 -Do not limit the query results;
 -Use only prefixes, classes and properties provided in the RDF graph;
 -Use the IRIs provided in the object metadata given along the question to construct the query;
--Declare non-essential properties to the question as OPTIONAL if needed; 
+-Declare non-essential properties to the question as OPTIONAL if needed
 
 Consider the following RDF graph in Turtle syntax:
     {context}

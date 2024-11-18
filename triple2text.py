@@ -6,8 +6,8 @@ import json
 import os
 
 # Define variables
-mode = "huggingface"
-model = "Llama-3.1-70B" # This variable is for folder naming only.
+mode = "local"
+model = "Llama-3.1-8B" # This variable is for folder naming only.
 
 def triple2text(question, question_id, triples, answer, mode):
     if mode=="huggingface":

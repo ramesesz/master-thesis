@@ -1,0 +1,21 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \n PREFIX nas: <http://www.nas.org/ontology#> \n SELECT ?s WHERE { ?s atm:aircraftModel ?o . FILTER regex(str(?s), 'ASA14') }",
+            "query_explanation": "This SPARQL query retrieves the aircraft model for flights with ID ASA14 by matching the flight ID in the subject (s) and retrieving the object (o) which represents the aircraft model.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "s"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

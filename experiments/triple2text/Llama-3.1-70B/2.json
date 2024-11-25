@@ -1,0 +1,9 @@
+{
+    "gen_results": "The flight atm:CHQ2945-201407150047 had a longer duration, as it departed at 00:47 and arrived at 02:27, while atm:ASQ3831-201407150019 departed at 00:19 and arrived at 01:22. The duration of atm:CHQ2945-201407150047 was 1 hour and 40 minutes, and the duration of atm:ASQ3831-201407150019 was 1 hour and 3 minutes.",
+    "answer": "Flight CHQ2945 had a longer duration of 1 hour and 40 minutes, compared to ASQ3831's duration of 1 hour and 3 minutes.",
+    "bleu": 0.1954223269780876,
+    "rouge_1": 0.49382716049382713,
+    "rouge_2": 0.32911392405063294,
+    "meteor": 0.705322809147946,
+    "BERTscore": 0.6640757322311401
+}

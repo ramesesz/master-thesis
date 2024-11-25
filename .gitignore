@@ -18,6 +18,3 @@ diagrams/img/
 
 # API keys
 .env.**
-
-# Experiments
-experiments/

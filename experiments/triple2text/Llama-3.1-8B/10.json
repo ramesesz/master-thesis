@@ -1,0 +1,9 @@
+{
+    "gen_results": "The aircraft used in flight ASQ4423, Aircraft N11548, has a certificate issue date of 2002-05-30, making it the newer aircraft.",
+    "answer": "The aircraft used for flight ASQ4423 is newer, with a certificate issued on 2002-05-30, compared to the one used for AAL20, issued on 1991-02-28.",
+    "bleu": 2.433694140476347e-78,
+    "rouge_1": 0.52,
+    "rouge_2": 0.2916666666666667,
+    "meteor": 0.2474367022389622,
+    "BERTscore": 0.7566084861755371
+}

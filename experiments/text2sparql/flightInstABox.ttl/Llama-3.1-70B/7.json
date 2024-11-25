@@ -1,0 +1,23 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?flight?aircraftType?numberOfSeats WHERE { VALUES?flight {atm:ASQ4423-201407150037 atm:ASA14-201407150005}?flight atm:aircraftTypeFlown?aircraftType.?aircraftType eqp:numberOfSeats?numberOfSeats. FILTER (?numberOfSeats > 100) }",
+            "query_explanation": "This SPARQL query retrieves the flights ASQ4423 and ASA14, their corresponding aircraft types, and the number of seats in those aircraft types. The FILTER clause ensures that only flights with more than 100 seats are returned.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "aircraftType",
+                        "numberOfSeats"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

@@ -1,0 +1,9 @@
+{
+    "gen_results": "The flight with the shorter interval was ASQ4423, with an interval of 9 minutes between planFilingTime \"2014-07-15T00:48:21\" and actualDepartureTime \"2014-07-15T00:37:00\".",
+    "answer": "Flight CHQ2945 had no interval between its filing and departure times, while ASQ4423 was filed 11 minutes and 21 seconds after its departure.",
+    "bleu": 1.1087896246665303e-231,
+    "rouge_1": 0.3137254901960784,
+    "rouge_2": 0.0,
+    "meteor": 0.13215859030837002,
+    "BERTscore": 0.5513927936553955
+}

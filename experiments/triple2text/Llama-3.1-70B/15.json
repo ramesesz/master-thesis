@@ -1,0 +1,9 @@
+{
+    "gen_results": "The aircraft model for flight ASA14-201407150005 is Boeing-737-990ER.",
+    "answer": "The aircraft model for ASA14 is a Boeing 737-990ER.",
+    "bleu": 0.32260135189272865,
+    "rouge_1": 0.8571428571428572,
+    "rouge_2": 0.5263157894736842,
+    "meteor": 0.5438202247191011,
+    "BERTscore": 0.798630952835083
+}

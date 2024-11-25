@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?faaAirportCode1?faaAirportCode2 WHERE { atm:AAL1144-201407150040 atm:departureAirport?airport1.?airport1 nas:faaAirportCode?faaAirportCode1. atm:ASQ3831-201407150019 atm:departureAirport?airport2.?airport2 nas:faaAirportCode?faaAirportCode2. }",
+            "query_explanation": "This SPARQL query retrieves the FAA airport codes for the departure airports of flights AAL1144 and ASQ3831. It uses the atm:departureAirport property to link the flights to their respective airports, and then uses the nas:faaAirportCode property to retrieve the FAA airport codes. The query does not directly answer the question of whether the flights operated in the same airspace region, but rather provides the necessary information to determine this.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "faaAirportCode1",
+                        "faaAirportCode2"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

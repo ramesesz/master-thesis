@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "\"\"\n        PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#>\n        SELECT ?flight ?passengers\n        WHERE {\n            ?flight a nas:Flight .\n            ?flight nas:hasPassengerCapacity ?passengers .\n            FILTER (?passengers > 100)\n            FILTER (?flight = <http://example.org/ASQ4423> || ?flight = <http://example.org/ASA14>)\n        }\n    \"\"",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Encountered \" <STRING_LITERAL2> \"\\\\\"\\\\\" \"\" at line 1, column 1.\\r\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

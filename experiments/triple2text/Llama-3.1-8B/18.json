@@ -1,0 +1,9 @@
+{
+    "gen_results": "The aircraft with the higher certainty in its model designation was AAL1102, with a certainty of 1.0000000000000002, compared to AAL20's certainty of 0.9879913721631963.",
+    "answer": "The aircraft used in AAL1102 had a higher model certainty (1.0000000000000002) compared to AAL20 (0.9879913721631963).",
+    "bleu": 6.4781755519555515e-155,
+    "rouge_1": 0.6976744186046512,
+    "rouge_2": 0.2926829268292683,
+    "meteor": 0.36958899828098146,
+    "BERTscore": 0.8382149934768677
+}

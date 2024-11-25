@@ -1,0 +1,29 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> SELECT (SUM(?engines) AS?totalEngines) WHERE { VALUES?flight {atm:ASA14-201407150005 atm:AAL20-201407152358}?flight atm:aircraftFlown?aircraft.?aircraft eqp:numberOfEngines?engines }",
+            "query_explanation": "This SPARQL query retrieves the total number of engines for flights ASA14 and AAL20 by first identifying the aircraft flown by each flight and then summing up the number of engines for each aircraft.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "totalEngines"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "totalEngines": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "value": "3"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

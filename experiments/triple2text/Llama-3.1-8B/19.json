@@ -1,0 +1,9 @@
+{
+    "gen_results": "No, flight AAL1144 departed from LGA (New York City area) while flight ASQ3831 departed from CYYZairport which is not explicitly linked to a specific FAA airport code.",
+    "answer": "No, AAL1144 departed from a U.S. airport (FAA code LGA), while ASQ3831 departed from a Canadian airport (CYYZ), which lacks an FAA code.",
+    "bleu": 3.388637889129455e-78,
+    "rouge_1": 0.5490196078431373,
+    "rouge_2": 0.16326530612244897,
+    "meteor": 0.4633844130885551,
+    "BERTscore": 0.7413301467895508
+}

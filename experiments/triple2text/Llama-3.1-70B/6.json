@@ -1,0 +1,9 @@
+{
+    "gen_results": "The flight CHQ2945 had a shorter interval between its filing time and actual departure, as they occurred at the same time (\"2014-07-15T00:47:00\").",
+    "answer": "Flight CHQ2945 had no interval between its filing and departure times, while ASQ4423 was filed 11 minutes and 21 seconds after its departure.",
+    "bleu": 0.12770266349506962,
+    "rouge_1": 0.40816326530612246,
+    "rouge_2": 0.21276595744680854,
+    "meteor": 0.306700327510917,
+    "BERTscore": 0.66508948802948
+}

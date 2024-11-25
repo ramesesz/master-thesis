@@ -1,0 +1,23 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \nPREFIX nas: <http://www.nas.org/ontology#> \nSELECT ?flight ?filingTime ?departureTime WHERE { ?flight a atm:PlannedFlightRoute ; atm:planFilingTime ?filingTime . ?flight atm:actualDepartureTime ?departureTime . FILTER ( ?filingTime > ?departureTime ) }",
+            "query_explanation": "This SPARQL query selects the flight with a shorter interval between its filing time and actual departure by filtering for flights where the filing time is greater than the departure time.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "filingTime",
+                        "departureTime"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

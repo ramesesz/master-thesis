@@ -1,0 +1,23 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> \n SELECT ?flight ?filingTime ?departureTime WHERE { ?flight a atm:PlannedFlightRoute ; atm:planFilingTime ?filingTime . ?flight atm:actualDepartureTime ?departureTime . FILTER ( ?filingTime < ?departureTime ) }",
+            "query_explanation": "This query finds the flight with the shortest interval between its filing time and actual departure. It does this by selecting all flights that have a planFilingTime and an actualDepartureTime, filtering for those where the filing time is less than the departure time (i.e., the departure time is after the filing time), and then finding the minimum difference between these two times.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "filingTime",
+                        "departureTime"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?country1?country2 WHERE { atm:AAL1170-201407150053 atm:departureAirport?airport1.?airport1 nas:locatedInState?state1.?state1 nas:locatedInCountry?country1. atm:ASQ3831-201407150019 atm:departureAirport?airport2.?airport2 nas:locatedInState?state2.?state2 nas:locatedInCountry?country2. }",
+            "query_explanation": "This SPARQL query retrieves the countries of the departure airports of flights AAL1170 and ASQ3831. It first identifies the departure airports of the two flights, then finds the states where these airports are located, and finally retrieves the countries of these states. The query does not directly answer the question but provides the necessary information to determine if the departure airports are located in the same country.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "country1",
+                        "country2"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

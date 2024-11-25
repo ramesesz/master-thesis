@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> SELECT ?airport ?offset WHERE { ?flight nas:departureAirport ?airport ; nas:utcOffset ?offset . FILTER (regex(str(?flight), 'AAL100') || regex(str(?flight), 'ASQ3831')) }",
+            "query_explanation": "This SPARQL query retrieves the UTC offset for the departure airports of flights AAL100 and ASQ3831. It uses the nas:departureAirport property to link a flight to its departure airport, and then uses the nas:utcOffset property to retrieve the UTC offset for that airport.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "airport",
+                        "offset"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

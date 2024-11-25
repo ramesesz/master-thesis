@@ -1,0 +1,9 @@
+{
+    "gen_results": "Yes, flights CHQ2945 and AAL1102 arrived on the same day, specifically on Day20140715.",
+    "answer": "Yes, both flights arrived on July 15, 2014.",
+    "bleu": 5.969061643530969e-155,
+    "rouge_1": 0.380952380952381,
+    "rouge_2": 0.10526315789473685,
+    "meteor": 0.23529411764705882,
+    "BERTscore": 0.5521819591522217
+}

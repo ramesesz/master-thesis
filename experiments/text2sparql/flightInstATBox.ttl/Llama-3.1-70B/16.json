@@ -1,0 +1,40 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT?flight?actualArrivalTime?plannedArrivalTime WHERE {?flight atm:callSign \"ASQ4423\"^^xsd:string.?flight atm:actualArrivalTime?actualArrivalTime.?flight atm:hasPlannedRoute?plannedRoute.?plannedRoute atm:flightPlanETA?plannedArrivalTime. }",
+            "query_explanation": "This SPARQL query retrieves the actual and planned arrival times for flight ASQ4423. The query first selects the flight with the call sign ASQ4423, then retrieves its actual arrival time and planned route. From the planned route, it retrieves the planned arrival time. The query does not directly answer whether the flight was on schedule, but provides the necessary information to determine this.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "actualArrivalTime",
+                        "plannedArrivalTime"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037"
+                            },
+                            "actualArrivalTime": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                                "value": "2014-07-15T01:33:00"
+                            },
+                            "plannedArrivalTime": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                                "value": "2014-07-15T01:41:00"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

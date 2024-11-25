@@ -1,0 +1,34 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> SELECT?flight?numberOfSeats WHERE { VALUES?flight {atm:ACA722-201407150025 atm:AAL1170-201407150053}?flight atm:aircraftFlown?aircraft.?aircraft eqp:numberOfSeats?numberOfSeats. } ORDER BY DESC(?numberOfSeats)",
+            "query_explanation": "This SPARQL query retrieves the number of seats for each of the flights ACA722 and AAL1170. The flight with more seats is likely to have more flight attendants on board. The query uses the VALUES clause to specify the two flights of interest, and then retrieves the number of seats for each flight by following the atm:aircraftFlown and eqp:numberOfSeats properties. The results are ordered in descending order by the number of seats.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "numberOfSeats"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#AAL1170-201407150053"
+                            },
+                            "numberOfSeats": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "value": "162"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

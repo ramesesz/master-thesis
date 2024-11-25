@@ -1,0 +1,9 @@
+{
+    "gen_results": "CHQ2945 had a more complex actual route with 10 waypoints, whereas AAL1144 had 12 waypoints is incorrect, AAL1144 had a more complex actual route with 12 waypoints, whereas CHQ2945 had 10 waypoints",
+    "answer": "Flight AAL1144 had a more complex route with 12 waypoints, compared to CHQ2945's 10 waypoints.",
+    "bleu": 0.18676246336830424,
+    "rouge_1": 0.5,
+    "rouge_2": 0.34782608695652173,
+    "meteor": 0.5613772455089819,
+    "BERTscore": 0.7711354494094849
+}

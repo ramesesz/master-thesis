@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \nSELECT ?flightPlanETA ?planFilingTime\nWHERE {\n    atm:PlannedRouteASQ4423-201407150037 a atm:PlannedFlightRoute ;\n        rdfs:label \"Planned Route for ASQ4423 on 2014-07-15 00:37:00\"^^xsd:string ;\n        atm:flightPlanETA ?flightPlanETA .\n    FILTER (strdt(?planFilingTime, xsd:dateTime) = '2014-07-15T00:21:13' && strdt(?flightPlanETA, xsd:dateTime) > strdt(?planFilingTime, xsd:dateTime))\n}",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Line 5, column 9: Unresolved prefixed name: rdfs:label\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

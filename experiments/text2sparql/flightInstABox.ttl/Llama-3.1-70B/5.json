@@ -1,0 +1,43 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?departureAirport?arrivalAirport?departureTimeZone?arrivalTimeZone WHERE { atm:AAL1144-201407150040 atm:departureAirport?departureAirport. atm:AAL1144-201407150040 atm:arrivalAirport?arrivalAirport.?departureAirport nas:withinTimezone?departureTimeZone.?arrivalAirport nas:withinTimezone?arrivalTimeZone. }",
+            "query_explanation": "This SPARQL query retrieves the departure and arrival airports for flight AAL1144, as well as their respective time zones. The query uses the atm:departureAirport and atm:arrivalAirport properties to get the airport IRIs, and then uses the nas:withinTimezone property to get the time zones for each airport.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "departureAirport",
+                        "arrivalAirport",
+                        "departureTimeZone",
+                        "arrivalTimeZone"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "departureAirport": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport"
+                            },
+                            "arrivalAirport": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/NAS#KDFWairport"
+                            },
+                            "departureTimeZone": {
+                                "type": "literal",
+                                "value": "America/New_York"
+                            },
+                            "arrivalTimeZone": {
+                                "type": "literal",
+                                "value": "America/Chicago"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

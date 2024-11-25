@@ -1,0 +1,45 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT?flight?duration WHERE { VALUES?flight { atm:CHQ2945-201407150047 atm:ASQ3831-201407150019 }?flight atm:actualDepartureTime?departureTime.?flight atm:actualArrivalTime?arrivalTime. BIND(xsd:dateTime(?arrivalTime) - xsd:dateTime(?departureTime) AS?duration) } ORDER BY DESC(?duration)",
+            "query_explanation": "This SPARQL query retrieves the flights CHQ2945 and ASQ3831 and calculates their durations by subtracting the actual departure time from the actual arrival time. The results are ordered in descending order by duration, so the flight with the longer duration will be listed first.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "duration"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#CHQ2945-201407150047"
+                            },
+                            "duration": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#duration",
+                                "value": "PT1H40M0.000S"
+                            }
+                        },
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#ASQ3831-201407150019"
+                            },
+                            "duration": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#duration",
+                                "value": "PT1H3M0.000S"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

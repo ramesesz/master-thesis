@@ -1,0 +1,9 @@
+{
+    "gen_results": "No, flights AAL1144 and ASQ3831 did not operate in the same airspace region based on FAA airport codes, as AAL1144 departed from LGA and ASQ3831 departed from an airport with an unknown FAA airport code, but different from LGA.",
+    "answer": "No, AAL1144 departed from a U.S. airport (FAA code LGA), while ASQ3831 departed from a Canadian airport (CYYZ), which lacks an FAA code.",
+    "bleu": 2.444523935261659e-78,
+    "rouge_1": 0.4761904761904762,
+    "rouge_2": 0.13114754098360656,
+    "meteor": 0.34665763324299914,
+    "BERTscore": 0.6886959671974182
+}

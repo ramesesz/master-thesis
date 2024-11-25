@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "\"\"\n    PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#>\n    SELECT ?aircraft ?newerAircraft\n    WHERE {\n      ?aircraft1 a nas:Aircraft ;\n        nas:manufactureDate ?date1 .\n      ?aircraft2 a nas:Aircraft ;\n        nas:manufactureDate ?date2 .\n      FILTER (?date1 > ?date2)\n      BIND(?aircraft1 AS ?newerAircraft)\n      UNION\n      ?aircraft1 a nas:Aircraft ;\n        nas:flightNumber \"ASQ4423\"^^xsd:string ;\n        nas:aircraft ?aircraft .\n      ?aircraft2 a nas:Aircraft ;\n        nas:flightNumber \"AAL20\"^^xsd:string ;\n        nas:aircraft ?newerAircraft .\n    }\n  \"\"",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Encountered \" <STRING_LITERAL2> \"\\\\\"\\\\\" \"\" at line 1, column 1.\\r\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

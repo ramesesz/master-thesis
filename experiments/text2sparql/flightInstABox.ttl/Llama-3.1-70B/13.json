@@ -1,0 +1,33 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> SELECT?userCategory1?userCategory2 WHERE { atm:AAL100-201407150030 atm:userCategory?userCategory1. atm:CHQ2945-201407150047 atm:userCategory?userCategory2. }",
+            "query_explanation": "This SPARQL query retrieves the user categories of flights AAL100 and CHQ2945. It uses the atm:userCategory property to get the user categories of the two flights and returns them as?userCategory1 and?userCategory2. The query does not filter the results, so it will return all user categories associated with the two flights, if any.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "userCategory1",
+                        "userCategory2"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "userCategory1": {
+                                "type": "literal",
+                                "value": "COMMERCIAL"
+                            },
+                            "userCategory2": {
+                                "type": "literal",
+                                "value": "AIR TAXI"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?flight?interval WHERE { VALUES?flight { atm:ASQ4423-201407150037 atm:CHQ2945-201407150047 }?flight atm:planFilingTime?planFilingTime ; atm:actualDepartureTime?actualDepartureTime. BIND(xsd:dateTime(?actualDepartureTime) - xsd:dateTime(?planFilingTime) AS?interval) } ORDER BY?interval",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Line 1, column 313: Unresolved prefixed name: xsd:dateTime\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

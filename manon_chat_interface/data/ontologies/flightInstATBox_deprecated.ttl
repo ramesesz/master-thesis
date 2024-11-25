@@ -1,0 +1,3567 @@
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix gen: <https://data.nasa.gov/ontologies/atmonto/general#> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+atm:AAL100-201407150030 a atm:Flight ;
+    rdfs:label "Flight AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T02:46:47"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:30:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:B77WAircraftType ;
+    atm:arrivalAirport nas:EGLLairport ;
+    atm:callSign "AAL100"^^xsd:string ;
+    atm:departureAirport nas:KJFKairport ;
+    atm:hasActualRoute atm:ActualRouteAAL100-201407150030 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL100-201407150030 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AAL1102-201407150046 a atm:Flight ;
+    rdfs:label "Flight AAL1102 on 2014-07-15 00:46:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T03:13:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:46:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN963AN ;
+    atm:aircraftTypeFlown eqp:B738AircraftType ;
+    atm:arrivalAirport nas:KMIAairport ;
+    atm:callSign "AAL1102"^^xsd:string ;
+    atm:departureAirport nas:KLGAairport ;
+    atm:hasActualRoute atm:ActualRouteAAL1102-201407150046 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL1102-201407150046 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AAL1144-201407150040 a atm:Flight ;
+    rdfs:label "Flight AAL1144 on 2014-07-15 00:40:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T04:01:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:40:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN942NN ;
+    atm:aircraftTypeFlown eqp:B738AircraftType ;
+    atm:arrivalAirport nas:KDFWairport ;
+    atm:callSign "AAL1144"^^xsd:string ;
+    atm:departureAirport nas:KLGAairport ;
+    atm:hasActualRoute atm:ActualRouteAAL1144-201407150040 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL1144-201407150040 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AAL1170-201407150053 a atm:Flight ;
+    rdfs:label "Flight AAL1170 on 2014-07-15 00:53:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T03:37:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:53:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN871NN ;
+    atm:aircraftTypeFlown eqp:B738AircraftType ;
+    atm:arrivalAirport nas:KLGAairport ;
+    atm:callSign "AAL1170"^^xsd:string ;
+    atm:departureAirport nas:KDFWairport ;
+    atm:hasActualRoute atm:ActualRouteAAL1170-201407150053 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL1170-201407150053 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AAL20-201407152358 a atm:Flight ;
+    rdfs:label "Flight AAL20 on 2014-07-15 23:58:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140716 ;
+    atm:actualArrivalTime "2014-07-16T04:54:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T23:58:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN784AA ;
+    atm:aircraftTypeFlown eqp:A321AircraftType ;
+    atm:arrivalAirport nas:KJFKairport ;
+    atm:callSign "AAL20"^^xsd:string ;
+    atm:departureAirport nas:KSFOairport ;
+    atm:hasActualRoute atm:ActualRouteAAL20-201407152358 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL20-201407152358 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ACA722-201407150025 a atm:Flight ;
+    rdfs:label "Flight ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:19:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:25:00"^^xsd:dateTime ;
+    atm:arrivalAirport nas:KLGAairport ;
+    atm:callSign "ACA722"^^xsd:string ;
+    atm:departureAirport nas:CYYZairport ;
+    atm:hasActualRoute atm:ActualRouteACA722-201407150025 ;
+    atm:hasPlannedRoute atm:PlannedRouteACA722-201407150025 ;
+    atm:operatedBy nas:ACAairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASA14-201407150005 a atm:Flight ;
+    rdfs:label "Flight ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T04:49:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:05:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN413AS ;
+    atm:aircraftTypeFlown eqp:B739AircraftType ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASA14"^^xsd:string ;
+    atm:departureAirport nas:KSEAairport ;
+    atm:hasActualRoute atm:ActualRouteASA14-201407150005 ;
+    atm:hasPlannedRoute atm:PlannedRouteASA14-201407150005 ;
+    atm:operatedBy nas:ASAairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASQ3831-201407150019 a atm:Flight ;
+    rdfs:label "Flight ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:22:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:19:00"^^xsd:dateTime ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASQ3831"^^xsd:string ;
+    atm:departureAirport nas:CYYZairport ;
+    atm:hasActualRoute atm:ActualRouteASQ3831-201407150019 ;
+    atm:hasPlannedRoute atm:PlannedRouteASQ3831-201407150019 ;
+    atm:operatedBy nas:ASQairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASQ4423-201407150037 a atm:Flight ;
+    rdfs:label "Flight ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:33:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:37:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN11548 ;
+    atm:aircraftTypeFlown eqp:E145AircraftType ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASQ4423"^^xsd:string ;
+    atm:departureAirport nas:KMHTairport ;
+    atm:hasActualRoute atm:ActualRouteASQ4423-201407150037 ;
+    atm:hasPlannedRoute atm:PlannedRouteASQ4423-201407150037 ;
+    atm:operatedBy nas:ASQairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AirportFix a owl:Class ;
+    rdfs:label "Airport Fix" ;
+    rdfs:comment "A subclass of navigation fix corresponding to fixes associated directly with a ground reference point that is an airport." ;
+    rdfs:subClassOf atm:VORfix .
+
+atm:AirspaceRouteSegment a owl:Class ;
+    rdfs:label "Airspace route segment" ;
+    rdfs:comment "A contiguous portion of an existing airspace route." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom nas:AirspaceRoute ;
+            owl:onProperty gen:subsequenceOf ],
+        atm:NavigationSubPath .
+
+atm:CHQ2945-201407150047 a atm:Flight ;
+    rdfs:label "Flight CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T02:27:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:47:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:E145AircraftType ;
+    atm:arrivalAirport nas:KCLTairport ;
+    atm:callSign "CHQ2945"^^xsd:string ;
+    atm:departureAirport nas:KJFKairport ;
+    atm:hasActualRoute atm:ActualRouteCHQ2945-201407150047 ;
+    atm:hasPlannedRoute atm:PlannedRouteCHQ2945-201407150047 ;
+    atm:operatedBy nas:CHQairline ;
+    atm:userCategory "AIR TAXI"^^xsd:string .
+
+atm:FRDfix a owl:Class ;
+    rdfs:label "FRD Fix" ;
+    rdfs:comment "A Fix Radial Distance (FRD) fix is located a specified distance from a ground-based navaid, a named fix, or an airport, along a given radial vector." ;
+    rdfs:subClassOf atm:RelativeFix .
+
+atm:FlightPlanSegment a owl:Class ;
+    rdfs:label "Flight plan segment" ;
+    rdfs:comment "A contiguous portion of a complete flight plan." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom atm:PlannedFlightRoute ;
+            owl:onProperty gen:subsequenceOf ],
+        atm:NavigationSubPath .
+
+atm:GDPmodel rdfs:comment "This model provides parameters to the code that assigns times to the aircraft involved in the GDP or GS" .
+
+atm:GPSfix a owl:Class ;
+    rdfs:label "GPS fix" ;
+    rdfs:comment "A navigation fix defined by GPS coordinates." ;
+    rdfs:subClassOf atm:LatLonFix .
+
+atm:IntersectionFix a owl:Class ;
+    rdfs:label "Intersection fix" ;
+    rdfs:comment "A navigation fix defined by the intersection of two airspace routes." ;
+    rdfs:subClassOf atm:AbsoluteFix .
+
+atm:MeterFix a owl:Class ;
+    rdfs:label "Meter fix" ;
+    rdfs:comment "A fix defined as an point in the terminal airspace through which flights are metered by air traffic control on approach." ;
+    rdfs:subClassOf atm:AbsoluteFix .
+
+atm:MilesInTrailTMI a owl:Class ;
+    rdfs:label "Miles in Trail (MIT)" ;
+    rdfs:comment "A Miles-in-Trail (MIT) traffic management initiative (TMI) is used to apportion traffic into a manageable flow, as well as provide space for additional traffic (merging or departing) to enter the flow of traffic. Miles-in-trail describes the number of miles required between aircraft departing an airport, over a fix, at an altitude, through a sector, or on a specific route." ;
+    rdfs:subClassOf atm:TrafficManagementInitiative .
+
+atm:NDBfix a owl:Class ;
+    rdfs:label "NDB Fix" ;
+    rdfs:comment "A fix based on the location of a ground-based non-directional radio beacon (NDB) installation. NDB signals follow the curvature of the Earth, so they can be received at much greater distances at lower altitudes, a major advantage over VOR. However, NDB signals are also affected more by atmospheric conditions, mountainous terrain, coastal refraction and electrical storms, particularly at long range." ;
+    rdfs:subClassOf atm:NavaidFix .
+
+atm:NRSfix a owl:Class ;
+    rdfs:label "NRS fix" ;
+    rdfs:comment "The NRS is a system of waypoints developed for use within the United States for flight planning and navigation without reference to ground based navigational aids. The NRS waypoints are located in a grid pattern along defined latitude and longitude lines. NRS waypoint names are composed of two letters followed by two numbers, followed by a single letter. The first and second characters of NRS waypoints are the FIR identifier for the United States (“K”) and the FIR subdivision, or ARTCC center in which the waypoint is located (e.g. “D” for Denver ARTCC). The third and fourth characters are a number group representing the latitude of the waypoint. These numbers begin at the equator with 00 and advances north and south from 01 to 90 and correspond to every 10 minutes of latitude and repeating every 15°. The final character in the NRS waypoint is a letter representing the line of longitude for which the waypoint is located. This identifier starts at the prime meridian moving west to east and uses the letters A to Z while repeating every 26°. To date, the current density of the NRS grid is one waypoint spaced every 30 minutes of latitude and every 2° of longitude." ;
+    rdfs:subClassOf atm:LatLonFix .
+
+atm:TACANfix a owl:Class ;
+    rdfs:label "TACAN Fix" ;
+    rdfs:comment "A fix based on the location of a ground-based TACAN (TACtical Air Navigation) installation." ;
+    rdfs:subClassOf atm:NavaidFix .
+
+atm:actualArrivalDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "actual arrival day" ;
+    rdfs:comment "Links a flight with the day on which the flight arrives. This is the day determined by surveillance data sources to be the 'actual' day of arrival, versus the scheduled day or the day specified in the flight plan, etc." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:NASday .
+
+atm:actualArrivalTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "actual arrival time" ;
+    rdfs:comment "The time determined by surveillance data sources to be the 'actual' time of flight arrival, versus the scheduled time or the time specified in the flight plan, etc." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:dateTime .
+
+atm:actualDepartureDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "actual departure day" ;
+    rdfs:comment "Links a flight with the day on which the flight departs. This is the day determined by surveillance data sources to be the 'actual' day of departure, versus the scheduled day or the day specified in the flight plan, etc." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:NASday .
+
+atm:actualDepartureTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "actual departure time" ;
+    rdfs:comment "The time determined by surveillance data sources to be the 'actual' time of flight departure, versus the scheduled time or the time specified in the flight plan, etc." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:dateTime .
+
+atm:adlDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "adl day" ;
+    rdfs:comment "Links a delay model to the day that the ADL (Aggregate Demand List) was generated. Each ADL contains information on the flights arriving and departing from an airport, or entering into and departing from a flow area." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range nas:NASday .
+
+atm:adlTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "adl time" ;
+    rdfs:comment "The timestamp of the ADL (Aggregate Demand List) that the delay model is based upon. Each ADL contains information on the flights arriving and departing from an airport, or entering into and departing from a flow area." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range xsd:dateTime .
+
+atm:adsbID a owl:DatatypeProperty ;
+    rdfs:label "adsb ID" ;
+    rdfs:comment "The unique identifier of the ADS-B (Automatic Dependent Surveillance - Broadcast) transponder unit on board the aircraft for this flight." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:string .
+
+atm:advisoryNumber a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "advisory number" ;
+    rdfs:comment "Advisory number as reported from the FAA Command Center database. it restarts at 001 on every new day UTC." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range xsd:integer .
+
+atm:aircraftCount a owl:DatatypeProperty ;
+    rdfs:label "aircraft count" ;
+    rdfs:comment "The number of aircraft flowing through an airspace region per some interval of time." ;
+    rdfs:domain atm:AircraftFlow ;
+    rdfs:range xsd:integer .
+
+atm:aircraftFix a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "aircraft fix" ;
+    rdfs:comment "Links an aircraft track point with its associated navigation fix." ;
+    rdfs:domain atm:AircraftTrackPoint ;
+    rdfs:range atm:NavigationFix .
+
+atm:aircraftFlown a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "aircraft flown" ;
+    rdfs:comment "Links a flight with the actual aircraft used." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range eqp:Aircraft .
+
+atm:aircraftTypeFlown a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "aircraft type flown" ;
+    rdfs:comment "Links a flight with the type of aircraft flown. The aircraft 'type' corresponds to a set of aircraft models with similar characteristics." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range eqp:AircraftType .
+
+atm:allowedRoute a owl:ObjectProperty ;
+    rdfs:label "allowed route" ;
+    rdfs:comment "In a reRoute traffic management initiative, there are multiple allowed routes specified between origin and destination. This property links a ReRouteTMI with its allowed routes." ;
+    rdfs:domain atm:ReRouteTMI ;
+    rdfs:range atm:ReRouteSegment .
+
+atm:alternateArrivalAirport a owl:ObjectProperty ;
+    rdfs:label "alternate arrival airport" ;
+    rdfs:comment "Links to the alternate arrival airport to be used in case of weather, traffic, or other unforseen contingency. The alternate airport is specified in the flight plan." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:Airport .
+
+atm:arrivalAirport a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "arrival airport" ;
+    rdfs:comment "Links to the actual arrival airport for the flight." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:Airport .
+
+atm:arrivalRunway a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "arrival runway" ;
+    rdfs:comment "Links to the actual arrival runway for the flight." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:OperationalRunway .
+
+atm:arrivalTaxiPath a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "arrival taxi path" ;
+    rdfs:comment "Links to the taxipath followed by the flight en route to the gate." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range atm:Taxipath .
+
+atm:callSign a owl:DatatypeProperty ;
+    rdfs:label "call sign" ;
+    rdfs:comment "The flight identifier (3-letter ICAO code plus number)." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:string .
+
+atm:cruisingAltitude a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "cruising altitude" ;
+    rdfs:comment "The cruising altitude (in number of feet) specified in the flight plan for this flight." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:integer .
+
+atm:departureAirport a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "departure airport" ;
+    rdfs:comment "Links to the actual departure airport for the flight." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:Airport .
+
+atm:departureRunway a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "departure runway" ;
+    rdfs:comment "Links to the actual departure runway for the flight." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:OperationalRunway .
+
+atm:departureScope a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "departure scope" ;
+    rdfs:comment "Links a Ground Delay Program (GDP) or a Ground Stop (GS) to a specification of the departure airport(s) participating in the traffic management initiative (TMI)." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( atm:GroundDelayProgramTMI atm:GroundStopTMI ) ] ;
+    rdfs:range atm:AirportSpec .
+
+atm:departureTaxiPath a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "departure taxi path" ;
+    rdfs:comment "Links to the taxipath followed by the flight en route to the runway." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range atm:Taxipath .
+
+atm:effectiveEndDay a owl:ObjectProperty ;
+    rdfs:label "effective end day" ;
+    rdfs:comment "Links to the expected ending day of the traffic management initiative (TMI)." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range nas:NASday .
+
+atm:effectiveEndTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "effective end time" ;
+    rdfs:comment "The expected end time of the traffic management initiative (TMI)." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range xsd:dateTime .
+
+atm:effectiveStartDay a owl:ObjectProperty ;
+    rdfs:label "effective start day" ;
+    rdfs:comment "Links to the expected starting day of the traffic management initiative (TMI)." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range nas:NASday .
+
+atm:effectiveStartTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "effective start time" ;
+    rdfs:comment "The expected start time of the traffic management initiative (TMI)." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range xsd:dateTime .
+
+atm:excludesARTCC a owl:ObjectProperty ;
+    rdfs:label "excludes ARTCC" ;
+    rdfs:comment "Links an airport specification to one of more ARTCCs (Centers) or ARTCC tiers (Centers radiating out from a give ARTCC). Any airport within the ARTCC or ARTCC tier is excluded from the set of airports covered by this airport specification." ;
+    rdfs:domain atm:AirportSpec ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( nas:ARTCC nas:ARTCCtier ) ] .
+
+atm:excludesAirport a owl:ObjectProperty ;
+    rdfs:label "excludes airport" ;
+    rdfs:comment "Links an airport specification to one of more airports. Any airport linked is excluded from the set of airports covered by this airport specification." ;
+    rdfs:domain atm:AirportSpec ;
+    rdfs:range nas:Airport .
+
+atm:excludesAirway a owl:ObjectProperty ;
+    rdfs:label "excludes airway" ;
+    rdfs:comment "Links a flight specification to one of more airways (routes). Any flight that traverses a linked airway is excluded from the set of flights covered by this flight specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range nas:AirspaceRoute .
+
+atm:excludesFix a owl:ObjectProperty ;
+    rdfs:label "excludes fix" ;
+    rdfs:comment "Links a flight specification to one of more navigation fixes. Any flight that traverses a linked fix is excluded from the set of flights covered by this flight specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range atm:NavigationFix .
+
+atm:excludesFlight a owl:ObjectProperty ;
+    rdfs:label "excludes flight" ;
+    rdfs:comment "Links a flight specification to one of more flights. Any linked flight is excluded from the set of flights covered by this flight specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range atm:Flight .
+
+atm:exemptedAFP a owl:ObjectProperty ;
+    rdfs:label "exempted AFP" ;
+    rdfs:comment "Links a flight specification to one of more Airspace Flow Program (AFP) traffic management initiatives (TMIs). Any flight included in one of the linked AFPs is excluded from the set of flights covered by this flight specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range atm:AirspaceFlowProgramTMI .
+
+atm:fixId a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "fix ID" ;
+    rdfs:comment "A non-unique FAA identifier for a fix. When combined with a fix ICAO code, it defines a unique fix worldwide. Often, but not always, the fixId is identical to the fixName." ;
+    rdfs:domain atm:NavigationFix ;
+    rdfs:range xsd:string .
+
+atm:fixName a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "fix name" ;
+    rdfs:comment "A unique FAA identier for a fix that can be filed as part of a flight plan. The fix name conceptually represents the worldwide-unique combination of a FixID and ICAO code. Often, but not always, the fixId is identical to the fixName." ;
+    rdfs:domain atm:NavigationFix ;
+    rdfs:range xsd:string .
+
+atm:fixTrajectoryString a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "fix trajectory string" ;
+    rdfs:comment "This is an experimental property of a flight that stores an ordered sequence of named fixes corresponding one-to-one to the sequence of trajectory track points recorded for the flight. For a given track point, the corresponding named fix is computed by finding the closest named fix to the track point." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:string .
+
+atm:flightExclusionSpec a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "flight exclusion spec" ;
+    rdfs:comment "Links a Ground Delay Program (GDP) or a Ground Stop (GS) to a specification of the flight(s) excluded from the traffic management initiative (TMI)." ;
+    rdfs:domain atm:GroundDelayProgramTMI ;
+    rdfs:range atm:FlightSpec .
+
+atm:flightInclusionExclusion a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "flight inclusion exclusion" ;
+    rdfs:comment "Links a ReRoute to a specification of the flight(s) included in or excluded from the ReRoute traffic management initiative (TMI)." ;
+    rdfs:domain atm:ReRouteTMI ;
+    rdfs:range atm:FlightSpec .
+
+atm:flightInclusionSpec a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "flight inclusion spec" ;
+    rdfs:comment "Links a Ground Delay Program (GDP) or a Ground Stop (GS) to a specification of the flight(s) included in the traffic management initiative (TMI)." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( atm:GroundDelayProgramTMI atm:GroundStopTMI ) ] ;
+    rdfs:range atm:FlightSpec .
+
+atm:flightPlanETA a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "flight plan ETA" ;
+    rdfs:comment "The estimated time of arrival specified in the flight plan." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range xsd:dateTime .
+
+atm:flightRouteString a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "flight route string" ;
+    rdfs:comment "A string that provides the route of flight proposed in a flight plan. Syntactically, the string shows a path of fixes, airways, SIDs, and STARs, separated by either one or two dots. The string is parsed to create an equivalent ontology representation: an ordered sequence of navigation elements that are associated directly with the flight plan (atm:PlannedFlightRoute)." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range xsd:string .
+
+atm:flowCapacity a owl:DatatypeProperty ;
+    rdfs:label "flow capacity" ;
+    rdfs:comment "The maximum controllable number of aircraft flowing through an airspace region per some interval of time." ;
+    rdfs:domain atm:AircraftCapacity ;
+    rdfs:range xsd:float .
+
+atm:flowMeasurementRegion a owl:ObjectProperty ;
+    rdfs:label "flow measurement region" ;
+    rdfs:comment "Links an aircraft capacity or aircraft flow to the spatial region through which flow or capacity is being monitored and measured." ;
+    rdfs:domain atm:AircraftFlowCapacity ;
+    rdfs:range atm:TFMcontrolElement .
+
+atm:groundSpeed a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "ground speed" ;
+    rdfs:comment "The reported ground speed at an aircraft track point." ;
+    rdfs:domain atm:AircraftTrackPoint ;
+    rdfs:range xsd:integer .
+
+atm:hasActualRoute a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has actual route" ;
+    rdfs:comment "Links a flight to its actual trajectory (i.e., a sequence of track points), as determined by flight track surveillance data." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range atm:ActualFlightRoute .
+
+atm:hasCrewMember a owl:ObjectProperty ;
+    rdfs:label "has crew member" ;
+    rdfs:comment "Links a flight to its crew members." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range atm:CrewMember .
+
+atm:hasNavElement a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has navigation element" ;
+    rdfs:comment "Links a container for a navigational element to the element contained." ;
+    rdfs:domain atm:NavElementContainer ;
+    rdfs:range atm:NavigationElement .
+
+atm:hasPlannedRoute a owl:ObjectProperty ;
+    rdfs:label "has planned route" ;
+    rdfs:comment "Links a flight to a version of its flight plan. (Which version gets stored is application-dependent.) There are multiple versions of the flight plan generated and then amended during the course of the flight, starting in the pre-flight timeframe and extending through to the termination of the flight." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range atm:PlannedFlightRoute .
+
+atm:heading a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "heading" ;
+    rdfs:comment "The aircraft heading at the track point: a number between 0.01 and 360.0 indicating the angular heading with respect to North." ;
+    rdfs:domain atm:AircraftTrackPoint ;
+    rdfs:range xsd:float .
+
+atm:impactingConditionMessage a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "impacting condition message" ;
+    rdfs:comment "A free-text descriptoin elaborating on the reason for initiating the Ground Delay Program." ;
+    rdfs:domain atm:GroundDelayProgramTMI ;
+    rdfs:range xsd:string .
+
+atm:includedFlights a owl:ObjectProperty ;
+    rdfs:label "included flights" ;
+    rdfs:comment "Links an aircraft flow to a specification of the flights included in the flow." ;
+    rdfs:domain atm:AircraftFlow ;
+    rdfs:range atm:FlightSpec .
+
+atm:includesAirport a owl:ObjectProperty ;
+    rdfs:label "includes airport" ;
+    rdfs:comment "Links an airport specification to one of more airports. Any airport linked is included in the set of airports covered by this airport specification. This property allows for explicit specification of a list of specific airports; the property atm:includesAirportType allows for the the implicit specification of an entire class of airports." ;
+    rdfs:domain atm:AirportSpec ;
+    rdfs:range nas:Airport .
+
+atm:includesAirway a owl:ObjectProperty ;
+    rdfs:label "includes airway" ;
+    rdfs:comment "Links a flight specification to one of more airways (routes). Any flight that traverses a linked airway is included in the set of flights covered by this flight specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range nas:AirspaceRoute .
+
+atm:includesFix a owl:ObjectProperty ;
+    rdfs:label "includes fix" ;
+    rdfs:comment "Links a flight specification to one of more navigation fixes. Any flight that traverses a linked fix is included in the set of flights covered by this flight specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range atm:NavigationFix .
+
+atm:includesFlight a owl:ObjectProperty ;
+    rdfs:label "includes flight" ;
+    rdfs:comment "Links a flight specification to one of more flights. Any linked flight is included in the set of flights covered by this flight specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range atm:Flight .
+
+atm:initiativeComments a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Provides any specific comments on the traffic management initiative (TMI) made by the issuing authority (e.g., ATCSCC, ARTCC)." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range xsd:string .
+
+atm:issuedDay a owl:ObjectProperty ;
+    rdfs:label "issued day" ;
+    rdfs:comment "Links to the day when the traffic management initiative (TMI) was issued." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range nas:NASday .
+
+atm:issuedTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "issued time" ;
+    rdfs:comment "The time when the traffic management initiative (TMI) was issued." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range xsd:dateTime .
+
+atm:locatedInSector a owl:ObjectProperty ;
+    rdfs:label "located in sector" ;
+    rdfs:comment "Links a navigation fix to the airspace sector in which that fix is located." ;
+    rdfs:domain atm:NavigationFix ;
+    rdfs:range nas:Sector .
+
+atm:maxFlowCapacity a owl:DatatypeProperty ;
+    rdfs:label "max flow capacity" ;
+    rdfs:comment "The absolute maximum controllable number of aircraft flowing through an airspace region per some interval of time under any air traffic conditions." ;
+    rdfs:domain atm:TFMcontrolElement ;
+    rdfs:range xsd:float .
+
+atm:modeledArrivalRate a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "modeled arrival rate" ;
+    rdfs:comment "Links a delay model used in defining a Ground Delay Program (GDP) or Ground Stop(GS) to a sequence of desired hourly aircraft arrival rates specified for the initiative." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range atm:ProgramArrivalRateSequence .
+
+atm:modeledAverageDelay a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "modeled average delay minutes" ;
+    rdfs:comment "The average flight delay specified when modeling a Ground Delay Program (GDP) or Ground Stop(GS)." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range xsd:integer .
+
+atm:modeledBy a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "modeled by" ;
+    rdfs:comment "Links a Ground Delay Program (GDP) or a Ground Stop (GS) to a representation of the model used to design that initiative. The model contains all relevant parameters used to create the initiative." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( atm:GroundDelayProgramTMI atm:GroundStopTMI ) ] ;
+    rdfs:range atm:DelayModel .
+
+atm:modeledMaximumDelay a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "modeled maximum delay minutes" ;
+    rdfs:comment "The maximum flight delay specified when modeling a Ground Delay Program (GDP) or Ground Stop(GS)." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range xsd:integer .
+
+atm:modeledPopUpFactor a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "modeled pop up factor" ;
+    rdfs:comment "Links a delay model used in defining a Ground Delay Program (GDP) or Ground Stop(GS) to a sequence of desired hourly popup factors specified for the initiative. 'Popups' account for late-filing flights (unexpected/unplanned flights) when modeling delays as part of a traffic management initiative (TMI) design process." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range atm:PopupFactorSequence .
+
+atm:modeledTotalDelay a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "modeled total delay minutes" ;
+    rdfs:comment "The total flight delay specified when modeling a Ground Delay Program (GDP) or Ground Stop(GS)." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range xsd:integer .
+
+atm:mustHaveDestination a owl:ObjectProperty ;
+    rdfs:label "must have destination" ;
+    rdfs:comment "Links a flight specification to an airport specification describing the destination airports for the flights being specified. Any flight covered by the flight specification must have as its destination one of the airports covered by the airport specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range atm:AirportSpec .
+
+atm:mustHaveOrigin a owl:ObjectProperty ;
+    rdfs:label "must have origin" ;
+    rdfs:comment "Links a flight specification to an airport specification describing the originating airports for the flights being specified. Any flight covered by the flight specification must have as its origin one of the airports covered by the airport specification." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range atm:AirportSpec .
+
+atm:operatedBy a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "operated by" ;
+    rdfs:comment "Links a flight to its carrier airline." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:AirCarrier .
+
+atm:operatingCarrier a owl:ObjectProperty ;
+    rdfs:label "operating carrier" ;
+    rdfs:comment "Links a flight specification to one or more carrier airline(s). Each flight covered by the specification must be operated by one of these carriers." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range nas:AirCarrier .
+
+atm:operatingTimeInterval a owl:ObjectProperty ;
+    rdfs:label "operating time interval" ;
+    rdfs:comment "Links a flight specification to a time interval. Each flight covered by the specification must be airborne sometime during the time period specified by the interval." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range gen:TimeInterval .
+
+atm:planFilingDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "plan filing day" ;
+    rdfs:comment "Links to the day when the flight plan was filed with the FAA." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range nas:NASday .
+
+atm:planFilingTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "plan filing time" ;
+    rdfs:comment "The time that the flight plan was filed with the FAA." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range xsd:dateTime .
+
+atm:planGapAfterSequenceElementNumber a owl:DatatypeProperty ;
+    rdfs:label "plan gap after sequence element number" ;
+    rdfs:comment "Indicates the location of a gap in the flight plan due to non-parsable/uninterpretable elements in the flight plan string." ;
+    rdfs:domain atm:PlannedFlightRoute ;
+    rdfs:range xsd:integer .
+
+atm:plannedArrivalDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "planned arrival day" ;
+    rdfs:comment "Links to the day that the flight is planned to arrive per the flight plan." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:NASday .
+
+atm:plannedArrivalTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "planned arrival time" ;
+    rdfs:comment "The time that the flight is planned to arrive per the flight plan." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:dateTime .
+
+atm:plannedDepartureDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "planned departure day" ;
+    rdfs:comment "Links to the day that the flight is planned to depart per the flight plan." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:NASday .
+
+atm:plannedDepartureTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "planned departure time" ;
+    rdfs:comment "The time that the flight is planned to depart per the flight plan." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:dateTime .
+
+atm:prevAverageDelay a owl:DatatypeProperty ;
+    rdfs:label "previous average delay minutes" ;
+    rdfs:comment "The average flight delay experienced prior to the start of a Ground Stop(GS)." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range xsd:integer .
+
+atm:prevMaximumDelay a owl:DatatypeProperty ;
+    rdfs:label "previous maximum delay minutes" ;
+    rdfs:comment "The maximum flight delay experienced prior to the start of a Ground Stop(GS)." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range xsd:integer .
+
+atm:prevTotalDelay a owl:DatatypeProperty ;
+    rdfs:label "previous total delay minutes" ;
+    rdfs:comment "The total flight delay experienced prior to the start of a Ground Stop(GS)." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range xsd:integer .
+
+atm:publishedArrivalDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "published arrival day" ;
+    rdfs:comment "Links to the day that the flight is planned to arrive per the OAG schedule." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:NASday .
+
+atm:publishedArrivalTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "published arrival time" ;
+    rdfs:comment "The time that the flight is planned to arrive per the OAG schedule." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:dateTime .
+
+atm:publishedDepartureDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "published departure day" ;
+    rdfs:comment "Links to the day that the flight is planned to depart per the OAG schedule." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range nas:NASday .
+
+atm:publishedDepartureTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "published departure time" ;
+    rdfs:comment "The time that the flight is planned to depart per the OAG schedule." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:dateTime .
+
+atm:radialAngle a owl:DatatypeProperty ;
+    rdfs:label "radial angle" ;
+    rdfs:comment "The angle (in degrees) that defines the radial route's angular position with respect to the defined fix." ;
+    rdfs:domain nas:RadialRoute ;
+    rdfs:range xsd:integer .
+
+atm:radialFix a owl:ObjectProperty ;
+    rdfs:label "radial fix" ;
+    rdfs:comment "Links to the fix through which the radial route passes." ;
+    rdfs:domain nas:RadialRoute ;
+    rdfs:range atm:NavigationFix .
+
+atm:reRouteConstraint a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "reroute constraint" ;
+    rdfs:comment "Links a route segment specified as part of a ReRoute traffic management initiative (TMI) to a flight specification indicating which flights are permitted to follow the route segment." ;
+    rdfs:domain atm:ReRouteSegment ;
+    rdfs:range atm:FlightSpec .
+
+atm:reRoutePath a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "re route path" ;
+    rdfs:comment "Links a route segment alternative (specified as part of a ReRoute traffic management initiative) to its associated flight plan." ;
+    rdfs:domain atm:ReRouteSegment ;
+    rdfs:range atm:PlannedFlightRoute .
+
+atm:referenceFix a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Links a relative fix to the absolute fix that serves as the basis for its location. (A relative fix position is defined relative to an absolute fix position, e.g. as a vector offset from the absolute fix.)" ;
+    rdfs:domain atm:RelativeFix ;
+    rdfs:range atm:AbsoluteFix .
+
+atm:relativeAngle a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "relative angle" ;
+    rdfs:comment "The angular direction in degrees (1-360) of a relative fix with respect to its defining absolute fix." ;
+    rdfs:domain atm:RelativeFix ;
+    rdfs:range xsd:integer .
+
+atm:relativeDistance a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "relative distance" ;
+    rdfs:comment "The distance (in nautical miles) between a relative fix and its defining (absolute) fix." ;
+    rdfs:domain atm:RelativeFix ;
+    rdfs:range xsd:integer .
+
+atm:reportingDay a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "reporting day" ;
+    rdfs:comment "A link between an aircraft track point and the day during which an en route aircraft traversed that point and reported its position, speed, and heading." ;
+    rdfs:domain atm:AircraftTrackPoint ;
+    rdfs:range nas:NASday .
+
+atm:reportingTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "reporting time" ;
+    rdfs:comment "The time when an en route aircraft passed through a trackpoint and reported its position, speed, and heading." ;
+    rdfs:domain atm:AircraftTrackPoint ;
+    rdfs:range xsd:dateTime .
+
+atm:traconID a owl:DatatypeProperty ;
+    rdfs:label "tracon ID" ;
+    rdfs:comment "Three letter FAA TRACON identifier code." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:string .
+
+atm:traversesSIDSTAR a owl:ObjectProperty ;
+    rdfs:label "traverses SIDSTAR" ;
+    rdfs:comment "Links a SIDSTARtraverse (i.e., a specific route through a SID or STAR) to the specific SID or STAR being traversed by a given flight." ;
+    rdfs:domain atm:SIDSTARtraverse ;
+    rdfs:range nas:SIDSTAR .
+
+atm:trueAirspeed a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "true airspeed" ;
+    rdfs:comment "The true airspeed of a flight: the speed of the aircraft relative to the airmass in which it is flying." ;
+    rdfs:domain atm:Flight ;
+    rdfs:range xsd:integer .
+
+atm:usesAirportRoute a owl:ObjectProperty ;
+    rdfs:label "uses airport route" ;
+    rdfs:comment "Links a SIDSTARtraverse (a path through a SID/STAR) to the airport route used in making the traverse." ;
+    rdfs:domain atm:SIDSTARtraverse ;
+    rdfs:range nas:AirportRoute .
+
+atm:usesTransitionRoute a owl:ObjectProperty ;
+    rdfs:label "uses transition route" ;
+    rdfs:comment "Links a SIDSTARtraverse (a path through a SID/STAR) to the transition route used in making the traverse." ;
+    rdfs:domain atm:SIDSTARtraverse ;
+    rdfs:range nas:TransitionRoute .
+
+atm:withinARTCC a owl:ObjectProperty ;
+    rdfs:label "within ARTCC" ;
+    rdfs:comment "Links an airport specification to an ARTCC or ARTCC tier. Only airports within the ARTCC or ARTCC tier are covered by the specification." ;
+    rdfs:domain atm:AirportSpec ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( nas:ARTCC nas:ARTCCtier ) ] .
+
+atm:withinAirportBoundingRegion a owl:ObjectProperty ;
+    rdfs:label "within airport bounding region" ;
+    rdfs:comment "Links an airport specification to a circular geographic region. Only airports whose locations fall within this region satisfy the specification." ;
+    rdfs:domain atm:AirportSpec ;
+    rdfs:range gen:CircularRegion .
+
+nas:ATCSCC a owl:Class ;
+    rdfs:label "ATCSCC" ;
+    rdfs:comment "Air Traffic Control System Command Center (ATCSCC) facility" ;
+    rdfs:subClassOf nas:NASfacility .
+
+nas:DeicingTruck a owl:Class ;
+    rdfs:label "Deicing truck" ;
+    rdfs:comment "A vehicle that holds deicing fluid and pumping equipment to support deicing." ;
+    rdfs:subClassOf nas:AirportServiceVehicle .
+
+nas:GovernmentAviationServiceProvider a owl:Class ;
+    rdfs:label "Government aviation service provider" ;
+    rdfs:comment "The set of govenment agencies that perform aviation services." ;
+    rdfs:subClassOf nas:AviationServiceProvider .
+
+nas:JetRoute a owl:Class ;
+    rdfs:label "Jet route" ;
+    rdfs:comment "A high altitude airway based on ground-based VOR sensor locations." ;
+    rdfs:subClassOf nas:VORroute .
+
+nas:NonCONUSairport a owl:Class ;
+    rdfs:label "Non CONUS airport" ;
+    rdfs:comment "The set of airports located in the United States, but outside the contiguous lower 48 states." ;
+    rdfs:subClassOf nas:USairport .
+
+nas:QRoute a owl:Class ;
+    rdfs:label "Q-Route" ;
+    rdfs:comment "A high altitude RNAV airway route. (RNAV routes allow an aircraft to choose any course within a network of navigation beacons, rather than navigate directly to and from the beacons.)" ;
+    rdfs:subClassOf nas:RNAVroute .
+
+nas:RefuelingTruck a owl:Class ;
+    rdfs:label "Refueling truck" ;
+    rdfs:comment "Vechicle that transports and pumps jet fuel to refuel aircraft." ;
+    rdfs:subClassOf nas:AirportServiceVehicle .
+
+nas:StandAloneWeatherStation a owl:Class ;
+    rdfs:label "Stand-alone weather station" ;
+    rdfs:comment "A non-airport location where operational weather monitoring hardware is installed." ;
+    rdfs:subClassOf owl:Thing .
+
+nas:TRoute a owl:Class ;
+    rdfs:label "T-Route" ;
+    rdfs:comment "A low altitude RNAV airway route. (RNAV routes allow an aircraft to choose any course within a network of navigation beacons, rather than navigate directly to and from the beacons.)" ;
+    rdfs:subClassOf nas:RNAVroute .
+
+nas:VictorRoute a owl:Class ;
+    rdfs:label "Victor route" ;
+    rdfs:comment "A low altitude airway based on ground-based VOR sensor locations." ;
+    rdfs:subClassOf nas:VORroute .
+
+nas:adjacentSector a owl:ObjectProperty ;
+    rdfs:label "adjacent sector" ;
+    rdfs:comment "Links a sector to an immediately adjacent sector that shares a boundary." ;
+    rdfs:domain nas:Sector ;
+    rdfs:range nas:Sector .
+
+nas:airCarrierAlias a owl:DatatypeProperty ;
+    rdfs:label "air carrier alias" ;
+    rdfs:comment "An alternative name for an air carrier." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:airCarrierName a owl:DatatypeProperty ;
+    rdfs:label "Air carrier name" ;
+    rdfs:comment "The official name of an air carrier." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:airlineCallsign a owl:DatatypeProperty ;
+    rdfs:label "airline callsign" ;
+    rdfs:comment "The radio call sign associated with an the air carrier. Used by pilots and controllers to identify aircraft over radio frequencies." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:airportBoundary a owl:ObjectProperty ;
+    rdfs:label "airport boundary" ;
+    rdfs:comment "Links an airport to a representation of its perimeter boundary." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range gen:Polygonal2DRegion .
+
+nas:airportLocation a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "airport location" ;
+    rdfs:comment "Links to a geographic point designated as the airport location." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range gen:PointLocation .
+
+nas:airportName a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "airport name" ;
+    rdfs:comment "The official name of the airport." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:airspaceLayerHighAltitude a owl:DatatypeProperty ;
+    rdfs:label "airspace layer high altitude" ;
+    rdfs:comment "The upper altitude bound of an airspace layer." ;
+    rdfs:domain nas:AirspaceLayer ;
+    rdfs:range xsd:integer .
+
+nas:airspaceLayerLowAltitude a owl:DatatypeProperty ;
+    rdfs:label "airspace layer low altitude" ;
+    rdfs:comment "The lower altitude bound of an airspace layer." ;
+    rdfs:domain nas:AirspaceLayer ;
+    rdfs:range xsd:integer .
+
+nas:arrivalRouteAirport a owl:ObjectProperty ;
+    rdfs:label "arrival route airport" ;
+    rdfs:comment "Links to the airport for which this route is destined." ;
+    rdfs:domain nas:AirportRoute ;
+    rdfs:range nas:Airport .
+
+nas:artccID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "artcc ID" ;
+    rdfs:comment "The 3-letter ARTCC (Air Route Traffic Control Center) code." ;
+    rdfs:domain nas:ARTCC ;
+    rdfs:range xsd:string .
+
+nas:associatedAirport a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "associated airport" ;
+    rdfs:comment "Associates some component of airport infrastructure (runway, terminal, tower, etc.) with its airport." ;
+    rdfs:domain nas:AirportInfrastructureComponent ;
+    rdfs:range nas:Airport .
+
+nas:associatedOpRunway a owl:ObjectProperty ;
+    rdfs:label "associated operational runway" ;
+    rdfs:comment "Associates a physical runway with its two operational runways (180 degrees apart, representing approaches from either end of the physical runway)." ;
+    rdfs:domain nas:PhysicalRunway ;
+    rdfs:range nas:OperationalRunway .
+
+nas:calendarMonth a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "The month number associated with a day class." ;
+    rdfs:domain nas:NASday ;
+    rdfs:range xsd:integer .
+
+nas:calendarYear a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "The calendar year associated with a day class." ;
+    rdfs:domain nas:NASday ;
+    rdfs:range xsd:integer .
+
+nas:countryOfRegistry a owl:DatatypeProperty ;
+    rdfs:label "country of registry" ;
+    rdfs:comment "The country name of the airline registration." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:date a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "date" ;
+    rdfs:comment "The date corresponding to the day represented by the day class. The value of this property is a date datatype. In contrast, the class represents the day conceptually as an object." ;
+    rdfs:domain nas:NASday ;
+    rdfs:range xsd:date .
+
+nas:dayOfMonth a owl:DatatypeProperty ;
+    rdfs:comment "The day number associated with a day class." ;
+    rdfs:domain nas:NASday ;
+    rdfs:range xsd:integer .
+
+nas:deicingPadLocation a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "deicing pad location" ;
+    rdfs:comment "Links a deicing pad with its location as a two-dimensional bounding polygon." ;
+    rdfs:domain nas:DeicingPad ;
+    rdfs:range gen:Polygonal2DRegion .
+
+nas:departureRouteAirport a owl:ObjectProperty ;
+    rdfs:label "departure route airport" ;
+    rdfs:comment "Links to the airport from which this route is destined." ;
+    rdfs:domain nas:AirportRoute ;
+    rdfs:range nas:Airport .
+
+nas:faaAirportCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "FAA airport code" ;
+    rdfs:comment "The alphanumeric FAA code of lenth 3 or 4 for the airport. Contrasted with the ICAO and IATA codes, which in general are different. Often the IATA and FAA codes are identical." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:gateID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "gate ID" ;
+    rdfs:comment "The gate identifier assigned by the airport authority." ;
+    rdfs:domain nas:Gate ;
+    rdfs:range xsd:string .
+
+nas:hasAirportRoute a owl:ObjectProperty ;
+    rdfs:label "has airport route" ;
+    rdfs:comment "Associates an airport route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes." ;
+    rdfs:domain nas:SIDSTAR ;
+    rdfs:range nas:AirportRoute .
+
+nas:hasAirspaceLayerGeometry a owl:ObjectProperty ;
+    rdfs:label "has airspace layer geometry" ;
+    rdfs:comment "Links an airspace layer with a polygon describing its location in 3-space. A sector is composed of a sequence of layers, each of which is represented as a shear-sided polygonal volume." ;
+    rdfs:domain nas:AirspaceLayer ;
+    rdfs:range gen:ShearSidedPolygonalVolume .
+
+nas:hasCenterGeometry a owl:ObjectProperty ;
+    rdfs:label "has center geometry" ;
+    rdfs:comment "Links an ARTCC to a 2-dimensional bounding polygon." ;
+    rdfs:domain nas:ARTCC ;
+    rdfs:range gen:Polygonal2DRegion .
+
+nas:hasCommonRoute a owl:ObjectProperty ;
+    rdfs:label "has common route" ;
+    rdfs:comment "Associates a common route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes." ;
+    rdfs:domain nas:SIDSTAR ;
+    rdfs:range nas:CommonRoute .
+
+nas:hasGate a owl:ObjectProperty ;
+    rdfs:label "has gate" ;
+    rdfs:comment "Associates an airport terminal with a aircraft gate located at that terminal." ;
+    rdfs:domain nas:Terminal ;
+    rdfs:range nas:Gate .
+
+nas:hasLOAwith a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "has LOA with" ;
+    rdfs:comment "This property links a NAS facility to another NAS facility when there is a letter of agreement (LOA) in place between them." ;
+    rdfs:domain nas:NASfacility ;
+    rdfs:range nas:NASfacility .
+
+nas:hasQueue a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has queue" ;
+    rdfs:comment "Links a deicing pad to its queue of aircraft waiting to be deiced." ;
+    rdfs:domain nas:DeicingPad ;
+    rdfs:range nas:DeicingQueue .
+
+nas:hasRampTower a owl:ObjectProperty ;
+    rdfs:label "has ramp tower" ;
+    rdfs:comment "Associates an airport terminal with a ramp tower that controlls the aircraft and vehicle traffic in the vicinity of that terminal." ;
+    rdfs:domain nas:Terminal ;
+    rdfs:range nas:RampTower .
+
+nas:hasRunway a owl:ObjectProperty ;
+    rdfs:label "has runway" ;
+    rdfs:comment "Links an airport to a physical runway for that airport." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range nas:PhysicalRunway .
+
+nas:hasSID a owl:ObjectProperty ;
+    rdfs:label "has SID" ;
+    rdfs:comment "Associates an airport with the the SIDs designated to route aircraft from that airport." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range nas:SID .
+
+nas:hasSTAR a owl:ObjectProperty ;
+    rdfs:label "has STAR" ;
+    rdfs:comment "Associates an airport with the the STARs designated to route aircraft to that airport." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range nas:STAR .
+
+nas:hasSectorID a owl:DatatypeProperty ;
+    rdfs:label "has sector ID" ;
+    rdfs:comment "A sector identifier that consists of the ARTCC identifier concatenated with a three-digit number. This identifier is in general different than the sector name." ;
+    rdfs:domain nas:Sector ;
+    rdfs:range xsd:string .
+
+nas:hasSectorLayer a owl:ObjectProperty ;
+    rdfs:label "has sector layer" ;
+    rdfs:comment "Links a sector to its vertically-stacked set of layers." ;
+    rdfs:domain nas:Sector ;
+    rdfs:range nas:AirspaceLayer .
+
+nas:hasSectorName a owl:DatatypeProperty ;
+    rdfs:label "has sector name" ;
+    rdfs:comment "An alphanumeric sector name that is in general different than the sector ID." ;
+    rdfs:domain nas:Sector ;
+    rdfs:range xsd:string .
+
+nas:hasTRACONcity a owl:DatatypeProperty ;
+    rdfs:label "has TRACONcity" ;
+    rdfs:comment "The city name where the TRACON command center is located." ;
+    rdfs:domain nas:TRACON ;
+    rdfs:range xsd:string .
+
+nas:hasTRACONid a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has TRACON ID" ;
+    rdfs:comment "The FAA alphanumeric code for the TRACON." ;
+    rdfs:domain nas:TRACON ;
+    rdfs:range xsd:string .
+
+nas:hasTRACONlayer a owl:ObjectProperty ;
+    rdfs:label "has TRACON layer" ;
+    rdfs:comment "A link between the TRACON and its geographic extent, represented as a single shear-sided polygonal volume." ;
+    rdfs:domain nas:TRACON ;
+    rdfs:range nas:AirspaceLayer .
+
+nas:hasTRACONname a owl:DatatypeProperty ;
+    rdfs:label "has TRACON name" ;
+    rdfs:comment "The common name for the TRACON." ;
+    rdfs:domain nas:TRACON ;
+    rdfs:range xsd:string .
+
+nas:hasTRACONstate a owl:DatatypeProperty ;
+    rdfs:label "has TRACONstate" ;
+    rdfs:comment "The name of the US state in which the TRACON command center is located." ;
+    rdfs:domain nas:TRACON ;
+    rdfs:range xsd:string .
+
+nas:hasTaxiway a owl:ObjectProperty ;
+    rdfs:label "has taxiway" ;
+    rdfs:comment "Links an airport to a taxiway for that airport." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range nas:Taxiway .
+
+nas:hasTerminal a owl:ObjectProperty ;
+    rdfs:label "has terminal" ;
+    rdfs:comment "Links an airport to a terminal for that airport." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range nas:Terminal .
+
+nas:hasTier a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has tier" ;
+    rdfs:comment "Asociates an ARTCC with the set of ARTCCs in its nth level tier.  Tier 1 includes the central ARTCC plus all ARTCCs immediately adjoining the central ARTCC; tier 2 includes tier 1 plus all adjacent ARTCCs two steps away from the central ARTCC. And so on." ;
+    rdfs:domain nas:ARTCC ;
+    rdfs:range nas:ARTCCtier .
+
+nas:hasTower a owl:ObjectProperty ;
+    rdfs:label "has tower" ;
+    rdfs:comment "Links an airport to an air traffic control tower for that airport." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range nas:ATCT .
+
+nas:hasTransitionRoute a owl:ObjectProperty ;
+    rdfs:label "has transition route" ;
+    rdfs:comment "Associates a transition route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes." ;
+    rdfs:domain nas:SIDSTAR ;
+    rdfs:range nas:TransitionRoute .
+
+nas:hoursOffsetFromUTC a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "hours offset from UTC" ;
+    rdfs:comment "The number of hours that the airport is offset from the UTC timezone." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:integer .
+
+nas:iataAirportCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "IATA Airport Code" ;
+    rdfs:comment "The thre-letter IATA code assigned to the airport. Contrast with the ICAO and FAA airport codes." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:iataCarrierCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "IATA Carrier Code" ;
+    rdfs:comment "The two-letter IATA code assigned to the carrier." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:icaoAirportCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "ICAO airport code" ;
+    rdfs:comment "The four-letter ICAO code assignied to the airport. Contrast with the IATA and FAA airport codes." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:icaoCarrierCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "ICAO Air Carrier Code" ;
+    rdfs:comment "The three-letter ICAO code assigned to the airline carrier." ;
+    rdfs:domain nas:AirCarrier ;
+    rdfs:range xsd:string .
+
+nas:includesARTCC a owl:ObjectProperty ;
+    rdfs:label "includes ARTCC" ;
+    rdfs:comment "A link between an ARTCC tier and the ARTCCs included in the tier." ;
+    rdfs:domain nas:ARTCCtier ;
+    rdfs:range nas:ARTCC .
+
+nas:isInstrumentControlEligible a owl:DatatypeProperty ;
+    rdfs:label "is instrument control eligible" ;
+    rdfs:comment "Indicates whether this airport is capable of an instrument approach." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:boolean .
+
+nas:isWeatherReportingStation a owl:DatatypeProperty ;
+    rdfs:label "is weather reporting station" ;
+    rdfs:comment "Indicates whether this airport is a METAR weather reporting station." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:boolean .
+
+nas:locatedInCenter a owl:ObjectProperty ;
+    rdfs:label "located in Center" ;
+    rdfs:comment "Links a sector to the ARTCC in which the sector is located." ;
+    rdfs:domain nas:Sector ;
+    rdfs:range nas:ARTCC .
+
+nas:locatedInState a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "Located in State" ;
+    rdfs:comment "The 2-letter US postal code for the state in which the airport is located." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+nas:manufacturerCountryName a owl:DatatypeProperty ;
+    rdfs:label "manufacturer country name" ;
+    rdfs:comment "The country name where the manufacturer is established." ;
+    rdfs:domain nas:AirframeManufacturer ;
+    rdfs:range xsd:string .
+
+nas:manufacturerFullName a owl:DatatypeProperty ;
+    rdfs:label "manufacturer full name" ;
+    rdfs:comment "The full name of the manufacturer." ;
+    rdfs:domain nas:AirframeManufacturer ;
+    rdfs:range xsd:string .
+
+nas:maxVisibility a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "max visibility" ;
+    rdfs:comment "The upper bound of visibility in feet over the centerline of the runway." ;
+    rdfs:domain nas:RunwayVisibleRangeMeasurement ;
+    rdfs:range xsd:integer .
+
+nas:minVisibility a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "min visibility" ;
+    rdfs:comment "The lower bound of visibility in feet over the centerline of the runway." ;
+    rdfs:domain nas:RunwayVisibleRangeMeasurement ;
+    rdfs:range xsd:integer .
+
+nas:routeID a owl:DatatypeProperty ;
+    rdfs:label "route ID" ;
+    rdfs:comment "FAA alphanumeric identifier assigned to the route/airway." ;
+    rdfs:domain nas:AirspaceRoute ;
+    rdfs:range xsd:string .
+
+nas:runwayFootprint a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "runway footprint" ;
+    rdfs:comment "Associates a physical runway with its bounding two-dimensional rectangle." ;
+    rdfs:domain nas:PhysicalRunway ;
+    rdfs:range gen:Polygonal2DRegion .
+
+nas:runwayID a owl:DatatypeProperty ;
+    rdfs:label "runway ID" ;
+    rdfs:comment "An identifier for the runway. For physical runways, the convention is to label runways by their heading, dropping the last digit. E.g. for Liverpool, runway 9/27 is facing approximately magnetic heading 90 degrees in one direction, and 270 degrees in the opposite direction. If an airport has parallel runways, these would then be marked Left, Center and Right, e.g. 9L, 9C, 9R. For operational runways, the runway identifiers specifies one direction only: either 9 or 27 in the Liverpool example." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( nas:OperationalRunway nas:PhysicalRunway ) ] ;
+    rdfs:range xsd:string .
+
+nas:runwayLengthInFeet a owl:DatatypeProperty ;
+    rdfs:label "runway length in feet" ;
+    rdfs:comment "The length in feet of the physical runway." ;
+    rdfs:domain nas:PhysicalRunway ;
+    rdfs:range xsd:float .
+
+nas:runwayMeasured a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "runway measured" ;
+    rdfs:comment "Indicates which operational runway is being measured for visible range." ;
+    rdfs:domain nas:RunwayVisibleRangeMeasurement ;
+    rdfs:range nas:OperationalRunway .
+
+nas:runwayWidthInFeet a owl:DatatypeProperty ;
+    rdfs:label "runway width in feet" ;
+    rdfs:comment "The width in feet of the physical runway." ;
+    rdfs:domain nas:PhysicalRunway ;
+    rdfs:range xsd:float .
+
+nas:sidstarID a owl:DatatypeProperty ;
+    rdfs:label "sidstar ID" ;
+    rdfs:comment "The FAA identifier for the SID or STAR. Typically, but not uniformly, 5 alpha characters plus a revision digit." ;
+    rdfs:domain nas:SIDSTAR ;
+    rdfs:range xsd:string .
+
+nas:startingTime a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "starting time" ;
+    rdfs:comment "The beginning of the hour stored as a datetime value." ;
+    rdfs:domain nas:NAShour ;
+    rdfs:range xsd:time .
+
+nas:taxiwayFootprint a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "taxiway location" ;
+    rdfs:comment "Associates a taxiway with its bounding two-dimensional rectangle." ;
+    rdfs:domain nas:Taxiway ;
+    rdfs:range gen:Polygonal2DRegion .
+
+nas:taxiwayID a owl:DatatypeProperty ;
+    rdfs:label "taxiway ID" ;
+    rdfs:comment "An identifier for the taxiway." ;
+    rdfs:domain nas:Taxiway ;
+    rdfs:range xsd:string .
+
+nas:terminalID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "terminal ID" ;
+    rdfs:comment "The alphanumeric identifier of the airport terminal." ;
+    rdfs:domain nas:Terminal ;
+    rdfs:range xsd:string .
+
+nas:tfmsMonitorAlertParameter a owl:DatatypeProperty ;
+    rdfs:label "tfms monitor alert parameter" ;
+    rdfs:comment "The maximum number of aircraft permitted in a given sector at any time, per agreement between FAA and Air Traffic Controller union. MAP (Monitor Alert Parameter) is a TFMS input parameter." ;
+    rdfs:domain nas:Sector ;
+    rdfs:range xsd:integer .
+
+nas:tierLevel a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tier level" ;
+    rdfs:comment "The degree number of the ARTCC tier. Tier 1 includes the central ARTCC plus all ARTCCs immediately adjoining the central ARTCC; tier 2 includes tier 1 plus all adjacent ARTCCs two steps away from the central ARTCC. And so on." ;
+    rdfs:domain nas:ARTCCtier ;
+    rdfs:range xsd:integer .
+
+nas:touchdownPoint a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "touchdown point" ;
+    rdfs:comment "Links to the geographical point location that is the touchdown spot on the operational runway." ;
+    rdfs:domain nas:OperationalRunway ;
+    rdfs:range gen:PointLocation .
+
+nas:towerID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "tower ID" ;
+    rdfs:comment "The FAA identifier for air traffic control tower." ;
+    rdfs:domain nas:ATCT ;
+    rdfs:range xsd:string .
+
+nas:withinARTCC a owl:ObjectProperty ;
+    rdfs:label "within ARTCC" ;
+    rdfs:comment "Links the airport to the ARTCC within which it is located." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range nas:ARTCC .
+
+nas:withinTimezone a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "within timezone" ;
+    rdfs:comment "The timezone identifier for the airport, where the timezone is specified as Area/Location, e.g. America/New_York." ;
+    rdfs:domain nas:Airport ;
+    rdfs:range xsd:string .
+
+eqp:AircraftCommunicationSystem a owl:Class ;
+    rdfs:label "Aircraft communication system" ;
+    rdfs:comment "An aircraft subsystem involving all voice and data communications functions." ;
+    rdfs:subClassOf eqp:AircraftSubsystem .
+
+eqp:AircraftEngine a owl:Class ;
+    rdfs:label "Aircraft engine" ;
+    rdfs:comment "An aircraft engine is the component of the propulsion system for an aircraft that generates mechanical power." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom nas:AircraftEngineManufacturer ;
+            owl:onProperty eqp:manufacturedBy ],
+        eqp:AircraftSubsystem .
+
+eqp:AircraftNavigationSystem a owl:Class ;
+    rdfs:label "Aircraft navigation system" ;
+    rdfs:comment "An aircraft subsystem responsible for navigation functions." ;
+    rdfs:subClassOf eqp:AircraftSubsystem .
+
+eqp:BallBearing a owl:Class ;
+    rdfs:label "Ball bearing" ;
+    rdfs:comment "A unit assembly in an aircraft mechanical subsystem, a ball bearing is positioned between a wheel and a fixed axle, in which the rotating part and the stationary part are separated by a ring of small solid metal balls that reduce friction." ;
+    rdfs:subClassOf eqp:UnitAssembly .
+
+eqp:ElectricalPowerSystem a owl:Class ;
+    rdfs:label "Electrical power system" ;
+    rdfs:comment "An aircraft subsystem responsible for generating and distributing electrical power." ;
+    rdfs:subClassOf eqp:AircraftSubsystem .
+
+eqp:NavigationAid a owl:Class ;
+    rdfs:label "Navigation aid" ;
+    rdfs:comment "A navaid (navigational aid) is an engineered system on the ground that airplanes can detect based on their emission of radio signals that enable the aircraft to navigate. Modern examples include NDBs and VORs, which both transmit radio signals that aircraft can follow and home in on." ;
+    rdfs:subClassOf eqp:DecomposableSystem .
+
+eqp:aircraftModelCertainty a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "aircraft model certainty" ;
+    rdfs:comment "A numeric measure between 0 and 1 reflecting how certain the eqp:hasAircraftModel link is to be correct between the aircraft and the model. A value of one indicates 100% certainty. A lesser value is not to be taken as a percentage, but is a heuristic similarity value taken from the scoring of the TF/IDF similarity assessment performed between the FAA aircraft make/model in the FAA registration database and ICAO make/model names used in the ontology." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:float .
+
+eqp:aircraftRegistrant a owl:DatatypeProperty ;
+    rdfs:label "aircraft registrant" ;
+    rdfs:comment "The name of the entity that registered the aircraft with the FAA." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:string .
+
+eqp:aircraftSerialNumber a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "serial number" ;
+    rdfs:comment "The manufacturer serial number of the aircraft." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:string .
+
+eqp:aircraftTypeDesignator a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "aircraft type designator" ;
+    rdfs:comment "The type designator code for this type of aircraft (e.g., B777)." ;
+    rdfs:domain eqp:AircraftType ;
+    rdfs:range xsd:string .
+
+eqp:aircraftWeightHighBound a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "aircraft weight high bound" ;
+    rdfs:comment "The upper bound of the aircraft weight category." ;
+    rdfs:domain eqp:AircraftWeightClass ;
+    rdfs:range xsd:integer .
+
+eqp:aircraftWeightLowBound a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "aircraft weight low bound" ;
+    rdfs:comment "The lower bound of the aircraft weight category." ;
+    rdfs:domain eqp:AircraftWeightClass ;
+    rdfs:range xsd:integer .
+
+eqp:certificateIssueDate a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "certificate issue date" ;
+    rdfs:comment "The date that an operating certificate was issued to the aircraft." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:date .
+
+eqp:cicttNumber a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "CICTT number" ;
+    rdfs:comment "CAST/ICAO Common Taxonomy Team (CICTT) identifier for this model as specified by the International Aircraft Categorisation And Identification Standard (IACIS)." ;
+    rdfs:domain eqp:AircraftModel ;
+    rdfs:range xsd:integer .
+
+eqp:designedBy a owl:ObjectProperty ;
+    rdfs:label "designed by" ;
+    rdfs:comment "Links an aircraft model to the airframe manufacturer that designed the model." ;
+    rdfs:domain eqp:AircraftModel ;
+    rdfs:range nas:AirframeManufacturer .
+
+eqp:engineTypeDescription a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "engine type description" ;
+    rdfs:comment "A text description of the engine type characteristics." ;
+    rdfs:domain eqp:EngineType ;
+    rdfs:range xsd:string .
+
+eqp:hasAircraftEngineType a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has aircraft engine type" ;
+    rdfs:comment "Links an aircraft type to the type of engine it uses." ;
+    rdfs:domain eqp:AircraftType ;
+    rdfs:range eqp:EngineType .
+
+eqp:hasAircraftModel a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has aircraft model" ;
+    rdfs:comment "Links a specific aircraft to its model." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range eqp:AircraftModel .
+
+eqp:hasAircraftWakeCategory a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has aircraft wake category" ;
+    rdfs:comment "Links an aircraft model to its wake category." ;
+    rdfs:domain eqp:AircraftType ;
+    rdfs:range eqp:AircraftWakeCategory .
+
+eqp:hasAircraftWeightClass a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has aircraft weight class" ;
+    rdfs:comment "Links an aircraft model to its weight class." ;
+    rdfs:domain eqp:AircraftType ;
+    rdfs:range eqp:AircraftWeightClass .
+
+eqp:hasComponent a owl:ObjectProperty ;
+    rdfs:label "has component" ;
+    rdfs:comment "Connects an engineered system to its primitive components." ;
+    rdfs:domain eqp:DecomposableSystem ;
+    rdfs:range eqp:UnitAssembly .
+
+eqp:hasSubsystem a owl:ObjectProperty ;
+    rdfs:label "has subsystem" ;
+    rdfs:comment "Connects an engineered system to its subsystems." ;
+    rdfs:domain eqp:DecomposableSystem ;
+    rdfs:range eqp:DecomposableSystem .
+
+eqp:isAircraftType a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "is aircraft type" ;
+    rdfs:comment "Links an aircraft model to its type, where the type represents a set of related models." ;
+    rdfs:domain eqp:AircraftModel ;
+    rdfs:range eqp:AircraftType .
+
+eqp:manufactureYear a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "manufacture year" ;
+    rdfs:comment "The year the system was manufactured." ;
+    rdfs:domain eqp:EngineeredSystem ;
+    rdfs:range xsd:integer .
+
+eqp:maxTakeoffWeightHighBound a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "max takeoff weight high bound" ;
+    rdfs:comment "The upper bound of the maximum takeoff weight for this category." ;
+    rdfs:domain eqp:AircraftWakeCategory ;
+    rdfs:range xsd:integer .
+
+eqp:maxTakeoffWeightLowBound a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "max takeoff weight low bound" ;
+    rdfs:comment "The lower bound of the maximum takeoff weight for this category." ;
+    rdfs:domain eqp:AircraftWakeCategory ;
+    rdfs:range xsd:integer .
+
+eqp:modeSCode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "mode SCode" ;
+    rdfs:comment "The unique Mode S address of the transponder aboard the aircraft. Mode S equipment on aircraft are assigned a unique ICAO 24-bit address or (informally) Mode S hex code upon national registration and this address becomes a part of the aircraft's Certificate of Registration." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:string .
+
+eqp:modelID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "model ID" ;
+    rdfs:comment "The string identifier of the model for this system/subsystem/assembly." ;
+    rdfs:domain eqp:EngineeredSystem ;
+    rdfs:range xsd:string .
+
+eqp:numberOfEngines a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "number of engines" ;
+    rdfs:comment "The number of engines specified for this aircraft model or found on this aircraft." ;
+    rdfs:domain eqp:Aircraft,
+        eqp:AircraftModel ;
+    rdfs:range xsd:integer .
+
+eqp:numberOfSeats a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "number of seats" ;
+    rdfs:comment "The number of seats on this aircraft." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:integer .
+
+eqp:registrationNumber a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "registration number" ;
+    rdfs:comment "The aircraft FAA registration number (the tail number, or the N-Number in the US)." ;
+    rdfs:domain eqp:Aircraft ;
+    rdfs:range xsd:string .
+
+eqp:wakeCategoryID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "wake category ID" ;
+    rdfs:comment "The wake category identification character (A through F)." ;
+    rdfs:domain eqp:AircraftWakeCategory ;
+    rdfs:range xsd:string .
+
+eqp:wingSpanHighBound a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "wing span high bound" ;
+    rdfs:comment "The upper bound of the wingspan for this category." ;
+    rdfs:domain eqp:AircraftWakeCategory ;
+    rdfs:range xsd:integer .
+
+eqp:wingSpanLowBound a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "wing span low bound" ;
+    rdfs:comment "The lower bound of the wingspan for this category." ;
+    rdfs:domain eqp:AircraftWakeCategory ;
+    rdfs:range xsd:integer .
+
+<https://data.nasa.gov/ontologies/atmonto/flightInst> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/ATM> .
+
+gen:FloatParameter a owl:Class ;
+    rdfs:label "Float parameter" ;
+    rdfs:comment "A subclass of NumericParameter representing parameters with floating-point values." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:float ;
+            owl:onProperty gen:parameterValue ],
+        gen:NumericParameter .
+
+gen:WKTgeoRepresentation a owl:DatatypeProperty ;
+    rdfs:label "Well-Known Text geographic representation" ;
+    rdfs:comment "The WKT string representation of a location. Well-known text (WKT) is a text markup language for representing vector geometry objects on a map, spatial reference systems of spatial objects and transformations between spatial reference systems. WKT is a standards-based representation stored as an alternative to the explicit polygon boundary representation employed in the Ontology (see gen:PolygonBoundary)." ;
+    rdfs:domain gen:Location ;
+    rdfs:range xsd:string .
+
+gen:altitude a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "altitude" ;
+    rdfs:comment "The altitude of a point location." ;
+    rdfs:domain gen:PointLocation ;
+    rdfs:range xsd:float .
+
+gen:centerpoint a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "centerpoint" ;
+    rdfs:comment "Links to the center point of the 2-D circular region." ;
+    rdfs:domain gen:CircularRegion ;
+    rdfs:range gen:PointLocation .
+
+gen:closedEndTimeInterval a owl:DatatypeProperty ;
+    rdfs:label "closed end time interval" ;
+    rdfs:comment "A boolean property that specifies whether or not the endpoint of the time interval is closes (inclusive of the point)." ;
+    rdfs:domain gen:TimeInterval ;
+    rdfs:range xsd:boolean .
+
+gen:closedStartTimeInterval a owl:DatatypeProperty ;
+    rdfs:label "closed start time interval" ;
+    rdfs:comment "A boolean property that specifies whether or not the starting point of the time interval is closed (inclusive of the point)." ;
+    rdfs:domain gen:TimeInterval ;
+    rdfs:range xsd:boolean .
+
+gen:endTime a owl:DatatypeProperty ;
+    rdfs:label "end time" ;
+    rdfs:comment "The ending time of a defined time interval." ;
+    rdfs:domain gen:TimeInterval ;
+    rdfs:range xsd:dateTime .
+
+gen:hasNextItem a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasNext" ;
+    rdfs:comment "Links an item in a sequence to the subsequent item in the sequence." ;
+    rdfs:domain gen:SequencedItem ;
+    rdfs:range gen:SequencedItem .
+
+gen:hasPolygonBoundary a owl:ObjectProperty ;
+    rdfs:label "has polygon boundary" ;
+    rdfs:comment "Links a polygonal region to its boundary representation." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( gen:Polygonal2DRegion gen:ShearSidedPolygonalVolume ) ] ;
+    rdfs:range gen:PolygonBoundary .
+
+gen:latitude a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "latitude" ;
+    rdfs:comment "The latitude of a point location." ;
+    rdfs:domain gen:PointLocation ;
+    rdfs:range xsd:float .
+
+gen:longitude a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "longitude" ;
+    rdfs:comment "The longitude of a point location." ;
+    rdfs:domain gen:PointLocation ;
+    rdfs:range xsd:float .
+
+gen:polygonHeight a owl:DatatypeProperty ;
+    rdfs:label "polygon height" ;
+    rdfs:comment "Specifies the length dimension of a polygonal volume." ;
+    rdfs:domain gen:ShearSidedPolygonalVolume ;
+    rdfs:range xsd:float .
+
+gen:radius a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "radius" ;
+    rdfs:comment "The radius of a circular region. Note: Unfortunately, the units are currently dependent the type of circular region defined. This needs to be improved." ;
+    rdfs:domain gen:CircularRegion ;
+    rdfs:range xsd:float .
+
+gen:sequenceLength a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "sequence length" ;
+    rdfs:comment "The number of items in the ordered sequence." ;
+    rdfs:domain gen:Sequence ;
+    rdfs:range xsd:integer .
+
+gen:sequenceNumber a owl:DatatypeProperty ;
+    rdfs:label "sequenceNumber" ;
+    rdfs:comment "Indicates the ordered position of this item within the sequence, where 1 signifies the first position in the sequence." ;
+    rdfs:domain gen:SequencedItem ;
+    rdfs:range xsd:integer .
+
+gen:startTime a owl:DatatypeProperty ;
+    rdfs:label "start time" ;
+    rdfs:comment "The starting time of a defined time interval." ;
+    rdfs:domain gen:TimeInterval ;
+    rdfs:range xsd:dateTime .
+
+gen:subsequenceEndIndex a owl:DatatypeProperty ;
+    rdfs:label "subsequence end index" ;
+    rdfs:comment "A numeric position within a base sequence that represents the end of the subsequence." ;
+    rdfs:domain gen:SubSequence ;
+    rdfs:range xsd:integer .
+
+gen:subsequenceStartIndex a owl:DatatypeProperty ;
+    rdfs:label "subsequence start index" ;
+    rdfs:comment "A numeric position within a base sequence that represents the start of the subsequence." ;
+    rdfs:domain gen:SubSequence ;
+    rdfs:range xsd:integer .
+
+xsd:time a rdfs:Datatype .
+
+<https://data.nasa.gov/ontologies/atmonto/ATM> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/NAS> ;
+    owl:versionInfo "Created with TopBraid Composer" .
+
+atm:ActualRouteAAL100-201407150030 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150035168241 ;
+    gen:hasLastItem atm:TrackPt201407150103092611 ;
+    gen:hasSequencedItem atm:TrackPt201407150035168241,
+        atm:TrackPt201407150036016540,
+        atm:TrackPt201407150036158496,
+        atm:TrackPt201407150037033298,
+        atm:TrackPt201407150038011997,
+        atm:TrackPt201407150038053432,
+        atm:TrackPt201407150039016585,
+        atm:TrackPt201407150039142779,
+        atm:TrackPt201407150040136442,
+        atm:TrackPt201407150042003522,
+        atm:TrackPt201407150042163295,
+        atm:TrackPt201407150044011185,
+        atm:TrackPt201407150045036607,
+        atm:TrackPt201407150046061041,
+        atm:TrackPt201407150047040140,
+        atm:TrackPt201407150047159137,
+        atm:TrackPt201407150049008479,
+        atm:TrackPt201407150050054272,
+        atm:TrackPt201407150051022724,
+        atm:TrackPt201407150052043274,
+        atm:TrackPt201407150053049581,
+        atm:TrackPt201407150054057773,
+        atm:TrackPt201407150055059878,
+        atm:TrackPt201407150056032777,
+        atm:TrackPt201407150057035830,
+        atm:TrackPt201407150058038681,
+        atm:TrackPt201407150059044154,
+        atm:TrackPt201407150100038713,
+        atm:TrackPt201407150102066806,
+        atm:TrackPt201407150102125822,
+        atm:TrackPt201407150103092611 .
+
+atm:ActualRouteAAL1102-201407150046 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL1102 on 2014-07-15 00:46:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150052008111 ;
+    gen:hasLastItem atm:TrackPt201407150315062514 ;
+    gen:hasSequencedItem atm:TrackPt201407150052008111,
+        atm:TrackPt201407150052035829,
+        atm:TrackPt201407150053030654,
+        atm:TrackPt201407150053051356,
+        atm:TrackPt201407150054017098,
+        atm:TrackPt201407150054028745,
+        atm:TrackPt201407150055040463,
+        atm:TrackPt201407150055085318,
+        atm:TrackPt201407150056085105,
+        atm:TrackPt201407150056156335,
+        atm:TrackPt201407150058017519,
+        atm:TrackPt201407150059027869,
+        atm:TrackPt201407150100028366,
+        atm:TrackPt201407150102126730,
+        atm:TrackPt201407150104000266,
+        atm:TrackPt201407150104133606,
+        atm:TrackPt201407150105135111,
+        atm:TrackPt201407150106128016,
+        atm:TrackPt201407150107150517 .
+
+atm:ActualRouteAAL1144-201407150040 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL1144 on 2014-07-15 00:40:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150045160390 ;
+    gen:hasLastItem atm:TrackPt201407150105124308 ;
+    gen:hasSequencedItem atm:TrackPt201407150045160390,
+        atm:TrackPt201407150046158584,
+        atm:TrackPt201407150047141258,
+        atm:TrackPt201407150048111122,
+        atm:TrackPt201407150049090586,
+        atm:TrackPt201407150050036548,
+        atm:TrackPt201407150050088226,
+        atm:TrackPt201407150051025266,
+        atm:TrackPt201407150051114613,
+        atm:TrackPt201407150051133037,
+        atm:TrackPt201407150052117349,
+        atm:TrackPt201407150052117550,
+        atm:TrackPt201407150053078231,
+        atm:TrackPt201407150053142196,
+        atm:TrackPt201407150054080523,
+        atm:TrackPt201407150054141559,
+        atm:TrackPt201407150055109787,
+        atm:TrackPt201407150055130641,
+        atm:TrackPt201407150056114863,
+        atm:TrackPt201407150057105029,
+        atm:TrackPt201407150058057912,
+        atm:TrackPt201407150059072129,
+        atm:TrackPt201407150100078904,
+        atm:TrackPt201407150102105614,
+        atm:TrackPt201407150103063913,
+        atm:TrackPt201407150104083491,
+        atm:TrackPt201407150105124308 .
+
+atm:ActualRouteAAL1170-201407150053 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL1170 on 2014-07-15 00:53:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150059019717 ;
+    gen:hasLastItem atm:TrackPt201407150107104737 ;
+    gen:hasSequencedItem atm:TrackPt201407150059019717,
+        atm:TrackPt201407150100042224,
+        atm:TrackPt201407150100111037,
+        atm:TrackPt201407150102075025,
+        atm:TrackPt201407150103002879,
+        atm:TrackPt201407150103077285,
+        atm:TrackPt201407150104129102,
+        atm:TrackPt201407150105091434,
+        atm:TrackPt201407150105143587,
+        atm:TrackPt201407150106115691,
+        atm:TrackPt201407150106135668,
+        atm:TrackPt201407150107085777,
+        atm:TrackPt201407150107104737 .
+
+atm:ActualRouteAAL20-201407152358 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL20 on 2014-07-15 23:58:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407160004009387 ;
+    gen:hasLastItem atm:TrackPt201407160010120576 ;
+    gen:hasSequencedItem atm:TrackPt201407160004009387,
+        atm:TrackPt201407160004093371,
+        atm:TrackPt201407160005027364,
+        atm:TrackPt201407160005117150,
+        atm:TrackPt201407160006051030,
+        atm:TrackPt201407160006119603,
+        atm:TrackPt201407160007075345,
+        atm:TrackPt201407160008079906,
+        atm:TrackPt201407160009145689,
+        atm:TrackPt201407160010120576 .
+
+atm:ActualRouteACA722-201407150025 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150031054599 ;
+    gen:hasLastItem atm:TrackPt201407150039070788 ;
+    gen:hasSequencedItem atm:TrackPt201407150031054599,
+        atm:TrackPt201407150031155236,
+        atm:TrackPt201407150032160905,
+        atm:TrackPt201407150033066739,
+        atm:TrackPt201407150033145930,
+        atm:TrackPt201407150034063383,
+        atm:TrackPt201407150034134237,
+        atm:TrackPt201407150035059399,
+        atm:TrackPt201407150035160163,
+        atm:TrackPt201407150036064400,
+        atm:TrackPt201407150037042239,
+        atm:TrackPt201407150037086183,
+        atm:TrackPt201407150038023217,
+        atm:TrackPt201407150038120487,
+        atm:TrackPt201407150038138609,
+        atm:TrackPt201407150039070788 .
+
+atm:ActualRouteASA14-201407150005 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150010162517 ;
+    gen:hasLastItem atm:TrackPt201407150025043901 ;
+    gen:hasSequencedItem atm:TrackPt201407150010162517,
+        atm:TrackPt201407150012004444,
+        atm:TrackPt201407150012159153,
+        atm:TrackPt201407150013137273,
+        atm:TrackPt201407150014001903,
+        atm:TrackPt201407150015044256,
+        atm:TrackPt201407150015162929,
+        atm:TrackPt201407150017010688,
+        atm:TrackPt201407150017143381,
+        atm:TrackPt201407150020016149,
+        atm:TrackPt201407150021034434,
+        atm:TrackPt201407150022040160,
+        atm:TrackPt201407150023023639,
+        atm:TrackPt201407150024010689,
+        atm:TrackPt201407150025043901 .
+
+atm:ActualRouteASQ3831-201407150019 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150026013204 ;
+    gen:hasLastItem atm:TrackPt201407150033008184 ;
+    gen:hasSequencedItem atm:TrackPt201407150026013204,
+        atm:TrackPt201407150026175968,
+        atm:TrackPt201407150027159377,
+        atm:TrackPt201407150028146562,
+        atm:TrackPt201407150029009441,
+        atm:TrackPt201407150030027897,
+        atm:TrackPt201407150030046134,
+        atm:TrackPt201407150030137356,
+        atm:TrackPt201407150031007389,
+        atm:TrackPt201407150031173828,
+        atm:TrackPt201407150032044449,
+        atm:TrackPt201407150033008184 .
+
+atm:ActualRouteASQ4423-201407150037 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150043108464 ;
+    gen:hasLastItem atm:TrackPt201407150055123150 ;
+    gen:hasSequencedItem atm:TrackPt201407150043108464,
+        atm:TrackPt201407150044075821,
+        atm:TrackPt201407150045164562,
+        atm:TrackPt201407150046104481,
+        atm:TrackPt201407150047089632,
+        atm:TrackPt201407150048124841,
+        atm:TrackPt201407150049104356,
+        atm:TrackPt201407150050154124,
+        atm:TrackPt201407150051152091,
+        atm:TrackPt201407150052141510,
+        atm:TrackPt201407150053111463,
+        atm:TrackPt201407150054127641,
+        atm:TrackPt201407150055123150 .
+
+atm:ActualRouteCHQ2945-201407150047 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150053074110 ;
+    gen:hasLastItem atm:TrackPt201407150102035883 ;
+    gen:hasSequencedItem atm:TrackPt201407150053042977,
+        atm:TrackPt201407150053074110,
+        atm:TrackPt201407150054073369,
+        atm:TrackPt201407150055056700,
+        atm:TrackPt201407150056037367,
+        atm:TrackPt201407150057041561,
+        atm:TrackPt201407150057137003,
+        atm:TrackPt201407150059006967,
+        atm:TrackPt201407150100030361,
+        atm:TrackPt201407150102035883 .
+
+atm:AircraftCapacity a owl:Class ;
+    rdfs:label "Aircraft capacity" ;
+    rdfs:comment "A subclass of interval-based data representing the maximum number of controllable aircraft flowing through an airspace region during some interval of time." ;
+    rdfs:subClassOf atm:AircraftFlowCapacity .
+
+atm:AirspaceFlowProgramTMI a owl:Class ;
+    rdfs:label "Airspace Flow Program (AFP)" ;
+    rdfs:comment "A subclass of Traffic Management Initiative involving control and metering of air traffic through specified airspace volumes." ;
+    rdfs:subClassOf atm:TrafficManagementInitiative .
+
+atm:CrewMember a owl:Class ;
+    rdfs:label "Crew member" ;
+    rdfs:comment "The set of inflight airline personnel operating or performing servicing functions on a flight (pilots and cabin attendants)." ;
+    rdfs:subClassOf owl:Thing .
+
+atm:PlannedRouteAAL100-201407150030 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T06:16:00"^^xsd:dateTime ;
+    atm:flightRouteString "KJFK.BETTE3.BETTE..ACK..TUSKY.N271A.TUDEP.NATX.MALOT.NATX.GISTI..SLANY.UL9.STU.UP2.OKESI.Y3.BEDEK..EGLL/0616"^^xsd:string ;
+    atm:planFilingDay nas:Day20140714 ;
+    atm:planFilingTime "2014-07-14T23:35:46"^^xsd:dateTime .
+
+atm:PlannedRouteAAL1102-201407150046 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL1102 on 2014-07-15 00:46:00"^^xsd:string ;
+    atm:flightRouteString "KLGA./.EMJAY.J174.WARNN.J174.SWL..CEBEE..WETRO..DIW.AR22.JORAY.HILEY4.KMIA"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:46:44"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_AAL1102-201407150046_KLGA ;
+    gen:hasLastItem nas:NEC008_AAL1102-201407150046_KMIA ;
+    gen:hasSequencedItem nas:NEC001_AAL1102-201407150046_KLGA,
+        nas:NEC002_AAL1102-201407150046_J174,
+        nas:NEC003_AAL1102-201407150046_SWL,
+        nas:NEC004_AAL1102-201407150046_CEBEE,
+        nas:NEC005_AAL1102-201407150046_WETRO,
+        nas:NEC006_AAL1102-201407150046_AR22,
+        nas:NEC007_AAL1102-201407150046_HILEY4,
+        nas:NEC008_AAL1102-201407150046_KMIA .
+
+atm:PlannedRouteAAL1144-201407150040 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL1144 on 2014-07-15 00:40:00"^^xsd:string ;
+    atm:flightRouteString "KLGA./.MIKYG.Q480.AIR.J80.FYLLS.J29.PXV.J131.LIT.BYP6.KDFW"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:42:12"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_AAL1144-201407150040_KLGA ;
+    gen:hasLastItem nas:NEC007_AAL1144-201407150040_KDFW ;
+    gen:hasSequencedItem nas:NEC001_AAL1144-201407150040_KLGA,
+        nas:NEC002_AAL1144-201407150040_Q480,
+        nas:NEC003_AAL1144-201407150040_J80,
+        nas:NEC004_AAL1144-201407150040_J29,
+        nas:NEC005_AAL1144-201407150040_J131,
+        nas:NEC006_AAL1144-201407150040_BYP6,
+        nas:NEC007_AAL1144-201407150040_KDFW .
+
+atm:PlannedRouteAAL1170-201407150053 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL1170 on 2014-07-15 00:53:00"^^xsd:string ;
+    atm:flightRouteString "KDFW.AKUNA4.MLC..RZC..STL..VHP..ROD.J29.DJB..CXR.J146.ETG.MIP4.KLGA"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:53:45"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "0"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_AAL1170-201407150053_KDFW ;
+    gen:hasLastItem nas:NEC009_AAL1170-201407150053_KLGA ;
+    gen:hasSequencedItem nas:NEC001_AAL1170-201407150053_KDFW,
+        nas:NEC002_AAL1170-201407150053_AKUNA4,
+        nas:NEC003_AAL1170-201407150053_RZC,
+        nas:NEC004_AAL1170-201407150053_STL,
+        nas:NEC005_AAL1170-201407150053_VHP,
+        nas:NEC006_AAL1170-201407150053_J29,
+        nas:NEC007_AAL1170-201407150053_J146,
+        nas:NEC008_AAL1170-201407150053_MIP4,
+        nas:NEC009_AAL1170-201407150053_KLGA .
+
+atm:PlannedRouteAAL20-201407152358 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL20 on 2014-07-15 23:58:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-16T05:01:00"^^xsd:dateTime ;
+    atm:flightRouteString "KSFO.SHOR5.SAC.J32.BAM.J94.FOD..KG75M..DAFLU..JHW.J70.LVZ.LENDY6.KJFK/0501"^^xsd:string ;
+    atm:planFilingDay nas:Day20140716 ;
+    atm:planFilingTime "2014-07-16T00:06:41"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "0"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_AAL20-201407152358_KSFO ;
+    gen:hasLastItem nas:NEC009_AAL20-201407152358_KJFK ;
+    gen:hasSequencedItem nas:NEC001_AAL20-201407152358_KSFO,
+        nas:NEC002_AAL20-201407152358_SHOR5,
+        nas:NEC003_AAL20-201407152358_J32,
+        nas:NEC004_AAL20-201407152358_J94,
+        nas:NEC005_AAL20-201407152358_KG75M,
+        nas:NEC006_AAL20-201407152358_DAFLU,
+        nas:NEC007_AAL20-201407152358_J70,
+        nas:NEC008_AAL20-201407152358_LENDY6,
+        nas:NEC009_AAL20-201407152358_KJFK .
+
+atm:PlannedRouteACA722-201407150025 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:24:00"^^xsd:dateTime ;
+    atm:flightRouteString "CYYZ.BULGE2.AIRCO..GEE.GEE111.EXTOL..RKA.HAARP3.KLGA/0124"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:25:59"^^xsd:dateTime .
+
+atm:PlannedRouteASA14-201407150005 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T04:48:00"^^xsd:dateTime ;
+    atm:flightRouteString "KSEA..SEA.J70.MLP..GTF..HILGR..KP09Y..KP06C..GEP..ODI..KG78K..KG72M..EVOTE..NELLS..KEEHO.J584.SLT.FQM3.KEWR/0448"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:24:53"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "0"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_ASA14-201407150005_KSEA ;
+    gen:hasLastItem nas:NEC015_ASA14-201407150005_KEWR ;
+    gen:hasSequencedItem nas:NEC001_ASA14-201407150005_KSEA,
+        nas:NEC002_ASA14-201407150005_J70,
+        nas:NEC003_ASA14-201407150005_GTF,
+        nas:NEC004_ASA14-201407150005_HILGR,
+        nas:NEC005_ASA14-201407150005_KP09Y,
+        nas:NEC006_ASA14-201407150005_KP06C,
+        nas:NEC007_ASA14-201407150005_GEP,
+        nas:NEC008_ASA14-201407150005_ODI,
+        nas:NEC009_ASA14-201407150005_KG78K,
+        nas:NEC010_ASA14-201407150005_KG72M,
+        nas:NEC011_ASA14-201407150005_EVOTE,
+        nas:NEC012_ASA14-201407150005_NELLS,
+        nas:NEC013_ASA14-201407150005_J584,
+        nas:NEC014_ASA14-201407150005_FQM3,
+        nas:NEC015_ASA14-201407150005_KEWR .
+
+atm:PlannedRouteASQ3831-201407150019 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:24:00"^^xsd:dateTime ;
+    atm:flightRouteString "CYYZ.BULGE2.AIRCO.V252.GEE.SHAFF7.KEWR/0124"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:21:13"^^xsd:dateTime .
+
+atm:PlannedRouteASQ4423-201407150037 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:41:00"^^xsd:dateTime ;
+    atm:flightRouteString "KMHT./.HANAA.FLOSI3.KEWR/0141"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:48:21"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_ASQ4423-201407150037_KMHT ;
+    gen:hasLastItem nas:NEC003_ASQ4423-201407150037_KEWR ;
+    gen:hasSequencedItem nas:NEC001_ASQ4423-201407150037_KMHT,
+        nas:NEC002_ASQ4423-201407150037_FLOSI3,
+        nas:NEC003_ASQ4423-201407150037_KEWR .
+
+atm:PlannedRouteCHQ2945-201407150047 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    atm:flightRouteString "KJFK./.EMJAY.J174.WARNN.J174.ORF.J121.BARTL.J4.FLO.HUSTN2.KCLT"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:47:00"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_CHQ2945-201407150047_KJFK ;
+    gen:hasLastItem nas:NEC006_CHQ2945-201407150047_KCLT ;
+    gen:hasSequencedItem nas:NEC001_CHQ2945-201407150047_KJFK,
+        nas:NEC002_CHQ2945-201407150047_J174,
+        nas:NEC003_CHQ2945-201407150047_J121,
+        nas:NEC004_CHQ2945-201407150047_J4,
+        nas:NEC005_CHQ2945-201407150047_HUSTN2,
+        nas:NEC006_CHQ2945-201407150047_KCLT .
+
+atm:PopupFactor a owl:Class ;
+    rdfs:label "Popup factor" ;
+    rdfs:comment "Factor to account for late-filing flights when modeling delays as part of a traffic management initiative (TMI) design process." ;
+    rdfs:subClassOf gen:IntegerParameter .
+
+atm:PopupFactorSequence a owl:Class ;
+    rdfs:label "Popup Factor Sequence" ;
+    rdfs:comment "An ordered sequence of hourly popup factors used in specifying a Ground Delay Program (GDP)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom atm:PopupFactorContainer ;
+            owl:onProperty gen:hasSequencedItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:PopupFactorContainer ;
+            owl:onProperty gen:hasFirstItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:PopupFactorContainer ;
+            owl:onProperty gen:hasLastItem ],
+        gen:Sequence .
+
+atm:ProgramArrivalRate a owl:Class ;
+    rdfs:label "Program arrival rate" ;
+    rdfs:comment "The number of aircraft that the Ground Delay Program (GDP) is to provide to the airport for a given hour." ;
+    rdfs:subClassOf gen:IntegerParameter .
+
+atm:ProgramArrivalRateSequence a owl:Class ;
+    rdfs:label "Program Arrival Rate Sequence" ;
+    rdfs:comment "An ordered sequence of hourly program arrival rates used in specifying a Ground Dela Program (GDP)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom atm:ProgramArrivalRateContainer ;
+            owl:onProperty gen:hasFirstItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:ProgramArrivalRateContainer ;
+            owl:onProperty gen:hasSequencedItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:ProgramArrivalRateContainer ;
+            owl:onProperty gen:hasLastItem ],
+        gen:Sequence .
+
+atm:VORfix a owl:Class ;
+    rdfs:label "VOR Fix" ;
+    rdfs:comment "A fix based on the location of a ground-based VOR (VHF Omni Directional Radio Range) installation." ;
+    rdfs:subClassOf atm:NavaidFix .
+
+atm:delayAssignmentMode a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "delay assignment mode" ;
+    rdfs:comment "The type of delay assignment mode specified for this delay model: DAS, GAAP, or UDP." ;
+    rdfs:domain atm:DelayModel ;
+    rdfs:range xsd:string .
+
+atm:includesAirportType a owl:DatatypeProperty ;
+    rdfs:label "includes airport type" ;
+    rdfs:comment "Indicates which type of airports are included in the set of airports covered by this airport specification: all, US, CONUS, NonCONUS, International, Canadian. This property allows for the implicit specification of an entire class of airports; the property atm:includesAirport allows for the explicit specification of a list of specific airports." ;
+    rdfs:domain atm:AirportSpec ;
+    rdfs:range xsd:string .
+
+atm:reRouteSegmentType a owl:DatatypeProperty ;
+    rdfs:label "re route segment type" ;
+    rdfs:comment "Indicates which type of ReRoute segment: origin , destination, origin-destination. A ReRoute segment can be a entire route between origin and destination, or a partial route leading from an origin or leading to a destination." ;
+    rdfs:domain atm:ReRouteSegment ;
+    rdfs:range xsd:string .
+
+<https://data.nasa.gov/ontologies/atmonto/NAS> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/equipment> ;
+    owl:versionInfo "Created with TopBraid Composer" .
+
+nas:ACAairline a nas:AirCarrier ;
+    rdfs:label "Air Canada"^^xsd:string ;
+    nas:airCarrierName "Air Canada"^^xsd:string ;
+    nas:airlineCallsign "AIR CANADA"^^xsd:string ;
+    nas:countryOfRegistry "Canada"^^xsd:string ;
+    nas:iataCarrierCode "AC"^^xsd:string ;
+    nas:icaoCarrierCode "ACA"^^xsd:string .
+
+nas:ASAairline a nas:AirCarrier ;
+    rdfs:label "Alaska Airlines"^^xsd:string ;
+    nas:airCarrierName "Alaska Airlines"^^xsd:string ;
+    nas:airlineCallsign "ALASKA"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "AS"^^xsd:string ;
+    nas:icaoCarrierCode "ASA"^^xsd:string .
+
+nas:AircraftEngineManufacturer a owl:Class ;
+    rdfs:label "Aircraft engine manufacturer" ;
+    rdfs:comment "A manufacturer of aircraft engines." ;
+    rdfs:subClassOf nas:AviationIndustryManufacturer .
+
+nas:CHQairline a nas:AirCarrier ;
+    rdfs:label "Chautauqua Airlines"^^xsd:string ;
+    nas:airCarrierName "Chautauqua Airlines"^^xsd:string ;
+    nas:airlineCallsign "CHAUTAUQUA"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "RP"^^xsd:string ;
+    nas:icaoCarrierCode "CHQ"^^xsd:string .
+
+nas:CYYZcoordinates a gen:PointLocation ;
+    rdfs:label "CYYZ coordinates"^^xsd:string ;
+    gen:altitude "569.0"^^xsd:float ;
+    gen:latitude "43.676661"^^xsd:float ;
+    gen:longitude "-79.630644"^^xsd:float .
+
+nas:CanadianAirport a owl:Class ;
+    rdfs:label "Canadian airport" ;
+    rdfs:comment "The set of Canadian airports." ;
+    rdfs:subClassOf nas:InternationalAirport .
+
+nas:CommonRoute a owl:Class ;
+    rdfs:label "Common route" ;
+    rdfs:comment "The backbone portion of a SID or STAR that is flown by all aircraft." ;
+    rdfs:subClassOf nas:SIDSTARroute .
+
+nas:DeicingQueue a owl:Class ;
+    rdfs:label "Deicing queue" ;
+    rdfs:comment "An ordered sequence of aircraft awaiting deicing at a deicing pad." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom eqp:Aircraft ;
+            owl:onProperty gen:hasSequencedItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom eqp:Aircraft ;
+            owl:onProperty gen:hasLastItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom eqp:Aircraft ;
+            owl:onProperty gen:hasFirstItem ],
+        gen:Sequence .
+
+nas:EGLLairport a nas:InternationalAirport ;
+    rdfs:label "EGLL Airport"^^xsd:string ;
+    nas:airportLocation nas:EGLLcoordinates ;
+    nas:airportName "Heathrow"^^xsd:string ;
+    nas:iataAirportCode "LHR"^^xsd:string ;
+    nas:icaoAirportCode "EGLL"^^xsd:string ;
+    nas:withinTimezone "Europe/London"^^xsd:string .
+
+nas:EGLLcoordinates a gen:PointLocation ;
+    rdfs:label "EGLL coordinates"^^xsd:string ;
+    gen:altitude "83.0"^^xsd:float ;
+    gen:latitude "51.4775"^^xsd:float ;
+    gen:longitude "-0.461389"^^xsd:float .
+
+nas:KCLTairport a nas:CONUSairport ;
+    rdfs:label "KCLT Airport"^^xsd:string ;
+    nas:airportLocation nas:KCLTcoordinates ;
+    nas:airportName "CHARLOTTE/DOUGLAS INTL"^^xsd:string ;
+    nas:faaAirportCode "CLT"^^xsd:string ;
+    nas:hasRunway nas:KCLTphysicalRunway05_23,
+        nas:KCLTphysicalRunway18C_36C,
+        nas:KCLTphysicalRunway18L_36R,
+        nas:KCLTphysicalRunway18R_36L ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "CLT"^^xsd:string ;
+    nas:icaoAirportCode "KCLT"^^xsd:string ;
+    nas:locatedInState "NC"^^xsd:string ;
+    nas:withinARTCC nas:ZTLcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KDFWcoordinates a gen:PointLocation ;
+    rdfs:label "KDFW coordinates"^^xsd:string ;
+    gen:altitude "607.0"^^xsd:float ;
+    gen:latitude "32.897231"^^xsd:float ;
+    gen:longitude "-97.037694"^^xsd:float .
+
+nas:KEWRcoordinates a gen:PointLocation ;
+    rdfs:label "KEWR coordinates"^^xsd:string ;
+    gen:altitude "18.0"^^xsd:float ;
+    gen:latitude "40.692481"^^xsd:float ;
+    gen:longitude "-74.168686"^^xsd:float .
+
+nas:KJFKcoordinates a gen:PointLocation ;
+    rdfs:label "KJFK coordinates"^^xsd:string ;
+    gen:altitude "14.0"^^xsd:float ;
+    gen:latitude "40.63975"^^xsd:float ;
+    gen:longitude "-73.778925"^^xsd:float .
+
+nas:KLGAcoordinates a gen:PointLocation ;
+    rdfs:label "KLGA coordinates"^^xsd:string ;
+    gen:altitude "21.0"^^xsd:float ;
+    gen:latitude "40.77725"^^xsd:float ;
+    gen:longitude "-73.872611"^^xsd:float .
+
+nas:KMHTairport a nas:CONUSairport ;
+    rdfs:label "KMHT Airport"^^xsd:string ;
+    nas:airportLocation nas:KMHTcoordinates ;
+    nas:airportName "MANCHESTER"^^xsd:string ;
+    nas:faaAirportCode "MHT"^^xsd:string ;
+    nas:hasRunway nas:KMHTphysicalRunway06_24,
+        nas:KMHTphysicalRunway17_35 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "MHT"^^xsd:string ;
+    nas:icaoAirportCode "KMHT"^^xsd:string ;
+    nas:locatedInState "NH"^^xsd:string ;
+    nas:withinARTCC nas:ZBWcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KMHTcoordinates a gen:PointLocation ;
+    rdfs:label "KMHT coordinates"^^xsd:string ;
+    gen:altitude "266.0"^^xsd:float ;
+    gen:latitude "42.932806"^^xsd:float ;
+    gen:longitude "-71.43575"^^xsd:float .
+
+nas:KMIAairport a nas:CONUSairport ;
+    rdfs:label "KMIA Airport"^^xsd:string ;
+    nas:airportLocation nas:KMIAcoordinates ;
+    nas:airportName "MIAMI INTL"^^xsd:string ;
+    nas:faaAirportCode "MIA"^^xsd:string ;
+    nas:hasRunway nas:KMIAphysicalRunway08L_26R,
+        nas:KMIAphysicalRunway08R_26L,
+        nas:KMIAphysicalRunway09_27,
+        nas:KMIAphysicalRunway12_30 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "MIA"^^xsd:string ;
+    nas:icaoAirportCode "KMIA"^^xsd:string ;
+    nas:locatedInState "FL"^^xsd:string ;
+    nas:withinARTCC nas:ZMAcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KMIAcoordinates a gen:PointLocation ;
+    rdfs:label "KMIA coordinates"^^xsd:string ;
+    gen:altitude "9.0"^^xsd:float ;
+    gen:latitude "25.795361"^^xsd:float ;
+    gen:longitude "-80.290111"^^xsd:float .
+
+nas:KSEAairport a nas:CONUSairport ;
+    rdfs:label "KSEA Airport"^^xsd:string ;
+    nas:airportLocation nas:KSEAcoordinates ;
+    nas:airportName "SEATTLE-TACOMA INTL"^^xsd:string ;
+    nas:faaAirportCode "SEA"^^xsd:string ;
+    nas:hasRunway nas:KSEAphysicalRunway16C_34C,
+        nas:KSEAphysicalRunway16L_34R,
+        nas:KSEAphysicalRunway16R_34L ;
+    nas:hoursOffsetFromUTC -8 ;
+    nas:iataAirportCode "SEA"^^xsd:string ;
+    nas:icaoAirportCode "KSEA"^^xsd:string ;
+    nas:locatedInState "WA"^^xsd:string ;
+    nas:withinARTCC nas:ZSEcenter ;
+    nas:withinTimezone "America/Los_Angeles"^^xsd:string .
+
+nas:KSEAcoordinates a gen:PointLocation ;
+    rdfs:label "KSEA coordinates"^^xsd:string ;
+    gen:altitude "433.0"^^xsd:float ;
+    gen:latitude "47.449889"^^xsd:float ;
+    gen:longitude "-122.311778"^^xsd:float .
+
+nas:KSFOairport a nas:CONUSairport ;
+    rdfs:label "KSFO Airport"^^xsd:string ;
+    nas:airportLocation nas:KSFOcoordinates ;
+    nas:airportName "SAN FRANCISCO INTL"^^xsd:string ;
+    nas:faaAirportCode "SFO"^^xsd:string ;
+    nas:hasRunway nas:KSFOphysicalRunway01L_19R,
+        nas:KSFOphysicalRunway01R_19L,
+        nas:KSFOphysicalRunway10L_28R,
+        nas:KSFOphysicalRunway10R_28L ;
+    nas:hoursOffsetFromUTC -8 ;
+    nas:iataAirportCode "SFO"^^xsd:string ;
+    nas:icaoAirportCode "KSFO"^^xsd:string ;
+    nas:locatedInState "CA"^^xsd:string ;
+    nas:withinARTCC nas:ZOAcenter ;
+    nas:withinTimezone "America/Los_Angeles"^^xsd:string .
+
+nas:KSFOcoordinates a gen:PointLocation ;
+    rdfs:label "KSFO coordinates"^^xsd:string ;
+    gen:altitude "13.0"^^xsd:float ;
+    gen:latitude "37.619106"^^xsd:float ;
+    gen:longitude "-122.375236"^^xsd:float .
+
+nas:NAShour a owl:Class ;
+    rdfs:label "NAShour" ;
+    rdfs:comment "A class that represents an hour within a day. Events, such as flights, weather forecasts, and other events are linked to the instance of the day they occurred." ;
+    rdfs:subClassOf owl:Thing .
+
+nas:RampTower a owl:Class ;
+    rdfs:label "Ramp tower" ;
+    rdfs:comment "A control tower from which ramp controllers guide aircraft movements as they enter and exit the taxiways, and arrive and leave the gates. The ramp is the area of the airport surface where planes, service vehicles, and people meet." ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent .
+
+nas:SID a owl:Class ;
+    rdfs:label "Standard Instrument Departure" ;
+    rdfs:comment "A SID (Standard Instrument Departure) is an air traffic control coded departure procedure that has been established at certain airports to simplify clearance delivery procedures." ;
+    rdfs:subClassOf nas:SIDSTAR .
+
+nas:STAR a owl:Class ;
+    rdfs:label "Standard Arrival Route" ;
+    rdfs:comment "A STAR (Standard Terminal Arrival Route) is an air traffic control coded arrival route established for application to arriving IFR (Instrument Flight Rules) aircraft destined for certain airports." ;
+    rdfs:subClassOf nas:SIDSTAR .
+
+nas:hasTRACONtype a owl:DatatypeProperty ;
+    rdfs:label "has TRACONtype" ;
+    rdfs:comment "The type of TRACON: Tower-colocated TRACON or standalone TRACON." ;
+    rdfs:domain nas:TRACON ;
+    rdfs:range xsd:string .
+
+<https://data.nasa.gov/ontologies/atmonto/equipment> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/general> ;
+    owl:versionInfo "Created with TopBraid Composer" .
+
+eqp:A321AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type A321"^^xsd:string ;
+    eqp:aircraftTypeDesignator "A321"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWakeCategory eqp:AircraftWakeCategoryD5 ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+eqp:AircraftN11548 a eqp:Aircraft ;
+    rdfs:label "Aircraft N11548"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "145565"^^xsd:string ;
+    eqp:certificateIssueDate "2002-05-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Embraer-EMB145-LR ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 50040713 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 55 ;
+    eqp:registrationNumber "N11548"^^xsd:string .
+
+eqp:AircraftN413AS a eqp:Aircraft ;
+    rdfs:label "Aircraft N413AS"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "ALASKA AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "35205"^^xsd:string ;
+    eqp:certificateIssueDate "2013-03-28"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-990ER ;
+    eqp:manufactureYear 2013 ;
+    eqp:modeSCode 51157526 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 222 ;
+    eqp:registrationNumber "N413AS"^^xsd:string .
+
+eqp:AircraftN784AA a eqp:Aircraft ;
+    rdfs:label "Aircraft N784AA"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9879913721631963"^^xsd:float ;
+    eqp:aircraftRegistrant "HAYDEN CHARLES J JR"^^xsd:string ;
+    eqp:aircraftSerialNumber "D-6858"^^xsd:string ;
+    eqp:certificateIssueDate "1991-02-28"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Beech-35-P35 ;
+    eqp:manufactureYear 1961 ;
+    eqp:modeSCode 52517543 ;
+    eqp:numberOfEngines 1 ;
+    eqp:numberOfSeats 4 ;
+    eqp:registrationNumber "N784AA"^^xsd:string .
+
+eqp:AircraftN871NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N871NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WILMINGTON TRUST CO TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31127"^^xsd:string ;
+    eqp:certificateIssueDate "2011-11-14"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2011 ;
+    eqp:modeSCode 52775506 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N871NN"^^xsd:string .
+
+eqp:AircraftN942NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N942NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "33492"^^xsd:string ;
+    eqp:certificateIssueDate "2013-12-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2013 ;
+    eqp:modeSCode 53212717 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N942NN"^^xsd:string .
+
+eqp:AircraftN963AN a eqp:Aircraft ;
+    rdfs:label "Aircraft N963AN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "AMERICAN AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "29543"^^xsd:string ;
+    eqp:certificateIssueDate "2001-05-04"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 53263530 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N963AN"^^xsd:string .
+
+eqp:B739AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type B739"^^xsd:string ;
+    eqp:aircraftTypeDesignator "B739"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWakeCategory eqp:AircraftWakeCategoryD5 ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+eqp:B77WAircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type B77W"^^xsd:string ;
+    eqp:aircraftTypeDesignator "B77W"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWeightClass eqp:HighAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+<https://data.nasa.gov/ontologies/atmonto/general> a owl:Ontology ;
+    owl:versionInfo "Created with TopBraid Composer" .
+
+gen:PolygonBoundary a owl:Class ;
+    rdfs:label "Polygon boundary" ;
+    rdfs:comment "An ordered sequence of point locations where the last point connects back to the first point, closing the polygon." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom gen:PointLocation ;
+            owl:onProperty gen:hasLastItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom gen:PointLocation ;
+            owl:onProperty gen:hasFirstItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom gen:PointLocation ;
+            owl:onProperty gen:hasSequencedItem ],
+        gen:Sequence .
+
+gen:Region3D a owl:Class ;
+    rdfs:comment "A three-dimensional geographic region." ;
+    rdfs:subClassOf gen:GeographicRegion .
+
+xsd:date a rdfs:Datatype .
+
+atm:AircraftFlow a owl:Class ;
+    rdfs:label "Aircraft flow" ;
+    rdfs:comment "A subclass of interval-based data representing the number of aircraft flowing through an airspace region during some interval of time." ;
+    rdfs:subClassOf atm:AircraftFlowCapacity .
+
+atm:LatLonFix a owl:Class ;
+    rdfs:label "Lat-lon fix" ;
+    rdfs:comment "A navigation fix based on latitude/longitude coordinates." ;
+    rdfs:subClassOf atm:AbsoluteFix .
+
+atm:NavigationPath a owl:Class ;
+    rdfs:label "Navigation path" ;
+    rdfs:comment "An ordered sequence of navigation elements (fixes, routes, airports) representing a path through the airspace." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom atm:NavElementContainer ;
+            owl:onProperty gen:hasSequencedItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:NavElementContainer ;
+            owl:onProperty gen:hasLastItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:NavElementContainer ;
+            owl:onProperty gen:hasFirstItem ],
+        atm:NavigationElement,
+        gen:Sequence .
+
+atm:NavigationSubPath a owl:Class ;
+    rdfs:label "Navigation SubPath" ;
+    rdfs:comment "A contiguous portion of an existing navigation path." ;
+    rdfs:subClassOf atm:NavigationElement,
+        gen:SubSequence .
+
+atm:Taxipath a owl:Class ;
+    rdfs:label "Taxipath" ;
+    rdfs:comment "A sequence of taxiways followed by an aircraft taxiing en route to/from a runway." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom nas:Taxiway ;
+            owl:onProperty gen:hasSequencedItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom nas:Taxiway ;
+            owl:onProperty gen:hasFirstItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom nas:Taxiway ;
+            owl:onProperty gen:hasLastItem ],
+        gen:Sequence .
+
+atm:aircraftWeightCat a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "aircraft weight category" ;
+    rdfs:comment "Indicates the weight category as part of a flight specification constraint." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range xsd:string .
+
+atm:hasNumericParameter a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has numeric parameter" ;
+    rdfs:comment "Links a container for a numerical parameter to the numerical parameter contained." ;
+    rdfs:domain atm:NumericParameterContainer ;
+    rdfs:range gen:NumericParameter .
+
+atm:impactingCondition a owl:DatatypeProperty ;
+    rdfs:label "impacting condition" ;
+    rdfs:comment "Indicates the reason for initiating the Ground Delay Program: weather, volume, runway, equipment, other." ;
+    rdfs:domain atm:GroundDelayProgramTMI ;
+    rdfs:range xsd:string .
+
+atm:implementationStatus a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "implementation status" ;
+    rdfs:comment "Indicates the enforcement status of the ReRoute advisory: RQD (required), RMD (recommended), PLN (planned for implementation), FYI (informational only)" ;
+    rdfs:domain atm:ReRouteTMI ;
+    rdfs:range xsd:string .
+
+atm:includesAircraftClass a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "includes aircraft class" ;
+    rdfs:comment "Indicates which class of aircraft the flights defined by this specification must employ: jet, prop, jet and prop, turbo, all." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range xsd:string .
+
+atm:reRouteReason a owl:DatatypeProperty ;
+    rdfs:label "reroute reason" ;
+    rdfs:comment "Provides the reason for initiating a ReRoute: WEATHER , VOLUME , EQUIPMENT , RUNWAY/TAXIWAY , OTHER." ;
+    rdfs:domain atm:ReRouteTMI ;
+    rdfs:range xsd:string .
+
+atm:reRouteTimeType a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "ReRoute time type" ;
+    rdfs:comment "The time period associated with the reroute is specified in one of three ways. The reroute can apply to flights that: depart specified airports or centers during a certain time window (timeType=ETD); depart specified airports or centers to arrive at their destinations during a certain time window (timeType=ETA); or arrive at the boundary of a flow constrained area during a certain time window (timeType=FCA Flight List)." ;
+    rdfs:domain atm:ReRouteTMI ;
+    rdfs:range xsd:string .
+
+atm:reRouteType a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "ReRoute type" ;
+    rdfs:comment "The ReRoute type encodes information about the type of ReRoute being initiated or the reason for the ReRoute. One of the following: ROUTE , PLAYBOOK , CDR, SPECIAL OPERATIONS, NRP SUSPENSIONS, VS , NAT, SHUTTLE ACTIVITY, FCA, FEA, INFORMATIONAL, MISCELLANEOUS." ;
+    rdfs:domain atm:ReRouteTMI ;
+    rdfs:range xsd:string .
+
+atm:timeConstraintType a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "time constraint type" ;
+    rdfs:comment "Specifies the type of flight time being constrained in this flight specification: either ETA (estimated arrival time) or ETD (estimated departure time)." ;
+    rdfs:domain atm:FlightSpec ;
+    rdfs:range xsd:string .
+
+nas:ASQairline a nas:AirCarrier ;
+    rdfs:label "Atlantic Southeast Airlines"^^xsd:string ;
+    nas:airCarrierName "Atlantic Southeast Airlines"^^xsd:string ;
+    nas:airlineCallsign "ACEY"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "EV"^^xsd:string ;
+    nas:icaoCarrierCode "ASQ"^^xsd:string .
+
+nas:ATCT a owl:Class ;
+    rdfs:label "ATCT" ;
+    rdfs:comment "Air Traffic Control Tower (ATCT) facility" ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent,
+        nas:NASfacility .
+
+nas:AirportServiceVehicle a owl:Class ;
+    rdfs:label "Airport service vehicle" ;
+    rdfs:comment "A class of vehicles that service the flights and maintain the airport physical infrastructure." ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent .
+
+nas:CYYZairport a nas:CanadianAirport ;
+    rdfs:label "CYYZ Airport"^^xsd:string ;
+    nas:airportLocation nas:CYYZcoordinates ;
+    nas:airportName "TORONTO PEARSON INTL"^^xsd:string ;
+    nas:hasRunway nas:CYYZphysicalRunway05_23 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "YYZ"^^xsd:string ;
+    nas:icaoAirportCode "CYYZ"^^xsd:string ;
+    nas:locatedInState "ON"^^xsd:string ;
+    nas:withinARTCC nas:CZYcenter ;
+    nas:withinTimezone "America/Toronto\r"^^xsd:string .
+
+nas:DeicingPad a owl:Class ;
+    rdfs:label "Deicing pad" ;
+    rdfs:comment "A physical location in the airport where deicing is performed." ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent .
+
+nas:FederalAirway a owl:Class ;
+    rdfs:label "Federal airway" ;
+    rdfs:comment "An airspace route that is defined by FAA and can be filed as part of a flight plan: a jet route, a Q-route,  a T-Route, a Victor route." ;
+    rdfs:subClassOf nas:AirspaceRoute .
+
+nas:Gate a owl:Class ;
+    rdfs:label "Gate" ;
+    rdfs:comment "A physical interface between the aircraft and the terminal, used to board passengers and crew." ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent .
+
+nas:InternationalAirport a owl:Class ;
+    rdfs:label "International airport" ;
+    rdfs:comment "The set of international (i.e., non-US) airports." ;
+    rdfs:subClassOf nas:Airport .
+
+nas:KDFWairport a nas:CONUSairport ;
+    rdfs:label "KDFW Airport"^^xsd:string ;
+    nas:airportLocation nas:KDFWcoordinates ;
+    nas:airportName "DALLAS/FORT WORTH INTL"^^xsd:string ;
+    nas:faaAirportCode "DFW"^^xsd:string ;
+    nas:hasRunway nas:KDFWphysicalRunway13L_31R,
+        nas:KDFWphysicalRunway13R_31L,
+        nas:KDFWphysicalRunway17C_35C,
+        nas:KDFWphysicalRunway17L_35R,
+        nas:KDFWphysicalRunway17R_35L,
+        nas:KDFWphysicalRunway18L_36R,
+        nas:KDFWphysicalRunway18R_36L ;
+    nas:hasTerminal nas:KDFWtermA,
+        nas:KDFWtermB,
+        nas:KDFWtermC,
+        nas:KDFWtermD,
+        nas:KDFWtermE ;
+    nas:hoursOffsetFromUTC -6 ;
+    nas:iataAirportCode "DFW"^^xsd:string ;
+    nas:icaoAirportCode "KDFW"^^xsd:string ;
+    nas:locatedInState "TX"^^xsd:string ;
+    nas:withinARTCC nas:ZFWcenter ;
+    nas:withinTimezone "America/Chicago"^^xsd:string .
+
+nas:RNAVroute a owl:Class ;
+    rdfs:label "RNAV route" ;
+    rdfs:comment "An RNAV (Random Navigation) route is defined relative to a network of existing ground-based navigation beacons.  RNAV allows an aircraft to choose any course within the network, rather than navigate using only point-to-point routes defined by the beacons." ;
+    rdfs:subClassOf nas:FederalAirway .
+
+nas:RadialRoute a owl:Class ;
+    rdfs:label "Radial Route" ;
+    rdfs:comment "A route that follows a specified radial path emanating from a given fix." ;
+    rdfs:subClassOf nas:AirspaceRoute .
+
+nas:TransitionRoute a owl:Class ;
+    rdfs:label "Transition route" ;
+    rdfs:comment "A route within a SID or STAR that feeds aircraft into or out from the common route of the SID/STAR. In other words, the transition route is a feeder route from the en route segment of a flight into the heart of a STAR for arrival; or an exit route from a SID funneling flights to their appropriate initial jet routes for the en route segment of flight." ;
+    rdfs:subClassOf nas:SIDSTARroute .
+
+nas:USairport a owl:Class ;
+    rdfs:label "USairport" ;
+    rdfs:comment "The set of airports located in the United States." ;
+    rdfs:subClassOf nas:Airport .
+
+nas:VORroute a owl:Class ;
+    rdfs:label "VOR route" ;
+    rdfs:comment "A VOR route is defined relative to a network of existing ground-based VOR navigation beacons. VOR routes consist of point-to-point segments, where the points are defined by the beacons. More modern RNAV routes allow any path within the network, not limited to VOR-to-VOR segments." ;
+    rdfs:subClassOf nas:FederalAirway .
+
+eqp:E145AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type E145"^^xsd:string ;
+    eqp:aircraftTypeDesignator "E145"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+eqp:EngineType a owl:Class ;
+    rdfs:label "Engine Type" ;
+    rdfs:comment "Represents different generic types of aircraft engines." ;
+    rdfs:subClassOf owl:Thing .
+
+eqp:UnitAssembly a owl:Class ;
+    rdfs:label "Unit assembly" ;
+    rdfs:comment "A primitive, non-decomposible component in an engineered system." ;
+    rdfs:subClassOf eqp:EngineeredSystem .
+
+eqp:manufacturedBy a owl:ObjectProperty ;
+    rdfs:label "manufactured by" ;
+    rdfs:comment "A link to the entity that manufactured the system." ;
+    rdfs:domain eqp:EngineeredSystem ;
+    rdfs:range nas:AviationIndustryManufacturer .
+
+gen:GeographicRegion a owl:Class ;
+    rdfs:comment "A class representing a demarcated region on or above the surface of the Earth." ;
+    rdfs:subClassOf gen:Location .
+
+gen:IntegerParameter a owl:Class ;
+    rdfs:label "Integer Parameter" ;
+    rdfs:comment "A subclass of NumericParameter representing parameters with interger values." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:integer ;
+            owl:onProperty gen:parameterValue ],
+        gen:NumericParameter .
+
+gen:Region2D a owl:Class ;
+    rdfs:comment "A two-dimensional geographic region." ;
+    rdfs:subClassOf gen:GeographicRegion .
+
+gen:parameterValue a owl:DatatypeProperty ;
+    rdfs:label "parameter value" ;
+    rdfs:comment "The numeric value of a parameter." ;
+    rdfs:domain gen:NumericParameter .
+
+gen:subsequenceOf a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "subsequence of" ;
+    rdfs:comment "Links a subsequence to its base sequence." ;
+    rdfs:domain gen:SubSequence ;
+    rdfs:range gen:Sequence .
+
+atm:AircraftFlowCapacity a owl:Class ;
+    rdfs:label "Aircraft flow capacity" ;
+    rdfs:comment "A subclass of interval-based data representing the maximum controllable number of aircraft flowing through an airspace region during some interval of time, given weather and other air traffic control constraints." .
+
+atm:GroundStopTMI a owl:Class ;
+    rdfs:label "Ground Stop (GS)" ;
+    rdfs:comment "A Ground Stop (GS) traffic management initiative (TMI). A ground stop is a procedure requiring aircraft that meet specific criteria to remain on the ground. The GS may be airport specific, related to a geographical area, or equipment related." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom nas:Airport ;
+            owl:onProperty atm:controlledNASelement ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "HIGH" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "LOW" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "MEDIUM" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "NONE" ;
+                                                    rdf:rest () ] ] ] ] ] ;
+            owl:onProperty atm:extensionProbability ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "equipment" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "other" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "runway" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "volume" ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first "weather" ;
+                                                            rdf:rest () ] ] ] ] ] ] ;
+            owl:onProperty atm:impactingCondition ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:extensionProbability ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:controlledNASelement ],
+        atm:TrafficManagementInitiative .
+
+atm:NavaidFix a owl:Class ;
+    rdfs:label "NavaidFix" ;
+    rdfs:comment "A fix based on the location of a ground-based Navigation Aid (Navaid) installation." ;
+    rdfs:subClassOf atm:AbsoluteFix .
+
+atm:NumericParameterContainer a owl:Class ;
+    rdfs:label "Numeric parameter container" ;
+    rdfs:comment "A wrapper around a numeric parameter. Containers can be sequenced to create an ordered list of numeric parameters." ;
+    rdfs:subClassOf gen:SequencedItem .
+
+atm:PopupFactorContainer a owl:Class ;
+    rdfs:label "Popup Factor container" ;
+    rdfs:comment "A wrapper around a popup factor parameter. Used to sequence popup factors in the specification of a Ground Delay Program (GDP)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom atm:PopupFactor ;
+            owl:onProperty atm:hasNumericParameter ],
+        atm:NumericParameterContainer .
+
+atm:ProgramArrivalRateContainer a owl:Class ;
+    rdfs:label "Program arrival rate container" ;
+    rdfs:comment "A wrapper around a program arrival rate, used to sequence them into an ordered list." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom atm:ProgramArrivalRate ;
+            owl:onProperty atm:hasNumericParameter ],
+        atm:NumericParameterContainer .
+
+atm:SIDSTARtraverse a owl:Class ;
+    rdfs:label "SIDSTARtraverse" ;
+    rdfs:comment "A route through a SID (Standard Instrument Departure route) or a STAR (Standard Arrival Route), traversing a common route at minimum and optionally a transition route and/or an airport route." ;
+    rdfs:subClassOf atm:NavigationElement .
+
+atm:userCategory a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "user category" ;
+    rdfs:comment "The type of airspace user that this flight represents: GA, Air Taxi, Cargo, Commercial, Military. Also used to constrain a flight specification to contain only flights representing a specific user category." ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( atm:Flight atm:FlightSpec ) ] ;
+    rdfs:range xsd:string .
+
+nas:AviationIndustryManufacturer a owl:Class ;
+    rdfs:label "Aviation industry manufacturer" ;
+    rdfs:comment "A superclass encompassing the set of airframe and engine manufacturers." ;
+    rdfs:subClassOf nas:AviationServiceProvider .
+
+nas:AviationServiceProvider a owl:Class ;
+    rdfs:label "Aviation service provider" ;
+    rdfs:comment "A superclass encompassing all entities that provide aviation services in the public and private sectors." ;
+    rdfs:subClassOf owl:Thing .
+
+nas:KEWRairport a nas:CONUSairport ;
+    rdfs:label "KEWR Airport"^^xsd:string ;
+    nas:airportLocation nas:KEWRcoordinates ;
+    nas:airportName "NEWARK LIBERTY INTL"^^xsd:string ;
+    nas:faaAirportCode "EWR"^^xsd:string ;
+    nas:hasRunway nas:KEWRphysicalRunway04L_22R,
+        nas:KEWRphysicalRunway04R_22L,
+        nas:KEWRphysicalRunway11_29 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "EWR"^^xsd:string ;
+    nas:icaoAirportCode "KEWR"^^xsd:string ;
+    nas:locatedInState "NJ"^^xsd:string ;
+    nas:withinARTCC nas:ZNYcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KJFKairport a nas:CONUSairport ;
+    rdfs:label "KJFK Airport"^^xsd:string ;
+    nas:airportLocation nas:KJFKcoordinates ;
+    nas:airportName "JOHN F KENNEDY INTL"^^xsd:string ;
+    nas:faaAirportCode "JFK"^^xsd:string ;
+    nas:hasRunway nas:KJFKphysicalRunway04L_22R,
+        nas:KJFKphysicalRunway04R_22L,
+        nas:KJFKphysicalRunway13L_31R,
+        nas:KJFKphysicalRunway13R_31L ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "JFK"^^xsd:string ;
+    nas:icaoAirportCode "KJFK"^^xsd:string ;
+    nas:locatedInState "NY"^^xsd:string ;
+    nas:withinARTCC nas:ZNYcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:RunwayVisibleRangeMeasurement a owl:Class ;
+    rdfs:label "RVR measurement" ;
+    rdfs:comment "A measurement of the distance over which a pilot of an aircraft on the centerline of a runway can see the runway surface markings delineating the runway and its centerline. RVR (Runway Visible Range) is expressed as an interval specifying the minimum and maximum number of feet visible." .
+
+nas:SIDSTARroute a owl:Class ;
+    rdfs:label "SIDSTARroute" ;
+    rdfs:comment "A route that defines a SID or STAR." ;
+    rdfs:subClassOf nas:AirspaceRoute .
+
+eqp:AircraftWeightClass a owl:Class ;
+    rdfs:label "Aircraft Weight Class" ;
+    rdfs:comment "Specifies a category of aircraft that can be used to partition aircraft according to their weight." ;
+    rdfs:subClassOf owl:Thing .
+
+eqp:B738AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type B738"^^xsd:string ;
+    eqp:aircraftTypeDesignator "B738"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWakeCategory eqp:AircraftWakeCategoryD5 ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+gen:CircularRegion a owl:Class ;
+    rdfs:comment "A two-dimensional region defined by a geographic centerpoint and radius." ;
+    rdfs:subClassOf gen:Region2D .
+
+gen:Location a owl:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "A place defined by a point or a contiguous geographic region." ;
+    rdfs:subClassOf owl:Thing .
+
+gen:ShearSidedPolygonalVolume a owl:Class ;
+    rdfs:label "Shear sided polygonal volume" ;
+    rdfs:comment "A three-dimensional volume defined by a two-dimensional polygon plus a length component that stretches the polygon along an axis perpendicular to the polygon surface." ;
+    rdfs:subClassOf gen:Region3D .
+
+atm:NavElementContainer a owl:Class ;
+    rdfs:label "Navigation element container" ;
+    rdfs:comment "A navigation element container is a wrapper around an existing navigation element, such as a fix or a route. These containers can be sequenced together to represent flight paths and flight trajectories." ;
+    rdfs:subClassOf gen:SequencedItem .
+
+atm:ReRouteSegment a owl:Class ;
+    rdfs:label "ReRoute segment" ;
+    rdfs:comment "One of the route segment alternatives specified as part of a ReRoute traffic management initiative (TMI)." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "destination" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "origin" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "origin-destination" ;
+                                            rdf:rest () ] ] ] ] ;
+            owl:onProperty atm:reRouteSegmentType ],
+        owl:Thing .
+
+atm:RelativeFix a owl:Class ;
+    rdfs:label "Relative fix" ;
+    rdfs:comment "A fix defined in relation to another fix." ;
+    rdfs:subClassOf atm:NavigationFix .
+
+atm:controlledNASelement a owl:ObjectProperty ;
+    rdfs:label "controlled NASelement" ;
+    rdfs:comment "Links a traffic management initiative (TMI) to the airspace element being controlled by the TMI (e.g., an airport)." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range atm:TFMcontrolElement .
+
+nas:AirframeManufacturer a owl:Class ;
+    rdfs:label "Airframe manufacturer" ;
+    rdfs:comment "A manufacturer of physical aircraft." ;
+    rdfs:subClassOf nas:AviationIndustryManufacturer .
+
+nas:AirportRoute a owl:Class ;
+    rdfs:label "Airport route" ;
+    rdfs:comment "A route within a SID or STAR that connects the common route to one of multiple airports that use the SID/STAR." ;
+    rdfs:subClassOf nas:SIDSTARroute .
+
+nas:KLGAairport a nas:CONUSairport ;
+    rdfs:label "KLGA Airport"^^xsd:string ;
+    nas:airportLocation nas:KLGAcoordinates ;
+    nas:airportName "LA GUARDIA"^^xsd:string ;
+    nas:faaAirportCode "LGA"^^xsd:string ;
+    nas:hasRunway nas:KLGAphysicalRunway04_22,
+        nas:KLGAphysicalRunway13_31 ;
+    nas:hasTerminal nas:KLGAtermA,
+        nas:KLGAtermB,
+        nas:KLGAtermC,
+        nas:KLGAtermD ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "LGA"^^xsd:string ;
+    nas:icaoAirportCode "KLGA"^^xsd:string ;
+    nas:locatedInState "NY"^^xsd:string ;
+    nas:withinARTCC nas:ZNYcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:Terminal a owl:Class ;
+    rdfs:label "Terminal" ;
+    rdfs:comment "A structure on the airport surface that serves as an interface between people, baggage, and aircraft." ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent .
+
+eqp:AircraftSubsystem a owl:Class ;
+    rdfs:label "Aircraft subsystem" ;
+    rdfs:comment "An engineering subsystem of an aircraft." ;
+    rdfs:subClassOf eqp:DecomposableSystem .
+
+gen:NumericParameter a owl:Class ;
+    rdfs:label "Numeric Parameter" ;
+    rdfs:comment "A class representing numeric parameters explicitly as objects (versus representing them as datatype properties). These parameters can be inserted into containers and sequenced. This enables reuse of the same parameter value in multiple sequences." ;
+    rdfs:subClassOf owl:Thing .
+
+gen:SubSequence a owl:Class ;
+    rdfs:label "Subsequence" ;
+    rdfs:comment "Represents a subsequence of existing base sequence. The subsequence does not replicate the items of the sequence, but merely points to the start and end positions within the base sequence." ;
+    rdfs:subClassOf owl:Thing .
+
+atm:AbsoluteFix a owl:Class ;
+    rdfs:label "Absolute fix" ;
+    rdfs:comment "A fix based on some established global measuring scheme." ;
+    rdfs:subClassOf atm:NavigationFix,
+        gen:PointLocation .
+
+atm:TFMcontrolElement a owl:Class ;
+    rdfs:label "TFM control element" ;
+    rdfs:comment "Any NAS entity that is potentially controlled via a TFM initiative." ;
+    rdfs:subClassOf owl:Thing .
+
+atm:extensionProbability a owl:DatatypeProperty ;
+    rdfs:label "extension probability" ;
+    rdfs:comment "The probability that this traffic management initiative (TMI) will be extended: LOW, MEDIUM, or HIGH." ;
+    rdfs:domain atm:TrafficManagementInitiative ;
+    rdfs:range xsd:string .
+
+nas:AALairline a nas:AirCarrier ;
+    rdfs:label "American Airlines"^^xsd:string ;
+    nas:airCarrierName "American Airlines"^^xsd:string ;
+    nas:airlineCallsign "AMERICAN"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "AA"^^xsd:string ;
+    nas:icaoCarrierCode "AAL"^^xsd:string .
+
+nas:ARTCCtier a owl:Class ;
+    rdfs:label "ARTCCtier" ;
+    rdfs:comment "A donut-shaped geographical area surrounding a designated central ARTCC. The first tier includes all the ARTCCs that share a boundary with the designated  ARTCC. The tier two ARTCCs includes the first tier ARTCCs plus those adjacent to the first tier ARCCCs. And so on." ;
+    rdfs:subClassOf nas:AirspaceInfrastructureComponent .
+
+nas:AirspaceLayer a owl:Class ;
+    rdfs:label "Airspace layer" ;
+    rdfs:comment "Represents a layer within the airspace, defined by a shear-sided polygon with specified low and high altitudes." ;
+    rdfs:subClassOf nas:AirspaceInfrastructureComponent .
+
+eqp:AircraftModel a owl:Class ;
+    rdfs:label "Aircraft model" ;
+    rdfs:comment "An aircraft model represents a generic specification that describes the characteristics of a specific type of aircraft to be manufactured." ;
+    rdfs:subClassOf owl:Thing .
+
+eqp:EngineeredSystem a owl:Class ;
+    rdfs:label "Engineered system" ;
+    rdfs:comment "Represents engineered systems as either decomposable or non-decomposible subsystems." ;
+    rdfs:subClassOf owl:Thing .
+
+gen:TimeInterval a owl:Class ;
+    rdfs:label "Time interval" ;
+    rdfs:comment "A time interval with starting and ending time points. Intervals can be open (including the end points) or closed including the end points) or mixed including one but not the other end point)." ;
+    rdfs:subClassOf owl:Thing .
+
+atm:GroundDelayProgramTMI a owl:Class ;
+    rdfs:label "Ground Delay Program (GDP)" ;
+    rdfs:comment "A Ground Delay Program (GDP) traffic management initiative (TMI). A Ground Delay Program (GDP) is a traffic management procedure where aircraft are delayed at their departure airport in order to manage demand and capacity at their arrival airport." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:controlledNASelement ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "equipment" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "other" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "runway" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "volume" ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first "weather" ;
+                                                            rdf:rest () ] ] ] ] ] ] ;
+            owl:onProperty atm:impactingCondition ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom nas:Airport ;
+            owl:onProperty atm:controlledNASelement ],
+        atm:TrafficManagementInitiative .
+
+atm:NavigationElement a owl:Class ;
+    rdfs:label "Navigation element" ;
+    rdfs:comment "A navigation element is a set of components that can be used to assemble a flight plan or trajectory. They include fixes, routes, airports, SID/STAR traverses, etc." ;
+    rdfs:subClassOf atm:TFMcontrolElement .
+
+atm:ReRouteTMI a owl:Class ;
+    rdfs:label "ReRoute" ;
+    rdfs:comment "A ReRoute is a traffic management initiative (TMI) that mandates a change in the filed flight plan for a set of specified flights. There are multiple factors that might justify a reroute, including weather, traffic congestion, unusual airspace activity, etc. The substitute flight plans route air traffic around the airspace problem area." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "FYI" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "PLN" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "RMD" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "RQD" ;
+                                                    rdf:rest () ] ] ] ] ] ;
+            owl:onProperty atm:implementationStatus ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "ETA" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "ETD" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "FCA Flight List" ;
+                                            rdf:rest () ] ] ] ] ;
+            owl:onProperty atm:reRouteTimeType ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "CDR" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "FCA" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "FEA" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "INFORMATIONAL" ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first "MISCELLANEOUS" ;
+                                                            rdf:rest [ a rdf:List ;
+                                                                    rdf:first "NAT" ;
+                                                                    rdf:rest [ a rdf:List ;
+                                                                            rdf:first "NRP SUSPENSIONS" ;
+                                                                            rdf:rest [ a rdf:List ;
+                                                                                    rdf:first "PLAYBOOK" ;
+                                                                                    rdf:rest [ a rdf:List ;
+                                                                                            rdf:first "ROUTE" ;
+                                                                                            rdf:rest [ a rdf:List ;
+                                                                                                    rdf:first "SHUTTLE ACTIVITY" ;
+                                                                                                    rdf:rest [ a rdf:List ;
+                                                                                                            rdf:first "SPECIAL OPERATIONS" ;
+                                                                                                            rdf:rest [ a rdf:List ;
+                                                                                                                    rdf:first "VS" ;
+                                                                                                                    rdf:rest () ] ] ] ] ] ] ] ] ] ] ] ] ] ;
+            owl:onProperty atm:reRouteType ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:reRouteReason ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "EQUIPMENT" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "OTHER" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "RUNWAY/TAXIWAY" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "VOLUME" ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first "WEATHER" ;
+                                                            rdf:rest () ] ] ] ] ] ] ;
+            owl:onProperty atm:reRouteReason ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "HIGH" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "LOW" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "MEDIUM" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "NONE" ;
+                                                    rdf:rest () ] ] ] ] ] ;
+            owl:onProperty atm:extensionProbability ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:reRouteType ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:reRouteTimeType ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:implementationStatus ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:extensionProbability ],
+        atm:TrafficManagementInitiative .
+
+nas:OperationalRunway a owl:Class ;
+    rdfs:label "Operational runway" ;
+    rdfs:comment "An operational runway is a named runway one used in airport operations. There are two operational runways corresponding to one physical runway; these operational runways are 180 degrees apart." ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent .
+
+nas:PhysicalRunway a owl:Class ;
+    rdfs:label "Physical Runway" ;
+    rdfs:comment "A physical runway, defined as a delimited rectangular surface region of the airport. Each physical runway is associated with two operational runways, 180 degrees apart." ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent .
+
+nas:TRACON a owl:Class ;
+    rdfs:label "TRACON" ;
+    rdfs:comment "Terminal Radar Approach Control (TRACON) facility" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "TOWER" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "TRACON" ;
+                                    rdf:rest () ] ] ] ;
+            owl:onProperty nas:hasTRACONtype ],
+        nas:AirspaceInfrastructureComponent,
+        nas:NASfacility .
+
+nas:Taxiway a owl:Class ;
+    rdfs:label "Taxiway" ;
+    rdfs:comment "An airport surface leading that connects the ramp area (i.e., the area in the vicinity of the gates) with the runways." ;
+    rdfs:subClassOf nas:AirportInfrastructureComponent,
+        gen:SequencedItem .
+
+eqp:AircraftWakeCategory a owl:Class ;
+    rdfs:label "Aircraft Wake Category" ;
+    rdfs:comment "Specifies a category of aircraft according to their wake turbulance characteristics (including takeoff weight and wingspan). These categories are useful for the purpose of FAA separation assurance. See FAA Order JO 7110.659B, Wake Turbulence Recategorization, effective March 01, 2015." ;
+    rdfs:subClassOf owl:Thing .
+
+eqp:DecomposableSystem a owl:Class ;
+    rdfs:label "Decomposable system" ;
+    rdfs:comment "A complex engineering system that can be further decomposed into a set of decomposable subsystems and primitive components." ;
+    rdfs:subClassOf eqp:EngineeredSystem .
+
+gen:Polygonal2DRegion a owl:Class ;
+    rdfs:comment "A two-dimensional region defined by a polygonal boundary." ;
+    rdfs:subClassOf gen:Region2D .
+
+nas:AirspaceInfrastructureComponent a owl:Class ;
+    rdfs:label "Airspace infrastructure component" ;
+    rdfs:comment "A defined substructure of the airspace used to manage air traffic, including sectors, SIDs, STARs, routes, etc." ;
+    rdfs:subClassOf owl:Thing,
+        atm:TFMcontrolElement .
+
+nas:AirspaceRoute a owl:Class ;
+    rdfs:comment "An ordered sequence of navigation elements specifying a path through the airspace." ;
+    rdfs:subClassOf atm:NavigationPath,
+        nas:AirspaceInfrastructureComponent .
+
+nas:NASfacility a owl:Class ;
+    rdfs:label "NAS facility" ;
+    rdfs:comment "The set of FAA and airport facilities involved in operational air traffic management." ;
+    rdfs:subClassOf owl:Thing .
+
+nas:SIDSTAR a owl:Class ;
+    rdfs:label "SIDSTAR" ;
+    rdfs:comment "A superclass of SID and STAR defining the properties shared by both, specifically the set of common, airport, and transition routes that comprise the SID/STAR." ;
+    rdfs:subClassOf nas:AirspaceInfrastructureComponent .
+
+gen:hasFirstItem a owl:ObjectProperty ;
+    rdfs:label "hasFirstItem" ;
+    rdfs:comment "Links a sequence to the first item being sequenced." ;
+    rdfs:domain gen:Sequence ;
+    rdfs:range gen:SequencedItem ;
+    rdfs:subPropertyOf gen:hasSequencedItem .
+
+gen:hasLastItem a owl:ObjectProperty ;
+    rdfs:label "hasLastItem" ;
+    rdfs:comment "Links a sequence to the last item being sequenced." ;
+    rdfs:domain gen:Sequence ;
+    rdfs:range gen:SequencedItem ;
+    rdfs:subPropertyOf gen:hasSequencedItem .
+
+atm:AircraftTrackPoint a owl:Class ;
+    rdfs:label "Aircraft Track Point" ;
+    rdfs:comment "A point during a flight where various flight parameters are captured and sent (via transponder) to FAA computers." ;
+    rdfs:subClassOf gen:SequencedItem .
+
+nas:ARTCC a owl:Class ;
+    rdfs:label "ARTCC" ;
+    rdfs:comment "Air Route Traffic Control Center (ARTCC or 'Center') facility" ;
+    rdfs:subClassOf nas:AirspaceInfrastructureComponent,
+        nas:NASfacility .
+
+nas:Sector a owl:Class ;
+    rdfs:label "Sector" ;
+    rdfs:comment "A defined volume in the the airspace of an ARTCC or TRACON whose flight traffic is typically controlled by a single controller." ;
+    rdfs:subClassOf nas:AirspaceInfrastructureComponent .
+
+atm:AirportSpec a owl:Class ;
+    rdfs:label "Airport spec" ;
+    rdfs:comment "A specification of a set of airports." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "CONUS" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "Canadian" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "International" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "NonCONUS" ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first "US" ;
+                                                            rdf:rest [ a rdf:List ;
+                                                                    rdf:first "all" ;
+                                                                    rdf:rest () ] ] ] ] ] ] ] ;
+            owl:onProperty atm:includesAirportType ],
+        owl:Thing .
+
+atm:NavigationFix a owl:Class ;
+    rdfs:label "Navigation fix" ;
+    rdfs:comment "A designated point on the surface of the earth used for aeronautical navigation." ;
+    rdfs:subClassOf atm:NavigationElement .
+
+nas:CONUSairport a owl:Class ;
+    rdfs:label "Continental US airport" ;
+    rdfs:comment "The set of airports in the continental US." ;
+    rdfs:subClassOf nas:USairport .
+
+gen:hasSequencedItem a owl:ObjectProperty ;
+    rdfs:label "hasSequencedItem" ;
+    rdfs:comment "Links a sequence to each of the items being sequenced." ;
+    rdfs:domain gen:Sequence ;
+    rdfs:range gen:SequencedItem .
+
+nas:AirportInfrastructureComponent a owl:Class ;
+    rdfs:label "Airport infrastructure component" ;
+    rdfs:comment "Part of an airport's physical infrastructure, including gates, terminals, runways, taxiways, etc." ;
+    rdfs:subClassOf owl:Thing .
+
+atm:ActualFlightRoute a owl:Class ;
+    rdfs:label "Actual Flight Route" ;
+    rdfs:comment "A flight trajectory (i.e., a sequence of track points), as determined by flight track surveillance data." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom atm:AircraftTrackPoint ;
+            owl:onProperty gen:hasSequencedItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:AircraftTrackPoint ;
+            owl:onProperty gen:hasFirstItem ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom atm:AircraftTrackPoint ;
+            owl:onProperty gen:hasLastItem ],
+        gen:Sequence .
+
+eqp:AircraftType a owl:Class ;
+    rdfs:label "Aircraft Type" ;
+    rdfs:comment "An aircraft type represents a set of related aircraft models. Each type corresponds to one of the FAA's aircraft type designators (e.g., B777 covers all Boeing 777 models)." ;
+    rdfs:subClassOf owl:Thing .
+
+atm:DelayModel a owl:Class ;
+    rdfs:label "GDPmodel" ;
+    rdfs:comment "This class represents a computational delay model used in assigning times to the aircraft involved in the GDP or GS. The properties of this class correspond to parameters that are used by the delay model to compute the delay times." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "DAS" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "GAAP" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "UDP" ;
+                                            rdf:rest () ] ] ] ] ;
+            owl:onProperty atm:delayAssignmentMode ],
+        owl:Thing .
+
+gen:Sequence a owl:Class ;
+    rdfs:label "Sequence" ;
+    rdfs:comment "An ordered sequence of items." ;
+    rdfs:subClassOf owl:Thing .
+
+gen:SequencedItem a owl:Class ;
+    rdfs:label "Sequenced item" ;
+    rdfs:comment "The set of items that can be sequenced." ;
+    rdfs:subClassOf owl:Thing .
+
+nas:AirCarrier a owl:Class ;
+    rdfs:label "Air carrier" ;
+    rdfs:comment "An entity that it licensed to operate aircraft." ;
+    rdfs:subClassOf nas:AviationServiceProvider .
+
+atm:TrafficManagementInitiative a owl:Class ;
+    rdfs:label "Traffic management initiative" ;
+    rdfs:comment "A Traffic Management Initiative (TMI) is an orchestrated air traffic management procedure implemented as needed to control the flow of air traffic in the NAS based on capacity and demand." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "HIGH" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "LOW" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "MEDIUM" ;
+                                            rdf:rest () ] ] ] ] ;
+            owl:onProperty atm:extensionProbability ],
+        owl:Thing .
+
+nas:NASday a owl:Class ;
+    rdfs:label "NAS day" ;
+    rdfs:comment "A class that represents a day of the year. Events, such as flights, weather forecasts, and other events are linked to the instance of the day they occurred." ;
+    rdfs:subClassOf owl:Thing .
+
+atm:PlannedFlightRoute a owl:Class ;
+    rdfs:label "Planned flight route" ;
+    rdfs:comment "A planned flight route is an ordered sequence of navigation elements that the pilot intends to traverse en route from origin to destination airport." ;
+    rdfs:subClassOf atm:NavigationPath .
+
+eqp:Aircraft a owl:Class ;
+    rdfs:label "Aircraft" ;
+    rdfs:comment "A physical realization of an aircraft, produced according to the specifications defined for a specific model type." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom nas:AirframeManufacturer ;
+            owl:onProperty eqp:manufacturedBy ],
+        eqp:DecomposableSystem,
+        gen:SequencedItem .
+
+atm:FlightSpec a owl:Class ;
+    rdfs:label "Flight spec" ;
+    rdfs:comment "A specification describing a set of flights." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "Air Taxi" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "Cargo" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "Commercial" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "GA" ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first "Military" ;
+                                                            rdf:rest () ] ] ] ] ] ] ;
+            owl:onProperty atm:userCategory ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:includesAircraftClass ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:userCategory ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:aircraftWeightCat ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "heavy" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "large" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "small" ;
+                                            rdf:rest () ] ] ] ] ;
+            owl:onProperty atm:aircraftWeightCat ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "All" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "Jet" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "Jet and Prop" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "Prop" ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first "Turbo" ;
+                                                            rdf:rest () ] ] ] ] ] ] ;
+            owl:onProperty atm:includesAircraftClass ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "ETA" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "ETD" ;
+                                    rdf:rest () ] ] ] ;
+            owl:onProperty atm:timeConstraintType ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty atm:timeConstraintType ],
+        owl:Thing .
+
+gen:PointLocation a owl:Class ;
+    rdfs:comment "A location in three-space defined by a latitude, longitude, and altitude." ;
+    rdfs:subClassOf gen:Location,
+        gen:SequencedItem .
+
+nas:Airport a owl:Class ;
+    rdfs:label "Airport" ;
+    rdfs:comment "A facility where regularly-scheduled aircraft arrive and depart." ;
+    rdfs:subClassOf atm:NavigationElement,
+        nas:NASfacility .
+
+atm:Flight a owl:Class ;
+    rdfs:label "Flight" ;
+    rdfs:comment "A single flight segment from origin to destination." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "Air Taxi" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "Cargo" ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first "Commercial" ;
+                                            rdf:rest [ a rdf:List ;
+                                                    rdf:first "GA" ;
+                                                    rdf:rest [ a rdf:List ;
+                                                            rdf:first "Military" ;
+                                                            rdf:rest () ] ] ] ] ] ] ;
+            owl:onProperty atm:userCategory ],
+        owl:Thing .
+

@@ -1,0 +1,45 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> SELECT?aircraft?certainty WHERE {?aircraft eqp:aircraftModelCertainty?certainty. FILTER (?aircraft = eqp:AircraftN963AN ||?aircraft = eqp:AircraftN784AA) } ORDER BY DESC(?certainty)",
+            "query_explanation": "This SPARQL query retrieves the aircraft model certainty for the aircraft flown by AAL1102 and AAL20, and orders the results in descending order to show which aircraft had a higher certainty in its model designation.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "aircraft",
+                        "certainty"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "aircraft": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN963AN"
+                            },
+                            "certainty": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "1.0"
+                            }
+                        },
+                        {
+                            "aircraft": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN784AA"
+                            },
+                            "certainty": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "0.9879914"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

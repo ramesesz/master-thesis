@@ -1,0 +1,28 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?icaoAirportCode WHERE { atm:AAL1170-201407150053 atm:departureAirport?departureAirport.?departureAirport nas:icaoAirportCode?icaoAirportCode. }",
+            "query_explanation": "This SPARQL query retrieves the ICAO code for the departure airport of flight AAL1170. It uses the atm and nas prefixes to refer to the ATM and NAS namespaces, respectively. The query first identifies the departure airport of flight AAL1170 using the atm:departureAirport property, and then retrieves the ICAO code for that airport using the nas:icaoAirportCode property.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "icaoAirportCode"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "icaoAirportCode": {
+                                "type": "literal",
+                                "value": "KDFW"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

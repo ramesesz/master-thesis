@@ -1,0 +1,9 @@
+{
+    "gen_results": "The flight ACA722 covered a greater distance because its departure airport (nas:CYYZairport) is located at a latitude of 43.676661 and longitude of -79.630644, while its arrival airport (nas:KLGAairport) is located at a latitude of 40.77725 and longitude of -73.872611, resulting in a greater difference between the two locations compared to AAL1102's departure airport (nas:KLGAairport) at a latitude of 40.77725 and longitude of -73.872611 and arrival airport (nas:KMIAairport) at a latitude of 25.795361 and longitude of -80.290111.",
+    "answer": "The flight AAL1102 from LaGuardia Airport (New York) to Miami International Airport (Florida) covered a greater distance of approximately 1768 km, compared to flight ACA722 from Toronto Pearson International Airport (Canada) to LaGuardia Airport (New York), which covered about 573 km.",
+    "bleu": 0.04443119077043701,
+    "rouge_1": 0.23076923076923075,
+    "rouge_2": 0.09374999999999999,
+    "meteor": 0.18866085760146756,
+    "BERTscore": 0.5335157513618469
+}

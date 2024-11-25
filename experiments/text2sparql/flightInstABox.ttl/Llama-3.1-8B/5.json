@@ -1,0 +1,23 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \nSELECT ?departureAirportTimezone ?arrivalAirportTimezone ?timezoneDifference\nWHERE {\n    atm:AAL1144 a atm:Flight ;\n        atm:flightNumber 'AAL1144' .\n    ?depAirport atm:airportICAOCode ?depIcao .\n    ?arrAirport atm:airportICAOCode ?arrIcao .\n    ?depAirport atm:locationTimezone ?departureAirportTimezone .\n    ?arrAirport atm:locationTimezone ?arrivalAirportTimezone .\n    BIND((?arrivalAirportTimezone - ?departureAirportTimezone) AS ?timezoneDifference)\n}",
+            "query_explanation": "This SPARQL query retrieves the time zone difference between the departure and arrival airports for flight AAL1144. It first identifies the flight by its number, then finds the ICAO codes of the departure and arrival airports. Finally, it calculates the time zone difference between these two airports.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "departureAirportTimezone",
+                        "arrivalAirportTimezone",
+                        "timezoneDifference"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

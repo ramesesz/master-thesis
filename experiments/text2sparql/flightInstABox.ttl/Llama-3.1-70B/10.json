@@ -1,0 +1,34 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> \nPREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> \nSELECT?aircraft?manufactureYear WHERE { \n  VALUES?flight {atm:ASQ4423-201407150037 atm:AAL20-201407152358} \n ?flight atm:aircraftFlown?aircraft. \n ?aircraft eqp:manufactureYear?manufactureYear. \n} ORDER BY DESC(?manufactureYear) LIMIT 1",
+            "query_explanation": "This SPARQL query retrieves the aircraft used in flights ASQ4423 or AAL20 and orders them by their manufacture year in descending order. The LIMIT 1 clause ensures that only the newest aircraft is returned.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "aircraft",
+                        "manufactureYear"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "aircraft": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/equipment#AircraftN11548"
+                            },
+                            "manufactureYear": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "value": "2002"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/12/18/nas#> \nSELECT ?flight1 ?flight2\nWHERE {\n    ?flight1 a nas:Flight .\n    ?flight2 a nas:Flight .\n    ?flight1 nas:departureAirport ?dep1 .\n    ?flight2 nas:departureAirport ?dep2 .\n    FILTER (regex(?dep1, '^K', 'i') && regex(?dep2, '^K', 'i')) .\n    FILTER (?flight1 != ?flight2) .\n    BIND ('AAL1144' AS ?flight1) .\n    BIND ('ASQ3831' AS ?flight2)\n}",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: BIND: Variable used when already in-scope: ?flight1 in BIND(\"AAL1144\" AS ?flight1)\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

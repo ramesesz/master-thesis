@@ -9,3 +9,6 @@ openai==1.33.0
 SPARQLWrapper==2.0.0
 strictjson==4.1.0
 python-dotenv==1.0.1
+nltk 
+rouge-score 
+bert-score

@@ -1,0 +1,9 @@
+{
+    "gen_results": "No, flights AAL100-201407150030 and CHQ2945-201407150047 did not operate under the same user category. AAL100-201407150030 was a commercial flight, while CHQ2945-201407150047 was an air taxi flight.",
+    "answer": "No, AAL100 operates as a commercial flight, while CHQ2945 operates as an air taxi.",
+    "bleu": 0.11653907453915101,
+    "rouge_1": 0.5116279069767441,
+    "rouge_2": 0.2926829268292683,
+    "meteor": 0.49668874172185434,
+    "BERTscore": 0.693088173866272
+}

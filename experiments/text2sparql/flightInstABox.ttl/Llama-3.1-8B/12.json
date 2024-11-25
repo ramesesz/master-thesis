@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \nSELECT ?flight ?distance\nWHERE {\n    ?flight atm:flightRouteString ?route.\n    BIND(ST_LN(?route) AS ?distance).\n    FILTER (?flight = 'AAL1102' || ?flight = 'ACA722').\n}",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Lexical error at line 5, column 15.  Encountered: \\'40\\' (40), after prefix \"ST_LN\"\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

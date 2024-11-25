@@ -1,0 +1,9 @@
+{
+    "gen_results": "To determine which flight covered a greater distance, we need to calculate the distance between the departure and arrival airports for each flight. \n\nFor AAL1102, the departure airport is KLGA (40.77725, -73.872611) and the arrival airport is KMIA (25.795361, -80.290111). \n\nFor ACA722, the departure airport is CYYZ (43.676661, -79.630644) and the arrival airport is KLGA (40.77725, -73.872611).\n\nUsing the Haversine formula to calculate the distance between two points on a sphere (such as the Earth), we can calculate the distance for each flight.\n\nDistance for AAL1102 \u2248 1,280 km (or 795 miles)\nDistance for ACA722 \u2248 560 km (or 348 miles)\n\nTherefore, AAL1102 covered a greater distance than ACA722.",
+    "answer": "The flight AAL1102 from LaGuardia Airport (New York) to Miami International Airport (Florida) covered a greater distance of approximately 1768 km, compared to flight ACA722 from Toronto Pearson International Airport (Canada) to LaGuardia Airport (New York), which covered about 573 km.",
+    "bleu": 0.02651557258217066,
+    "rouge_1": 0.25477707006369427,
+    "rouge_2": 0.038709677419354833,
+    "meteor": 0.23349162456023514,
+    "BERTscore": 0.5146799087524414
+}

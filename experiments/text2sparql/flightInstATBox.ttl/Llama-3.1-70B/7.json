@@ -1,0 +1,34 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?flight?numberOfSeats WHERE {?flight atm:operatedBy?airline.?airline nas:iataCarrierCode?carrierCode. FILTER (?carrierCode IN (\"EV\", \"AS\")).?flight atm:aircraftFlown?aircraft.?aircraft eqp:numberOfSeats?numberOfSeats. FILTER (?numberOfSeats > 100) }",
+            "query_explanation": "This SPARQL query retrieves flights operated by airlines with IATA carrier codes \"EV\" and \"AS\" (corresponding to ASQ and ASA airlines) and checks if the aircraft flown by these flights have more than 100 seats.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "numberOfSeats"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#ASA14-201407150005"
+                            },
+                            "numberOfSeats": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "value": "222"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

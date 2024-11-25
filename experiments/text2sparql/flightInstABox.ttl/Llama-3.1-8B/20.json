@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> SELECT ?flight ?num_flight_attendants WHERE { ?flight a nas:Flight ; nas:num_flight_attendants ?num_flight_attendants . FILTER ( ?flight = 'ACA722' || ?flight = 'AAL1170' ) }",
+            "query_explanation": "This SPARQL query retrieves the number of flight attendants for flights ACA722 and AAL1170. It uses the nas:Flight class to filter the results and returns the flight and its corresponding number of flight attendants.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "num_flight_attendants"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

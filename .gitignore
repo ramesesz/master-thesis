@@ -1,9 +1,6 @@
 # Virtual environments
 **/*venv*/
 
-# Ontologies
-# ontologies/
-
 # Vectorstore
 vectorstores/
 
@@ -18,3 +15,6 @@ __pycache__/
 
 # Images
 diagrams/img/
+
+# API keys
+.env.**

@@ -1,0 +1,21 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> SELECT ?engines WHERE {nas:ASA14 nas:numberOfEngines ?engines1 . nas:AAL20 nas:numberOfEngines ?engines2 . }",
+            "query_explanation": "This SPARQL query retrieves the combined number of engines for flights ASA14 and AAL20 by querying their respective numberOfEngines properties.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "engines"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

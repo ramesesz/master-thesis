@@ -1,0 +1,9 @@
+{
+    "gen_results": "The flight ACA722 (with departure time 2014-07-15T00:25:00) departed before the flight AAL1102 (with departure time 2014-07-15T00:46:00).",
+    "answer": "Flight ACA722 departed first at 00:25:00, while flight AAL1102 departed later at 00:46:00 on the same day.",
+    "bleu": 5.323760397095685e-155,
+    "rouge_1": 0.4444444444444445,
+    "rouge_2": 0.18604651162790697,
+    "meteor": 0.3024326101249178,
+    "BERTscore": 0.6841629147529602
+}

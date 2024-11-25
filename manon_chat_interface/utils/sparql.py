@@ -24,33 +24,13 @@ def execute_sparql(url: str, query: str):
       results = wrapper.query().convert()
 
     except URLError as e:
-        print(f"\033[91mERROR. Server may not be running.\033[0m Error message: {e}")
+        print(f"\033[91mERROR. SPARQL server may not be running.\033[0m Error message: {e}")
         
     return results
 
 
-def execute_parse_sparql(url, queries):
-    """Helper function for retrieve_context().
-
-    Args:
-        url (_type_): _description_
-        queries (_type_): _description_
-
-    Returns:
-        _type_: _description_
-    """
-    results = []
-    for index, query in enumerate(queries):
-        result = execute_sparql(url=url, query=PREFIXES+query)
-        table = utils.parse_sparql_output(result).to_string()
-        results.append(f"Triples: {index}\n{table}")
-    subgraph = "\n".join(results)
-    subgraph = utils.replace_urls_with_prefixes(subgraph, prefix_dict)
-    return subgraph
-
-
 def load_rdf_triples(file_path: str, format: str = 'ttl'):
-    
+  # gaada prefix jadi ngarang dia
   # Create a Graph object 
   g = Graph()
   g.parse(file_path, format=format)
@@ -67,57 +47,50 @@ def load_rdf_triples(file_path: str, format: str = 'ttl'):
 
 
 prefix_dict = {
-    ":": "http://www.co-ode.org/ontologies/pizza#",
-    "dc:": "http://purl.org/dc/elements/1.1/",
+    "atm:": "https://data.nasa.gov/ontologies/atmonto/ATM#",
+    "eqp:": "https://data.nasa.gov/ontologies/atmonto/equipment#",
+    "gen:": "https://data.nasa.gov/ontologies/atmonto/general#",
+    "nas:": "https://data.nasa.gov/ontologies/atmonto/NAS#",
     "owl:": "http://www.w3.org/2002/07/owl#",
     "rdf:": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xml:": "http://www.w3.org/XML/1998/namespace",
-    "xsd:": "http://www.w3.org/2001/XMLSchema#",
     "rdfs:": "http://www.w3.org/2000/01/rdf-schema#",
-    "skos:": "http://www.w3.org/2004/02/skos/core#",
-    "pizza:": "http://www.co-ode.org/ontologies/pizza/pizza.owl#",
-    "terms:": "http://purl.org/dc/terms/",
-    "base:": "http://www.co-ode.org/ontologies/pizza#"
+    "xsd:": "http://www.w3.org/2001/XMLSchema#"
 }
 
 PREFIXES = """
-PREFIX : <http://www.co-ode.org/ontologies/pizza#>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#>
+PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#>
+PREFIX gen: <https://data.nasa.gov/ontologies/atmonto/general#>
+PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xml: <http://www.w3.org/XML/1998/namespace>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#>
-PREFIX terms: <http://purl.org/dc/terms/>
-BASE <http://www.co-ode.org/ontologies/pizza#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 """
 
 ########################################################################
 ## Embed entities ######################################################
 ########################################################################
 EXTRACTION_QUERY = """
-SELECT DISTINCT ?individual
-WHERE {{
-{{
- SELECT ?individual
- WHERE {{
-   ?individual rdfs:subClassOf* {pizza_class} .
- }}
-}}
-UNION
-{{
- SELECT DISTINCT ?individual
- WHERE {{
-   ?individual rdf:type owl:Class ;
-           owl:equivalentClass ?equivClass .
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-   ?equivClass owl:intersectionOf ?list .
-   ?list rdf:rest*/rdf:first {pizza_class} .
- }}
-}}
-}}
+SELECT DISTINCT ?classIRI ?classLabel ?classComment ?entity ?entityLabel ?entityComment
+WHERE {
+    {
+        ?classIRI a owl:Class .
+        OPTIONAL { ?classIRI rdfs:label ?classLabel . }
+        OPTIONAL { ?classIRI rdfs:comment ?classComment . }
+    }
+    UNION
+    {
+        ?entity a ?classIRI .
+        ?classIRI a owl:Class .
+        OPTIONAL { ?entity rdfs:label ?entityLabel . }
+        OPTIONAL { ?entity rdfs:comment ?entityComment . }
+    }
+}
 """
 
 ########################################################################

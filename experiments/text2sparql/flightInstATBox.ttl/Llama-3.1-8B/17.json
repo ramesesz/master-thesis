@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \nSELECT ?flight1 ?flight2\nWHERE {\n  ?flight1 a nas:Flight .\n  ?flight2 a nas:Flight .\n  ?flight1 nas:flightNumber 'CHQ2945' .\n  ?flight2 nas:flightNumber 'AAL1102' .\n  ?flight1 nas:arrivalDay ?day1 .\n  ?flight2 nas:arrivalDay ?day2 .\n  FILTER (?day1 = ?day2)\n}",
+            "query_explanation": "This query checks if the flights CHQ2945 and AAL1102 arrived on the same day by matching their flight numbers and arrival days.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight1",
+                        "flight2"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

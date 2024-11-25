@@ -1,0 +1,21 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \nSELECT ?aircraftModel WHERE {nas:ASA14 nas:hasAircraftModel ?aircraftModel .}",
+            "query_explanation": "This SPARQL query retrieves the aircraft model for flight ASA14 by matching it with its corresponding resource in the NAS ontology.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "aircraftModel"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

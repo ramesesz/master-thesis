@@ -1,0 +1,21 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \n PREFIX nas: <http://www.nas.org/ontology#> \n SELECT ?icaoCode \n WHERE { \n   <http://example.org/AAL1170> atm:departureAirport ?airport . \n   ?airport nas:icaoCode ?icaoCode . \n }",
+            "query_explanation": "This SPARQL query retrieves the ICAO code of the departure airport for flight AAL1170. It first finds the departure airport of the flight using the atm:departureAirport property, and then looks up its ICAO code using the nas:icaoCode property.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "icaoCode"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

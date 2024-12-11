@@ -1,0 +1,9 @@
+{
+    "gen_results": "No, flight ASQ4423's actual arrival time was 8 minutes earlier than its planned ETA. The actual arrival time was 01:33:00, while the planned ETA was 01:41:00.",
+    "answer": "No, ASQ4423 arrived 8 minutes earlier than the scheduled ETA of 01:41:00 on 2014-07-15.",
+    "bleu": 0.10401577613691955,
+    "rouge_1": 0.4897959183673469,
+    "rouge_2": 0.21276595744680848,
+    "meteor": 0.46206825657894746,
+    "BERTscore": 0.7498653531074524
+}

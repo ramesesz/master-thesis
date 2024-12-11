@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "question": "Which flight departed first: AAL1102 or ACA722?",
+        "type": "Temporal comparison",
+        "triples": "atm:ACA722-201407150025 a atm:Flight .\natm:AAL1102-201407150046 a atm:Flight .\natm:ACA722-201407150025 atm:actualDepartureTime \"2014-07-15T00:25:00\" .\natm:AAL1102-201407150046 atm:actualDepartureTime \"2014-07-15T00:46:00\" .",
+        "answer": "Flight ACA722 departed first at 00:25:00, while flight AAL1102 departed later at 00:46:00 on the same day."
+    },
+    {
+        "id": 2,
+        "question": "Which flight had a longer duration: CHQ2945 or ASQ3831?",
+        "type": "Temporal comparison",
+        "triples": "atm:CHQ2945-201407150047 a atm:Flight .\natm:ASQ3831-201407150019 a atm:Flight .\natm:CHQ2945-201407150047 atm:actualDepartureTime \"2014-07-15T00:47:00\" .\natm:CHQ2945-201407150047 atm:actualArrivalTime \"2014-07-15T02:27:00\" .\natm:ASQ3831-201407150019 atm:actualDepartureTime \"2014-07-15T00:19:00\" .\natm:ASQ3831-201407150019 atm:actualArrivalTime \"2014-07-15T01:22:00\" .",
+        "answer": "Flight CHQ2945 had a longer duration of 1 hour and 40 minutes, compared to ASQ3831's duration of 1 hour and 3 minutes."
+    },
+    {
+        "id": 3,
+        "question": "What is the combined number of engines for flights ASA14 and AAL20?",
+        "type": "Aggregate",
+        "triples": "atm:ASA14-201407150005 a atm:Flight ;\n    atm:aircraftTypeFlown eqp:AircraftN413AS .\natm:AAL20-201407152358 a atm:Flight ;\n    atm:aircraftTypeFlown eqp:AircraftN784AA .\neqp:AircraftN413AS eqp:numberOfEngines \"2\"^^xsd:int .\neqp:AircraftN784AA eqp:numberOfEngines \"1\"^^xsd:int .",
+        "answer": "The combined number of engines for flights ASA14 and AAL20 is 3."
+    },
+    {
+        "id": 4,
+        "question": "What is the ICAO code for the departure airport of flight AAL1170?",
+        "type": "Specific attribute query",
+        "triples": "atm:AAL1170-201407150053 a atm:Flight .\nnas:KDFWairport nas:icaoAirportCode \"KDFW\"^^xsd:string .",
+        "answer": "The ICAO code for the departure airport of flight AAL1170 is KDFW."
+    },
+    {
+        "id": 5,
+        "question": "What is the time zone difference between the departure and arrival airports for flight AAL1144?",
+        "type": "Temporal comparison",
+        "triples": "atm:AAL1144-201407150040 a atm:Flight .\natm:AAL1144-201407150040 atm:arrivalAirport nas:KDFWairport .\natm:AAL1144-201407150040 atm:departureAirport nas:KLGAairport .\nnas:KDFWairport nas:withinTimezone \"America/Chicago\"^^xsd:string .\nnas:KLGAairport  nas:withinTimezone \"America/New_York\"^^xsd:string .",
+        "answer": "The time zone difference is 1 hour, with KLGA being 1 hour ahead of KDFW."
+    },
+    {
+        "id": 6,
+        "question": "Which flight had a shorter interval between its filing time and actual departure: ASQ4423 or CHQ2945?",
+        "type": "Temporal comparison",
+        "triples": "atm:ASQ4423-201407150037 a atm:Flight .\natm:ASA14-201407150005 a atm:Flight .\natm:ASQ4423-201407150037 atm:actualDepartureTime \"2014-07-15T00:37:00\"^^xsd:dateTime .\natm:PlannedRouteASQ4423-201407150037 atm:planFilingTime \"2014-07-15T00:48:21\"^^xsd:dateTime .\natm:CHQ2945-201407150047 atm:actualDepartureTime \"2014-07-15T00:47:00\"^^xsd:dateTime .\natm:PlannedRouteCHQ2945-201407150047 atm:planFilingTime \"2014-07-15T00:47:00\"^^xsd:dateTime .",
+        "answer": "Flight CHQ2945 had no interval between its filing and departure times, while ASQ4423 was filed 11 minutes and 21 seconds after its departure."
+    },
+    {
+        "id": 7,
+        "question": "Can flights ASQ4423 and ASA14 carry more than 100 passengers?",
+        "type": "Filtered",
+        "triples": "atm:ASQ4423-201407150037 a atm:Flight .\natm:ASQ4423-201407150037 atm:aircraftFlown eqp:AircraftN11548 .\natm:ASA14-201407150005 a atm:Flight .\natm:ASA14-201407150005 atm:aircraftFlown eqp:AircraftN413AS .\neqp:AircraftN11548 eqp:numberOfSeats \"55\" .\neqp:AircraftN413AS eqp:numberOfSeats \"222\" .",
+        "answer": "Flight ASQ4423 can carry 55 passengers, while flight ASA14 can carry 222 passengers, which is more than 100."
+    },
+    {
+        "id": 8,
+        "question": "Do flights AAL1170 and ASA14 have the same number of seats on board?",
+        "type": "Attribute comparison",
+        "triples": "atm:AAL1170-201407150053 a atm:Flight .\natm:AAL1170-201407150053 atm:aircraftFlown eqp:AircraftN871NN .\natm:ASA14-201407150005 a atm:Flight .\natm:ASA14-201407150005 atm:aircraftFlown eqp:AircraftN413AS .\neqp:AircraftN871NN eqp:numberOfSeats \"162\" .\neqp:AircraftN413AS eqp:numberOfSeats \"222\" .",
+        "answer": "No, AAL1170's aircraft has 162 seats, while ASA14's aircraft has 222 seats."
+    },
+    {
+        "id": 9,
+        "question": "What is the UTC offset for the departure airports of flights AAL100 and ASQ3831?",
+        "type": "Temporal comparison",
+        "triples": "atm:AAL100-201407150030 a atm:Flight .\natm:AAL100-201407150030 atm:departureAirport nas:KJFKairport .\natm:ASQ3831-201407150019 a atm:Flight .\natm:ASQ3831-201407150019 atm:departureAirport nas:CYYZairport .\nnas:KJFKairport nas:hoursOffsetFromUTC \"-5\" .\nnas:CYYZairport nas:hoursOffsetFromUTC \"-5\" .",
+        "answer": "Both departure airports have a UTC offset of -5, meaning their local time is 5 hours behind UTC."
+    },
+    {
+        "id": 10,
+        "question": "Which aircraft, used in flights ASQ4423 or AAL20, is newer based on its certificate issue date?\"",
+        "type": "Temporal comparison",
+        "triples": "atm:ASQ4423-201407150037 a atm:Flight .\natm:ASQ4423-201407150037 atm:aircraftFlown eqp:AircraftN11548 .\natm:AAL20-201407152358 a atm:Flight .\natm:AAL20-201407152358 atm:aircraftFlown eqp:AircraftN784AA .\neqp:AircraftN11548 eqp:certificateIssueDate \"2002-05-30\"^^xsd:date .\neqp:AircraftN784AA eqp:certificateIssueDate \"1991-02-28\"^^xsd:date .",
+        "answer": "The aircraft used for flight ASQ4423 is newer, with a certificate issued on 2002-05-30, compared to the one used for AAL20, issued on 1991-02-28."
+    },
+    {
+        "id": 11,
+        "question": "Which flight had a more complex actual route based on the number of waypoints: CHQ2945 or AAL1144?",
+        "type": "Complexity",
+        "triples": "atm:CHQ2945-201407150047 a atm:Flight ;\n    atm:hasActualRoute atm:ActualRouteCHQ2945-201407150047 .\natm:ActualRouteCHQ2945-201407150047 a atm:ActualFlightRoute ;\n    gen:hasSequencedItem atm:TrackPt201407150053042977,\n        atm:TrackPt201407150053074110,\n        atm:TrackPt201407150054073369,\n        atm:TrackPt201407150055056700,\n        atm:TrackPt201407150056037367,\n        atm:TrackPt201407150057041561,\n        atm:TrackPt201407150057137003,\n        atm:TrackPt201407150059006967,\n        atm:TrackPt201407150100030361,\n        atm:TrackPt201407150102035883 .\natm:AAL1144-201407150040 a atm:Flight ;\n    atm:hasActualRoute atm:ActualRouteAAL1144-201407150040 .\natm:ActualRouteAAL1144-201407150040 a atm:ActualFlightRoute ;\n    gen:hasSequencedItem atm:TrackPt201407150045160390,\n        atm:TrackPt201407150046158584,\n        atm:TrackPt201407150047141258,\n        atm:TrackPt201407150048111122,\n        atm:TrackPt201407150049090586,\n        atm:TrackPt201407150050036548,\n        atm:TrackPt201407150050088226,\n        atm:TrackPt201407150051025266,\n        atm:TrackPt201407150051114613,\n        atm:TrackPt201407150051133037,\n        atm:TrackPt201407150052117349,\n        atm:TrackPt201407150052117550 .",
+        "answer": "Flight AAL1144 had a more complex route with 12 waypoints, compared to CHQ2945's 10 waypoints."
+    },
+    {
+        "id": 12,
+        "question": "Based on the airports'coordinates, which flight covered a greater distance: AAL1102 or ACA722?",
+        "type": "Geospatial comparison",
+        "triples": "atm:AAL1102-201407150046 a atm:Flight .\natm:AAL1102-201407150046 atm:arrivalAirport nas:KMIAairport .\nnas:KMIAairport nas:airportLocation nas:KMIAcoordinates .\nnas:KMIAcoordinates gen:altitude \"9.0\"^^xsd:float ;\n    gen:latitude \"25.795361\"^^xsd:float ;\n    gen:longitude \"-80.290111\"^^xsd:float .\natm:AAL1102-201407150046 atm:departureAirport nas:KLGAairport .\nnas:KLGAairport nas:airportLocation nas:KLGAcoordinates .\nnas:KLGAcoordinates gen:altitude \"21.0\"^^xsd:float ;\n    gen:latitude \"40.77725\"^^xsd:float ;\n    gen:longitude \"-73.872611\"^^xsd:float .\natm:ACA722-201407150025 a atm:Flight .\natm:ACA722-201407150025 atm:arrivalAirport nas:KLGAairport .\natm:ACA722-201407150025 atm:departureAirport nas:CYYZairport .\nnas:CYYZairport nas:airportLocation nas:CYYZcoordinates .\nnas:CYYZcoordinates gen:altitude \"569.0\"^^xsd:float ;\n    gen:latitude \"43.676661\"^^xsd:float ;\n    gen:longitude \"-79.630644\"^^xsd:float .",
+        "answer": "The flight AAL1102 from LaGuardia Airport (New York) to Miami International Airport (Florida) covered a greater distance of approximately 1768 km, compared to flight ACA722 from Toronto Pearson International Airport (Canada) to LaGuardia Airport (New York), which covered about 573 km."
+    },
+    {
+        "id": 13,
+        "question": "Did flights AAL100 and CHQ2945 operate under the same user category?",
+        "type": "Attribute comparison",
+        "triples": " atm:AAL100-201407150030 a atm:Flight .\natm:AAL100-201407150030 atm:userCategory \"COMMERCIAL\"^^xsd:string .\natm:CHQ2945-201407150047 a atm:Flight .\natm:CHQ2945-201407150047 atm:userCategory \"AIR TAXI\"^^xsd:string .",
+        "answer": "No, AAL100 operates as a commercial flight, while CHQ2945 operates as an air taxi."
+    },
+    {
+        "id": 14,
+        "question": "Are the departure airports of flights AAL1170 and ASQ3831 located in the same country?",
+        "type": "Geographical comparison",
+        "triples": "atm:AAL1170-201407150053 a atm:Flight .\natm:AAL1170-201407150053 atm:departureAirport nas:KDFWairport .\nnas:KDFWairport nas:locatedInState \"TX\"^^xsd:string .\natm:ASQ3831-201407150019 a atm:Flight .\natm:ASQ3831-201407150019 atm:departureAirport nas:CYYZairport .\nnas:CYYZairport nas:locatedInState \"ON\"^^xsd:string .",
+        "answer": "No, AAL1170 departs from a U.S. airport, while ASQ3831 departs from a Canadian airport."
+    },
+    {
+        "id": 15,
+        "question": "What is the aircraft model for flight ASA14?",
+        "type": "Specific attribute query",
+        "triples": "atm:ASA14-201407150005 a atm:Flight .\natm:ASA14-201407150005 atm:aircraftFlown eqp:AircraftN413AS .\neqp:AircraftN413AS eqp:hasAircraftModel eqp:Boeing-737-990ER .",
+        "answer": "The aircraft model for ASA14 is a Boeing 737-990ER."
+    },
+    {
+        "id": 16,
+        "question": "Was flight ASQ4423's arrival time on schedule?",
+        "type": "Attribute comparison",
+        "triples": "atm:ASQ4423-201407150037 a atm:Flight .\natm:ASQ4423-201407150037 atm:actualArrivalTime \"2014-07-15T01:33:00\"^^xsd:dateTime .\natm:ASQ4423-201407150037 atm:hasPlannedRoute atm:PlannedRouteASQ4423-201407150037 .\natm:PlannedRouteASQ4423-201407150037 atm:flightPlanETA \"2014-07-15T01:41:00\"^^xsd:dateTime .",
+        "answer": "No, ASQ4423 arrived 8 minutes earlier than the scheduled ETA of 01:41:00 on 2014-07-15."
+    },
+    {
+        "id": 17,
+        "question": "Did flights CHQ2945 and AAL1102 arrive on the same day?",
+        "type": "Temporal comparison",
+        "triples": "atm:CHQ2945-201407150047 a atm:Flight .\natm:CHQ2945-201407150047 atm:actualArrivalDay nas:Day20140715 .\natm:AAL1102-201407150046 a atm:Flight .\natm:AAL1102-201407150046 atm:actualArrivalDay nas:Day20140715 .",
+        "answer": "Yes, both flights arrived on July 15, 2014."
+    },
+    {
+        "id": 18,
+        "question": "Which aircraft had a higher certainty in its model designation: AAL1102 or AAL20?",
+        "type": "Attribute comparison",
+        "triples": "atm:AAL1102-201407150046 a atm:Flight .\natm:AAL1102-201407150046 atm:aircraftFlown eqp:AircraftN963AN .\neqp:AircraftN963AN eqp:aircraftModelCertainty \"1.0000000000000002\"^^xsd:float .\natm:AAL20-201407152358 a atm:Flight .\natm:AAL20-201407152358 atm:aircraftFlown eqp:AircraftN784AA .\neqp:AircraftN784AA eqp:aircraftModelCertainty \"0.9879913721631963\"^^xsd:float .",
+        "answer": "The aircraft used in AAL1102 had a higher model certainty (1.0000000000000002) compared to AAL20 (0.9879913721631963)."
+    },
+    {
+        "id": 19,
+        "question": "Did flights AAL1144 and ASQ3831 operate in the same airspace region based on FAA airport codes?",
+        "type": "No answer, partial unavailability",
+        "triples": "atm:AAL1144-201407150040 a atm:Flight .\natm:AAL1144-201407150040 atm:departureAirport nas:KLGAairport .\nnas:KLGAairport nas:faaAirportCode \"LGA\"^^xsd:string .\natm:ASQ3831-201407150019 a atm:Flight .\natm:ASQ3831-201407150019 atm:departureAirport nas:CYYZairport .",
+        "answer": "No, AAL1144 departed from a U.S. airport (FAA code LGA), while ASQ3831 departed from a Canadian airport (CYYZ), which lacks an FAA code."
+    },
+    {
+        "id": 20,
+        "question": "Which flight has more flight attendants on board: ACA722 or AAL1170?",
+        "type": "No answer",
+        "triples": "",
+        "answer": "No information is provided about the number of flight attendants on either ACA722 or AAL1170."
+    }
+]

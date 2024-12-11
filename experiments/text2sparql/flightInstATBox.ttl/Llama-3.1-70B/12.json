@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> PREFIX gen: <https://data.nasa.gov/ontologies/atmonto/general#> SELECT?flight?distance WHERE {?flight atm:hasActualRoute?route.?route gen:hasSequencedItem?trackPoint1.?route gen:hasSequencedItem?trackPoint2.?trackPoint1 gen:hasLocation?location1.?trackPoint2 gen:hasLocation?location2.?location1 gen:latitude?lat1.?location1 gen:longitude?long1.?location2 gen:latitude?lat2.?location2 gen:longitude?long2. BIND(geof:distance(?lat1,?long1,?lat2,?long2) AS?distance). FILTER(?flight IN (atm:AAL1102-201407150046, atm:ACA722-201407150025)) } ORDER BY DESC(?distance)",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Line 1, column 532: Unresolved prefixed name: geof:distance\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \nSELECT ?flight1 ?flight2\nWHERE {\n  ?flight1 atm:flightNumber \"CHQ2945\" .\n  ?flight2 atm:flightNumber \"ASQ3831\" .\n  BIND(STR(?flight1) AS ?flight1Str)\n  BIND(STR(?flight2) AS ?flight2Str)\n  BIND(IF(STRLEN(?flight1Str) > STRLEN(?flight2Str), ?flight1, ?flight2) AS ?longerFlight)\n}",
+            "query_explanation": "This query compares the flight numbers CHQ2945 and ASQ3831 to determine which one has a longer duration.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight1",
+                        "flight2"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

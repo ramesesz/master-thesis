@@ -1,0 +1,9 @@
+{
+    "gen_results": "I don't have any triples to answer your question. Please provide the RDF triples.",
+    "answer": "No information is provided about the number of flight attendants on either ACA722 or AAL1170.",
+    "bleu": 8.769105200491155e-232,
+    "rouge_1": 0.13333333333333333,
+    "rouge_2": 0.0,
+    "meteor": 0.06711409395973154,
+    "BERTscore": 0.41841596364974976
+}

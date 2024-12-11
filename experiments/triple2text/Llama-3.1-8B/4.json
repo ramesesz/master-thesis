@@ -1,0 +1,9 @@
+{
+    "gen_results": "The ICAO code for the departure airport of flight AAL1170 is KDFW.",
+    "answer": "The ICAO code for the departure airport of flight AAL1170 is KDFW.",
+    "bleu": 1.0,
+    "rouge_1": 1.0,
+    "rouge_2": 1.0,
+    "meteor": 0.9997106481481481,
+    "BERTscore": 1.0
+}

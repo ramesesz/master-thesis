@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> SELECT ?depAirport1 ?depAirport2 WHERE { ?flight1 a nas:Flight ; nas:departureAirport ?depAirport1 . ?flight2 a nas:Flight ; nas:departureAirport ?depAirport2 . FILTER ( ?depAirport1 = <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#AAL1170> && ?depAirport2 = <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#ASQ3831> ) }",
+            "query_explanation": "This query checks if the departure airports of flights AAL1170 and ASQ3831 are located in the same country by filtering for the specific flight URIs.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "depAirport1",
+                        "depAirport2"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

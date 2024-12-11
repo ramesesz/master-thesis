@@ -1,0 +1,9 @@
+{
+    "gen_results": "The departure airport of flight AAL100 has a UTC offset of -5 hours, and the departure airport of flight ASQ3831 also has a UTC offset of -5 hours.",
+    "answer": "Both departure airports have a UTC offset of -5, meaning their local time is 5 hours behind UTC.",
+    "bleu": 0.08839374326825923,
+    "rouge_1": 0.43478260869565216,
+    "rouge_2": 0.27272727272727276,
+    "meteor": 0.3099415204678363,
+    "BERTscore": 0.6537508964538574
+}

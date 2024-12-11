@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \nSELECT ?flightPlanETA ?arrivalTime\nWHERE {\n    atm:PlannedRouteASQ4423-201407150037 a atm:PlannedFlightRoute ;\n        atm:flightPlanETA ?flightPlanETA .\n    ?airport atm:hasArrivalTime ?arrivalTime .\n    FILTER (?arrivalTime = ?flightPlanETA)\n}",
+            "query_explanation": "This SPARQL query checks if the arrival time of flight ASQ4423 is on schedule by comparing it with its planned ETA.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flightPlanETA",
+                        "arrivalTime"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

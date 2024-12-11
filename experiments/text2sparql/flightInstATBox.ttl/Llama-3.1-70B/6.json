@@ -1,0 +1,34 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT?flight?interval WHERE { VALUES?flight { atm:ASQ4423-201407150037 atm:CHQ2945-201407150047 }?flight atm:hasPlannedRoute?plan.?plan atm:planFilingTime?filingTime.?flight atm:actualDepartureTime?departureTime. BIND(xsd:dateTime(?departureTime) - xsd:dateTime(?filingTime) AS?interval) } ORDER BY?interval LIMIT 1",
+            "query_explanation": "This SPARQL query retrieves the flight with the shorter interval between its filing time and actual departure time between ASQ4423 and CHQ2945. It first defines the prefixes for the ATM and XSD namespaces. Then, it selects the flight and the interval between the filing time and actual departure time. The VALUES clause specifies the two flights of interest. The query then retrieves the planned route for each flight and the filing time and actual departure time for each flight. The BIND clause calculates the interval between the filing time and actual departure time. Finally, the query orders the results by the interval and limits the output to the flight with the shortest interval.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "interval"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037"
+                            },
+                            "interval": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#duration",
+                                "value": "-PT11M21.000S"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

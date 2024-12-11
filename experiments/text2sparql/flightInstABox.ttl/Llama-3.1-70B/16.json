@@ -1,0 +1,40 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> SELECT?flight?plannedArrivalTime?actualArrivalTime WHERE {?flight atm:callSign \"ASQ4423\"^^xsd:string.?flight atm:hasPlannedRoute?plannedRoute.?plannedRoute atm:flightPlanETA?plannedArrivalTime.?flight atm:actualArrivalTime?actualArrivalTime. }",
+            "query_explanation": "This SPARQL query retrieves the planned and actual arrival times for flight ASQ4423. It first identifies the flight with the call sign ASQ4423, then finds its planned route and actual arrival time. The planned arrival time is retrieved from the flight plan ETA, and the actual arrival time is retrieved from the flight's actual arrival time property. The query returns the flight, planned arrival time, and actual arrival time, allowing for comparison to determine if the flight arrived on schedule.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "plannedArrivalTime",
+                        "actualArrivalTime"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#ASQ4423-201407150037"
+                            },
+                            "plannedArrivalTime": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                                "value": "2014-07-15T01:41:00"
+                            },
+                            "actualArrivalTime": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                                "value": "2014-07-15T01:33:00"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

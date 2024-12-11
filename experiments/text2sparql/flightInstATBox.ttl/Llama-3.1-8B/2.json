@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \n\"\n                    \"SELECT ?flight1 ?flight2 WHERE { \n\"\n                    \"?flight1 atm:flightNumber \"CHQ2945\" .\n\"\n                    \"?flight2 atm:flightNumber \"ASQ3831\" .\n\"\n                    \"BIND (atm:flightDuration(?flight1) AS ?duration1)\n\"\n                    \"BIND (atm:flightDuration(?flight2) AS ?duration2)\n\"\n                    \"FILTER (?duration1 > ?duration2)\n\"\n                    \"}",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Lexical error at line 2, column 2.  Encountered: \\'10\\' (10), after prefix \"\\\\\"\"\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

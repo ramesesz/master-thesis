@@ -1,0 +1,21 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> SELECT ?certainty WHERE {nas:AAL1102 a nas:Aircraft ; nas:modelCertainty ?certainty . nas:AAL20 a nas:Aircraft ; nas:modelCertainty ?certainty2 . FILTER(?certainty > ?certainty2)}",
+            "query_explanation": "This query compares the certainty of model designations for AAL1102 and AAL20. It selects the higher value from the two.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "certainty"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

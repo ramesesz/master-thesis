@@ -1,0 +1,9 @@
+{
+    "gen_results": "No, flight AAL1170 has 162 seats while flight ASA14 has 222 seats.",
+    "answer": "No, AAL1170's aircraft has 162 seats, while ASA14's aircraft has 222 seats.",
+    "bleu": 4.337579510280189e-78,
+    "rouge_1": 0.7692307692307692,
+    "rouge_2": 0.41666666666666663,
+    "meteor": 0.5289115646258503,
+    "BERTscore": 0.8615098595619202
+}

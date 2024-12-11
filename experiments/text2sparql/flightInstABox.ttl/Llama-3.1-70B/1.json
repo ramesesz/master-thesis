@@ -1,0 +1,34 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> SELECT?flight?departureTime WHERE { VALUES?flight { atm:AAL1102-201407150046 atm:ACA722-201407150025 }?flight atm:actualDepartureTime?departureTime } ORDER BY?departureTime LIMIT 1",
+            "query_explanation": "This SPARQL query retrieves the flight that departed first between AAL1102 and ACA722 by comparing their actual departure times.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "departureTime"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#ACA722-201407150025"
+                            },
+                            "departureTime": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                                "value": "2014-07-15T00:25:00"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

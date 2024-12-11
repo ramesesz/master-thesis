@@ -1,0 +1,9 @@
+{
+    "gen_results": "The flight with the longest duration was CHQ2945, which departed at 00:47 and arrived at 02:27.",
+    "answer": "Flight CHQ2945 had a longer duration of 1 hour and 40 minutes, compared to ASQ3831's duration of 1 hour and 3 minutes.",
+    "bleu": 7.445183326929416e-232,
+    "rouge_1": 0.1951219512195122,
+    "rouge_2": 0.0,
+    "meteor": 0.07009345794392523,
+    "BERTscore": 0.5839113593101501
+}

@@ -1,0 +1,33 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?arrivalDayCHQ2945?arrivalDayAAL1102 WHERE { atm:CHQ2945-201407150047 atm:actualArrivalDay?arrivalDayCHQ2945. atm:AAL1102-201407150046 atm:actualArrivalDay?arrivalDayAAL1102. }",
+            "query_explanation": "This SPARQL query retrieves the actual arrival days of flights CHQ2945 and AAL1102. It uses the atm:actualArrivalDay property to get the arrival days of the two flights and returns the results as?arrivalDayCHQ2945 and?arrivalDayAAL1102.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "arrivalDayCHQ2945",
+                        "arrivalDayAAL1102"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "arrivalDayCHQ2945": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Day20140715"
+                            },
+                            "arrivalDayAAL1102": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Day20140715"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

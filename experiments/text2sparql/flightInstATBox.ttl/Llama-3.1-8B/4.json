@@ -1,0 +1,21 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \nSELECT ?icaoCode\nWHERE {\n    ?flight nas:departureAirport ?airport .\n    ?airport nas:icaoAirportCode ?icaoCode .\n    FILTER (?flight = <http://example.org/AAL1170>)\n}",
+            "query_explanation": "This SPARQL query retrieves the ICAO code of the departure airport for flight AAL1170. It first selects all flights with a departure airport, then filters to only include the specified flight (AAL1170), and finally returns the ICAO code of its departure airport.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "icaoCode"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

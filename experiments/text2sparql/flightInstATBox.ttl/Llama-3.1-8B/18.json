@@ -1,0 +1,21 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \nSELECT ?a WHERE {\n    ?a nas:modelDesignationCertainty ?certainty .\n    FILTER (?a = 'AAL1102' || ?a = 'AAL20')\n}",
+            "query_explanation": "This SPARQL query retrieves the certainty of model designation for aircraft AAL1102 and AAL20.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "a"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

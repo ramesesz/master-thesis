@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?offset WHERE { atm:AAL100-201407150030 atm:departureAirport?dep1. atm:ASQ3831-201407150019 atm:departureAirport?dep2.?dep1 nas:hoursOffsetFromUTC?offset1.?dep2 nas:hoursOffsetFromUTC?offset2. BINDINGS?offset { (?offset1?offset2) } }",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Encountered \" \"in\" \"IN \"\" at line 1, column 324.\\r\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

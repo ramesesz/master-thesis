@@ -1,0 +1,9 @@
+{
+    "gen_results": "The time zones of the departure airport (KLGA) and arrival airport (KDFW) are America/New_York and America/Chicago, respectively. The time zone difference between them is 1 hour.",
+    "answer": "The time zone difference is 1 hour, with KLGA being 1 hour ahead of KDFW.",
+    "bleu": 0.11177222547202245,
+    "rouge_1": 0.4545454545454545,
+    "rouge_2": 0.2380952380952381,
+    "meteor": 0.436238354037267,
+    "BERTscore": 0.6302552223205566
+}

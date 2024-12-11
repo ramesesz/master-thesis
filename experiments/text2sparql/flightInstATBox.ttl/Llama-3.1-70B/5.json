@@ -1,0 +1,43 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> SELECT?departureAirport?arrivalAirport?departureTimezone?arrivalTimezone WHERE { atm:AAL1144-201407150040 atm:departureAirport?departureAirport. atm:AAL1144-201407150040 atm:arrivalAirport?arrivalAirport.?departureAirport nas:withinTimezone?departureTimezone.?arrivalAirport nas:withinTimezone?arrivalTimezone. }",
+            "query_explanation": "This SPARQL query retrieves the departure and arrival airports for flight AAL1144, as well as their respective time zones. The query uses the atm:departureAirport and atm:arrivalAirport properties to get the airport IRIs, and then uses the nas:withinTimezone property to get the time zone for each airport.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "departureAirport",
+                        "arrivalAirport",
+                        "departureTimezone",
+                        "arrivalTimezone"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "departureAirport": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/NAS#KLGAairport"
+                            },
+                            "arrivalAirport": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/NAS#KDFWairport"
+                            },
+                            "departureTimezone": {
+                                "type": "literal",
+                                "value": "America/New_York"
+                            },
+                            "arrivalTimezone": {
+                                "type": "literal",
+                                "value": "America/Chicago"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

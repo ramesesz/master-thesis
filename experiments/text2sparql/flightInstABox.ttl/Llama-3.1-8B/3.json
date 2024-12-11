@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \nSELECT ?engines\nWHERE {\n  ?flight atm:airlineCallsign \"ASA\" .\n  ?flight atm:numberOfEngines ?engines .\n  FILTER (?engines > 0)\n}\nUNION\n{\n  ?flight atm:airlineCallsign \"AAL\" .\n  ?flight atm:numberOfEngines ?engines .\n  FILTER (?engines > 0)\n}",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Encountered \" \"union\" \"UNION \"\" at line 8, column 1.\\r\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

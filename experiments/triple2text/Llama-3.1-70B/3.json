@@ -1,0 +1,9 @@
+{
+    "gen_results": "The combined number of engines for flights ASA14 and AAL20 is 3. This is calculated by adding the number of engines for the aircraft flown in each flight, which are 2 for eqp:AircraftN413AS (flown in ASA14) and 1 for eqp:AircraftN784AA (flown in AAL20).",
+    "answer": "The combined number of engines for flights ASA14 and AAL20 is 3.",
+    "bleu": 0.25165972150028304,
+    "rouge_1": 0.4210526315789474,
+    "rouge_2": 0.4,
+    "meteor": 0.627069536423841,
+    "BERTscore": 0.7106363773345947
+}

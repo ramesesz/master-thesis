@@ -1,0 +1,28 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> SELECT?aircraftModel WHERE { atm:ASA14-201407150005 atm:aircraftFlown?aircraft.?aircraft eqp:hasAircraftModel?aircraftModel. }",
+            "query_explanation": "This SPARQL query retrieves the aircraft model for flight ASA14 by first identifying the aircraft flown by ASA14 and then retrieving its aircraft model.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "aircraftModel"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "aircraftModel": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/equipment#Boeing-737-990ER"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

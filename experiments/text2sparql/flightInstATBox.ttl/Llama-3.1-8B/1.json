@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \nSELECT ?flight1 ?flight2\nWHERE {\n  ?flight1 a nas:Flight .\n  ?flight2 a nas:Flight .\n  FILTER (?flight1 != ?flight2) .\n  BIND (nas:departureTime(?flight1) AS ?time1) .\n  BIND (nas:departureTime(?flight2) AS ?time2) .\n  FILTER (?time1 < ?time2)\n} \nGROUP BY ?flight1\nORDER BY DESC(?time1)",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Non-group key variable in SELECT: ?flight2\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

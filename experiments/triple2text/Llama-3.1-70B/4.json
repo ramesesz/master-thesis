@@ -1,0 +1,9 @@
+{
+    "gen_results": "The provided RDF triples do not contain information about the departure airport of flight AAL1170 or its ICAO code.",
+    "answer": "The ICAO code for the departure airport of flight AAL1170 is KDFW.",
+    "bleu": 0.2680165156355778,
+    "rouge_1": 0.5806451612903226,
+    "rouge_2": 0.41379310344827586,
+    "meteor": 0.6133120078740157,
+    "BERTscore": 0.7086816430091858
+}

@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \nSELECT ?route1 ?route2 (COUNT(?waypoint1) AS ?count1) (COUNT(?waypoint2) AS ?count2)\nWHERE {\n  ?flight1 a nas:PlannedFlightRoute ;\n           nas:flightPlanETA \"2014-07-15T01:41:00\"^^xsd:dateTime .\n  ?route1 rdfs:label \"Actual Route for AAL1144 on 2014-07-15 00:21:13\"^^xsd:string ;\n          nas:hasSequencedItem ?waypoint1 .\n  FILTER (?flight1 = <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#AAL1144>)\n\n  ?flight2 a nas:PlannedFlightRoute ;\n           nas:flightPlanETA \"2014-07-15T01:41:00\"^^xsd:dateTime .\n  ?route2 rdfs:label \"Actual Route for CHQ2945 on 2014-07-15 00:47:00\"^^xsd:string ;\n          nas:hasSequencedItem ?waypoint2 .\n  FILTER (?flight2 = <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#CHQ2945>)\n}",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Line 5, column 53: Unresolved prefixed name: xsd:dateTime\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

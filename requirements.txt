@@ -1,0 +1,14 @@
+# Requirements for running manon-chat-interface. Dependencies of the ManOn Knowledge Learner is further required.
+
+# wheel
+# llama_cpp_python==0.2.60
+# langchain==0.1.14
+# langchain-experimental==0.0.56
+chromadb==0.5.0
+openai==1.33.0
+SPARQLWrapper==2.0.0
+strictjson==4.1.0
+python-dotenv==1.0.1
+nltk 
+rouge-score 
+bert-score

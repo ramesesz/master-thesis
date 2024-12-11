@@ -1,0 +1,78 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> PREFIX gen: <https://data.nasa.gov/ontologies/atmonto/general#> SELECT?flight?lat1?lon1?lat2?lon2 WHERE { VALUES?flight {atm:AAL1102-201407150046 atm:ACA722-201407150025}?flight atm:departureAirport?dep.?dep nas:airportLocation?depLoc.?depLoc gen:latitude?lat1.?depLoc gen:longitude?lon1.?flight atm:arrivalAirport?arr.?arr nas:airportLocation?arrLoc.?arrLoc gen:latitude?lat2.?arrLoc gen:longitude?lon2 }",
+            "query_explanation": "This query retrieves the departure and arrival airport coordinates for flights AAL1102 and ACA722. The distance between two points on the surface of the Earth can be calculated using the latitude and longitude values. However, this query does not calculate the distance, it only retrieves the necessary data to do so.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "lat1",
+                        "lon1",
+                        "lat2",
+                        "lon2"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#AAL1102-201407150046"
+                            },
+                            "lat1": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "40.77725"
+                            },
+                            "lon1": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "-73.87261"
+                            },
+                            "lat2": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "25.79536"
+                            },
+                            "lon2": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "-80.29011"
+                            }
+                        },
+                        {
+                            "flight": {
+                                "type": "uri",
+                                "value": "https://data.nasa.gov/ontologies/atmonto/ATM#ACA722-201407150025"
+                            },
+                            "lat1": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "43.676662"
+                            },
+                            "lon1": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "-79.630646"
+                            },
+                            "lat2": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "40.77725"
+                            },
+                            "lon2": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#float",
+                                "value": "-73.87261"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

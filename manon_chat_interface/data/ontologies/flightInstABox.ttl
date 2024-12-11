@@ -1,0 +1,898 @@
+# baseURI: https://data.nasa.gov/ontologies/atmonto/flightInst
+# imports: https://data.nasa.gov/ontologies/atmonto/ATM
+
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@prefix data: <https://data.nasa.gov/ontologies/atmonto/data#> .
+@prefix doc: <https://data.nasa.gov/ontologies/atmonto/documentation#> .
+@prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
+@prefix gen: <https://data.nasa.gov/ontologies/atmonto/general#> .
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.nasa.gov/ontologies/atmonto/flightInst> a owl:Ontology ;
+    owl:imports <https://data.nasa.gov/ontologies/atmonto/ATM> .
+
+########################################################################
+## Flights #############################################################
+########################################################################
+
+atm:AAL100-201407150030 a atm:Flight ;
+    rdfs:label "Flight AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T02:46:47"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:30:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:B77WAircraftType ;
+    atm:arrivalAirport nas:EGLLairport ;
+    atm:callSign "AAL100"^^xsd:string ;
+    atm:departureAirport nas:KJFKairport ;
+    atm:hasActualRoute atm:ActualRouteAAL100-201407150030 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL100-201407150030 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AAL1102-201407150046 a atm:Flight ;
+    rdfs:label "Flight AAL1102 on 2014-07-15 00:46:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T03:13:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:46:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN963AN ;
+    atm:aircraftTypeFlown eqp:B738AircraftType ;
+    atm:arrivalAirport nas:KMIAairport ;
+    atm:callSign "AAL1102"^^xsd:string ;
+    atm:departureAirport nas:KLGAairport ;
+    atm:hasActualRoute atm:ActualRouteAAL1102-201407150046 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL1102-201407150046 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AAL1144-201407150040 a atm:Flight ;
+    rdfs:label "Flight AAL1144 on 2014-07-15 00:40:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T04:01:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:40:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN942NN ;
+    atm:aircraftTypeFlown eqp:B738AircraftType ;
+    atm:arrivalAirport nas:KDFWairport ;
+    atm:callSign "AAL1144"^^xsd:string ;
+    atm:departureAirport nas:KLGAairport ;
+    atm:hasActualRoute atm:ActualRouteAAL1144-201407150040 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL1144-201407150040 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AAL1170-201407150053 a atm:Flight ;
+    rdfs:label "Flight AAL1170 on 2014-07-15 00:53:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T03:37:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:53:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN871NN ;
+    atm:aircraftTypeFlown eqp:B738AircraftType ;
+    atm:arrivalAirport nas:KLGAairport ;
+    atm:callSign "AAL1170"^^xsd:string ;
+    atm:departureAirport nas:KDFWairport ;
+    atm:hasActualRoute atm:ActualRouteAAL1170-201407150053 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL1170-201407150053 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:AAL20-201407152358 a atm:Flight ;
+    rdfs:label "Flight AAL20 on 2014-07-15 23:58:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140716 ;
+    atm:actualArrivalTime "2014-07-16T04:54:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T23:58:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN784AA ;
+    atm:aircraftTypeFlown eqp:A321AircraftType ;
+    atm:arrivalAirport nas:KJFKairport ;
+    atm:callSign "AAL20"^^xsd:string ;
+    atm:departureAirport nas:KSFOairport ;
+    atm:hasActualRoute atm:ActualRouteAAL20-201407152358 ;
+    atm:hasPlannedRoute atm:PlannedRouteAAL20-201407152358 ;
+    atm:operatedBy nas:AALairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ACA722-201407150025 a atm:Flight ;
+    rdfs:label "Flight ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:19:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:25:00"^^xsd:dateTime ;
+    atm:arrivalAirport nas:KLGAairport ;
+    atm:callSign "ACA722"^^xsd:string ;
+    atm:departureAirport nas:CYYZairport ;
+    atm:hasActualRoute atm:ActualRouteACA722-201407150025 ;
+    atm:hasPlannedRoute atm:PlannedRouteACA722-201407150025 ;
+    atm:operatedBy nas:ACAairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASA14-201407150005 a atm:Flight ;
+    rdfs:label "Flight ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T04:49:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:05:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN413AS ;
+    atm:aircraftTypeFlown eqp:B739AircraftType ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASA14"^^xsd:string ;
+    atm:departureAirport nas:KSEAairport ;
+    atm:hasActualRoute atm:ActualRouteASA14-201407150005 ;
+    atm:hasPlannedRoute atm:PlannedRouteASA14-201407150005 ;
+    atm:operatedBy nas:ASAairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASQ3831-201407150019 a atm:Flight ;
+    rdfs:label "Flight ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:22:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:19:00"^^xsd:dateTime ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASQ3831"^^xsd:string ;
+    atm:departureAirport nas:CYYZairport ;
+    atm:hasActualRoute atm:ActualRouteASQ3831-201407150019 ;
+    atm:hasPlannedRoute atm:PlannedRouteASQ3831-201407150019 ;
+    atm:operatedBy nas:ASQairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:ASQ4423-201407150037 a atm:Flight ;
+    rdfs:label "Flight ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T01:33:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:37:00"^^xsd:dateTime ;
+    atm:aircraftFlown eqp:AircraftN11548 ;
+    atm:aircraftTypeFlown eqp:E145AircraftType ;
+    atm:arrivalAirport nas:KEWRairport ;
+    atm:callSign "ASQ4423"^^xsd:string ;
+    atm:departureAirport nas:KMHTairport ;
+    atm:hasActualRoute atm:ActualRouteASQ4423-201407150037 ;
+    atm:hasPlannedRoute atm:PlannedRouteASQ4423-201407150037 ;
+    atm:operatedBy nas:ASQairline ;
+    atm:userCategory "COMMERCIAL"^^xsd:string .
+
+atm:CHQ2945-201407150047 a atm:Flight ;
+    rdfs:label "Flight CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    atm:actualArrivalDay nas:Day20140715 ;
+    atm:actualArrivalTime "2014-07-15T02:27:00"^^xsd:dateTime ;
+    atm:actualDepartureDay nas:Day20140715 ;
+    atm:actualDepartureTime "2014-07-15T00:47:00"^^xsd:dateTime ;
+    atm:aircraftTypeFlown eqp:E145AircraftType ;
+    atm:arrivalAirport nas:KCLTairport ;
+    atm:callSign "CHQ2945"^^xsd:string ;
+    atm:departureAirport nas:KJFKairport ;
+    atm:hasActualRoute atm:ActualRouteCHQ2945-201407150047 ;
+    atm:hasPlannedRoute atm:PlannedRouteCHQ2945-201407150047 ;
+    atm:operatedBy nas:CHQairline ;
+    atm:userCategory "AIR TAXI"^^xsd:string .
+
+########################################################################
+## Aircraft ############################################################
+########################################################################
+
+eqp:AircraftN963AN a eqp:Aircraft ;
+    rdfs:label "Aircraft N963AN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "AMERICAN AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "29543"^^xsd:string ;
+    eqp:certificateIssueDate "2001-05-04"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2001 ;
+    eqp:modeSCode 53263530 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N963AN"^^xsd:string .
+
+eqp:AircraftN942NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N942NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "33492"^^xsd:string ;
+    eqp:certificateIssueDate "2013-12-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2013 ;
+    eqp:modeSCode 53212717 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N942NN"^^xsd:string .
+
+eqp:AircraftN871NN a eqp:Aircraft ;
+    rdfs:label "Aircraft N871NN"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0000000000000002"^^xsd:float ;
+    eqp:aircraftRegistrant "WILMINGTON TRUST CO TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "31127"^^xsd:string ;
+    eqp:certificateIssueDate "2011-11-14"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-823 ;
+    eqp:manufactureYear 2011 ;
+    eqp:modeSCode 52775506 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 162 ;
+    eqp:registrationNumber "N871NN"^^xsd:string .
+
+eqp:AircraftN784AA a eqp:Aircraft ;
+    rdfs:label "Aircraft N784AA"^^xsd:string ;
+    eqp:aircraftModelCertainty "0.9879913721631963"^^xsd:float ;
+    eqp:aircraftRegistrant "HAYDEN CHARLES J JR"^^xsd:string ;
+    eqp:aircraftSerialNumber "D-6858"^^xsd:string ;
+    eqp:certificateIssueDate "1991-02-28"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Beech-35-P35 ;
+    eqp:manufactureYear 1961 ;
+    eqp:modeSCode 52517543 ;
+    eqp:numberOfEngines 1 ;
+    eqp:numberOfSeats 4 ;
+    eqp:registrationNumber "N784AA"^^xsd:string .
+
+eqp:AircraftN413AS a eqp:Aircraft ;
+    rdfs:label "Aircraft N413AS"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "ALASKA AIRLINES INC"^^xsd:string ;
+    eqp:aircraftSerialNumber "35205"^^xsd:string ;
+    eqp:certificateIssueDate "2013-03-28"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Boeing-737-990ER ;
+    eqp:manufactureYear 2013 ;
+    eqp:modeSCode 51157526 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 222 ;
+    eqp:registrationNumber "N413AS"^^xsd:string .
+
+eqp:AircraftN11548 a eqp:Aircraft ;
+    rdfs:label "Aircraft N11548"^^xsd:string ;
+    eqp:aircraftModelCertainty "1.0"^^xsd:float ;
+    eqp:aircraftRegistrant "WELLS FARGO BANK NORTHWEST NA TRUSTEE"^^xsd:string ;
+    eqp:aircraftSerialNumber "145565"^^xsd:string ;
+    eqp:certificateIssueDate "2002-05-30"^^xsd:date ;
+    eqp:hasAircraftModel eqp:Embraer-EMB145-LR ;
+    eqp:manufactureYear 2002 ;
+    eqp:modeSCode 50040713 ;
+    eqp:numberOfEngines 2 ;
+    eqp:numberOfSeats 55 ;
+    eqp:registrationNumber "N11548"^^xsd:string .
+
+########################################################################
+## Aircraft type #######################################################
+########################################################################
+
+eqp:B77WAircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type B77W"^^xsd:string ;
+    eqp:aircraftTypeDesignator "B77W"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;                       
+    eqp:hasAircraftWeightClass eqp:HighAircraftWeightClass ;            
+    eqp:numberOfEngines 2 .
+
+eqp:B738AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type B738"^^xsd:string ;
+    eqp:aircraftTypeDesignator "B738"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWakeCategory eqp:AircraftWakeCategoryD5 ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+eqp:A321AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type A321"^^xsd:string ;
+    eqp:aircraftTypeDesignator "A321"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWakeCategory eqp:AircraftWakeCategoryD5 ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+eqp:B739AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type B739"^^xsd:string ;
+    eqp:aircraftTypeDesignator "B739"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWakeCategory eqp:AircraftWakeCategoryD5 ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+eqp:E145AircraftType a eqp:AircraftType ;
+    rdfs:label "Aircraft Type E145"^^xsd:string ;
+    eqp:aircraftTypeDesignator "E145"^^xsd:string ;
+    eqp:hasAircraftEngineType eqp:JetEngineType ;
+    eqp:hasAircraftWeightClass eqp:MediumAircraftWeightClass ;
+    eqp:numberOfEngines 2 .
+
+########################################################################
+## Airports ############################################################
+########################################################################
+
+nas:EGLLairport a nas:InternationalAirport ;                            
+    rdfs:label "EGLL Airport"^^xsd:string ;
+    nas:airportLocation nas:EGLLcoordinates ;
+    nas:airportName "Heathrow"^^xsd:string ;
+    nas:iataAirportCode "LHR"^^xsd:string ;
+    nas:icaoAirportCode "EGLL"^^xsd:string ;
+    nas:withinTimezone "Europe/London"^^xsd:string .
+
+nas:KMIAairport a nas:CONUSairport ;
+    rdfs:label "KMIA Airport"^^xsd:string ;
+    nas:airportLocation nas:KMIAcoordinates ;
+    nas:airportName "MIAMI INTL"^^xsd:string ;
+    nas:faaAirportCode "MIA"^^xsd:string ;
+    nas:hasRunway nas:KMIAphysicalRunway08L_26R,
+        nas:KMIAphysicalRunway08R_26L,
+        nas:KMIAphysicalRunway09_27,
+        nas:KMIAphysicalRunway12_30 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "MIA"^^xsd:string ;
+    nas:icaoAirportCode "KMIA"^^xsd:string ;
+    nas:locatedInState "FL"^^xsd:string ;
+    nas:withinARTCC nas:ZMAcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KDFWairport a nas:CONUSairport ;
+    rdfs:label "KDFW Airport"^^xsd:string ;
+    nas:airportLocation nas:KDFWcoordinates ;
+    nas:airportName "DALLAS/FORT WORTH INTL"^^xsd:string ;
+    nas:faaAirportCode "DFW"^^xsd:string ;
+    nas:hasRunway nas:KDFWphysicalRunway13L_31R,
+        nas:KDFWphysicalRunway13R_31L,
+        nas:KDFWphysicalRunway17C_35C,
+        nas:KDFWphysicalRunway17L_35R,
+        nas:KDFWphysicalRunway17R_35L,
+        nas:KDFWphysicalRunway18L_36R,
+        nas:KDFWphysicalRunway18R_36L ;
+    nas:hasTerminal nas:KDFWtermA,
+        nas:KDFWtermB,
+        nas:KDFWtermC,
+        nas:KDFWtermD,
+        nas:KDFWtermE ;
+    nas:hoursOffsetFromUTC -6 ;
+    nas:iataAirportCode "DFW"^^xsd:string ;
+    nas:icaoAirportCode "KDFW"^^xsd:string ;
+    nas:locatedInState "TX"^^xsd:string ;
+    nas:withinARTCC nas:ZFWcenter ;
+    nas:withinTimezone "America/Chicago"^^xsd:string .
+
+nas:KJFKairport a nas:CONUSairport ;
+    rdfs:label "KJFK Airport"^^xsd:string ;
+    nas:airportLocation nas:KJFKcoordinates ;
+    nas:airportName "JOHN F KENNEDY INTL"^^xsd:string ;
+    nas:faaAirportCode "JFK"^^xsd:string ;
+    nas:hasRunway nas:KJFKphysicalRunway04L_22R,
+        nas:KJFKphysicalRunway04R_22L,
+        nas:KJFKphysicalRunway13L_31R,
+        nas:KJFKphysicalRunway13R_31L ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "JFK"^^xsd:string ;
+    nas:icaoAirportCode "KJFK"^^xsd:string ;
+    nas:locatedInState "NY"^^xsd:string ;
+    nas:withinARTCC nas:ZNYcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KLGAairport a nas:CONUSairport ;
+    rdfs:label "KLGA Airport"^^xsd:string ;
+    nas:airportLocation nas:KLGAcoordinates ;
+    nas:airportName "LA GUARDIA"^^xsd:string ;
+    nas:faaAirportCode "LGA"^^xsd:string ;
+    nas:hasRunway nas:KLGAphysicalRunway04_22,
+        nas:KLGAphysicalRunway13_31 ;
+    nas:hasTerminal nas:KLGAtermA,
+        nas:KLGAtermB,
+        nas:KLGAtermC,
+        nas:KLGAtermD ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "LGA"^^xsd:string ;
+    nas:icaoAirportCode "KLGA"^^xsd:string ;
+    nas:locatedInState "NY"^^xsd:string ;
+    nas:withinARTCC nas:ZNYcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string . 
+
+nas:KSFOairport a nas:CONUSairport ;
+    rdfs:label "KSFO Airport"^^xsd:string ;
+    nas:airportLocation nas:KSFOcoordinates ;
+    nas:airportName "SAN FRANCISCO INTL"^^xsd:string ;
+    nas:faaAirportCode "SFO"^^xsd:string ;
+    nas:hasRunway nas:KSFOphysicalRunway01L_19R,
+        nas:KSFOphysicalRunway01R_19L,
+        nas:KSFOphysicalRunway10L_28R,
+        nas:KSFOphysicalRunway10R_28L ;
+    nas:hoursOffsetFromUTC -8 ;
+    nas:iataAirportCode "SFO"^^xsd:string ;
+    nas:icaoAirportCode "KSFO"^^xsd:string ;
+    nas:locatedInState "CA"^^xsd:string ;
+    nas:withinARTCC nas:ZOAcenter ;
+    nas:withinTimezone "America/Los_Angeles"^^xsd:string .   
+
+nas:CYYZairport a nas:CanadianAirport ;
+    rdfs:label "CYYZ Airport"^^xsd:string ;
+    nas:airportLocation nas:CYYZcoordinates ;
+    nas:airportName "TORONTO PEARSON INTL"^^xsd:string ;
+    nas:hasRunway nas:CYYZphysicalRunway05_23 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "YYZ"^^xsd:string ;
+    nas:icaoAirportCode "CYYZ"^^xsd:string ;
+    nas:locatedInState "ON"^^xsd:string ;
+    nas:withinARTCC nas:CZYcenter ;
+    nas:withinTimezone "America/Toronto\r"^^xsd:string .
+
+nas:KEWRairport a nas:CONUSairport ;
+    rdfs:label "KEWR Airport"^^xsd:string ;
+    nas:airportLocation nas:KEWRcoordinates ;
+    nas:airportName "NEWARK LIBERTY INTL"^^xsd:string ;
+    nas:faaAirportCode "EWR"^^xsd:string ;
+    nas:hasRunway nas:KEWRphysicalRunway04L_22R,
+        nas:KEWRphysicalRunway04R_22L,
+        nas:KEWRphysicalRunway11_29 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "EWR"^^xsd:string ;
+    nas:icaoAirportCode "KEWR"^^xsd:string ;
+    nas:locatedInState "NJ"^^xsd:string ;
+    nas:withinARTCC nas:ZNYcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KSEAairport a nas:CONUSairport ;
+    rdfs:label "KSEA Airport"^^xsd:string ;
+    nas:airportLocation nas:KSEAcoordinates ;
+    nas:airportName "SEATTLE-TACOMA INTL"^^xsd:string ;
+    nas:faaAirportCode "SEA"^^xsd:string ;
+    nas:hasRunway nas:KSEAphysicalRunway16C_34C,
+        nas:KSEAphysicalRunway16L_34R,
+        nas:KSEAphysicalRunway16R_34L ;
+    nas:hoursOffsetFromUTC -8 ;
+    nas:iataAirportCode "SEA"^^xsd:string ;
+    nas:icaoAirportCode "KSEA"^^xsd:string ;
+    nas:locatedInState "WA"^^xsd:string ;
+    nas:withinARTCC nas:ZSEcenter ;
+    nas:withinTimezone "America/Los_Angeles"^^xsd:string .
+
+nas:KMHTairport a nas:CONUSairport ;
+    rdfs:label "KMHT Airport"^^xsd:string ;
+    nas:airportLocation nas:KMHTcoordinates ;
+    nas:airportName "MANCHESTER"^^xsd:string ;
+    nas:faaAirportCode "MHT"^^xsd:string ;
+    nas:hasRunway nas:KMHTphysicalRunway06_24,
+        nas:KMHTphysicalRunway17_35 ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "MHT"^^xsd:string ;
+    nas:icaoAirportCode "KMHT"^^xsd:string ;
+    nas:locatedInState "NH"^^xsd:string ;
+    nas:withinARTCC nas:ZBWcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+nas:KCLTairport a nas:CONUSairport ;
+    rdfs:label "KCLT Airport"^^xsd:string ;
+    nas:airportLocation nas:KCLTcoordinates ;
+    nas:airportName "CHARLOTTE/DOUGLAS INTL"^^xsd:string ;
+    nas:faaAirportCode "CLT"^^xsd:string ;
+    nas:hasRunway nas:KCLTphysicalRunway05_23,
+        nas:KCLTphysicalRunway18C_36C,
+        nas:KCLTphysicalRunway18L_36R,
+        nas:KCLTphysicalRunway18R_36L ;
+    nas:hoursOffsetFromUTC -5 ;
+    nas:iataAirportCode "CLT"^^xsd:string ;
+    nas:icaoAirportCode "KCLT"^^xsd:string ;
+    nas:locatedInState "NC"^^xsd:string ;
+    nas:withinARTCC nas:ZTLcenter ;
+    nas:withinTimezone "America/New_York"^^xsd:string .
+
+########################################################################
+## Coordinates #########################################################
+########################################################################
+
+nas:EGLLcoordinates a gen:PointLocation ;
+    rdfs:label "EGLL coordinates"^^xsd:string ;
+    gen:altitude "83"^^xsd:float ;
+    gen:latitude "51.477500"^^xsd:float ;
+    gen:longitude "-0.461389"^^xsd:float .
+
+nas:KJFKcoordinates a gen:PointLocation ;
+    rdfs:label "KJFK coordinates"^^xsd:string ;
+    gen:altitude "14"^^xsd:float ;
+    gen:latitude "40.639750"^^xsd:float ;
+    gen:longitude "-73.778925"^^xsd:float .
+
+nas:KMIAcoordinates a gen:PointLocation ;
+    rdfs:label "KMIA coordinates"^^xsd:string ;
+    gen:altitude "9"^^xsd:float ;
+    gen:latitude "25.795361"^^xsd:float ;
+    gen:longitude "-80.290111"^^xsd:float .
+
+nas:KLGAcoordinates a gen:PointLocation ;
+    rdfs:label "KLGA coordinates"^^xsd:string ;
+    gen:altitude "21"^^xsd:float ;
+    gen:latitude "40.777250"^^xsd:float ;
+    gen:longitude "-73.872611"^^xsd:float .
+
+nas:KDFWcoordinates a gen:PointLocation ;
+    rdfs:label "KDFW coordinates"^^xsd:string ;
+    gen:altitude "607"^^xsd:float ;
+    gen:latitude "32.897231"^^xsd:float ;
+    gen:longitude "-97.037694"^^xsd:float .
+
+nas:KSFOcoordinates a gen:PointLocation ;
+    rdfs:label "KSFO coordinates"^^xsd:string ;
+    gen:altitude "13"^^xsd:float ;
+    gen:latitude "37.619106"^^xsd:float ;
+    gen:longitude "-122.375236"^^xsd:float .
+
+nas:CYYZcoordinates a gen:PointLocation ;
+    rdfs:label "CYYZ coordinates"^^xsd:string ;
+    gen:altitude "569"^^xsd:float ;
+    gen:latitude "43.676661"^^xsd:float ;
+    gen:longitude "-79.630644"^^xsd:float .
+
+nas:KEWRcoordinates a gen:PointLocation ;
+    rdfs:label "KEWR coordinates"^^xsd:string ;
+    gen:altitude "18"^^xsd:float ;
+    gen:latitude "40.692481"^^xsd:float ;
+    gen:longitude "-74.168686"^^xsd:float .
+
+nas:KSEAcoordinates a gen:PointLocation ;
+    rdfs:label "KSEA coordinates"^^xsd:string ;
+    gen:altitude "433"^^xsd:float ;
+    gen:latitude "47.449889"^^xsd:float ;
+    gen:longitude "-122.311778"^^xsd:float .
+
+nas:KMHTcoordinates a gen:PointLocation ;
+    rdfs:label "KMHT coordinates"^^xsd:string ;
+    gen:altitude "266"^^xsd:float ;
+    gen:latitude "42.932806"^^xsd:float ;
+    gen:longitude "-71.435750"^^xsd:float .
+
+########################################################################
+## Actual routes #######################################################
+########################################################################
+
+atm:ActualRouteAAL100-201407150030 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150035168241 ;
+    gen:hasLastItem atm:TrackPt201407150047159137 ;
+    gen:hasSequencedItem atm:TrackPt201407150035168241,
+        atm:TrackPt201407150036016540,
+        atm:TrackPt201407150036158496,
+        atm:TrackPt201407150037033298,
+        atm:TrackPt201407150038011997,
+        atm:TrackPt201407150038053432,
+        atm:TrackPt201407150039016585,
+        atm:TrackPt201407150039142779,
+        atm:TrackPt201407150040136442,
+        atm:TrackPt201407150042003522,
+        atm:TrackPt201407150042163295,
+        atm:TrackPt201407150044011185,
+        atm:TrackPt201407150045036607,
+        atm:TrackPt201407150046061041,
+        atm:TrackPt201407150047040140,
+        atm:TrackPt201407150047159137 .
+
+atm:ActualRouteAAL1102-201407150046 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL1102 on 2014-07-15 00:46:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150052008111 ;
+    gen:hasLastItem atm:TrackPt201407150054017098 ;
+    gen:hasSequencedItem atm:TrackPt201407150052008111,
+        atm:TrackPt201407150052035829,
+        atm:TrackPt201407150053030654,
+        atm:TrackPt201407150053051356,
+        atm:TrackPt201407150054017098 .
+
+atm:ActualRouteAAL1144-201407150040 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL1144 on 2014-07-15 00:40:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150045160390 ;
+    gen:hasLastItem atm:TrackPt201407150052117550 ;
+    gen:hasSequencedItem atm:TrackPt201407150045160390,
+        atm:TrackPt201407150046158584,
+        atm:TrackPt201407150047141258,
+        atm:TrackPt201407150048111122,
+        atm:TrackPt201407150049090586,
+        atm:TrackPt201407150050036548,
+        atm:TrackPt201407150050088226,
+        atm:TrackPt201407150051025266,
+        atm:TrackPt201407150051114613,
+        atm:TrackPt201407150051133037,
+        atm:TrackPt201407150052117349,
+        atm:TrackPt201407150052117550 .
+
+atm:ActualRouteAAL1170-201407150053 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL1170 on 2014-07-15 00:53:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150059019717 ;
+    gen:hasLastItem atm:TrackPt201407150107104737 ;
+    gen:hasSequencedItem atm:TrackPt201407150059019717,
+        atm:TrackPt201407150100042224,
+        atm:TrackPt201407150100111037,
+        atm:TrackPt201407150102075025,
+        atm:TrackPt201407150103002879,
+        atm:TrackPt201407150103077285,
+        atm:TrackPt201407150104129102,
+        atm:TrackPt201407150105091434,
+        atm:TrackPt201407150105143587,
+        atm:TrackPt201407150106115691,
+        atm:TrackPt201407150106135668,
+        atm:TrackPt201407150107085777,
+        atm:TrackPt201407150107104737 .
+
+atm:ActualRouteAAL20-201407152358 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for AAL20 on 2014-07-15 23:58:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407160004009387 ;
+    gen:hasLastItem atm:TrackPt201407160010120576 ;
+    gen:hasSequencedItem atm:TrackPt201407160004009387,
+        atm:TrackPt201407160004093371,
+        atm:TrackPt201407160005027364,
+        atm:TrackPt201407160005117150,
+        atm:TrackPt201407160006051030,
+        atm:TrackPt201407160006119603,
+        atm:TrackPt201407160007075345,
+        atm:TrackPt201407160008079906,
+        atm:TrackPt201407160009145689,
+        atm:TrackPt201407160010120576 .
+
+atm:ActualRouteACA722-201407150025 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150031054599 ;
+    gen:hasLastItem atm:TrackPt201407150035160163 ;
+    gen:hasSequencedItem atm:TrackPt201407150031054599,
+        atm:TrackPt201407150031155236,
+        atm:TrackPt201407150032160905,
+        atm:TrackPt201407150033066739,
+        atm:TrackPt201407150033145930,
+        atm:TrackPt201407150034063383,
+        atm:TrackPt201407150034134237,
+        atm:TrackPt201407150035059399,
+        atm:TrackPt201407150035160163 .
+
+atm:ActualRouteASA14-201407150005 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150010162517 ;
+    gen:hasLastItem atm:TrackPt201407150025043901 ;
+    gen:hasSequencedItem atm:TrackPt201407150010162517,
+        atm:TrackPt201407150012004444,
+        atm:TrackPt201407150012159153,
+        atm:TrackPt201407150013137273,
+        atm:TrackPt201407150014001903,
+        atm:TrackPt201407150015044256,
+        atm:TrackPt201407150015162929,
+        atm:TrackPt201407150017010688,
+        atm:TrackPt201407150017143381,
+        atm:TrackPt201407150020016149,
+        atm:TrackPt201407150021034434,
+        atm:TrackPt201407150022040160,
+        atm:TrackPt201407150023023639,
+        atm:TrackPt201407150024010689,
+        atm:TrackPt201407150025043901 .
+
+atm:ActualRouteASQ3831-201407150019 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150026013204 ;
+    gen:hasLastItem atm:TrackPt201407150033008184 ;
+    gen:hasSequencedItem atm:TrackPt201407150026013204,
+        atm:TrackPt201407150026175968,
+        atm:TrackPt201407150027159377,
+        atm:TrackPt201407150028146562,
+        atm:TrackPt201407150029009441,
+        atm:TrackPt201407150030027897,
+        atm:TrackPt201407150030046134,
+        atm:TrackPt201407150030137356,
+        atm:TrackPt201407150031007389,
+        atm:TrackPt201407150031173828,
+        atm:TrackPt201407150032044449,
+        atm:TrackPt201407150033008184 .
+
+atm:ActualRouteASQ4423-201407150037 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150043108464 ;
+    gen:hasLastItem atm:TrackPt201407150055123150 ;
+    gen:hasSequencedItem atm:TrackPt201407150043108464,
+        atm:TrackPt201407150044075821,
+        atm:TrackPt201407150045164562,
+        atm:TrackPt201407150046104481,
+        atm:TrackPt201407150047089632,
+        atm:TrackPt201407150048124841,
+        atm:TrackPt201407150049104356,
+        atm:TrackPt201407150050154124,
+        atm:TrackPt201407150051152091,
+        atm:TrackPt201407150052141510,
+        atm:TrackPt201407150053111463,
+        atm:TrackPt201407150054127641,
+        atm:TrackPt201407150055123150 .
+
+atm:ActualRouteCHQ2945-201407150047 a atm:ActualFlightRoute ;
+    rdfs:label "Actual Route for CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    gen:hasFirstItem atm:TrackPt201407150053074110 ;
+    gen:hasLastItem atm:TrackPt201407150102035883 ;
+    gen:hasSequencedItem atm:TrackPt201407150053042977,
+        atm:TrackPt201407150053074110,
+        atm:TrackPt201407150054073369,
+        atm:TrackPt201407150055056700,
+        atm:TrackPt201407150056037367,
+        atm:TrackPt201407150057041561,
+        atm:TrackPt201407150057137003,
+        atm:TrackPt201407150059006967,
+        atm:TrackPt201407150100030361,
+        atm:TrackPt201407150102035883 .
+
+########################################################################
+## Planned routes ######################################################
+########################################################################
+
+atm:PlannedRouteAAL100-201407150030 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL100 on 2014-07-15 00:30:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T06:16:00"^^xsd:dateTime ;
+    atm:flightRouteString "KJFK.BETTE3.BETTE..ACK..TUSKY.N271A.TUDEP.NATX.MALOT.NATX.GISTI..SLANY.UL9.STU.UP2.OKESI.Y3.BEDEK..EGLL/0616"^^xsd:string ;
+    atm:planFilingDay nas:Day20140714 ;
+    atm:planFilingTime "2014-07-14T23:35:46"^^xsd:dateTime .
+
+atm:PlannedRouteAAL1102-201407150046 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL1102 on 2014-07-15 00:46:00"^^xsd:string ;
+    atm:flightRouteString "KLGA./.EMJAY.J174.WARNN.J174.SWL..CEBEE..WETRO..DIW.AR22.JORAY.HILEY4.KMIA"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:46:44"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_AAL1102-201407150046_KLGA ;
+    gen:hasLastItem nas:NEC008_AAL1102-201407150046_KMIA ;
+    gen:hasSequencedItem nas:NEC001_AAL1102-201407150046_KLGA,
+        nas:NEC002_AAL1102-201407150046_J174,
+        nas:NEC003_AAL1102-201407150046_SWL,
+        nas:NEC004_AAL1102-201407150046_CEBEE,
+        nas:NEC005_AAL1102-201407150046_WETRO,
+        nas:NEC006_AAL1102-201407150046_AR22,
+        nas:NEC007_AAL1102-201407150046_HILEY4,
+        nas:NEC008_AAL1102-201407150046_KMIA .
+
+atm:PlannedRouteAAL1144-201407150040 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL1144 on 2014-07-15 00:40:00"^^xsd:string ;
+    atm:flightRouteString "KLGA./.MIKYG.Q480.AIR.J80.FYLLS.J29.PXV.J131.LIT.BYP6.KDFW"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:42:12"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_AAL1144-201407150040_KLGA ;
+    gen:hasLastItem nas:NEC007_AAL1144-201407150040_KDFW ;
+    gen:hasSequencedItem nas:NEC001_AAL1144-201407150040_KLGA,
+        nas:NEC002_AAL1144-201407150040_Q480,
+        nas:NEC003_AAL1144-201407150040_J80,
+        nas:NEC004_AAL1144-201407150040_J29,
+        nas:NEC005_AAL1144-201407150040_J131,
+        nas:NEC006_AAL1144-201407150040_BYP6,
+        nas:NEC007_AAL1144-201407150040_KDFW .
+
+atm:PlannedRouteAAL1170-201407150053 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL1170 on 2014-07-15 00:53:00"^^xsd:string ;
+    atm:flightRouteString "KDFW.AKUNA4.MLC..RZC..STL..VHP..ROD.J29.DJB..CXR.J146.ETG.MIP4.KLGA"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:53:45"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "0"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_AAL1170-201407150053_KDFW ;
+    gen:hasLastItem nas:NEC009_AAL1170-201407150053_KLGA ;
+    gen:hasSequencedItem nas:NEC001_AAL1170-201407150053_KDFW,
+        nas:NEC002_AAL1170-201407150053_AKUNA4,
+        nas:NEC003_AAL1170-201407150053_RZC,
+        nas:NEC004_AAL1170-201407150053_STL,
+        nas:NEC005_AAL1170-201407150053_VHP,
+        nas:NEC006_AAL1170-201407150053_J29,
+        nas:NEC007_AAL1170-201407150053_J146,
+        nas:NEC008_AAL1170-201407150053_MIP4,
+        nas:NEC009_AAL1170-201407150053_KLGA .
+
+atm:PlannedRouteAAL20-201407152358 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for AAL20 on 2014-07-15 23:58:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-16T05:01:00"^^xsd:dateTime ;
+    atm:flightRouteString "KSFO.SHOR5.SAC.J32.BAM.J94.FOD..KG75M..DAFLU..JHW.J70.LVZ.LENDY6.KJFK/0501"^^xsd:string ;
+    atm:planFilingDay nas:Day20140716 ;
+    atm:planFilingTime "2014-07-16T00:06:41"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "0"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_AAL20-201407152358_KSFO ;
+    gen:hasLastItem nas:NEC009_AAL20-201407152358_KJFK ;
+    gen:hasSequencedItem nas:NEC001_AAL20-201407152358_KSFO,
+        nas:NEC002_AAL20-201407152358_SHOR5,
+        nas:NEC003_AAL20-201407152358_J32,
+        nas:NEC004_AAL20-201407152358_J94,
+        nas:NEC005_AAL20-201407152358_KG75M,
+        nas:NEC006_AAL20-201407152358_DAFLU,
+        nas:NEC007_AAL20-201407152358_J70,
+        nas:NEC008_AAL20-201407152358_LENDY6,
+        nas:NEC009_AAL20-201407152358_KJFK .
+
+atm:PlannedRouteACA722-201407150025 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ACA722 on 2014-07-15 00:25:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:24:00"^^xsd:dateTime ;
+    atm:flightRouteString "CYYZ.BULGE2.AIRCO..GEE.GEE111.EXTOL..RKA.HAARP3.KLGA/0124"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:25:59"^^xsd:dateTime .
+
+atm:PlannedRouteASA14-201407150005 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASA14 on 2014-07-15 00:05:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T04:48:00"^^xsd:dateTime ;
+    atm:flightRouteString "KSEA..SEA.J70.MLP..GTF..HILGR..KP09Y..KP06C..GEP..ODI..KG78K..KG72M..EVOTE..NELLS..KEEHO.J584.SLT.FQM3.KEWR/0448"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:24:53"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "0"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_ASA14-201407150005_KSEA ;
+    gen:hasLastItem nas:NEC015_ASA14-201407150005_KEWR ;
+    gen:hasSequencedItem nas:NEC001_ASA14-201407150005_KSEA,
+        nas:NEC002_ASA14-201407150005_J70,
+        nas:NEC003_ASA14-201407150005_GTF,
+        nas:NEC004_ASA14-201407150005_HILGR,
+        nas:NEC005_ASA14-201407150005_KP09Y,
+        nas:NEC006_ASA14-201407150005_KP06C,
+        nas:NEC007_ASA14-201407150005_GEP,
+        nas:NEC008_ASA14-201407150005_ODI,
+        nas:NEC009_ASA14-201407150005_KG78K,
+        nas:NEC010_ASA14-201407150005_KG72M,
+        nas:NEC011_ASA14-201407150005_EVOTE,
+        nas:NEC012_ASA14-201407150005_NELLS,
+        nas:NEC013_ASA14-201407150005_J584,
+        nas:NEC014_ASA14-201407150005_FQM3,
+        nas:NEC015_ASA14-201407150005_KEWR .
+
+atm:PlannedRouteASQ3831-201407150019 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASQ3831 on 2014-07-15 00:19:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:24:00"^^xsd:dateTime ;
+    atm:flightRouteString "CYYZ.BULGE2.AIRCO.V252.GEE.SHAFF7.KEWR/0124"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:21:13"^^xsd:dateTime .
+
+atm:PlannedRouteASQ4423-201407150037 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for ASQ4423 on 2014-07-15 00:37:00"^^xsd:string ;
+    atm:flightPlanETA "2014-07-15T01:41:00"^^xsd:dateTime ;
+    atm:flightRouteString "KMHT./.HANAA.FLOSI3.KEWR/0141"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:48:21"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_ASQ4423-201407150037_KMHT ;
+    gen:hasLastItem nas:NEC003_ASQ4423-201407150037_KEWR ;
+    gen:hasSequencedItem nas:NEC001_ASQ4423-201407150037_KMHT,
+        nas:NEC002_ASQ4423-201407150037_FLOSI3,
+        nas:NEC003_ASQ4423-201407150037_KEWR .
+
+atm:PlannedRouteCHQ2945-201407150047 a atm:PlannedFlightRoute ;
+    rdfs:label "Planned Route for CHQ2945 on 2014-07-15 00:47:00"^^xsd:string ;
+    atm:flightRouteString "KJFK./.EMJAY.J174.WARNN.J174.ORF.J121.BARTL.J4.FLO.HUSTN2.KCLT"^^xsd:string ;
+    atm:planFilingDay nas:Day20140715 ;
+    atm:planFilingTime "2014-07-15T00:47:00"^^xsd:dateTime ;
+    atm:planGapAfterSequenceElementNumber "1"^^xsd:Integer ;
+    gen:hasFirstItem nas:NEC001_CHQ2945-201407150047_KJFK ;
+    gen:hasLastItem nas:NEC006_CHQ2945-201407150047_KCLT ;
+    gen:hasSequencedItem nas:NEC001_CHQ2945-201407150047_KJFK,
+        nas:NEC002_CHQ2945-201407150047_J174,
+        nas:NEC003_CHQ2945-201407150047_J121,
+        nas:NEC004_CHQ2945-201407150047_J4,
+        nas:NEC005_CHQ2945-201407150047_HUSTN2,
+        nas:NEC006_CHQ2945-201407150047_KCLT .
+
+########################################################################
+## Airlines ############################################################
+########################################################################
+
+nas:AALairline a nas:AirCarrier ;
+    rdfs:label "American Airlines"^^xsd:string ;
+    nas:airCarrierName "American Airlines"^^xsd:string ;
+    nas:airlineCallsign "AMERICAN"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "AA"^^xsd:string ;
+    nas:icaoCarrierCode "AAL"^^xsd:string .
+
+nas:ACAairline a nas:AirCarrier ;
+    rdfs:label "Air Canada"^^xsd:string ;
+    nas:airCarrierName "Air Canada"^^xsd:string ;
+    nas:airlineCallsign "AIR CANADA"^^xsd:string ;
+    nas:countryOfRegistry "Canada"^^xsd:string ;
+    nas:iataCarrierCode "AC"^^xsd:string ;
+    nas:icaoCarrierCode "ACA"^^xsd:string .
+
+nas:ASAairline a nas:AirCarrier ;
+    rdfs:label "Alaska Airlines"^^xsd:string ;
+    nas:airCarrierName "Alaska Airlines"^^xsd:string ;
+    nas:airlineCallsign "ALASKA"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "AS"^^xsd:string ;
+    nas:icaoCarrierCode "ASA"^^xsd:string .
+
+nas:ASQairline a nas:AirCarrier ;
+    rdfs:label "Atlantic Southeast Airlines"^^xsd:string ;
+    nas:airCarrierName "Atlantic Southeast Airlines"^^xsd:string ;
+    nas:airlineCallsign "ACEY"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "EV"^^xsd:string ;
+    nas:icaoCarrierCode "ASQ"^^xsd:string .
+
+nas:CHQairline a nas:AirCarrier ;
+    rdfs:label "Chautauqua Airlines"^^xsd:string ;
+    nas:airCarrierName "Chautauqua Airlines"^^xsd:string ;
+    nas:airlineCallsign "CHAUTAUQUA"^^xsd:string ;
+    nas:countryOfRegistry "United States"^^xsd:string ;
+    nas:iataCarrierCode "RP"^^xsd:string ;
+    nas:icaoCarrierCode "CHQ"^^xsd:string .

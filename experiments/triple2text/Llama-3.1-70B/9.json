@@ -1,0 +1,9 @@
+{
+    "gen_results": "The UTC offset for the departure airports of flights AAL100 and ASQ3831 is -5 hours. Both flights depart from airports (KJFK and CYYZ) that have the same UTC offset of -5 hours.",
+    "answer": "Both departure airports have a UTC offset of -5, meaning their local time is 5 hours behind UTC.",
+    "bleu": 2.0581673600881486e-78,
+    "rouge_1": 0.4800000000000001,
+    "rouge_2": 0.25,
+    "meteor": 0.32538659793814434,
+    "BERTscore": 0.634207010269165
+}

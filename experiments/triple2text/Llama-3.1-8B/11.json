@@ -1,0 +1,9 @@
+{
+    "gen_results": "The flight with a more complex actual route, CHQ2945, has 10 waypoints in its actual route, while the flight AAL1144 has 11 waypoints.",
+    "answer": "Flight AAL1144 had a more complex route with 12 waypoints, compared to CHQ2945's 10 waypoints.",
+    "bleu": 2.326888985667872e-78,
+    "rouge_1": 0.5641025641025642,
+    "rouge_2": 0.21621621621621623,
+    "meteor": 0.4445213607594936,
+    "BERTscore": 0.7822238802909851
+}

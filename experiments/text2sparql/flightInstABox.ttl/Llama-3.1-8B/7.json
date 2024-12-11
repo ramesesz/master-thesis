@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <http://www.atm.org/ontology#> \nPREFIX nas: <http://www.nas.org/ontology#> \nSELECT ?flight ?passengers \nWHERE { ?flight a atm:Flight ; nas:passengerCapacity ?passengers . FILTER (?passengers > 100) }",
+            "query_explanation": "This SPARQL query selects flights that have a passenger capacity greater than 100. It uses the `nas:passengerCapacity` property to retrieve the number of passengers each flight can carry.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "flight",
+                        "passengers"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

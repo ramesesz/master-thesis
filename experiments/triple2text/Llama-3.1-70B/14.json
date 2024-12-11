@@ -1,0 +1,9 @@
+{
+    "gen_results": "Although the RDF triples do not explicitly state the country, they do provide the state information for the departure airports of flights AAL1170 and ASQ3831. Since the states \"TX\" and \"ON\" are typically associated with the United States and Canada, respectively, it can be inferred that the departure airports are likely not located in the same country.",
+    "answer": "No, AAL1170 departs from a U.S. airport, while ASQ3831 departs from a Canadian airport.",
+    "bleu": 6.630398171726777e-232,
+    "rouge_1": 0.11111111111111112,
+    "rouge_2": 0.0,
+    "meteor": 0.0273224043715847,
+    "BERTscore": 0.5401853919029236
+}

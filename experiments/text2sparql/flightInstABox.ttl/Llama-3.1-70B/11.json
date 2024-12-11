@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX gen: <https://data.nasa.gov/ontologies/atmonto/gen#> SELECT?flight?numWaypoints WHERE { VALUES?flight { atm:CHQ2945-201407150047 atm:AAL1144-201407150040 }?flight atm:hasActualRoute?route.?route gen:hasSequencedItem?waypoint. BIND (COUNT(?waypoint) AS?numWaypoints) } ORDER BY DESC(?numWaypoints)",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Line 1, column 300: Aggregate expression not legal at this point\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}

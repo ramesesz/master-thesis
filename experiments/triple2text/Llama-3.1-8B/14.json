@@ -1,0 +1,9 @@
+{
+    "gen_results": "The departure airport of flight AAL1170 is located in Texas, while the departure airport of flight ASQ3831 is located in Ontario. Therefore, no, they are not located in the same state/province.",
+    "answer": "No, AAL1170 departs from a U.S. airport, while ASQ3831 departs from a Canadian airport.",
+    "bleu": 1.016127520387007e-231,
+    "rouge_1": 0.25531914893617025,
+    "rouge_2": 0.0,
+    "meteor": 0.12738853503184713,
+    "BERTscore": 0.6504227519035339
+}

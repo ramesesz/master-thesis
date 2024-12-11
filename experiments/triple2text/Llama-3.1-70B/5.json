@@ -1,0 +1,9 @@
+{
+    "gen_results": "The departure airport (nas:KLGAairport) for flight AAL1144 is in the \"America/New_York\" time zone, and the arrival airport (nas:KDFWairport) is in the \"America/Chicago\" time zone. America/Chicago is 1 hour behind America/New_York.",
+    "answer": "The time zone difference is 1 hour, with KLGA being 1 hour ahead of KDFW.",
+    "bleu": 4.884188340600192e-155,
+    "rouge_1": 0.22641509433962267,
+    "rouge_2": 0.11764705882352942,
+    "meteor": 0.25841750841750843,
+    "BERTscore": 0.5164539217948914
+}

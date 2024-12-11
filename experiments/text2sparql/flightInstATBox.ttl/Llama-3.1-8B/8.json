@@ -1,0 +1,22 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.semanticdesktop.org/ontologies/2007/04/18/nas#> \nSELECT ?seatCount1 ?seatCount2\nWHERE {\n    nas:AAL1170 nas:numberOfSeats ?seatCount1 .\n    nas:ASA14 nas:numberOfSeats ?seatCount2 .\n    FILTER (?seatCount1 = ?seatCount2)\n}",
+            "query_explanation": "This SPARQL query checks if the number of seats on board for flights AAL1170 and ASA14 are equal.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "seatCount1",
+                        "seatCount2"
+                    ]
+                },
+                "results": {
+                    "bindings": []
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

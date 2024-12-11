@@ -1,0 +1,9 @@
+{
+    "gen_results": "No, flight AAL100 operated under a commercial user category, while flight CHQ2945 operated under an air taxi user category.",
+    "answer": "No, AAL100 operates as a commercial flight, while CHQ2945 operates as an air taxi.",
+    "bleu": 6.937383209327784e-155,
+    "rouge_1": 0.7272727272727273,
+    "rouge_2": 0.3225806451612903,
+    "meteor": 0.6151724137931034,
+    "BERTscore": 0.8183484673500061
+}

@@ -1,0 +1,9 @@
+{
+    "gen_results": "No, flight ASQ4423 can carry up to 55 passengers, and flight ASA14 can carry up to 222 passengers, so only ASA14 can carry more than 100 passengers.",
+    "answer": "Flight ASQ4423 can carry 55 passengers, while flight ASA14 can carry 222 passengers, which is more than 100.",
+    "bleu": 0.16497440012799217,
+    "rouge_1": 0.6666666666666667,
+    "rouge_2": 0.46511627906976744,
+    "meteor": 0.6944444444444445,
+    "BERTscore": 0.838815450668335
+}

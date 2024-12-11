@@ -1,0 +1,9 @@
+{
+    "gen_results": "There is no information about the number of flight attendants for either ACA722 or AAL1170.",
+    "answer": "No information is provided about the number of flight attendants on either ACA722 or AAL1170.",
+    "bleu": 0.5149732203257935,
+    "rouge_1": 0.8666666666666667,
+    "rouge_2": 0.6428571428571429,
+    "meteor": 0.854043392504931,
+    "BERTscore": 0.9425137042999268
+}

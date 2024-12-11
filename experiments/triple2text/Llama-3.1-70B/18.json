@@ -1,0 +1,9 @@
+{
+    "gen_results": "AAL1102 had a higher certainty in its model designation, with a certainty of 1.0000000000000002 for Aircraft N963AN.",
+    "answer": "The aircraft used in AAL1102 had a higher model certainty (1.0000000000000002) compared to AAL20 (0.9879913721631963).",
+    "bleu": 0.16467029855845897,
+    "rouge_1": 0.5714285714285715,
+    "rouge_2": 0.24242424242424243,
+    "meteor": 0.35002055921052627,
+    "BERTscore": 0.7521905303001404
+}

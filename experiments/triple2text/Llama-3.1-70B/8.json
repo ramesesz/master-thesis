@@ -1,0 +1,9 @@
+{
+    "gen_results": "No, flights AAL1170 and ASA14 do not have the same number of seats on board. AAL1170 has 162 seats and ASA14 has 222 seats.",
+    "answer": "No, AAL1170's aircraft has 162 seats, while ASA14's aircraft has 222 seats.",
+    "bleu": 2.3964247400990494e-78,
+    "rouge_1": 0.4736842105263159,
+    "rouge_2": 0.2222222222222222,
+    "meteor": 0.42613636363636365,
+    "BERTscore": 0.7432045936584473
+}

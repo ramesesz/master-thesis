@@ -1,0 +1,35 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> PREFIX eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> SELECT?seatsAAL1170?seatsASA14 WHERE { atm:AAL1170-201407150053 atm:aircraftFlown?aircraftAAL1170. atm:ASA14-201407150005 atm:aircraftFlown?aircraftASA14.?aircraftAAL1170 eqp:numberOfSeats?seatsAAL1170.?aircraftASA14 eqp:numberOfSeats?seatsASA14. }",
+            "query_explanation": "This SPARQL query retrieves the number of seats for flights AAL1170 and ASA14 by first identifying the aircraft flown by each flight and then retrieving the number of seats for each aircraft.",
+            "query_results": {
+                "head": {
+                    "vars": [
+                        "seatsAAL1170",
+                        "seatsASA14"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "seatsAAL1170": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "value": "162"
+                            },
+                            "seatsASA14": {
+                                "type": "literal",
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "value": "222"
+                            }
+                        }
+                    ]
+                }
+            },
+            "error": null
+        }
+    ],
+    "number_of_attempts": 1
+}

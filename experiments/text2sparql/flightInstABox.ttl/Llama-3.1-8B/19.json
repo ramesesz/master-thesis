@@ -1,0 +1,10 @@
+{
+    "attempts": [
+        {
+            "attempt_number": 1,
+            "sparql_query": "PREFIX nas: <http://www.sandiego.edu/naa/nas#> \nPREFIX atm: <http://www.sandiego.edu/naa/atm#> \nSELECT ?flight1 ?flight2 WHERE { ?flight1 a atm:Flight ; atm:flightNumber \"AAL1144\"^^xsd:string . ?flight2 a atm:Flight ; atm:flightNumber \"ASQ3831\"^^xsd:string . ?flight1 nas:operatedInAirspaceRegion ?region1 . ?flight2 nas:operatedInAirspaceRegion ?region2 . FILTER ( ?region1 = ?region2 ) }",
+            "error": "QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. \n\nResponse:\nb'Parse error: Line 3, column 86: Unresolved prefixed name: xsd:string\\n'"
+        }
+    ],
+    "number_of_attempts": 1
+}
